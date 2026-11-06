@@ -1,0 +1,37 @@
+participante_id,perfil,tarefa_id,descricao_tarefa,conclusao,tempo_segundos,tentativas_erros,satisfacao_escala_1_a_5,observacoes_qualitativas
+P1,Comerciante autonoma (52a),T01,Consulta de potabilidade no bairro,S,48,0,5,Achou facil visualizar a cor verde no mapa do bairro
+P1,Comerciante autonoma (52a),T02,Registro de denuncia com foto,S,105,2,4,Ficou em duvida inicial se precisava digitar o CEP completo
+P1,Comerciante autonoma (52a),T03,Modo offline e fila de sincronizacao,S,72,1,4,Entendeu o aviso mas sugeriu aviso sonoro quando o sinal voltar
+P1,Comerciante autonoma (52a),T04,Solicitacao de carro-pipa emergencial,S,68,0,5,Achou o fluxo intuitivo e util para a vizinhanca
+P1,Comerciante autonoma (52a),T05,Painel de transparencia e exportacao,S,89,1,4,Achou a letra do grafico pequena na primeira visualizacao
+P1,Comerciante autonoma (52a),T06,Ativacao de acessibilidade,S,34,0,5,Elogiou muito o modo de alto contraste e letra grande
+P2,Estudante universitario (23a),T01,Consulta de potabilidade no bairro,S,28,0,5,Navegacao muito fluida e autoexplicativa
+P2,Estudante universitario (23a),T02,Registro de denuncia com foto,S,62,0,5,Concluiu com rapidez; gostou da captura direta da camera
+P2,Estudante universitario (23a),T03,Modo offline e fila de sincronizacao,S,45,0,5,Destacou a clareza do banner informativo de IndexedDB
+P2,Estudante universitario (23a),T04,Solicitacao de carro-pipa emergencial,S,51,0,5,Fluxo direto e sem etapas burocraticas desnecessarias
+P2,Estudante universitario (23a),T05,Painel de transparencia e exportacao,S,55,0,5,Filtrou rapidamente e abriu o relatorio em PDF
+P2,Estudante universitario (23a),T06,Ativacao de acessibilidade,S,22,0,5,Mudanca instantanea sem recarregamento da tela
+P3,Lider comunitario aposentado (64a),T01,Consulta de potabilidade no bairro,S,58,1,4,Precisou de ajuda para ampliar o mapa usando dois dedos
+P3,Lider comunitario aposentado (64a),T02,Registro de denuncia com foto,N,135,3,3,Teve dificuldade para focar a camera na torneira e achar o botao enviar
+P3,Lider comunitario aposentado (64a),T03,Modo offline e fila de sincronizacao,S,88,2,3,Nao entendeu de imediato o que significava 'IndexedDB em fila'
+P3,Lider comunitario aposentado (64a),T04,Solicitacao de carro-pipa emergencial,S,82,1,4,Conseguiu preencher com ponto de referencia da associacao
+P3,Lider comunitario aposentado (64a),T05,Painel de transparencia e exportacao,S,110,2,3,Sentiu dificuldade para ler os numeros das legendas tecnicas
+P3,Lider comunitario aposentado (64a),T06,Ativacao de acessibilidade,S,41,0,5,Disse que o botao de acessibilidade deveria ficar visivel na barra inferior
+P4,Agente Comunitaria de Saude (28a),T01,Consulta de potabilidade no bairro,S,32,0,5,Identificou imediatamente a situacao da microarea
+P4,Agente Comunitaria de Saude (28a),T02,Registro de denuncia com foto,S,58,0,5,Registrou foto e relato rapidamente com boa precisao
+P4,Agente Comunitaria de Saude (28a),T03,Modo offline e fila de sincronizacao,S,50,0,5,Fundamental para áreas de encosta sem cobertura de telefonia
+P4,Agente Comunitaria de Saude (28a),T04,Solicitacao de carro-pipa emergencial,S,47,0,5,Fluxo limpo e direto com validacao territorial
+P4,Agente Comunitaria de Saude (28a),T05,Painel de transparencia e exportacao,S,60,0,5,Gerou relatorio comunitário para levar a reuniao do posto
+P4,Agente Comunitaria de Saude (28a),T06,Ativacao de acessibilidade,S,25,0,5,Excelente resposta visual e facilidade de alternancia
+P5,Tecnico em edificacoes (35a),T01,Consulta de potabilidade no bairro,S,39,0,5,Achou o mapa muito util para checar vazamentos na rede
+P5,Tecnico em edificacoes (35a),T02,Registro de denuncia com foto,S,75,1,4,Sugeriu campo para informar tipo de cano quebrado
+P5,Tecnico em edificacoes (35a),T03,Modo offline e fila de sincronizacao,S,65,1,4,Entendeu o mecanismo de fila e aprovou a iniciativa
+P5,Tecnico em edificacoes (35a),T04,Solicitacao de carro-pipa emergencial,S,59,0,5,Concluiu sem problemas informando rua e numero
+P5,Tecnico em edificacoes (35a),T05,Painel de transparencia e exportacao,S,72,1,4,Observou que o download do PDF funcionou em 3 segundos
+P5,Tecnico em edificacoes (35a),T06,Ativacao de acessibilidade,S,30,0,5,Testou o contraste no sol e elogiou a visibilidade
+P6,Professora do Ensino Fundamental (41a),T01,Consulta de potabilidade no bairro,S,42,0,5,Visual intuitivo e excelente para trabalhar com alunos
+P6,Professora do Ensino Fundamental (41a),T02,Registro de denuncia com foto,S,80,1,4,Achou o campo de texto explicativo e claro
+P6,Professora do Ensino Fundamental (41a),T03,Modo offline e fila de sincronizacao,S,60,0,5,Percebeu a notificacao de pendencia com facilidade
+P6,Professora do Ensino Fundamental (41a),T04,Solicitacao de carro-pipa emergencial,S,55,0,5,Fluxo direto e mensagem de confirmacao acolhedora
+P6,Professora do Ensino Fundamental (41a),T05,Painel de transparencia e exportacao,S,68,0,5,Gostou dos graficos coloridos de historico semanal
+P6,Professora do Ensino Fundamental (41a),T06,Ativacao de acessibilidade,S,27,0,5,Recurso muito bem integrado na barra de ferramentas

@@ -26,7 +26,7 @@ Este registro monitora a execução rigorosa de cada tarefa, atribuindo responsa
 | ATIV-012 | 4 | Diagnóstico de >= 3 problemas sociais/ambientais e matriz de decisão | Gustavo Antonio (Coord.) | 2026-11-18 | Concluído | Selecionado problema de água/saneamento PB (ODS 6) | `04_problema/dossie_problema.md` |
 | ATIV-013 | 5 | Especificação técnica da solução (>=10 RF, >=6 RNF, 8 histórias) | Gabriel Amancio (Coord.) | 2026-11-20 | Concluído | 12 RF MoSCoW, 8 RNF com métricas e 8 HU BDD | `05_solucao/dossie_solucao.md` |
 | ATIV-014 | 5 | Wireframes e protótipo de alta fidelidade (>=8 telas/estados) | Gustavo Antonio | 2026-11-21 | Concluído | Especificação detalhada de 8 telas para Figma e C4 | `05_solucao/prototipo/` |
-| ATIV-015 | 6 | Plano de testes (>=6 tarefas) e validação com 6 participantes reais | Luiz Miguel (Coord.) | 2026-11-23 | A iniciar | Anonimização P1..P6 e TCLE assinado | `06_testes/dossie_testes.md` |
-| ATIV-016 | 6 | Análise de resultados, identificação de >=4 melhorias e reiteração | Paulo Germano | 2026-11-24 | A iniciar | Comparativo antes/depois do protótipo | `06_testes/dossie_testes.md` |
+| ATIV-015 | 6 | Plano de testes (>=6 tarefas) e validação com 6 participantes reais | Luiz Miguel (Coord.) | 2026-11-23 | Concluído | 6 tarefas mensuradas, N=6 anonimizados e 36 registros CSV | `06_testes/plano_testes.md` |
+| ATIV-016 | 6 | Análise de resultados, identificação de >=4 melhorias e reiteração | Paulo Germano | 2026-11-24 | Concluído | Escore SUS 84,2, 4 melhorias na matriz e protótipo v2.0 | `06_testes/dossie_testes.md` |
 | ATIV-017 | 7 | Consolidação do Relatório Final (20-30 páginas ABNT) e Slides | Todos | 2026-11-26 | A iniciar | Montagem via Pandoc + CSL e banco de 20 perguntas | `07_relatorio/relatorio_final.md` |
 | ATIV-018 | 7 | Simulação de banca e defesa oral individual | Todos | 2026-11-27 | A iniciar | Domínio transversal de todas as fases | `07_relatorio/roteiro_defesa.md` |

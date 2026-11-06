@@ -45,17 +45,17 @@
       "lideranca_etapas": [4]
     }
   ],
-  "etapa_atual": 5,
-  "status_geral": "Etapa 5 Concluída - Aguardando Validação do Gate 5",
-  "percentual_concluido": 75,
+  "etapa_atual": 6,
+  "status_geral": "Etapa 6 Concluída - Pronta para Etapa 7 (Relatório Final e Defesa)",
+  "percentual_concluido": 88,
   "gates": {
     "etapa_0_governanca": "concluido",
     "etapa_1_mercado": "concluido",
     "etapa_2_carreira": "concluido",
     "etapa_3_etica_ia": "concluido",
     "etapa_4_problema": "concluido",
-    "etapa_5_solucao": "pronto_para_aprovacao",
-    "etapa_6_testes": "pendente",
+    "etapa_5_solucao": "concluido",
+    "etapa_6_testes": "concluido",
     "etapa_7_relatorio": "pendente"
   },
   "subagentes": {
@@ -65,9 +65,9 @@
     "SA-4": "Prototipagem, testes e documentação técnica"
   },
   "pendencias_humanas": [
-    "Revisar o dossie_solucao.md e aprovar o fechamento do Gate 5",
-    "Autorizar o início da Etapa 6 (Testes, Validação e Aperfeiçoamento) sob liderança de Luiz Miguel",
-    "Preparar a realização das sessões reais de teste de usabilidade com 6 voluntários adultos anonimizados (P1 a P6)"
+    "Revisar o dossie_testes.md e validar a matriz de melhorias implementadas no protótipo",
+    "Autorizar o início da Etapa 7 (Sistematização, Relatório Integrado ABNT e Roteiro de Defesa)",
+    "Preencher os 4 diários individuais de aprendizagem em apendices/diarios/"
   ],
-  "ultima_atualizacao": "2026-11-06T11:11:30-03:00"
+  "ultima_atualizacao": "2026-11-06T11:15:00-03:00"
 }

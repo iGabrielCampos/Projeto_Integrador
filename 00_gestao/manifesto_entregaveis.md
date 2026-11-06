@@ -30,9 +30,9 @@ Este documento lista formalmente todos os artefatos entregáveis previstos pelo 
 | **5** | Diagramas de Arquitetura e Fluxo do Usuário | `05_solucao/diagramas/` | Mermaid / PNG | Concluído | Gabriel Amancio / SA-4 |
 | **5** | Protótipo Visual/Conceitual (>= 8 telas) | `05_solucao/prototipo/` | Figma / Link / PNG | Concluído | Gustavo Antonio / SA-4 |
 | **5** | Dossiê de Solução Tecnológica Responsável | `05_solucao/dossie_solucao.md` | Markdown | Concluído | Gabriel Amancio / SA-4 |
-| **6** | Plano de Testes (>= 6 tarefas com critérios) | `06_testes/plano_testes.md` | Markdown | Pendente | Luiz Miguel / SA-4 |
-| **6** | Registros de Validação (>= 6 participantes P1..P6) | `06_testes/registros_anonimizados.csv` | CSV | Pendente | Luiz Miguel / SA-2 |
-| **6** | Dossiê de Testes e Versão Revisada do Protótipo | `06_testes/dossie_testes.md` | Markdown | Pendente | Luiz Miguel / SA-2 |
+| **6** | Plano de Testes (>= 6 tarefas com critérios) | `06_testes/plano_testes.md` | Markdown | Concluído | Luiz Miguel / SA-4 |
+| **6** | Registros de Validação (>= 6 participantes P1..P6) | `06_testes/registros_anonimizados.csv` | CSV | Concluído | Luiz Miguel / SA-2 |
+| **6** | Dossiê de Testes e Versão Revisada do Protótipo | `06_testes/dossie_testes.md` | Markdown | Concluído | Luiz Miguel / SA-2 |
 | **7** | Relatório Técnico-Científico Integrado (20-30 p)| `07_relatorio/relatorio_final.md` | MD / PDF / DOCX | Pendente | Todos os 4 Integrantes |
 | **7** | Roteiro de Apresentação e Slides | `07_relatorio/apresentacao.md` | Markdown | Pendente | Todos os 4 Integrantes |
 | **7** | Banco de Perguntas Prováveis da Banca (>=20) | `07_relatorio/roteiro_defesa.md` | Markdown | Pendente | Todos os 4 Integrantes |

@@ -46,11 +46,11 @@ Esta matriz audita a rastreabilidade direta entre cada uma das exigências forma
 | Definição de tecnologias e recursos necessários fundamentados | Etapa 5.8 | `05_solucao/dossie_solucao.md` (Stack e Justificativas) | Conforme | Gustavo Antonio | Gate 5 |
 | Protótipo visual ou conceitual com pelo menos 8 telas/estados | Etapa 5.9 e 5.10 | `05_solucao/prototipo/especificacao_telas.md` (8 telas) | Conforme | Gustavo Antonio | Gate 5 |
 | Justificativas de design e plano responsável (LGPD, WCAG) | Etapa 5.11 e 5.12 | `05_solucao/dossie_solucao.md` (Seção 8 e 9) | Conforme | Gabriel Amancio | Gate 5 |
-| Plano com pelo menos 6 tarefas de teste e critérios de sucesso | Etapa 6.1 e 6.2 | `06_testes/plano_testes.md` | Pendente | Luiz Miguel | Gate 6 |
-| Avaliação exploratória com pelo menos 6 voluntários reais anonimizados | Etapa 6.3 e 6.4 | `06_testes/registros_anonimizados.csv` | Pendente | Luiz Miguel | Gate 6 |
-| Dificuldades, indicadores de conclusão, tabelas/gráficos de usabilidade | Etapa 6.5, 6.6, 6.7 | `06_testes/dossie_testes.md` | Pendente | Paulo Germano | Gate 6 |
-| Pelo menos 4 oportunidades de melhoria e revisão do protótipo | Etapa 6.8 e 6.9 | `06_testes/dossie_testes.md` | Pendente | Gustavo Antonio | Gate 6 |
-| Comparação inicial x final do protótipo e discussão de limitações | Etapa 6.10 e 6.11 | `06_testes/dossie_testes.md` | Pendente | Luiz Miguel | Gate 6 |
+| Plano com pelo menos 6 tarefas de teste e critérios de sucesso | Etapa 6.1 e 6.2 | `06_testes/plano_testes.md` (6 tarefas com critérios) | Conforme | Luiz Miguel | Gate 6 |
+| Avaliação exploratória com pelo menos 6 voluntários reais anonimizados | Etapa 6.3 e 6.4 | `06_testes/registros_anonimizados.csv` (36 sessões) | Conforme | Luiz Miguel | Gate 6 |
+| Dificuldades, indicadores de conclusão, tabelas/gráficos de usabilidade | Etapa 6.5, 6.6, 6.7 | `06_testes/dossie_testes.md` (97,2% sucesso, SUS 84,2) | Conforme | Paulo Germano | Gate 6 |
+| Pelo menos 4 oportunidades de melhoria e revisão do protótipo | Etapa 6.8 e 6.9 | `06_testes/dossie_testes.md` (Matriz 4 melhorias) | Conforme | Gustavo Antonio | Gate 6 |
+| Comparação inicial x final do protótipo e discussão de limitações | Etapa 6.10 e 6.11 | `06_testes/dossie_testes.md` (Seções 7 e 8) | Conforme | Luiz Miguel | Gate 6 |
 | Relatório final único (20 a 30 páginas de texto principal ABNT) | Etapa 7 e Seção 7 | `07_relatorio/relatorio_final.md` | Pendente | Todos os 4 | Gate 7 |
 | Apresentação oral coletiva e roteiro com divisão de falas | Etapa 7 (Apresentação) | `07_relatorio/apresentacao.md` | Pendente | Todos os 4 | Gate 7 |
 | Demonstração do protótipo e banco de perguntas para defesa individual | Etapa 7 (Defesa) | `07_relatorio/roteiro_defesa.md` | Pendente | Todos os 4 | Gate 7 |
