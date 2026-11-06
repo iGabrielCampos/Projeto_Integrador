@@ -1,0 +1,73 @@
+{
+  "versao_schema": "2.0",
+  "projeto": {
+    "nome": "Laboratório de Carreira e Inovação Responsável em TI",
+    "instituicao": "UNIPÊ - Centro Universitário de João Pessoa",
+    "curso": "ADS – Análise e Desenvolvimento de Sistemas",
+    "turma": "[A confirmar]",
+    "data_inicio": "2026-11-06",
+    "prazo_final": "2027-12-15",
+    "area_principal_ti": "Tecnologia da Informação e Comunicação (Desenvolvimento, Infraestrutura, Dados e Segurança)",
+    "nivel_vagas_padrao": "Estágio e Júnior",
+    "recorte_geografico_padrao": "Brasil (Remoto e Híbrido Nordeste / PB)",
+    "normas_formatacao": "ABNT (NBR 6023, 6024, 14724)",
+    "ferramenta_prototipagem": "Figma",
+    "tema_social_ambiental": "[Aberto para seleção na Etapa 4]",
+    "modelo_ia_orquestrador": "Gemini 3.8 Flash (High)"
+  },
+  "integrantes": [
+    {
+      "id": "INT-01",
+      "nome": "Gabriel Amancio",
+      "funcao_principal": "Desenvolvimento de Software",
+      "subagente_apoio": "SA-1",
+      "lideranca_etapas": [1, 5]
+    },
+    {
+      "id": "INT-02",
+      "nome": "Luiz Miguel",
+      "funcao_principal": "Infraestrutura e Redes",
+      "subagente_apoio": "SA-2",
+      "lideranca_etapas": [2, 6]
+    },
+    {
+      "id": "INT-03",
+      "nome": "Paulo Germano",
+      "funcao_principal": "Dados e IA",
+      "subagente_apoio": "SA-3",
+      "lideranca_etapas": [3]
+    },
+    {
+      "id": "INT-04",
+      "nome": "Gustavo Antonio",
+      "funcao_principal": "Segurança da Informação",
+      "subagente_apoio": "SA-4",
+      "lideranca_etapas": [4]
+    }
+  ],
+  "etapa_atual": 0,
+  "status_geral": "Inicialização de Governança e Infraestrutura",
+  "percentual_concluido": 5,
+  "gates": {
+    "etapa_0_governanca": "em_progresso",
+    "etapa_1_mercado": "pendente",
+    "etapa_2_carreira": "pendente",
+    "etapa_3_etica_ia": "pendente",
+    "etapa_4_problema": "pendente",
+    "etapa_5_solucao": "pendente",
+    "etapa_6_testes": "pendente",
+    "etapa_7_relatorio": "pendente"
+  },
+  "subagentes": {
+    "SA-1": "Coordenação do projeto e organização da pesquisa de mercado",
+    "SA-2": "Análise de dados, competências profissionais e planejamento",
+    "SA-3": "Pesquisa ética, responsabilidade digital e requisitos da solução",
+    "SA-4": "Prototipagem, testes e documentação técnica"
+  },
+  "pendencias_humanas": [
+    "Confirmar turma e prazo final exato da entrega",
+    "Confirmar recorte geográfico e nível das vagas (estágio/júnior/ambos)",
+    "Validar preferência por Figma ou Penpot e eventual tema pré-definido"
+  ],
+  "ultima_atualizacao": "2026-11-06T10:24:00-03:00"
+}
