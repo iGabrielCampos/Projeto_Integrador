@@ -6,13 +6,13 @@
     "curso": "ADS – Análise e Desenvolvimento de Sistemas",
     "turma": "[A confirmar]",
     "data_inicio": "2026-11-06",
-    "prazo_final": "2027-12-15",
+    "prazo_final": "2026-11-27",
     "area_principal_ti": "Tecnologia da Informação e Comunicação (Desenvolvimento, Infraestrutura, Dados e Segurança)",
     "nivel_vagas_padrao": "Estágio e Júnior",
     "recorte_geografico_padrao": "Brasil (Remoto e Híbrido Nordeste / PB)",
     "normas_formatacao": "ABNT (NBR 6023, 6024, 14724)",
     "ferramenta_prototipagem": "Figma",
-    "tema_social_ambiental": "[Aberto para seleção na Etapa 4]",
+    "tema_social_ambiental": "Aberto (seleção via matriz comparativa na Etapa 4)",
     "modelo_ia_orquestrador": "Gemini 3.8 Flash (High)"
   },
   "integrantes": [
@@ -45,12 +45,12 @@
       "lideranca_etapas": [4]
     }
   ],
-  "etapa_atual": 0,
-  "status_geral": "Inicialização de Governança e Infraestrutura",
-  "percentual_concluido": 5,
+  "etapa_atual": 1,
+  "status_geral": "Etapa 1 Concluída - Aguardando Validação do Gate 1",
+  "percentual_concluido": 20,
   "gates": {
-    "etapa_0_governanca": "em_progresso",
-    "etapa_1_mercado": "pendente",
+    "etapa_0_governanca": "concluido",
+    "etapa_1_mercado": "pronto_para_aprovacao",
     "etapa_2_carreira": "pendente",
     "etapa_3_etica_ia": "pendente",
     "etapa_4_problema": "pendente",
@@ -65,9 +65,9 @@
     "SA-4": "Prototipagem, testes e documentação técnica"
   },
   "pendencias_humanas": [
-    "Confirmar turma e prazo final exato da entrega",
-    "Confirmar recorte geográfico e nível das vagas (estágio/júnior/ambos)",
-    "Validar preferência por Figma ou Penpot e eventual tema pré-definido"
+    "Revisar o dossie_mercado.md e autorizar a passagem para a Etapa 2 (Gate 1)",
+    "Luiz Miguel: abrir e vincular a planilha Google Sheets com os 4 CSVs gerados em 01_mercado/",
+    "Integrantes: preparar para preencher suas matrizes de autoavaliação individuais (>= 10 competências) na Etapa 2"
   ],
-  "ultima_atualizacao": "2026-11-06T10:24:00-03:00"
+  "ultima_atualizacao": "2026-11-06T10:41:00-03:00"
 }

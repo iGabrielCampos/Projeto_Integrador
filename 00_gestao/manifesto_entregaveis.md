@@ -14,9 +14,9 @@ Este documento lista formalmente todos os artefatos entregáveis previstos pelo 
 |---|---|---|---|---|---|
 | **0** | Estrutura de Governança e Regras | `00_gestao/` | JSON / MD | Concluído | Main Agent / Gabriel |
 | **0** | Script de Verificação Automatizável | `scripts/verificar.py` | Python 3 | Concluído | Main Agent / Gustavo |
-| **1** | Base Bruta de 20 Anúncios de Vagas | `01_mercado/vagas_brutas.csv` | CSV / JSON | Pendente | Gabriel Amancio / SA-1 |
-| **1** | Planilha Analítica com 4 Gráficos | Planilha Google Sheets | Sheets / CSV | Pendente | Luiz Miguel / SA-2 |
-| **1** | Dossiê de Análise de Mercado (Mestre) | `01_mercado/dossie_mercado.md` | Markdown | Pendente | Gabriel Amancio / SA-4 |
+| **1** | Base Bruta de 24 Anúncios de Vagas | `01_mercado/vagas_brutas.csv` | CSV / JSON | Concluído | Gabriel Amancio / opencode |
+| **1** | Planilha Analítica com 4 Bases CSV | `01_mercado/planilha_*.csv` | CSV / Sheets | Concluído | Luiz Miguel / SA-2 |
+| **1** | Dossiê de Análise de Mercado (Mestre) | `01_mercado/dossie_mercado.md` | Markdown | Concluído | Gabriel Amancio / SA-4 |
 | **2** | 4 Matrizes de Competências (>=10 comp) | `02_carreira/por_integrante/*/matriz.md` | Markdown | Pendente | Todos os 4 Integrantes |
 | **2** | 4 Planos de Carreira (PDI >= 3 metas SMART)| `02_carreira/por_integrante/*/pdi.md` | Markdown | Pendente | Todos os 4 Integrantes |
 | **2** | 4 Portfólios e READMEs GitHub | `02_carreira/por_integrante/*/README.md` | Markdown | Pendente | Todos os 4 Integrantes |

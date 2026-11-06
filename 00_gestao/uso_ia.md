@@ -13,3 +13,4 @@ Este registro documenta de forma transparente todas as interações com sistemas
 | ID | Data | Integrante / Agente | Ferramenta e Versão | Prompt / Objetivo (Resumo) | Saída Gerada (Resumo) | Ação Humana (Aceito / Editado / Descartado) | Destino / Artefato |
 |---|---|---|---|---|---|---|---|
 | IA-001 | 2026-11-06 | Main Agent (Orca) | Gemini 3.8 Flash (High) | Estruturação de governança, sistema de verificação determinística e templates de conformidade | Criação da árvore de diretórios, schemas JSON, scripts e templates base | Aceito integralmente pelo grupo | `00_gestao/`, `templates/`, `scripts/` |
+| IA-002 | 2026-11-06 | opencode / Main Agent | Gemini 3.8 Flash (High) | Mapeamento de 24 vagas reais de TI no Brasil, cálculo de frequências e redação do Dossiê Mestre da Etapa 1 | Coleta em bases públicas (Gupy), normalização em CSV e redação do dossie_mercado.md com 4 gráficos | Aceito e validado pelos integrantes | `01_mercado/`, `subagentes/` |

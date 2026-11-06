@@ -1,0 +1,45 @@
+Competencia,Categoria,Dev_Software_Qtd,Dev_Software_Pct,Infra_Redes_Qtd,Infra_Redes_Pct,Dados_IA_Qtd,Dados_IA_Pct,Seguranca_Qtd,Seguranca_Pct,Total_Absoluto,Frequencia_Geral_Pct
+SQL (Postgres/SQL Server/MySQL),Técnica,6,100.0%,0,0.0%,5,83.3%,0,0.0%,11,45.8%
+Comunicação Clara e Transparente,Comportamental,2,33.3%,1,16.7%,2,33.3%,2,33.3%,7,29.2%
+Git / GitHub,Técnica,5,83.3%,0,0.0%,2,33.3%,0,0.0%,7,29.2%
+Python,Técnica,2,33.3%,1,16.7%,4,66.7%,0,0.0%,7,29.2%
+Java / Spring Boot,Técnica,5,83.3%,0,0.0%,0,0.0%,0,0.0%,5,20.8%
+Proatividade e Iniciativa,Comportamental,1,16.7%,1,16.7%,1,16.7%,1,16.7%,4,16.7%
+Linux (Ubuntu/Debian),Técnica,0,0.0%,4,66.7%,0,0.0%,0,0.0%,4,16.7%
+Postura Ética e Sigilo Profissional,Comportamental,0,0.0%,1,16.7%,1,16.7%,2,33.3%,4,16.7%
+Power BI / Data Viz,Técnica,0,0.0%,0,0.0%,4,66.7%,0,0.0%,4,16.7%
+JavaScript,Técnica,3,50.0%,0,0.0%,0,0.0%,0,0.0%,3,12.5%
+Trabalho em Equipe e Cooperação,Comportamental,2,33.3%,1,16.7%,0,0.0%,0,0.0%,3,12.5%
+Organização Operacional e Disciplina,Comportamental,0,0.0%,1,16.7%,1,16.7%,1,16.7%,3,12.5%
+Cloud Computing (AWS/Azure),Técnica,0,0.0%,1,16.7%,0,0.0%,2,33.3%,3,12.5%
+LGPD e Privacidade por Padrão,Técnica,0,0.0%,0,0.0%,0,0.0%,3,50.0%,3,12.5%
+TypeScript,Técnica,2,33.3%,0,0.0%,0,0.0%,0,0.0%,2,8.3%
+Aprendizado Contínuo (Growth Mindset),Comportamental,2,33.3%,0,0.0%,0,0.0%,0,0.0%,2,8.3%
+React,Técnica,2,33.3%,0,0.0%,0,0.0%,0,0.0%,2,8.3%
+APIs RESTful,Técnica,2,33.3%,0,0.0%,0,0.0%,0,0.0%,2,8.3%
+C# / .NET,Técnica,2,33.3%,0,0.0%,0,0.0%,0,0.0%,2,8.3%
+Resolução de Problemas Complexos,Comportamental,1,16.7%,1,16.7%,0,0.0%,0,0.0%,2,8.3%
+Atenção Rigorosa a Detalhes,Comportamental,1,16.7%,0,0.0%,0,0.0%,1,16.7%,2,8.3%
+Lógica e Algoritmos,Técnica,2,33.3%,0,0.0%,0,0.0%,0,0.0%,2,8.3%
+Redes e Protocolos TCP/IP,Técnica,0,0.0%,1,16.7%,0,0.0%,1,16.7%,2,8.3%
+Monitoramento (Zabbix/Grafana),Técnica,0,0.0%,2,33.3%,0,0.0%,0,0.0%,2,8.3%
+Microsoft Entra ID / M365,Técnica,0,0.0%,1,16.7%,0,0.0%,1,16.7%,2,8.3%
+Modelagem de Dados Relacional/Dimensional,Técnica,0,0.0%,0,0.0%,2,33.3%,0,0.0%,2,8.3%
+Firewalls de Borda e Perímetro,Técnica,0,0.0%,0,0.0%,0,0.0%,2,33.3%,2,8.3%
+Node.js,Técnica,1,16.7%,0,0.0%,0,0.0%,0,0.0%,1,4.2%
+Laravel,Técnica,1,16.7%,0,0.0%,0,0.0%,0,0.0%,1,4.2%
+PHP,Técnica,1,16.7%,0,0.0%,0,0.0%,0,0.0%,1,4.2%
+Angular,Técnica,1,16.7%,0,0.0%,0,0.0%,0,0.0%,1,4.2%
+Windows Server / AD,Técnica,0,0.0%,1,16.7%,0,0.0%,0,0.0%,1,4.2%
+Serviços de Rede (DNS/DHCP/VPN),Técnica,0,0.0%,1,16.7%,0,0.0%,0,0.0%,1,4.2%
+Virtualização (VMware/Proxmox),Técnica,0,0.0%,1,16.7%,0,0.0%,0,0.0%,1,4.2%
+Roteamento e Switching,Técnica,0,0.0%,1,16.7%,0,0.0%,0,0.0%,1,4.2%
+Resiliência e Adaptabilidade,Comportamental,0,0.0%,1,16.7%,0,0.0%,0,0.0%,1,4.2%
+Rotinas de Backup e Uptime,Técnica,0,0.0%,1,16.7%,0,0.0%,0,0.0%,1,4.2%
+Pipelines ETL / Fluxo de Dados,Técnica,0,0.0%,0,0.0%,1,16.7%,0,0.0%,1,4.2%
+IA Generativa e LLMs,Técnica,0,0.0%,0,0.0%,1,16.7%,0,0.0%,1,4.2%
+IAM (Gestão de Identidade e Acesso),Técnica,0,0.0%,0,0.0%,0,0.0%,1,16.7%,1,4.2%
+Gestão de Vulnerabilidades,Técnica,0,0.0%,0,0.0%,0,0.0%,1,16.7%,1,4.2%
+SIEM e Análise de Logs,Técnica,0,0.0%,0,0.0%,0,0.0%,1,16.7%,1,4.2%
+EDR/XDR e Endpoint Security,Técnica,0,0.0%,0,0.0%,0,0.0%,1,16.7%,1,4.2%
+Segurança de Aplicações (OWASP),Técnica,0,0.0%,0,0.0%,0,0.0%,1,16.7%,1,4.2%

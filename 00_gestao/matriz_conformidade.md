@@ -16,12 +16,12 @@ Esta matriz audita a rastreabilidade direta entre cada uma das exigências forma
 | Manutenção de registro de atividades com tarefas, prazos e evidências | Seção 4 | `00_gestao/registro_atividades.md` | Conforme | Gabriel Amancio | Gate 0 |
 | Alternância de liderança e colaboração transversal ao longo das etapas | Seção 4 | `00_gestao/cronograma.md` | Conforme | Gabriel Amancio | Gate 0 |
 | Seleção de 1 área principal de TI e 4 funções correlatas | Etapa 1.1 e 1.2 | `00_gestao/estado_projeto.json` | Conforme | Gabriel Amancio | Gate 1 |
-| Pesquisa de pelo menos 20 anúncios reais de vagas (5 por função) | Etapa 1.3 e 1.4 | `01_mercado/vagas_brutas.csv` | Pendente | Gabriel Amancio | Gate 1 |
-| Identificação de requisitos técnicos, comportamentais e de formação | Etapa 1.5 | `01_mercado/dossie_mercado.md` | Pendente | Gabriel Amancio | Gate 1 |
-| Planilha com classificação, padronização e frequências de competências | Etapa 1.6, 1.7 e 1.8 | Planilha Google Sheets / `01_mercado/` | Pendente | Luiz Miguel | Gate 1 |
-| Elaboração de pelo menos 4 gráficos com interpretação | Etapa 1.9 | `01_mercado/dossie_mercado.md` | Pendente | Luiz Miguel | Gate 1 |
-| Comparação de perfis, interpretação de dados e discussão de limitações | Etapa 1.10 | `01_mercado/dossie_mercado.md` | Pendente | Gustavo Antonio | Gate 1 |
-| Dossiê consolidado de análise do mercado de trabalho | Produto Etapa 1 | `01_mercado/dossie_mercado.md` | Pendente | Gabriel Amancio | Gate 1 |
+| Pesquisa de pelo menos 20 anúncios reais de vagas (5 por função) | Etapa 1.3 e 1.4 | `01_mercado/vagas_brutas.csv` (24 vagas, 6/função) | Conforme | Gabriel Amancio | Gate 1 |
+| Identificação de requisitos técnicos, comportamentais e de formação | Etapa 1.5 | `01_mercado/dossie_mercado.md` | Conforme | Gabriel Amancio | Gate 1 |
+| Planilha com classificação, padronização e frequências de competências | Etapa 1.6, 1.7 e 1.8 | `01_mercado/planilha_Frequencia_por_Funcao.csv` | Conforme | Luiz Miguel | Gate 1 |
+| Elaboração de pelo menos 4 gráficos com interpretação | Etapa 1.9 | `01_mercado/dossie_mercado.md` (4 gráficos Mermaid) | Conforme | Luiz Miguel | Gate 1 |
+| Comparação de perfis, interpretação de dados e discussão de limitações | Etapa 1.10 | `01_mercado/dossie_mercado.md` | Conforme | Gustavo Antonio | Gate 1 |
+| Dossiê consolidado de análise do mercado de trabalho | Produto Etapa 1 | `01_mercado/dossie_mercado.md` | Conforme | Gabriel Amancio | Gate 1 |
 | Matriz de autoavaliação com >= 10 competências para cada estudante | Etapa 2.1 | `02_carreira/por_integrante/*/matriz.md` | Pendente | Todos os 4 | Gate 2 |
 | Identificação individual de conhecimentos adquiridos e lacunas | Etapa 2.2 | `02_carreira/por_integrante/*/matriz.md` | Pendente | Todos os 4 | Gate 2 |
 | Construção ou aperfeiçoamento de perfil profissional digital | Etapa 2.3 | `02_carreira/por_integrante/*/perfil.md` | Pendente | Todos os 4 | Gate 2 |

@@ -29,21 +29,21 @@ Para assegurar o protagonismo, a responsabilidade compartilhada e a avaliação 
 
 ---
 
-## 2. Linha do Tempo e Marcos de Entrega (Milestones)
+## 2. Linha do Tempo e Marcos de Entrega (Prazo Final: 27/11/2026)
 
-> *Nota: Os marcos abaixo consideram o ritmo acadêmico regular com folga preventiva de 15%. Prazos podem ser ajustados mediante resposta do usuário na pergunta de alinhamento.*
+> *Cronograma acelerado ajustado para entrega final em **27/11/2026**, com marcos rígidos e rodízio formal de liderança.*
 
 ```mermaid
 timeline
-    title Linha do Tempo dos Marcos do Projeto Integrador
-    2026-11-07 : M0 - Setup de Governança Concluído
-    2026-11-18 : M1 - Gate 1: Dossiê de Mercado e 20 Vagas Consolidadas
-    2026-12-02 : M2 - Gate 2: 4 Matrizes, PDIs SMART e GitHub READMEs
-    2026-12-15 : M3 - Gate 3: Relatório Ético, LGPD e 4 Experimentos de IA
-    2026-12-23 : M4 - Gate 4: Diagnóstico de Problema e Matriz de Decisão Validada
-    2027-01-28 : M5 - Gate 5: Especificação Técnica e Protótipo de 8 Telas
-    2027-02-20 : M6 - Gate 6: Sessões de Teste com 6 Usuários e Reiteração
-    2027-03-15 : M7 - Gate 7: Relatório Final (20-30 págs ABNT), Slides e Defesa
+    title Linha do Tempo dos Marcos do Projeto Integrador (Término: 27/11/2026)
+    2026-11-06 : M0 - Setup de Governança Concluído
+    2026-11-10 : M1 - Gate 1: Dossiê de Mercado, 20 Vagas e Planilha Analítica
+    2026-11-13 : M2 - Gate 2: 4 Matrizes, PDIs SMART e GitHub READMEs
+    2026-11-16 : M3 - Gate 3: Casos Éticos, LGPD e 4 Experimentos de IA
+    2026-11-18 : M4 - Gate 4: Diagnóstico de Problema e Matriz de Decisão Validada
+    2026-11-21 : M5 - Gate 5: Requisitos, Arquitetura e Protótipo (8 Telas)
+    2026-11-24 : M6 - Gate 6: Sessões com 6 Usuários Reais e Reiteração
+    2026-11-27 : M7 - Gate 7: Relatório Final ABNT (20-30 p), Slides Figma e Defesa
 ```
 
 ---
@@ -52,13 +52,13 @@ timeline
 
 | Ciclo | Início | Término Previsto | Folga (15%) | Gate de Aprovação | Entregável Principal |
 |---|---|---|---|---|---|
-| **Etapa 1: Mercado** | 2026-11-08 | 2026-11-16 | 2026-11-17 a 18 | Gate 1 | `01_mercado/dossie_mercado.md` + Planilha |
-| **Etapa 2: Carreira** | 2026-11-19 | 2026-11-28 | 2026-11-29 a 30 | Gate 2 | `02_carreira/dossie_carreira.md` + 4 pastas de aluno |
-| **Etapa 3: Ética & IA** | 2026-12-01 | 2026-12-12 | 2026-12-13 a 15 | Gate 3 | `03_etica_ia/dossie_etica.md` + 4 logs reais |
-| **Etapa 4: Problema** | 2026-12-16 | 2026-12-21 | 2026-12-22 a 23 | Gate 4 | `04_problema/dossie_problema.md` + Matriz Decisão |
-| **Etapa 5: Solução** | 2027-01-05 | 2027-01-24 | 2027-01-25 a 28 | Gate 5 | `05_solucao/dossie_solucao.md` + Figma Protótipo |
-| **Etapa 6: Testes** | 2027-01-29 | 2027-02-16 | 2027-02-17 a 20 | Gate 6 | `06_testes/dossie_testes.md` + Dados anonimizados |
-| **Etapa 7: Defesa** | 2027-02-21 | 2027-03-10 | 2027-03-11 a 15 | Gate 7 | `07_relatorio/relatorio_final.md` + Slides + Roteiro |
+| **Etapa 1: Mercado** | 2026-11-07 | 2026-11-09 | 2026-11-10 | Gate 1 | `01_mercado/dossie_mercado.md` + Planilha |
+| **Etapa 2: Carreira** | 2026-11-11 | 2026-11-12 | 2026-11-13 | Gate 2 | `02_carreira/dossie_carreira.md` + 4 pastas de aluno |
+| **Etapa 3: Ética & IA** | 2026-11-14 | 2026-11-15 | 2026-11-16 | Gate 3 | `03_etica_ia/dossie_etica.md` + 4 logs reais |
+| **Etapa 4: Problema** | 2026-11-17 | 2026-11-17 | 2026-11-18 | Gate 4 | `04_problema/dossie_problema.md` + Matriz Decisão |
+| **Etapa 5: Solução** | 2026-11-19 | 2026-11-20 | 2026-11-21 | Gate 5 | `05_solucao/dossie_solucao.md` + Figma Protótipo |
+| **Etapa 6: Testes** | 2026-11-22 | 2026-11-23 | 2026-11-24 | Gate 6 | `06_testes/dossie_testes.md` + Dados anonimizados |
+| **Etapa 7: Defesa** | 2026-11-25 | 2026-11-26 | 2026-11-27 | Gate 7 | `07_relatorio/relatorio_final.md` + Slides + Roteiro |
 
 ---
 

@@ -1,0 +1,62 @@
+Termo_Bruto,Competencia_Padronizada,Categoria
+.net core,C# / .NET,Técnica
+active directory,Windows Server / AD,Técnica
+administração linux,Linux (Ubuntu/Debian),Técnica
+algoritmos e estruturas de dados,Lógica e Algoritmos,Técnica
+angular,Angular,Técnica
+apis restful,APIs RESTful,Técnica
+asp.net,C# / .NET,Técnica
+atenção a detalhes,Atenção Rigorosa a Detalhes,Comportamental
+backup,Rotinas de Backup e Uptime,Técnica
+c#,C# / .NET,Técnica
+cloud computing,Cloud Computing (AWS/Azure),Técnica
+cloudwatch/grafana,Monitoramento (Zabbix/Grafana),Técnica
+comunicação,Comunicação Clara e Transparente,Comportamental
+comunicação verbal,Comunicação Clara e Transparente,Comportamental
+consumo de apis,APIs RESTful,Técnica
+curiosidade intelectual,Aprendizado Contínuo (Growth Mindset),Comportamental
+"dns, dhcp, vpn",Serviços de Rede (DNS/DHCP/VPN),Técnica
+edr/xdr,EDR/XDR e Endpoint Security,Técnica
+espírito colaborativo,Trabalho em Equipe e Cooperação,Comportamental
+etl,Pipelines ETL / Fluxo de Dados,Técnica
+firewalls,Firewalls de Borda e Perímetro,Técnica
+gestão de identidade e acesso,IAM (Gestão de Identidade e Acesso),Técnica
+git,Git / GitHub,Técnica
+github,Git / GitHub,Técnica
+iam,IAM (Gestão de Identidade e Acesso),Técnica
+java,Java / Spring Boot,Técnica
+javascript,JavaScript,Técnica
+laravel,Laravel,Técnica
+lgpd,LGPD e Privacidade por Padrão,Técnica
+linux,Linux (Ubuntu/Debian),Técnica
+logs de segurança,SIEM e Análise de Logs,Técnica
+lógica de programação,Lógica e Algoritmos,Técnica
+microsoft entra id,Microsoft Entra ID / M365,Técnica
+modelagem,Modelagem de Dados Relacional/Dimensional,Técnica
+modelos de linguagem,IA Generativa e LLMs,Técnica
+node.js,Node.js,Técnica
+nuvem,Cloud Computing (AWS/Azure),Técnica
+organização,Organização Operacional e Disciplina,Comportamental
+owasp,Segurança de Aplicações (OWASP),Técnica
+php moderno,PHP,Técnica
+power bi,Power BI / Data Viz,Técnica
+proatividade,Proatividade e Iniciativa,Comportamental
+prompt engineering,IA Generativa e LLMs,Técnica
+python,Python,Técnica
+react,React,Técnica
+resiliência,Resiliência e Adaptabilidade,Comportamental
+resolução de problemas,Resolução de Problemas Complexos,Comportamental
+roteamento e switching,Roteamento e Switching,Técnica
+siem,SIEM e Análise de Logs,Técnica
+spring boot,Java / Spring Boot,Técnica
+sql,SQL (Postgres/SQL Server/MySQL),Técnica
+tableau,Power BI / Data Viz,Técnica
+tcp/ip,Redes e Protocolos TCP/IP,Técnica
+trabalho em equipe,Trabalho em Equipe e Cooperação,Comportamental
+typescript,TypeScript,Técnica
+virtualização,Virtualização (VMware/Proxmox),Técnica
+vontade de aprender,Aprendizado Contínuo (Growth Mindset),Comportamental
+vulnerabilidades,Gestão de Vulnerabilidades,Técnica
+windows server,Windows Server / AD,Técnica
+zabbix,Monitoramento (Zabbix/Grafana),Técnica
+ética,Postura Ética e Sigilo Profissional,Comportamental
