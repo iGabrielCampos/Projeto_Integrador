@@ -21,9 +21,9 @@ Este documento lista formalmente todos os artefatos entregáveis previstos pelo 
 | **2** | 4 Planos de Carreira (PDI >= 3 metas SMART)| `02_carreira/por_integrante/*/pdi.md` | Markdown | Concluído | Todos os 4 Integrantes |
 | **2** | 4 Portfólios e READMEs GitHub | `02_carreira/por_integrante/*/README.md` | Markdown | Concluído | Todos os 4 Integrantes |
 | **2** | Dossiê de Identidade e Síntese Comparativa | `02_carreira/dossie_carreira.md` | Markdown | Concluído | Luiz Miguel / SA-2 |
-| **3** | Análise de 2 Casos Reais de Ética (>=1 IA) | `03_etica_ia/dossie_etica.md` | Markdown | Pendente | Paulo Germano / SA-3 |
-| **3** | Matriz de Riscos Éticos (>= 8 riscos) | `03_etica_ia/matriz_riscos.md` | Markdown | Pendente | Paulo Germano / SA-3 |
-| **3** | 4 Registros de Experimentos Reais com IA | `03_etica_ia/experimentos/` | Markdown | Pendente | Todos os 4 Integrantes |
+| **3** | Análise de 2 Casos Reais de Ética (>=1 IA) | `03_etica_ia/dossie_etica.md` | Markdown | Concluído | Gabriel Amancio / SA-3 |
+| **3** | Matriz de Riscos Éticos (>= 8 riscos) | `03_etica_ia/matriz_riscos.md` | Markdown | Concluído | Gabriel Amancio / SA-3 |
+| **3** | 4 Registros de Experimentos Reais com IA | `03_etica_ia/experimentos/` | Markdown | Concluído | Todos os 4 Integrantes |
 | **4** | Diagnóstico de >= 3 Problemas Sociais/Amb.| `04_problema/dossie_problema.md` | Markdown | Pendente | Gustavo Antonio / SA-1 |
 | **4** | Matriz Comparativa de Seleção Fundamentada | `04_problema/matriz_decisao.md` | Markdown | Pendente | Gustavo Antonio / SA-3 |
 | **5** | Especificação Técnica (>=10 RF, >=6 RNF, 8 HU) | `05_solucao/requisitos.md` | Markdown | Pendente | Gabriel Amancio / SA-3 |

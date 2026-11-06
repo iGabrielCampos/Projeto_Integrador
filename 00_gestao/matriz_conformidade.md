@@ -29,11 +29,11 @@ Esta matriz audita a rastreabilidade direta entre cada uma das exigências forma
 | Pesquisa de formação continuada, comunidades, eventos e networking | Etapa 2.6 e 2.7 | `02_carreira/dossie_carreira.md` (Seções 5 e 6) | Conforme | Luiz Miguel | Gate 2 |
 | PDI individual com pelo menos 3 metas SMART por integrante | Etapa 2.8 | `02_carreira/por_integrante/*/pdi.md` (12 metas SMART) | Conforme | Todos os 4 | Gate 2 |
 | Análise comparativa coletiva dos quatro perfis profissionais | Etapa 2 (Coletivo) | `02_carreira/dossie_carreira.md` (Seção 7) | Conforme | Luiz Miguel | Gate 2 |
-| Investigação de 2 casos reais de ética tecnológica (>= 1 sobre IA) | Etapa 3.1, 3.2, 3.3 | `03_etica_ia/dossie_etica.md` | Pendente | Paulo Germano | Gate 3 |
-| Exame de princípios éticos e aspectos legais (LGPD, Marco Civil etc.) | Etapa 3.4 | `03_etica_ia/dossie_etica.md` | Pendente | Paulo Germano | Gate 3 |
-| Matriz contendo pelo menos 8 riscos com causas e medidas de mitigação | Etapa 3.5 | `03_etica_ia/matriz_riscos.md` | Pendente | Paulo Germano | Gate 3 |
-| 4 experimentos reais com ferramentas de IA registrados com prompts | Etapa 3.6, 3.7, 3.8 | `03_etica_ia/experimentos/` | Pendente | Todos os 4 | Gate 3 |
-| Recomendações para desenvolvimento responsável de tecnologias | Etapa 3.9 | `03_etica_ia/dossie_etica.md` | Pendente | Paulo Germano | Gate 3 |
+| Investigação de 2 casos reais de ética tecnológica (>= 1 sobre IA) | Etapa 3.1, 3.2, 3.3 | `03_etica_ia/dossie_etica.md` (CESeC e ANPD) | Conforme | Gabriel Amancio | Gate 3 |
+| Exame de princípios éticos e aspectos legais (LGPD, Marco Civil etc.) | Etapa 3.4 | `03_etica_ia/dossie_etica.md` (Seção 2) | Conforme | Gabriel Amancio | Gate 3 |
+| Matriz contendo pelo menos 8 riscos com causas e medidas de mitigação | Etapa 3.5 | `03_etica_ia/matriz_riscos.md` (8 riscos detalhados) | Conforme | Gabriel Amancio | Gate 3 |
+| 4 experimentos reais com ferramentas de IA registrados com prompts | Etapa 3.6, 3.7, 3.8 | `03_etica_ia/experimentos/` (4 logs individuais) | Conforme | Todos os 4 | Gate 3 |
+| Recomendações para desenvolvimento responsável de tecnologias | Etapa 3.9 | `03_etica_ia/dossie_etica.md` (Seção 5) | Conforme | Gabriel Amancio | Gate 3 |
 | Identificação de pelo menos 3 problemas sociais ou ambientais | Etapa 4.1 e 4.2 | `04_problema/dossie_problema.md` | Pendente | Gustavo Antonio | Gate 4 |
 | Investigação de causas, públicos afetados e soluções existentes | Etapa 4.3, 4.4, 4.5 | `04_problema/dossie_problema.md` | Pendente | Gustavo Antonio | Gate 4 |
 | Matriz comparativa e justificativa de seleção fundamentada | Etapa 4.6 e 4.7 | `04_problema/matriz_decisao.md` | Pendente | Gustavo Antonio | Gate 4 |

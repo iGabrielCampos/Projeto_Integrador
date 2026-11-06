@@ -46,7 +46,8 @@ Este documento centraliza todas as fontes bibliográficas, documentos legais, co
 
 ## 3. Casos Reais de Ética e IA (Etapa 3)
 
-*(Casos documentados em veículos de imprensa de referência e tribunais serão catalogados a partir de F050)*
+- **[F050]** CENTRO DE ESTUDOS DE SEGURANÇA E CIDADANIA (CESeC). **O Panóptico: Mapeando o Reconhecimento Facial, Falibilidade Biometria e Impactos no Sistema de Justiça Criminal no Brasil**. Rio de Janeiro: CESeC, 2023. Disponível em: <https://cesecseguranca.com.br/projeto/o-panoptico/>. Acesso em: 06 nov. 2026.
+- **[F051]** AUTORIDADE NACIONAL DE PROTEÇÃO DE DADOS (ANPD). **Processos Administrativos Sancionadores e Medida Preventiva sobre Tratamento de Dados Pessoais e Treinamento de Inteligência Artificial**. Brasília: ANPD, 2024. Disponível em: <https://www.gov.br/anpd/>. Acesso em: 06 nov. 2026.
 
 ---
 
