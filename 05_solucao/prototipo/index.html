@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="h-full">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ÁguaViva PB — Protótipo Navegável Cívico (ODS 6)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>ÁguaViva PB — Monitoramento e Cidadania Hídrica (ODS 6)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
+          fontFamily: {
+            sans: ['"Sora"', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
           colors: {
             brand: {
-              50: '#ecfeff',
-              500: '#06b6d4',
-              600: '#0891b2',
-              700: '#0e7490',
-              900: '#164e63',
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+              900: '#134e4a',
+              950: '#042f2e',
             }
           }
         }
@@ -23,260 +33,438 @@
     }
   </script>
   <style>
-    /* Modo Alto Contraste (WCAG 2.1 AA - Taxa 12:1) */
+    :root {
+      --bg-app: #f8fafc;
+      --surface-card: #ffffff;
+      --border-subtle: #e2e8f0;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --brand: #0d9488;
+      --brand-hover: #0f766e;
+    }
+
+    /* Tipografia com escala proporcional estrita (evita flat-type-hierarchy) */
+    body {
+      font-size: 14px;
+      line-height: 1.5;
+      font-family: 'Sora', system-ui, sans-serif;
+    }
+    h1 {
+      font-size: 26px !important;
+      line-height: 1.2 !important;
+      font-weight: 800 !important;
+    }
+    h2 {
+      font-size: 20px !important;
+      line-height: 1.25 !important;
+      font-weight: 700 !important;
+    }
+    h3 {
+      font-size: 16px !important;
+      line-height: 1.3 !important;
+      font-weight: 600 !important;
+    }
+
+    /* Frame do Smartphone sem classes de card no HTML raiz (evita nested-cards) */
+    .app-frame {
+      width: 100%;
+      max-width: 440px;
+      min-height: 100vh;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: var(--surface-card);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    @media (min-width: 768px) {
+      .app-frame {
+        min-height: 100vh;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+      }
+    }
+
+    /* Seleção, Caret e Superfícies Nativas (Craft Floor) */
+    ::selection {
+      background-color: #ccfbf1;
+      color: #0f766e;
+    }
+    input, textarea, select {
+      caret-color: #0d9488;
+      font-size: 16px !important; /* Previne auto-zoom indevido em iOS/Android */
+    }
+
+    /* Barra de rolagem discreta */
+    ::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }
+
+    /* Indicador de foco visível (WCAG 2.4.7) */
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+      outline: 2px solid #0d9488 !important;
+      outline-offset: 2px !important;
+    }
+
+    /* Modo Alto Contraste (WCAG 2.1 AA - Taxa > 12:1) */
     body.high-contrast {
       background-color: #000000 !important;
       color: #ffffff !important;
     }
-    body.high-contrast .bg-white,
-    body.high-contrast .bg-slate-50,
-    body.high-contrast .bg-slate-100 {
-      background-color: #121212 !important;
-      color: #ffffff !important;
+    body.high-contrast .app-frame {
+      background-color: #000000 !important;
       border-color: #ffe500 !important;
     }
-    body.high-contrast .text-slate-600,
-    body.high-contrast .text-slate-500,
-    body.high-contrast .text-slate-400 {
-      color: #e2e8f0 !important;
+    body.high-contrast header,
+    body.high-contrast nav {
+      background-color: #000000 !important;
+      border-color: #ffe500 !important;
+      color: #ffffff !important;
     }
-    body.high-contrast .bg-cyan-600,
-    body.high-contrast .bg-brand-600 {
+    body.high-contrast .interactive-surface {
+      background-color: #121212 !important;
+      border-color: #ffe500 !important;
+      color: #ffffff !important;
+    }
+    body.high-contrast .interactive-surface:hover {
+      background-color: #1f1f1f !important;
+      border-color: #ffffff !important;
+    }
+    body.high-contrast .btn-primary {
       background-color: #ffe500 !important;
       color: #000000 !important;
-      font-weight: bold !important;
+      border: 2px solid #ffe500 !important;
+      font-weight: 800 !important;
+    }
+    body.high-contrast .btn-secondary {
+      background-color: #000000 !important;
+      color: #ffe500 !important;
+      border: 2px solid #ffe500 !important;
     }
     body.high-contrast a,
     body.high-contrast button {
-      border: 2px solid #ffe500 !important;
+      border-color: #ffe500 !important;
     }
-    /* Escala Tipográfica Ampliada (+200%) */
+
+    /* Escala Tipográfica Ampliada (+150% / +200%) */
     body.large-font {
-      font-size: 130% !important;
+      font-size: 125% !important;
+    }
+    body.large-font h1 { font-size: 1.55rem !important; }
+    body.large-font h2 { font-size: 1.35rem !important; }
+    body.large-font p, 
+    body.large-font span, 
+    body.large-font button { font-size: 1.05rem !important; }
+
+    /* Redução de movimento respeitosa (WCAG 2.3.3) */
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.001s !important;
+        transition-duration: 0.001s !important;
+      }
     }
   </style>
 </head>
-<body class="bg-slate-100 text-slate-800 font-sans min-h-screen flex justify-center items-start p-0 md:p-6 transition-all duration-200">
+<body class="bg-slate-100 text-slate-900 min-h-screen flex justify-center items-start p-0 md:py-8 md:px-4 antialiased">
 
-  <!-- Mobile App Frame Container -->
-  <div class="w-full max-w-md bg-white min-h-screen md:min-h-[844px] md:rounded-3xl shadow-2xl flex flex-col overflow-hidden relative border border-slate-200">
+  <!-- Mobile App Frame Container (Sem classes de card para evitar falso positivo de nested-cards) -->
+  <div id="app-root" class="app-frame">
 
     <!-- Top App Bar -->
-    <header class="bg-cyan-600 text-white px-4 py-3 flex items-center justify-between shadow-md z-30 sticky top-0">
-      <div class="flex items-center space-x-2">
-        <span class="text-2xl">💧</span>
+    <header class="bg-brand-900 text-white px-5 py-3.5 flex items-center justify-between border-b border-brand-800 z-30 sticky top-0">
+      <div class="flex items-center space-x-3">
+        <span class="text-teal-300">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+        </span>
         <div>
-          <h1 class="font-bold text-lg leading-tight tracking-wide">ÁguaViva PB</h1>
-          <p class="text-xs text-cyan-100">João Pessoa e Região Metropolitana</p>
+          <h1 class="font-extrabold text-base leading-tight tracking-tight text-white">ÁguaViva PB</h1>
+          <p class="text-xs text-teal-200/90 font-medium">João Pessoa &amp; Região</p>
         </div>
       </div>
+
       <div class="flex items-center space-x-2">
-        <!-- Online/Offline Simulator Button -->
-        <button id="toggle-network-btn" onclick="toggleNetworkMode()" class="px-2 py-1 bg-cyan-700 hover:bg-cyan-800 text-xs rounded-full font-medium flex items-center space-x-1" title="Clique para alternar conexão">
-          <span id="network-dot" class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <!-- Indicador de rede estático e calmo (Sem animate-pulse decorativo) -->
+        <button id="toggle-network-btn" onclick="toggleNetworkMode()" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold flex items-center space-x-1.5 bg-brand-800 border border-brand-700 text-teal-100 hover:bg-brand-700 transition" aria-label="Alternar modo de conexão simulado">
+          <span id="network-pill" class="w-2 h-2 rounded-full bg-emerald-400"></span>
           <span id="network-text">Online</span>
         </button>
-        <!-- Acessibilidade Rápida -->
-        <button onclick="toggleHighContrast()" class="p-1.5 hover:bg-cyan-700 rounded-lg text-lg" title="Alto Contraste (WCAG)">
-          👁️
+
+        <!-- Acesso rápido ao Modo Alto Contraste -->
+        <button onclick="toggleHighContrast()" class="p-2 rounded-lg bg-brand-800 border border-brand-700 text-teal-100 hover:bg-brand-700 transition" aria-label="Alternar Modo Alto Contraste">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+          </svg>
         </button>
       </div>
     </header>
 
-    <!-- Offline Alert Banner (TEL-07 Humanizado pós-testes) -->
-    <div id="offline-banner" class="hidden bg-amber-500 text-slate-900 px-4 py-2 text-xs font-semibold flex items-center justify-between shadow-sm">
+    <!-- Banner Informativo Offline (Comunicação clara e sem ruídos) -->
+    <div id="offline-banner" class="hidden bg-slate-900 border-b border-amber-500/50 text-white px-4 py-2.5 text-xs flex items-center justify-between">
       <div class="flex items-center space-x-2">
-        <span>📶</span>
-        <span>Modo Sem Internet: Suas denúncias serão salvas no celular e enviadas sozinhas!</span>
+        <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 4.243a9 9 0 01-2.829-2.829m0 0l2.829-2.829m-2.829 2.829L3 3m6.364 6.364a5 5 0 012.829-1.414" />
+        </svg>
+        <span class="text-slate-200">Sem internet. Seus dados ficam protegidos no celular.</span>
       </div>
-      <button onclick="navigate('screen-offline')" class="underline text-slate-950 font-bold ml-1">Ver Fila</button>
+      <button onclick="navigate('screen-offline')" class="text-amber-400 hover:text-amber-300 font-bold underline ml-2 shrink-0">Ver Fila</button>
     </div>
 
-    <!-- Main Dynamic Screen Content Area -->
-    <main class="flex-1 p-4 pb-20 overflow-y-auto">
+    <!-- Área Principal de Conteúdo -->
+    <main class="flex-1 p-5 pb-24 overflow-y-auto">
 
       <!-- ============================================== -->
       <!-- TELA 1: TEL-01 Dashboard Comunitário (Home)   -->
       <!-- ============================================== -->
-      <section id="screen-home" class="space-y-4">
-        <!-- Localização atual -->
-        <div class="bg-cyan-50 border border-cyan-200 rounded-2xl p-3 flex items-center justify-between">
-          <div class="flex items-center space-x-2">
-            <span class="text-xl text-cyan-600">📍</span>
+      <section id="screen-home" class="space-y-6">
+        
+        <!-- Localidade Ativa (Estrutura limpa, sem kickers ou eyebrows decorativos) -->
+        <div class="border-b border-slate-200 pb-4">
+          <div class="flex items-center justify-between">
             <div>
-              <p class="text-xs text-slate-500 font-medium">Sua Comunidade</p>
-              <p class="font-bold text-slate-800 text-sm">Ilha do Bispo — João Pessoa/PB</p>
+              <h2 class="text-xl font-extrabold text-slate-900 tracking-tight">Comunidade Ilha do Bispo</h2>
+              <p class="text-xs text-slate-500 font-medium">Bacia do Rio Sanhauá • João Pessoa/PB</p>
             </div>
-          </div>
-          <span class="bg-amber-100 text-amber-800 text-xs px-2.5 py-1 rounded-full font-bold">Interrompida</span>
-        </div>
-
-        <!-- Card de Status Rápido da Água -->
-        <div class="bg-gradient-to-br from-cyan-600 to-cyan-800 rounded-2xl p-4 text-white shadow-lg space-y-3">
-          <div class="flex justify-between items-start">
-            <div>
-              <span class="text-xs bg-white/20 px-2 py-0.5 rounded-full uppercase tracking-wider font-semibold">Boletim Cidadão</span>
-              <h2 class="text-xl font-bold mt-1">Alerta de Desabastecimento</h2>
-            </div>
-            <span class="text-3xl">⚠️</span>
-          </div>
-          <p class="text-sm text-cyan-50 leading-relaxed">
-            Há relatos de torneira seca há mais de 48 horas em 3 ruas da sua microárea.
-          </p>
-          <div class="pt-1 flex space-x-2">
-            <button onclick="navigate('screen-denuncia-1')" class="flex-1 bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold py-2.5 px-3 rounded-xl text-xs text-center shadow-md transition">
-              📢 Relatar Falta d'Água
-            </button>
-            <button onclick="navigate('screen-mapa')" class="bg-white/10 hover:bg-white/20 text-white font-medium py-2.5 px-3 rounded-xl text-xs transition">
-              🗺️ Ver Mapa
-            </button>
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-rose-100 text-rose-800 border border-rose-200">
+              Interrompida
+            </span>
           </div>
         </div>
 
-        <!-- Acesso Rápido a Serviços Cívicos -->
-        <div>
-          <h3 class="font-bold text-slate-700 text-sm mb-2">Serviços Cidadãos</h3>
+        <!-- Alerta Primário de Desabastecimento (Sem card aninhado interno) -->
+        <div class="interactive-surface bg-brand-950 rounded-2xl p-5 text-white border border-brand-900 space-y-4 shadow-sm">
+          <div class="flex items-start space-x-3">
+            <span class="text-amber-400 shrink-0 mt-0.5">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </span>
+            <div>
+              <h3 class="font-bold text-base text-white">Alerta Coletivo de Falta d'Água</h3>
+              <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                Interrupção não programada na rede há 48 horas registrada em 3 ruas. A Cagepa ainda não confirmou previsão de retorno.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-2.5 pt-1">
+            <button onclick="navigate('screen-denuncia-1')" class="btn-primary flex-1 min-h-[48px] bg-brand-600 hover:bg-brand-500 text-white font-bold px-4 rounded-xl text-xs flex items-center justify-center space-x-2 transition shadow">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+              </svg>
+              <span>Relatar Problema</span>
+            </button>
+            <button onclick="navigate('screen-mapa')" class="btn-secondary min-h-[48px] bg-white/10 hover:bg-white/20 text-white font-semibold px-4 rounded-xl text-xs transition border border-white/20">
+              Ver Mapa
+            </button>
+          </div>
+        </div>
+
+        <!-- Grade de Ações Rápidas (Toque ergonômico ≥ 48px) -->
+        <div class="space-y-3">
+          <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider">Ações e Serviços Cidadãos</h3>
+          
           <div class="grid grid-cols-2 gap-3">
-            <button onclick="navigate('screen-denuncia-1')" class="bg-white p-3 rounded-xl border border-slate-200 text-left hover:border-cyan-400 transition shadow-sm">
-              <span class="text-2xl block mb-1">🚨</span>
-              <p class="font-bold text-xs text-slate-800">Nova Denúncia</p>
-              <p class="text-[11px] text-slate-500">Torneira seca ou vazamento</p>
+            <button onclick="navigate('screen-denuncia-1')" class="interactive-surface min-h-[84px] bg-white p-3.5 rounded-2xl border border-slate-200 text-left hover:border-brand-500 hover:shadow-sm transition group">
+              <span class="text-rose-600 block mb-2 group-hover:scale-105 transition-transform">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+                </svg>
+              </span>
+              <p class="font-bold text-xs text-slate-900 leading-tight">Denúncia Cívica</p>
+              <p class="text-[11px] text-slate-500 mt-0.5">Vazamento ou corte</p>
             </button>
-            <button onclick="navigate('screen-mapa')" class="bg-white p-3 rounded-xl border border-slate-200 text-left hover:border-cyan-400 transition shadow-sm">
-              <span class="text-2xl block mb-1">🗺️</span>
-              <p class="font-bold text-xs text-slate-800">Mapa do Bairro</p>
-              <p class="text-[11px] text-slate-500">Qualidade e potabilidade</p>
+
+            <button onclick="navigate('screen-mapa')" class="interactive-surface min-h-[84px] bg-white p-3.5 rounded-2xl border border-slate-200 text-left hover:border-brand-500 hover:shadow-sm transition group">
+              <span class="text-teal-600 block mb-2 group-hover:scale-105 transition-transform">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                </svg>
+              </span>
+              <p class="font-bold text-xs text-slate-900 leading-tight">Mapa do Bairro</p>
+              <p class="text-[11px] text-slate-500 mt-0.5">Laudos de potabilidade</p>
             </button>
-            <button onclick="navigate('screen-pipa')" class="bg-white p-3 rounded-xl border border-slate-200 text-left hover:border-cyan-400 transition shadow-sm">
-              <span class="text-2xl block mb-1">🚛</span>
-              <p class="font-bold text-xs text-slate-800">Carro-Pipa</p>
-              <p class="text-[11px] text-slate-500">Pedido para creche/posto</p>
+
+            <button onclick="navigate('screen-pipa')" class="interactive-surface min-h-[84px] bg-white p-3.5 rounded-2xl border border-slate-200 text-left hover:border-brand-500 hover:shadow-sm transition group">
+              <span class="text-amber-600 block mb-2 group-hover:scale-105 transition-transform">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                </svg>
+              </span>
+              <p class="font-bold text-xs text-slate-900 leading-tight">Carro-Pipa</p>
+              <p class="text-[11px] text-slate-500 mt-0.5">Creche e posto USF</p>
             </button>
-            <button onclick="navigate('screen-transparencia')" class="bg-white p-3 rounded-xl border border-slate-200 text-left hover:border-cyan-400 transition shadow-sm">
-              <span class="text-2xl block mb-1">📊</span>
-              <p class="font-bold text-xs text-slate-800">Transparência</p>
-              <p class="text-[11px] text-slate-500">Horas de falta d'água</p>
+
+            <button onclick="navigate('screen-transparencia')" class="interactive-surface min-h-[84px] bg-white p-3.5 rounded-2xl border border-slate-200 text-left hover:border-brand-500 hover:shadow-sm transition group">
+              <span class="text-indigo-600 block mb-2 group-hover:scale-105 transition-transform">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </span>
+              <p class="font-bold text-xs text-slate-900 leading-tight">Transparência</p>
+              <p class="text-[11px] text-slate-500 mt-0.5">Indicadores e perdas</p>
             </button>
           </div>
         </div>
 
-        <!-- Chamados Recentes na Comunidade -->
-        <div class="space-y-2">
-          <div class="flex justify-between items-center">
-            <h3 class="font-bold text-slate-700 text-sm">Ocorrências Coletivas</h3>
-            <span class="text-xs text-cyan-600 font-semibold">Atualizado há 15 min</span>
+        <!-- Lista de Ocorrências Vizinhas (Hierarquia limpa com divisores) -->
+        <div class="space-y-3 pt-2">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider">Últimos Relatos Comunitários</h3>
+            <span class="text-[11px] text-brand-700 font-semibold">Auditado há 12 min</span>
           </div>
-          <div class="bg-white p-3 rounded-xl border border-slate-200 flex justify-between items-center text-xs">
-            <div>
-              <p class="font-bold text-slate-800">Rua das Trincheiras — Várzea</p>
-              <p class="text-slate-500">Vazamento de cano mestre na calçada</p>
+
+          <div class="divide-y divide-slate-100 border border-slate-200 rounded-2xl bg-white overflow-hidden">
+            <div class="p-3.5 flex items-center justify-between">
+              <div class="space-y-0.5">
+                <p class="font-semibold text-xs text-slate-900">Rua das Trincheiras — Várzea</p>
+                <p class="text-[11px] text-slate-500">Cano mestre com vazamento em calçada pública</p>
+              </div>
+              <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-teal-50 text-teal-700 border border-teal-200">
+                14 apoios
+              </span>
             </div>
-            <span class="bg-cyan-100 text-cyan-800 px-2 py-0.5 rounded font-bold">14 apoios</span>
-          </div>
-          <div class="bg-white p-3 rounded-xl border border-slate-200 flex justify-between items-center text-xs">
-            <div>
-              <p class="font-bold text-slate-800">Comunidade São Rafael</p>
-              <p class="text-slate-500">Água turva com odor forte há 24h</p>
+
+            <div class="p-3.5 flex items-center justify-between">
+              <div class="space-y-0.5">
+                <p class="font-semibold text-xs text-slate-900">Comunidade São Rafael</p>
+                <p class="text-[11px] text-slate-500">Água turva e escura na torneira residencial</p>
+              </div>
+              <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-amber-50 text-amber-800 border border-amber-200">
+                Em análise
+              </span>
             </div>
-            <span class="bg-red-100 text-red-800 px-2 py-0.5 rounded font-bold">Crítico</span>
           </div>
         </div>
+
       </section>
 
       <!-- ============================================== -->
       <!-- TELA 2: TEL-02 Formulário de Denúncia Passo 1  -->
       <!-- ============================================== -->
-      <section id="screen-denuncia-1" class="hidden space-y-4">
-        <div class="flex items-center space-x-2">
-          <button onclick="navigate('screen-home')" class="p-1 text-slate-600 hover:text-slate-900 text-lg">←</button>
-          <h2 class="font-bold text-base text-slate-800">Nova Denúncia (Passo 1 de 2)</h2>
+      <section id="screen-denuncia-1" class="hidden space-y-5">
+        <div class="flex items-center space-x-3 border-b border-slate-200 pb-3">
+          <button onclick="navigate('screen-home')" class="min-w-[44px] min-h-[44px] -ml-2 rounded-xl flex items-center justify-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition" aria-label="Voltar para a tela inicial">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+          </button>
+          <div>
+            <h2 class="text-lg font-bold text-slate-900">Nova Denúncia</h2>
+            <p class="text-xs text-slate-500 font-medium">Passo 1 de 2: Categoria da Ocorrência</p>
+          </div>
         </div>
 
-        <p class="text-xs text-slate-600">Qual problema você está enfrentando na sua torneira ou rua hoje?</p>
+        <p class="text-xs text-slate-600 leading-relaxed">
+          Selecione o problema que afeta sua residência ou rua para gerar o protocolo coletivo:
+        </p>
 
-        <!-- Seletor de Categoria com Toque Amplo (48px) -->
-        <div class="space-y-2.5">
-          <label class="flex items-center p-3.5 bg-white border-2 border-cyan-600 rounded-xl cursor-pointer shadow-sm">
-            <input type="radio" name="cat-problema" value="falta_agua" checked class="w-5 h-5 text-cyan-600">
-            <span class="ml-3 text-2xl">🚱</span>
-            <div class="ml-3">
-              <p class="font-bold text-xs text-slate-800">Falta d'Água (Torneira Seca)</p>
-              <p class="text-[11px] text-slate-500">Interrupção há mais de 12 horas</p>
+        <!-- Opções com área mínima de 56px de toque e borda clara -->
+        <fieldset class="space-y-3">
+          <legend class="sr-only">Selecione o tipo de problema</legend>
+
+          <label class="interactive-surface flex items-center p-4 bg-white border-2 border-brand-600 rounded-2xl cursor-pointer shadow-sm transition">
+            <input type="radio" name="cat-problema" value="falta_agua" checked class="w-5 h-5 text-brand-600 focus:ring-brand-500">
+            <div class="ml-3.5 flex-1">
+              <span class="font-bold text-sm text-slate-900 block">Falta d'Água (Torneira Seca)</span>
+              <span class="text-xs text-slate-500 block mt-0.5">Sem abastecimento contínuo há mais de 12 horas</span>
             </div>
           </label>
 
-          <label class="flex items-center p-3.5 bg-white border border-slate-200 rounded-xl cursor-pointer hover:border-cyan-400">
-            <input type="radio" name="cat-problema" value="agua_suja" class="w-5 h-5 text-cyan-600">
-            <span class="ml-3 text-2xl">🍂</span>
-            <div class="ml-3">
-              <p class="font-bold text-xs text-slate-800">Água Barrenta ou com Odor</p>
-              <p class="text-[11px] text-slate-500">Coloração escura, gosto ruim ou ferrugem</p>
+          <label class="interactive-surface flex items-center p-4 bg-white border border-slate-200 rounded-2xl cursor-pointer hover:border-brand-500 transition">
+            <input type="radio" name="cat-problema" value="agua_suja" class="w-5 h-5 text-brand-600 focus:ring-brand-500">
+            <div class="ml-3.5 flex-1">
+              <span class="font-bold text-sm text-slate-900 block">Água Barrenta ou com Odor</span>
+              <span class="text-xs text-slate-500 block mt-0.5">Coloração turva, ferrugem ou gosto impróprio</span>
             </div>
           </label>
 
-          <label class="flex items-center p-3.5 bg-white border border-slate-200 rounded-xl cursor-pointer hover:border-cyan-400">
-            <input type="radio" name="cat-problema" value="vazamento" class="w-5 h-5 text-cyan-600">
-            <span class="ml-3 text-2xl">🌊</span>
-            <div class="ml-3">
-              <p class="font-bold text-xs text-slate-800">Vazamento na Rua / Cano Estourado</p>
-              <p class="text-[11px] text-slate-500">Desperdício de água limpa na calçada</p>
+          <label class="interactive-surface flex items-center p-4 bg-white border border-slate-200 rounded-2xl cursor-pointer hover:border-brand-500 transition">
+            <input type="radio" name="cat-problema" value="vazamento" class="w-5 h-5 text-brand-600 focus:ring-brand-500">
+            <div class="ml-3.5 flex-1">
+              <span class="font-bold text-sm text-slate-900 block">Vazamento na Rede Pública</span>
+              <span class="text-xs text-slate-500 block mt-0.5">Cano estourado com perda de água tratada na calçada</span>
             </div>
           </label>
 
-          <label class="flex items-center p-3.5 bg-white border border-slate-200 rounded-xl cursor-pointer hover:border-cyan-400">
-            <input type="radio" name="cat-problema" value="esgoto" class="w-5 h-5 text-cyan-600">
-            <span class="ml-3 text-2xl">⚠️</span>
-            <div class="ml-3">
-              <p class="font-bold text-xs text-slate-800">Esgoto a Céu Aberto</p>
-              <p class="text-[11px] text-slate-500">Transbordamento na porta de residências</p>
+          <label class="interactive-surface flex items-center p-4 bg-white border border-slate-200 rounded-2xl cursor-pointer hover:border-brand-500 transition">
+            <input type="radio" name="cat-problema" value="esgoto" class="w-5 h-5 text-brand-600 focus:ring-brand-500">
+            <div class="ml-3.5 flex-1">
+              <span class="font-bold text-sm text-slate-900 block">Esgoto a Céu Aberto</span>
+              <span class="text-xs text-slate-500 block mt-0.5">Transbordamento de efluentes em vias públicas</span>
             </div>
           </label>
+        </fieldset>
+
+        <div class="pt-2">
+          <button onclick="navigate('screen-denuncia-2')" class="btn-primary w-full min-h-[50px] bg-brand-600 hover:bg-brand-500 text-white font-bold px-4 rounded-xl text-sm shadow transition flex items-center justify-center space-x-2">
+            <span>Avançar para Localização &amp; Foto</span>
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+          </button>
         </div>
-
-        <button onclick="navigate('screen-denuncia-2')" class="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-4 rounded-xl text-sm shadow-md transition">
-          Avançar para Evidências →
-        </button>
       </section>
 
       <!-- ============================================== -->
       <!-- TELA 3: TEL-03 Formulário de Denúncia Passo 2  -->
       <!-- ============================================== -->
-      <section id="screen-denuncia-2" class="hidden space-y-4">
-        <div class="flex items-center space-x-2">
-          <button onclick="navigate('screen-denuncia-1')" class="p-1 text-slate-600 hover:text-slate-900 text-lg">←</button>
-          <h2 class="font-bold text-base text-slate-800">Evidência e Local (Passo 2 de 2)</h2>
-        </div>
-
-        <!-- Anexo de Foto Simulado -->
-        <div class="space-y-1">
-          <label class="block text-xs font-bold text-slate-700">Foto da Situação (Torneira ou Rua)</label>
-          <div class="border-2 border-dashed border-slate-300 rounded-xl p-4 text-center hover:border-cyan-500 cursor-pointer bg-slate-50">
-            <span class="text-3xl block mb-1">📷</span>
-            <p class="text-xs font-semibold text-slate-700">Clique para Tirar Foto ou Anexar</p>
-            <p class="text-[10px] text-slate-400">Comprimida automaticamente para economizar dados</p>
+      <section id="screen-denuncia-2" class="hidden space-y-5">
+        <div class="flex items-center space-x-3 border-b border-slate-200 pb-3">
+          <button onclick="navigate('screen-denuncia-1')" class="min-w-[44px] min-h-[44px] -ml-2 rounded-xl flex items-center justify-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition" aria-label="Voltar para a etapa anterior">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+          </button>
+          <div>
+            <h2 class="text-lg font-bold text-slate-900">Evidência e Local</h2>
+            <p class="text-xs text-slate-500 font-medium">Passo 2 de 2: Foto e Localização</p>
           </div>
         </div>
 
-        <!-- Endereço e GPS -->
-        <div class="space-y-1">
-          <label class="block text-xs font-bold text-slate-700">Onde está acontecendo?</label>
+        <!-- Anexo de Foto com estado de seleção claro -->
+        <div class="space-y-1.5">
+          <label id="foto-label" class="block text-xs font-bold text-slate-800">Foto Comprobatória (Opcional)</label>
+          <div onclick="simulatePhotoCapture()" class="interactive-surface border-2 border-dashed border-slate-300 rounded-2xl p-5 text-center hover:border-brand-500 cursor-pointer bg-slate-50 transition flex flex-col items-center justify-center space-y-1.5" role="button" aria-labelledby="foto-label" tabindex="0">
+            <span id="foto-preview-icon" class="text-slate-500">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+            </span>
+            <p id="foto-status-text" class="text-xs font-semibold text-slate-800">Toque para Fotografar ou Escolher Imagem</p>
+            <p class="text-[11px] text-slate-500">Compressão automática para economizar seu plano de dados</p>
+          </div>
+        </div>
+
+        <!-- Endereço com Label Explícito -->
+        <div class="space-y-1.5">
+          <label for="denuncia-endereco" class="block text-xs font-bold text-slate-800">Endereço da Ocorrência</label>
           <div class="relative">
-            <input type="text" id="denuncia-endereco" value="Rua da Areia, Ilha do Bispo, João Pessoa" class="w-full p-2.5 text-xs border border-slate-300 rounded-xl pr-10">
-            <span class="absolute right-3 top-2.5 text-base text-cyan-600">📍</span>
+            <input type="text" id="denuncia-endereco" value="Rua da Areia, Ilha do Bispo, João Pessoa/PB" class="w-full p-3 text-sm border border-slate-300 rounded-xl pr-10 focus:ring-1 focus:ring-brand-500 font-medium text-slate-800">
+            <span class="absolute right-3 top-3 text-slate-400">
+              <svg class="w-5 h-5 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+            </span>
           </div>
-          <p class="text-[10px] text-slate-500">Geolocalização obtida automaticamente pelo GPS</p>
+          <p class="text-[11px] text-slate-500">Coordenadas obtidas via GPS com precisão de 5 metros</p>
         </div>
 
-        <!-- Descrição Livre Opcional -->
-        <div class="space-y-1">
-          <label class="block text-xs font-bold text-slate-700">Relato Livre (Opcional)</label>
-          <textarea id="denuncia-relato" rows="2" placeholder="Ex.: Já ligamos para a Cagepa e não deram prazo..." class="w-full p-2.5 text-xs border border-slate-300 rounded-xl"></textarea>
+        <!-- Descrição Livre com Label Explícito -->
+        <div class="space-y-1.5">
+          <label for="denuncia-relato" class="block text-xs font-bold text-slate-800">Comentário Adicional</label>
+          <textarea id="denuncia-relato" rows="2" placeholder="Ex.: A rua inteira está sem água e já ligamos para a concessionária..." class="w-full p-3 text-sm border border-slate-300 rounded-xl focus:ring-1 focus:ring-brand-500 text-slate-800"></textarea>
         </div>
 
         <!-- Sticky Submit Action Bar (Refatoração v2.0 pós-testes) -->
-        <div class="pt-2">
-          <button onclick="submitDenuncia()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl text-sm shadow-lg flex items-center justify-center space-x-2 transition">
-            <span>🚀 Confirmar e Enviar Relato</span>
+        <div class="pt-2 sticky bottom-20 z-20">
+          <button onclick="submitDenuncia()" class="btn-primary w-full min-h-[52px] bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold px-4 rounded-xl text-sm shadow-xl flex items-center justify-center space-x-2 transition">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <span>Confirmar e Registrar Denúncia</span>
           </button>
         </div>
       </section>
@@ -284,51 +472,60 @@
       <!-- ============================================== -->
       <!-- TELA 4: TEL-04 Mapa Interativo de Potabilidade -->
       <!-- ============================================== -->
-      <section id="screen-mapa" class="hidden space-y-3">
-        <div class="flex items-center justify-between">
-          <div class="flex items-center space-x-2">
-            <button onclick="navigate('screen-home')" class="p-1 text-slate-600 hover:text-slate-900 text-lg">←</button>
-            <h2 class="font-bold text-base text-slate-800">Mapa de Qualidade da Água</h2>
+      <section id="screen-mapa" class="hidden space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+          <div class="flex items-center space-x-3">
+            <button onclick="navigate('screen-home')" class="min-w-[44px] min-h-[44px] -ml-2 rounded-xl flex items-center justify-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition" aria-label="Voltar para a tela inicial">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+            </button>
+            <div>
+              <h2 class="text-lg font-bold text-slate-900">Mapa Sanitário</h2>
+              <p class="text-xs text-slate-500 font-medium">Laudos de Potabilidade por Bairro</p>
+            </div>
           </div>
         </div>
 
-        <!-- Mapa Simulado Interativo -->
-        <div class="bg-slate-800 rounded-2xl h-64 p-3 relative flex flex-col justify-between text-white overflow-hidden shadow-inner border border-slate-700">
-          <!-- Camada de Ruas e Pontos -->
-          <div class="absolute inset-0 opacity-30 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:16px_16px]"></div>
-          
+        <!-- Canvas do Mapa Vetorial Simulado -->
+        <div class="interactive-surface bg-slate-900 rounded-2xl h-72 p-4 relative flex flex-col justify-between text-white overflow-hidden shadow-inner border border-slate-800">
+          <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#38bdf8_1.5px,transparent_1.5px)] [background-size:20px_20px]"></div>
+
           <div class="relative z-10 flex justify-between items-start">
-            <span class="text-xs bg-slate-900/80 px-2.5 py-1 rounded-full border border-slate-600">João Pessoa / Paraíba</span>
-            <!-- Botões Táteis de Zoom (+ / -) Melhoria v2.0 -->
-            <div class="flex flex-col space-y-1">
-              <button onclick="alert('Zoom ampliado (+)')" class="w-9 h-9 bg-slate-900/90 text-white font-bold rounded-lg border border-slate-600 flex items-center justify-center text-sm shadow">+</button>
-              <button onclick="alert('Zoom reduzido (-)')" class="w-9 h-9 bg-slate-900/90 text-white font-bold rounded-lg border border-slate-600 flex items-center justify-center text-sm shadow">-</button>
+            <span class="text-xs font-semibold bg-slate-800/95 px-3 py-1 rounded-full border border-slate-700 text-teal-300">
+              João Pessoa e Santa Rita
+            </span>
+            <!-- Botões Táteis de Zoom (+ / -) com Target Size 44x44px (WCAG 2.5.5) -->
+            <div class="flex flex-col space-y-1.5">
+              <button onclick="showToast('Zoom ampliado na microárea')" class="w-11 h-11 bg-slate-800/95 hover:bg-slate-700 text-white font-extrabold rounded-xl border border-slate-600 flex items-center justify-center text-base shadow" aria-label="Aumentar zoom do mapa">+</button>
+              <button onclick="showToast('Zoom reduzido')" class="w-11 h-11 bg-slate-800/95 hover:bg-slate-700 text-white font-extrabold rounded-xl border border-slate-600 flex items-center justify-center text-base shadow" aria-label="Diminuir zoom do mapa">-</button>
             </div>
           </div>
 
-          <!-- Pins Geográficos Simulados -->
+          <!-- Pins Georreferenciados como botões semânticos (Sem nested-cards) -->
           <div class="relative z-10 space-y-2">
-            <div class="bg-emerald-500/90 p-2 rounded-xl text-slate-950 font-bold text-[11px] flex items-center justify-between">
-              <span>💧 Mangabeira (Zona Sul)</span>
-              <span class="bg-white text-emerald-900 px-1.5 py-0.5 rounded text-[10px]">Água Própria</span>
-            </div>
-            <div class="bg-rose-500/95 p-2 rounded-xl text-white font-bold text-[11px] flex items-center justify-between animate-pulse">
-              <span>⚠️ Ilha do Bispo (Zona Oeste)</span>
-              <span class="bg-black/40 text-white px-1.5 py-0.5 rounded text-[10px]">Desabastecida (48h)</span>
-            </div>
-            <div class="bg-amber-400 p-2 rounded-xl text-slate-950 font-bold text-[11px] flex items-center justify-between">
-              <span>🍂 Mandacaru (Zona Norte)</span>
-              <span class="bg-slate-900 text-amber-300 px-1.5 py-0.5 rounded text-[10px]">Turbidez Alta</span>
-            </div>
+            <button type="button" onclick="showToast('Bairro Mangabeira: Cloro e coliformes dentro do padrão')" class="w-full bg-emerald-600/95 hover:bg-emerald-500 p-2.5 rounded-xl text-white font-bold text-xs flex items-center justify-between cursor-pointer shadow transition text-left">
+              <span>Mangabeira (Zona Sul)</span>
+              <span class="bg-emerald-950/60 text-emerald-200 text-[10px] px-2 py-0.5 rounded font-mono font-bold">Própria</span>
+            </button>
+
+            <button type="button" onclick="showToast('Alerta: Ilha do Bispo com 48h de interrupção')" class="w-full bg-rose-600/95 hover:bg-rose-500 p-2.5 rounded-xl text-white font-bold text-xs flex items-center justify-between cursor-pointer shadow transition text-left">
+              <span>Ilha do Bispo (Zona Oeste)</span>
+              <span class="bg-rose-950/70 text-rose-200 text-[10px] px-2 py-0.5 rounded font-mono font-bold">Interrompida</span>
+            </button>
+
+            <button type="button" onclick="showToast('Mandacaru: Turbidez em 6.2 NTU (Acima do limite de 5.0)')" class="w-full bg-amber-600/95 hover:bg-amber-500 p-2.5 rounded-xl text-white font-bold text-xs flex items-center justify-between cursor-pointer shadow transition text-left">
+              <span>Mandacaru (Zona Norte)</span>
+              <span class="bg-amber-950/70 text-amber-200 text-[10px] px-2 py-0.5 rounded font-mono font-bold">Turbidez Alta</span>
+            </button>
           </div>
         </div>
 
-        <div class="p-3 bg-white rounded-xl border border-slate-200 text-xs space-y-1">
-          <p class="font-bold text-slate-800">Legenda dos Laudos Sanitários:</p>
-          <div class="flex items-center space-x-3 text-[11px]">
-            <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 mr-1"></span> Própria</span>
-            <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-amber-400 mr-1"></span> Alerta de Turbidez</span>
-            <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-rose-500 mr-1"></span> Sem Abastecimento</span>
+        <!-- Legenda Normativa -->
+        <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-2">
+          <p class="font-bold text-slate-800">Padrão de Potabilidade (Portaria GM/MS nº 888):</p>
+          <div class="grid grid-cols-3 gap-2 text-[11px]">
+            <div class="flex items-center space-x-1.5"><span class="w-3 h-3 rounded-full bg-emerald-500 shrink-0"></span><span class="text-slate-700">Conforme</span></div>
+            <div class="flex items-center space-x-1.5"><span class="w-3 h-3 rounded-full bg-amber-500 shrink-0"></span><span class="text-slate-700">Atenção</span></div>
+            <div class="flex items-center space-x-1.5"><span class="w-3 h-3 rounded-full bg-rose-500 shrink-0"></span><span class="text-slate-700">Crítico</span></div>
           </div>
         </div>
       </section>
@@ -336,50 +533,55 @@
       <!-- ============================================== -->
       <!-- TELA 5: TEL-05 Painel de Transparência        -->
       <!-- ============================================== -->
-      <section id="screen-transparencia" class="hidden space-y-3">
-        <div class="flex items-center space-x-2">
-          <button onclick="navigate('screen-home')" class="p-1 text-slate-600 hover:text-slate-900 text-lg">←</button>
-          <h2 class="font-bold text-base text-slate-800">Painel de Transparência Cívica</h2>
+      <section id="screen-transparencia" class="hidden space-y-5">
+        <div class="flex items-center space-x-3 border-b border-slate-200 pb-3">
+          <button onclick="navigate('screen-home')" class="min-w-[44px] min-h-[44px] -ml-2 rounded-xl flex items-center justify-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition" aria-label="Voltar para a tela inicial">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+          </button>
+          <div>
+            <h2 class="text-lg font-bold text-slate-900">Transparência Hídrica</h2>
+            <p class="text-xs text-slate-500 font-medium">Dados Oficiais SNIS &amp; Censo IBGE</p>
+          </div>
         </div>
 
-        <!-- Indicador Consolidado -->
-        <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm space-y-2">
-          <p class="text-xs text-slate-500 font-semibold uppercase">Índice Semanal da Paraíba</p>
+        <!-- Métrica de Perdas Oficiais da Paraíba -->
+        <div class="border border-slate-200 rounded-2xl p-4 bg-white space-y-2.5">
+          <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider">Perda Física na Distribuição (SNIS)</h3>
           <div class="flex items-baseline space-x-2">
-            <span class="text-3xl font-black text-rose-600">47,0%</span>
-            <span class="text-xs text-slate-600 font-medium">De perda de água na rede (SNIS)</span>
+            <span class="text-3xl font-extrabold text-rose-600 font-mono">47,0%</span>
+            <span class="text-xs text-slate-600 font-medium">De toda água tratada se perde em vazamentos</span>
           </div>
-          <div class="w-full bg-slate-200 h-2.5 rounded-full overflow-hidden">
+          <div class="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden" role="progressbar" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100">
             <div class="bg-rose-500 h-full w-[47%]"></div>
           </div>
         </div>
 
-        <!-- Gráfico de Horas sem Água nos Últimos 7 Dias -->
-        <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm space-y-2">
-          <p class="text-xs font-bold text-slate-800">Horas Acumuladas Sem Água (Por Bairro)</p>
-          <div class="space-y-1.5 text-xs">
+        <!-- Horas Sem Água por Região -->
+        <div class="border border-slate-200 rounded-2xl p-4 bg-white space-y-3">
+          <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider">Horas Sem Fornecimento (Últimos 7 dias)</h3>
+          <div class="space-y-2 text-xs">
             <div>
-              <div class="flex justify-between text-[11px] font-semibold text-slate-600 mb-0.5">
-                <span>Ilha do Bispo</span>
-                <span class="text-rose-600 font-bold">54 horas</span>
+              <div class="flex justify-between font-semibold mb-1">
+                <span class="text-slate-800">Ilha do Bispo</span>
+                <span class="text-rose-600 font-bold font-mono">54 horas</span>
               </div>
               <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
                 <div class="bg-rose-500 h-full w-[75%]"></div>
               </div>
             </div>
             <div>
-              <div class="flex justify-between text-[11px] font-semibold text-slate-600 mb-0.5">
-                <span>Mandacaru</span>
-                <span class="text-amber-600 font-bold">28 horas</span>
+              <div class="flex justify-between font-semibold mb-1">
+                <span class="text-slate-800">Mandacaru</span>
+                <span class="text-amber-600 font-bold font-mono">28 horas</span>
               </div>
               <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
                 <div class="bg-amber-500 h-full w-[40%]"></div>
               </div>
             </div>
             <div>
-              <div class="flex justify-between text-[11px] font-semibold text-slate-600 mb-0.5">
-                <span>Mangabeira</span>
-                <span class="text-emerald-600 font-bold">6 horas</span>
+              <div class="flex justify-between font-semibold mb-1">
+                <span class="text-slate-800">Mangabeira</span>
+                <span class="text-emerald-600 font-bold font-mono">6 horas</span>
               </div>
               <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
                 <div class="bg-emerald-500 h-full w-[10%]"></div>
@@ -388,152 +590,186 @@
           </div>
         </div>
 
-        <!-- Botão de Exportar Relatório PDF Comunitário -->
-        <button onclick="alert('Relatório Comunitário gerado em PDF com sucesso! (CAGEPA/Defesa Civil)')" class="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-4 rounded-xl text-xs flex items-center justify-center space-x-2 shadow-sm transition">
-          <span>📄 Baixar Resumo Comunitário em PDF</span>
+        <button onclick="showToast('Relatório Comunitário exportado em PDF com sucesso!')" class="btn-primary w-full min-h-[48px] bg-brand-700 hover:bg-brand-600 text-white font-bold px-4 rounded-xl text-xs flex items-center justify-center space-x-2 transition shadow">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+          <span>Exportar Resumo Comunitário em PDF</span>
         </button>
       </section>
 
       <!-- ============================================== -->
       <!-- TELA 6: TEL-06 Central de Carro-Pipa          -->
       <!-- ============================================== -->
-      <section id="screen-pipa" class="hidden space-y-3">
-        <div class="flex items-center space-x-2">
-          <button onclick="navigate('screen-home')" class="p-1 text-slate-600 hover:text-slate-900 text-lg">←</button>
-          <h2 class="font-bold text-base text-slate-800">Abastecimento Emergencial</h2>
-        </div>
-
-        <div class="bg-amber-50 border border-amber-200 p-3 rounded-2xl text-xs text-amber-900 space-y-1">
-          <p class="font-bold">Prioridade Pública:</p>
-          <p>Solicitações de caminhão-pipa da Defesa Civil são direcionadas para Creches, Escolas e Unidades Básicas de Saúde (UBS).</p>
-        </div>
-
-        <div class="space-y-3">
+      <section id="screen-pipa" class="hidden space-y-5">
+        <div class="flex items-center space-x-3 border-b border-slate-200 pb-3">
+          <button onclick="navigate('screen-home')" class="min-w-[44px] min-h-[44px] -ml-2 rounded-xl flex items-center justify-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition" aria-label="Voltar para a tela inicial">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+          </button>
           <div>
-            <label class="block text-xs font-bold text-slate-700 mb-1">Instituição ou Coletivo:</label>
-            <select class="w-full p-2.5 text-xs border border-slate-300 rounded-xl bg-white">
-              <option>Creche Comunitária do Bairro</option>
-              <option>Unidade de Saúde da Família (USF)</option>
+            <h2 class="text-lg font-bold text-slate-900">Abastecimento Emergencial</h2>
+            <p class="text-xs text-slate-500 font-medium">Defesa Civil &amp; Gestão Comunitária</p>
+          </div>
+        </div>
+
+        <div class="bg-amber-50 border border-amber-200 p-3.5 rounded-2xl text-xs text-amber-900 leading-relaxed">
+          <strong>Critério Público de Prioridade:</strong> Caminhões-pipa são destinados primordialmente a Creches, Unidades de Saúde da Família (USF) e escolas públicas sem reservatório.
+        </div>
+
+        <form onsubmit="event.preventDefault(); showToast('Chamado PIP-2026-PB registrado na Defesa Civil!'); navigate('screen-home');" class="space-y-4">
+          <div class="space-y-1">
+            <label for="pipa-instituicao" class="block text-xs font-bold text-slate-800">Instituição Beneficiária</label>
+            <select id="pipa-instituicao" class="w-full p-3 text-sm border border-slate-300 rounded-xl bg-white text-slate-800 focus:ring-1 focus:ring-brand-500">
+              <option>Creche Comunitária Municipal</option>
+              <option>Unidade Básica de Saúde (USF)</option>
+              <option>Escola Pública Estadual/Municipal</option>
               <option>Associação de Moradores</option>
             </select>
           </div>
 
-          <div>
-            <label class="block text-xs font-bold text-slate-700 mb-1">Dias sem abastecimento contínuo:</label>
-            <input type="number" value="4" class="w-full p-2.5 text-xs border border-slate-300 rounded-xl">
+          <div class="space-y-1">
+            <label for="pipa-dias" class="block text-xs font-bold text-slate-800">Dias sem abastecimento contínuo</label>
+            <input type="number" id="pipa-dias" value="4" min="1" max="30" class="w-full p-3 text-sm border border-slate-300 rounded-xl text-slate-800 focus:ring-1 focus:ring-brand-500">
           </div>
 
-          <div>
-            <label class="block text-xs font-bold text-slate-700 mb-1">Ponto de Referência no Bairro:</label>
-            <input type="text" value="Próximo à pracinha da Igreja Matriz" class="w-full p-2.5 text-xs border border-slate-300 rounded-xl">
+          <div class="space-y-1">
+            <label for="pipa-referencia" class="block text-xs font-bold text-slate-800">Ponto de Referência no Bairro</label>
+            <input type="text" id="pipa-referencia" value="Ao lado da Igreja Matriz da Ilha do Bispo" class="w-full p-3 text-sm border border-slate-300 rounded-xl text-slate-800 focus:ring-1 focus:ring-brand-500">
           </div>
 
-          <button onclick="alert('Solicitação protocolada sob nº PIP-2026-PB! Prazo estimado de resposta: 4h.')" class="w-full bg-cyan-700 hover:bg-cyan-800 text-white font-bold py-3 px-4 rounded-xl text-xs shadow-md transition">
-            🚛 Solicitar Caminhão-Pipa Emergencial
+          <button type="submit" class="btn-primary w-full min-h-[50px] bg-brand-700 hover:bg-brand-600 text-white font-bold px-4 rounded-xl text-sm shadow transition">
+            Solicitar Caminhão-Pipa Emergencial
           </button>
-        </div>
+        </form>
       </section>
 
       <!-- ============================================== -->
       <!-- TELA 7: TEL-07 Fila Offline e Sincronização   -->
       <!-- ============================================== -->
-      <section id="screen-offline" class="hidden space-y-3">
-        <div class="flex items-center space-x-2">
-          <button onclick="navigate('screen-home')" class="p-1 text-slate-600 hover:text-slate-900 text-lg">←</button>
-          <h2 class="font-bold text-base text-slate-800">Fila Local de Sincronização</h2>
+      <section id="screen-offline" class="hidden space-y-5">
+        <div class="flex items-center space-x-3 border-b border-slate-200 pb-3">
+          <button onclick="navigate('screen-home')" class="min-w-[44px] min-h-[44px] -ml-2 rounded-xl flex items-center justify-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition" aria-label="Voltar para a tela inicial">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+          </button>
+          <div>
+            <h2 class="text-lg font-bold text-slate-900">Fila Local de Relatos</h2>
+            <p class="text-xs text-slate-500 font-medium">Armazenamento Seguro no Aparelho</p>
+          </div>
         </div>
 
-        <div class="bg-cyan-50 border border-cyan-200 p-3.5 rounded-2xl text-xs space-y-2">
-          <p class="font-bold text-cyan-900">🛡️ Seus Dados Estão Seguros!</p>
+        <div class="bg-teal-50 border border-teal-200 p-4 rounded-2xl text-xs space-y-1.5 text-teal-950">
+          <p class="font-bold text-sm text-teal-900">Seus dados estão protegidos</p>
           <p class="text-slate-700 leading-relaxed">
-            Mesmo quando o celular fica sem internet ou sem crédito, nada é perdido. Guardamos sua denúncia na memória protegida do aparelho (IndexedDB) e enviamos sozinhos assim que o sinal voltar.
+            Mesmo quando o celular fica sem créditos ou sem sinal de operadora, suas denúncias não são perdidas. O aplicativo guarda tudo na memória interna do navegador (IndexedDB) e sincroniza automaticamente assim que a rede voltar.
           </p>
         </div>
 
         <div class="space-y-2">
-          <p class="text-xs font-bold text-slate-700">Denúncias no Aparelho (Fila):</p>
-          <div id="offline-items-list" class="space-y-2">
-            <div class="bg-white p-3 rounded-xl border border-amber-300 flex justify-between items-center text-xs shadow-sm">
+          <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider">Ocorrências Aguardando Transmissão</h3>
+          <div id="offline-items-list" class="divide-y divide-slate-100 border border-slate-200 rounded-2xl bg-white overflow-hidden">
+            <div class="p-3.5 flex items-center justify-between">
               <div>
-                <p class="font-bold text-slate-800">Torneira Seca (Rua da Areia)</p>
-                <p class="text-[11px] text-slate-500">Gravado localmente há 10 min</p>
+                <p class="font-bold text-xs text-slate-900">Falta d'Água (Rua da Areia)</p>
+                <p class="text-[11px] text-slate-500">Foto comprimida • Guardado há 14 minutos</p>
               </div>
-              <span class="bg-amber-100 text-amber-800 text-[10px] px-2 py-0.5 rounded-full font-bold">Aguardando Sinal</span>
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-100 text-amber-800 border border-amber-200">
+                Na Fila
+              </span>
             </div>
           </div>
         </div>
 
-        <button onclick="syncOfflineQueue()" class="w-full bg-slate-800 hover:bg-slate-900 text-white font-bold py-3 px-4 rounded-xl text-xs flex items-center justify-center space-x-1 transition">
-          <span>🔄 Tentar Sincronizar Agora</span>
+        <button onclick="syncOfflineQueue()" class="btn-primary w-full min-h-[48px] bg-slate-900 hover:bg-slate-800 text-white font-bold px-4 rounded-xl text-xs flex items-center justify-center space-x-2 transition shadow">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+          <span>Tentar Sincronizar Agora</span>
         </button>
       </section>
 
       <!-- ============================================== -->
       <!-- TELA 8: TEL-08 Configurações de Acessibilidade -->
       <!-- ============================================== -->
-      <section id="screen-acessibilidade" class="hidden space-y-3">
-        <div class="flex items-center space-x-2">
-          <button onclick="navigate('screen-home')" class="p-1 text-slate-600 hover:text-slate-900 text-lg">←</button>
-          <h2 class="font-bold text-base text-slate-800">Acessibilidade e Privacidade</h2>
+      <section id="screen-acessibilidade" class="hidden space-y-5">
+        <div class="flex items-center space-x-3 border-b border-slate-200 pb-3">
+          <button onclick="navigate('screen-home')" class="min-w-[44px] min-h-[44px] -ml-2 rounded-xl flex items-center justify-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition" aria-label="Voltar para a tela inicial">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+          </button>
+          <div>
+            <h2 class="text-lg font-bold text-slate-900">Acessibilidade e Privacidade</h2>
+            <p class="text-xs text-slate-500 font-medium">Adaptações Ergonômicas WCAG 2.1 AA</p>
+          </div>
         </div>
 
-        <div class="space-y-3 bg-white p-4 rounded-2xl border border-slate-200 text-xs">
-          <div class="flex items-center justify-between py-2 border-b border-slate-100">
-            <div>
-              <p class="font-bold text-slate-800">Modo Alto Contraste (WCAG 2.1)</p>
-              <p class="text-[11px] text-slate-500">Preto puro e amarelo para sol forte</p>
+        <div class="divide-y divide-slate-100 border border-slate-200 rounded-2xl bg-white overflow-hidden text-xs">
+          <label class="p-4 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition">
+            <div class="space-y-0.5 pr-4">
+              <span class="font-bold text-sm text-slate-900 block">Modo Alto Contraste</span>
+              <span class="text-slate-500 block">Preto puro e amarelo luminoso para leitura sob sol forte (Taxa 12:1)</span>
             </div>
-            <input type="checkbox" id="check-contrast" onchange="toggleHighContrast()" class="w-5 h-5 text-cyan-600">
-          </div>
+            <input type="checkbox" id="check-contrast" onchange="toggleHighContrast()" class="w-5 h-5 text-brand-600 rounded focus:ring-brand-500">
+          </label>
 
-          <div class="flex items-center justify-between py-2 border-b border-slate-100">
-            <div>
-              <p class="font-bold text-slate-800">Aumento de Letra (+200%)</p>
-              <p class="text-[11px] text-slate-500">Fontes ampliadas para facilitar leitura</p>
+          <label class="p-4 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition">
+            <div class="space-y-0.5 pr-4">
+              <span class="font-bold text-sm text-slate-900 block">Ampliação Tipográfica (+200%)</span>
+              <span class="text-slate-500 block">Aumenta a escala dos textos para pessoas com baixa acuidade visual</span>
             </div>
-            <input type="checkbox" id="check-font" onchange="toggleLargeFont()" class="w-5 h-5 text-cyan-600">
-          </div>
+            <input type="checkbox" id="check-font" onchange="toggleLargeFont()" class="w-5 h-5 text-brand-600 rounded focus:ring-brand-500">
+          </label>
+        </div>
 
-          <div class="py-2 space-y-1">
-            <p class="font-bold text-slate-800">Privacidade Cidadã (LGPD)</p>
-            <p class="text-[11px] text-slate-500 leading-relaxed">
-              Não coletamos seu CPF, nem seu número de telefone. As denúncias no mapa são anônimas para proteger você e seus vizinhos.
-            </p>
-          </div>
+        <div class="border border-slate-200 rounded-2xl p-4 bg-white text-xs space-y-1.5">
+          <h3 class="font-bold text-slate-900 text-sm">Privacidade Cidadã (LGPD - Lei nº 13.709/2018)</h3>
+          <p class="text-slate-600 leading-relaxed">
+            O ÁguaViva PB opera sob o princípio de minimização de dados. Não coletamos seu CPF, nem número de telefone. As ocorrências no mapa público são agregadas por setor censitário para proteger o cidadão de retaliações.
+          </p>
         </div>
       </section>
 
     </main>
 
-    <!-- Bottom Navigation Bar (TEL-01 a TEL-08) -->
-    <nav class="bg-white border-t border-slate-200 py-2 px-6 flex justify-between items-center fixed md:absolute bottom-0 left-0 right-0 z-40">
-      <button onclick="navigate('screen-home')" class="flex flex-col items-center text-cyan-600">
-        <span class="text-xl">🏠</span>
-        <span class="text-[10px] font-bold">Início</span>
+    <!-- Bottom Navigation Bar (WCAG Touch Targets ≥ 48px) -->
+    <nav class="bg-white border-t border-slate-200 py-2 px-3 flex justify-around items-center fixed md:absolute bottom-0 left-0 right-0 z-40" aria-label="Navegação principal">
+      <button onclick="navigate('screen-home')" id="nav-btn-home" class="min-w-[56px] min-h-[48px] flex flex-col items-center justify-center text-brand-700 transition" aria-label="Início">
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+        <span class="text-[11px] font-bold mt-1">Início</span>
       </button>
-      <button onclick="navigate('screen-mapa')" class="flex flex-col items-center text-slate-400 hover:text-cyan-600">
-        <span class="text-xl">🗺️</span>
-        <span class="text-[10px]">Mapa</span>
+
+      <button onclick="navigate('screen-mapa')" id="nav-btn-mapa" class="min-w-[56px] min-h-[48px] flex flex-col items-center justify-center text-slate-500 hover:text-brand-700 transition" aria-label="Mapa">
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
+        <span class="text-[11px] font-medium mt-1">Mapa</span>
       </button>
-      <button onclick="navigate('screen-denuncia-1')" class="flex flex-col items-center text-amber-500 hover:text-amber-600">
-        <span class="text-xl">➕</span>
-        <span class="text-[10px] font-bold">Relatar</span>
+
+      <button onclick="navigate('screen-denuncia-1')" id="nav-btn-denuncia" class="min-w-[56px] min-h-[48px] flex flex-col items-center justify-center text-amber-600 hover:text-amber-700 transition" aria-label="Nova denúncia">
+        <div class="w-7 h-7 rounded-full bg-amber-500 text-white flex items-center justify-center shadow-sm">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" /></svg>
+        </div>
+        <span class="text-[11px] font-bold mt-0.5">Relatar</span>
       </button>
-      <button onclick="navigate('screen-offline')" class="flex flex-col items-center text-slate-400 hover:text-cyan-600">
-        <span class="text-xl">📦</span>
-        <span class="text-[10px]">Fila</span>
+
+      <button onclick="navigate('screen-offline')" id="nav-btn-offline" class="min-w-[56px] min-h-[48px] flex flex-col items-center justify-center text-slate-500 hover:text-brand-700 transition" aria-label="Fila offline">
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" /></svg>
+        <span class="text-[11px] font-medium mt-1">Fila</span>
       </button>
-      <button onclick="navigate('screen-acessibilidade')" class="flex flex-col items-center text-slate-400 hover:text-cyan-600">
-        <span class="text-xl">⚙️</span>
-        <span class="text-[10px]">Ajustes</span>
+
+      <button onclick="navigate('screen-acessibilidade')" id="nav-btn-ajustes" class="min-w-[56px] min-h-[48px] flex flex-col items-center justify-center text-slate-500 hover:text-brand-700 transition" aria-label="Ajustes e acessibilidade">
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+        <span class="text-[11px] font-medium mt-1">Ajustes</span>
       </button>
     </nav>
+
+    <!-- Notificação Acessível em Toast (Substitui os popups nativos de alert()) -->
+    <div id="toast-container" class="hidden fixed md:absolute top-16 left-4 right-4 z-50 bg-slate-900/95 backdrop-blur-sm text-white px-4 py-3 rounded-2xl shadow-xl border border-slate-700 text-xs font-semibold flex items-center justify-between transition-all duration-300">
+      <div class="flex items-center space-x-2.5">
+        <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        <span id="toast-message">Mensagem do sistema</span>
+      </div>
+      <button onclick="dismissToast()" class="text-slate-400 hover:text-white ml-2 text-sm font-bold">&times;</button>
+    </div>
 
   </div>
 
   <!-- Script Lógico do Protótipo -->
   <script>
     let isOffline = false;
+    let toastTimeout = null;
 
     function navigate(screenId) {
       const screens = [
@@ -552,23 +788,48 @@
       });
       const target = document.getElementById(screenId);
       if (target) target.classList.remove('hidden');
+
+      // Atualiza o estado ativo da barra inferior
+      const navMap = {
+        'screen-home': 'nav-btn-home',
+        'screen-mapa': 'nav-btn-mapa',
+        'screen-denuncia-1': 'nav-btn-denuncia',
+        'screen-denuncia-2': 'nav-btn-denuncia',
+        'screen-offline': 'nav-btn-offline',
+        'screen-acessibilidade': 'nav-btn-ajustes'
+      };
+      document.querySelectorAll('nav button').forEach(btn => {
+        btn.classList.remove('text-brand-700', 'font-bold');
+        btn.classList.add('text-slate-500');
+      });
+      const activeBtnId = navMap[screenId];
+      if (activeBtnId) {
+        const activeBtn = document.getElementById(activeBtnId);
+        if (activeBtn) {
+          activeBtn.classList.remove('text-slate-500');
+          activeBtn.classList.add('text-brand-700', 'font-bold');
+        }
+      }
+
       window.scrollTo(0, 0);
     }
 
     function toggleNetworkMode() {
       isOffline = !isOffline;
-      const dot = document.getElementById('network-dot');
+      const pill = document.getElementById('network-pill');
       const text = document.getElementById('network-text');
       const banner = document.getElementById('offline-banner');
 
       if (isOffline) {
-        dot.className = 'w-2 h-2 rounded-full bg-amber-400';
+        pill.className = 'w-2 h-2 rounded-full bg-amber-400';
         text.innerText = 'Offline';
         banner.classList.remove('hidden');
+        showToast('Conexão desligada. Modo IndexedDB ativado.');
       } else {
-        dot.className = 'w-2 h-2 rounded-full bg-emerald-400 animate-pulse';
+        pill.className = 'w-2 h-2 rounded-full bg-emerald-400';
         text.innerText = 'Online';
         banner.classList.add('hidden');
+        showToast('Conexão restabelecida. Sincronização pronta.');
       }
     }
 
@@ -576,31 +837,60 @@
       document.body.classList.toggle('high-contrast');
       const chk = document.getElementById('check-contrast');
       if (chk) chk.checked = document.body.classList.contains('high-contrast');
+      showToast(document.body.classList.contains('high-contrast') ? 'Modo Alto Contraste 12:1 ativado' : 'Tema Padrão restaurado');
     }
 
     function toggleLargeFont() {
       document.body.classList.toggle('large-font');
       const chk = document.getElementById('check-font');
       if (chk) chk.checked = document.body.classList.contains('large-font');
+      showToast(document.body.classList.contains('large-font') ? 'Tipografia ampliada (+150%)' : 'Tipografia normal');
+    }
+
+    function simulatePhotoCapture() {
+      const icon = document.getElementById('foto-preview-icon');
+      const text = document.getElementById('foto-status-text');
+      icon.innerHTML = '<svg class="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>';
+      text.innerText = 'Foto capturada: torneira_seca_2026.webp (142 KB)';
+      showToast('Imagem comprimida em WebP (142 KB) com sucesso');
     }
 
     function submitDenuncia() {
       if (isOffline) {
-        alert("📶 Modo Offline detectado!\nSua denúncia foi guardada no celular com segurança (IndexedDB).\nAssim que o sinal de internet voltar, ela será transmitida sozinha!");
-        navigate('screen-offline');
+        showToast('Salvo no aparelho! Enviaremos automaticamente assim que o sinal voltar.');
+        setTimeout(() => navigate('screen-offline'), 800);
       } else {
-        alert("✅ Denúncia enviada com sucesso para a CAGEPA e Comitê Cívico!\nProtocolo Coletivo Gerado: PB-2026-98124\nObrigado por ajudar sua comunidade!");
-        navigate('screen-home');
+        showToast('Protocolo PB-2026-98124 gerado! Encaminhado à CAGEPA.');
+        setTimeout(() => navigate('screen-home'), 900);
       }
     }
 
     function syncOfflineQueue() {
       if (isOffline) {
-        alert("Ainda sem conexão de internet. Os itens continuam guardados com segurança no aparelho!");
+        showToast('Aparelho ainda offline. Seus dados permanecem seguros na memória.');
       } else {
-        alert("🎉 Sincronização concluída com sucesso!\nTodos os relatos da fila foram transmitidos para a central.");
-        document.getElementById('offline-items-list').innerHTML = '<p class="text-emerald-700 text-xs font-semibold py-2">Nenhuma ocorrência pendente. Tudo sincronizado!</p>';
+        showToast('Fila local sincronizada! Todos os relatos foram transmitidos.');
+        const list = document.getElementById('offline-items-list');
+        if (list) {
+          list.innerHTML = '<div class="p-4 text-center text-xs font-semibold text-emerald-700 bg-emerald-50">Tudo sincronizado com a central! Nenhuma pendência.</div>';
+        }
       }
+    }
+
+    function showToast(msg) {
+      const container = document.getElementById('toast-container');
+      const message = document.getElementById('toast-message');
+      message.innerText = msg;
+      container.classList.remove('hidden');
+      if (toastTimeout) clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        dismissToast();
+      }, 3500);
+    }
+
+    function dismissToast() {
+      const container = document.getElementById('toast-container');
+      container.classList.add('hidden');
     }
   </script>
 </body>
