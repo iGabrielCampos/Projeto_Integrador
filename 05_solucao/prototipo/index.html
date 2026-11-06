@@ -108,6 +108,17 @@
       border-radius: 9999px;
     }
 
+    /* Feedback Tátil e Números Tabulares (Craft Floor) */
+    button, [role="button"] {
+      transition: transform 0.1s ease, background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    }
+    button:active, [role="button"]:active {
+      transform: scale(0.98);
+    }
+    .tabular-nums {
+      font-variant-numeric: tabular-nums;
+    }
+
     /* Indicador de foco visível (WCAG 2.4.7) */
     a:focus-visible,
     button:focus-visible,
@@ -329,6 +340,20 @@
     body.high-contrast #screen-mapa button[type="button"] {
       border: 2px solid #ffffff !important;
     }
+    body.high-contrast #map-pin-drawer {
+      background-color: #09090b !important;
+      border: 2px solid #ffe500 !important;
+      color: #ffffff !important;
+    }
+    body.high-contrast #map-pin-drawer dl div {
+      background-color: #18181b !important;
+    }
+    body.high-contrast #map-pin-drawer dt {
+      color: #e4e4e7 !important;
+    }
+    body.high-contrast #map-pin-drawer dd {
+      color: #ffe500 !important;
+    }
 
     /* Transparência e Barras de Progresso (TEL-05) */
     body.high-contrast [role="progressbar"],
@@ -437,7 +462,7 @@
     </header>
 
     <!-- Banner Informativo Offline (Comunicação clara e sem ruídos) -->
-    <div id="offline-banner" class="hidden bg-slate-900 border-b border-amber-500/50 text-white px-4 py-2.5 text-xs flex items-center justify-between">
+    <div id="offline-banner" role="region" aria-live="polite" class="hidden bg-slate-900 border-b border-amber-500/50 text-white px-4 py-2.5 text-xs flex items-center justify-between">
       <div class="flex items-center space-x-2">
         <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 4.243a9 9 0 01-2.829-2.829m0 0l2.829-2.829m-2.829 2.829L3 3m6.364 6.364a5 5 0 012.829-1.414" />
@@ -656,7 +681,7 @@
         <!-- Anexo de Foto com estado de seleção claro -->
         <div class="space-y-1.5">
           <label id="foto-label" class="block text-xs font-bold text-slate-800">Foto Comprobatória (Opcional)</label>
-          <div onclick="simulatePhotoCapture()" class="interactive-surface border-2 border-dashed border-slate-300 rounded-2xl p-5 text-center hover:border-brand-500 cursor-pointer bg-slate-50 transition flex flex-col items-center justify-center space-y-1.5" role="button" aria-labelledby="foto-label" tabindex="0">
+          <div onclick="simulatePhotoCapture()" onkeydown="if(event.key==='Enter'||event.key===' ') simulatePhotoCapture()" class="interactive-surface border-2 border-dashed border-slate-300 rounded-2xl p-5 text-center hover:border-brand-500 cursor-pointer bg-slate-50 transition flex flex-col items-center justify-center space-y-1.5" role="button" aria-labelledby="foto-label" tabindex="0">
             <span id="foto-preview-icon" class="text-slate-500">
               <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
             </span>
@@ -667,9 +692,9 @@
 
         <!-- Endereço com Label Explícito -->
         <div class="space-y-1.5">
-          <label for="denuncia-endereco" class="block text-xs font-bold text-slate-800">Endereço da Ocorrência</label>
+          <label for="denuncia-endereco" class="block text-xs font-bold text-slate-800">Endereço da Ocorrência <span class="text-rose-600 font-bold">*</span></label>
           <div class="relative">
-            <input type="text" id="denuncia-endereco" value="Rua da Areia, Ilha do Bispo, João Pessoa/PB" class="w-full p-3 text-sm border border-slate-300 rounded-xl pr-10 focus:ring-1 focus:ring-brand-500 font-medium text-slate-800">
+            <input type="text" id="denuncia-endereco" required aria-required="true" value="Rua da Areia, Ilha do Bispo, João Pessoa/PB" class="w-full p-3 text-sm border border-slate-300 rounded-xl pr-10 focus:ring-1 focus:ring-brand-500 font-medium text-slate-800">
             <span class="absolute right-3 top-3 text-slate-400">
               <svg class="w-5 h-5 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
             </span>
@@ -725,21 +750,46 @@
 
           <!-- Pins Georreferenciados como botões semânticos (Sem nested-cards) -->
           <div class="relative z-10 space-y-2">
-            <button type="button" onclick="showToast('Bairro Mangabeira: Cloro e coliformes dentro do padrão')" class="w-full bg-emerald-600/95 hover:bg-emerald-500 p-2.5 rounded-xl text-white font-bold text-xs flex items-center justify-between cursor-pointer shadow transition text-left">
+            <button type="button" onclick="selectMapPin('mangabeira')" class="w-full bg-emerald-600/95 hover:bg-emerald-500 p-2.5 rounded-xl text-white font-bold text-xs flex items-center justify-between cursor-pointer shadow transition text-left">
               <span>Mangabeira (Zona Sul)</span>
               <span class="bg-emerald-950/60 text-emerald-200 text-[10px] px-2 py-0.5 rounded font-mono font-bold">Própria</span>
             </button>
 
-            <button type="button" onclick="showToast('Alerta: Ilha do Bispo com 48h de interrupção')" class="w-full bg-rose-600/95 hover:bg-rose-500 p-2.5 rounded-xl text-white font-bold text-xs flex items-center justify-between cursor-pointer shadow transition text-left">
+            <button type="button" onclick="selectMapPin('ilha')" class="w-full bg-rose-600/95 hover:bg-rose-500 p-2.5 rounded-xl text-white font-bold text-xs flex items-center justify-between cursor-pointer shadow transition text-left">
               <span>Ilha do Bispo (Zona Oeste)</span>
               <span class="bg-rose-950/70 text-rose-200 text-[10px] px-2 py-0.5 rounded font-mono font-bold">Interrompida</span>
             </button>
 
-            <button type="button" onclick="showToast('Mandacaru: Turbidez em 6.2 NTU (Acima do limite de 5.0)')" class="w-full bg-amber-600/95 hover:bg-amber-500 p-2.5 rounded-xl text-white font-bold text-xs flex items-center justify-between cursor-pointer shadow transition text-left">
+            <button type="button" onclick="selectMapPin('mandacaru')" class="w-full bg-amber-600/95 hover:bg-amber-500 p-2.5 rounded-xl text-white font-bold text-xs flex items-center justify-between cursor-pointer shadow transition text-left">
               <span>Mandacaru (Zona Norte)</span>
               <span class="bg-amber-950/70 text-amber-200 text-[10px] px-2 py-0.5 rounded font-mono font-bold">Turbidez Alta</span>
             </button>
           </div>
+        </div>
+
+        <!-- Painel Detalhado do Laudo Sanitário Selecionado (Inspecionar parâmetros químicos) -->
+        <div id="map-pin-drawer" class="hidden p-4 bg-white rounded-2xl border border-slate-200 text-xs space-y-2.5 transition">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+            <div>
+              <h3 id="drawer-bairro-nome" class="font-extrabold text-sm text-slate-900">Mangabeira</h3>
+              <p id="drawer-coleta" class="text-[11px] text-slate-500">Coleta realizada hoje às 09:30</p>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span id="drawer-status-badge" class="px-2 py-0.5 rounded text-[11px] font-bold border bg-emerald-100 text-emerald-800 border-emerald-300">Conforme</span>
+              <button onclick="closeMapDrawer()" class="p-1 text-slate-400 hover:text-slate-600 rounded-lg text-sm font-bold" aria-label="Fechar detalhes">&times;</button>
+            </div>
+          </div>
+          <dl class="grid grid-cols-2 gap-2 text-[11px]">
+            <div class="p-2.5 bg-slate-50">
+              <dt class="text-slate-500 font-medium">Cloro Residual Livre</dt>
+              <dd id="drawer-cloro" class="text-slate-900 font-mono text-xs font-bold tabular-nums">1.4 mg/L</dd>
+            </div>
+            <div class="p-2.5 bg-slate-50">
+              <dt class="text-slate-500 font-medium">Turbidez da Água</dt>
+              <dd id="drawer-turbidez" class="text-slate-900 font-mono text-xs font-bold tabular-nums">1.8 NTU</dd>
+            </div>
+          </dl>
+          <p id="drawer-coliformes" class="text-[11px] text-slate-600 font-medium">Ausência de coliformes totais em 100 mL.</p>
         </div>
 
         <!-- Legenda Normativa -->
@@ -771,7 +821,7 @@
         <div class="border border-slate-200 rounded-2xl p-4 bg-white space-y-2.5">
           <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider">Perda Física na Distribuição (SNIS)</h3>
           <div class="flex items-baseline space-x-2">
-            <span class="text-3xl font-extrabold text-rose-600 font-mono">47,0%</span>
+            <span class="text-3xl font-extrabold text-rose-600 font-mono tabular-nums">47,0%</span>
             <span class="text-xs text-slate-600 font-medium">De toda água tratada se perde em vazamentos</span>
           </div>
           <div class="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden" role="progressbar" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100">
@@ -786,7 +836,7 @@
             <div>
               <div class="flex justify-between font-semibold mb-1">
                 <span class="text-slate-800">Ilha do Bispo</span>
-                <span class="text-rose-600 font-bold font-mono">54 horas</span>
+                <span class="text-rose-600 font-bold font-mono tabular-nums">54 horas</span>
               </div>
               <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
                 <div class="bg-rose-500 h-full w-[75%]"></div>
@@ -795,7 +845,7 @@
             <div>
               <div class="flex justify-between font-semibold mb-1">
                 <span class="text-slate-800">Mandacaru</span>
-                <span class="text-amber-600 font-bold font-mono">28 horas</span>
+                <span class="text-amber-600 font-bold font-mono tabular-nums">28 horas</span>
               </div>
               <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
                 <div class="bg-amber-500 h-full w-[40%]"></div>
@@ -804,7 +854,7 @@
             <div>
               <div class="flex justify-between font-semibold mb-1">
                 <span class="text-slate-800">Mangabeira</span>
-                <span class="text-emerald-600 font-bold font-mono">6 horas</span>
+                <span class="text-emerald-600 font-bold font-mono tabular-nums">6 horas</span>
               </div>
               <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
                 <div class="bg-emerald-500 h-full w-[10%]"></div>
@@ -837,10 +887,10 @@
           <strong>Critério Público de Prioridade:</strong> Caminhões-pipa são destinados primordialmente a Creches, Unidades de Saúde da Família (USF) e escolas públicas sem reservatório.
         </div>
 
-        <form onsubmit="event.preventDefault(); showToast('Chamado PIP-2026-PB registrado na Defesa Civil!'); navigate('screen-home');" class="space-y-4">
+        <form onsubmit="submitPipaForm(event)" class="space-y-4">
           <div class="space-y-1">
             <label for="pipa-instituicao" class="block text-xs font-bold text-slate-800">Instituição Beneficiária</label>
-            <select id="pipa-instituicao" class="w-full p-3 text-sm border border-slate-300 rounded-xl bg-white text-slate-800 focus:ring-1 focus:ring-brand-500">
+            <select id="pipa-instituicao" class="w-full p-3 text-sm border border-slate-300 rounded-xl bg-white text-slate-800 focus:ring-1 focus:ring-brand-500 font-medium">
               <option>Creche Comunitária Municipal</option>
               <option>Unidade Básica de Saúde (USF)</option>
               <option>Escola Pública Estadual/Municipal</option>
@@ -850,12 +900,12 @@
 
           <div class="space-y-1">
             <label for="pipa-dias" class="block text-xs font-bold text-slate-800">Dias sem abastecimento contínuo</label>
-            <input type="number" id="pipa-dias" value="4" min="1" max="30" class="w-full p-3 text-sm border border-slate-300 rounded-xl text-slate-800 focus:ring-1 focus:ring-brand-500">
+            <input type="number" id="pipa-dias" value="4" min="1" max="30" required aria-required="true" class="w-full p-3 text-sm border border-slate-300 rounded-xl text-slate-800 focus:ring-1 focus:ring-brand-500 font-medium tabular-nums">
           </div>
 
           <div class="space-y-1">
-            <label for="pipa-referencia" class="block text-xs font-bold text-slate-800">Ponto de Referência no Bairro</label>
-            <input type="text" id="pipa-referencia" value="Ao lado da Igreja Matriz da Ilha do Bispo" class="w-full p-3 text-sm border border-slate-300 rounded-xl text-slate-800 focus:ring-1 focus:ring-brand-500">
+            <label for="pipa-referencia" class="block text-xs font-bold text-slate-800">Ponto de Referência no Bairro <span class="text-rose-600 font-bold">*</span></label>
+            <input type="text" id="pipa-referencia" value="Ao lado da Igreja Matriz da Ilha do Bispo" required aria-required="true" class="w-full p-3 text-sm border border-slate-300 rounded-xl text-slate-800 focus:ring-1 focus:ring-brand-500 font-medium">
           </div>
 
           <button type="submit" class="btn-primary w-full min-h-[50px] bg-brand-700 hover:bg-brand-600 text-white font-bold px-4 rounded-xl text-sm shadow transition">
@@ -936,6 +986,14 @@
             </div>
             <input type="checkbox" id="check-font" onchange="toggleLargeFont()" class="w-5 h-5 text-brand-600 rounded focus:ring-brand-500">
           </label>
+
+          <label class="p-4 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition">
+            <div class="space-y-0.5 pr-4">
+              <span class="font-bold text-sm text-slate-900 block">Economia Extrema de Dados (2G)</span>
+              <span class="text-slate-500 block">Prioriza textos essenciais e suprime imagens pesadas em conexões lentas</span>
+            </div>
+            <input type="checkbox" id="check-data-saver" onchange="toggleDataSaver()" class="w-5 h-5 text-brand-600 rounded focus:ring-brand-500">
+          </label>
         </div>
 
         <div class="border border-slate-200 rounded-2xl p-4 bg-white text-xs space-y-1.5">
@@ -979,7 +1037,7 @@
     </nav>
 
     <!-- Notificação Acessível em Toast (Substitui os popups nativos de alert()) -->
-    <div id="toast-container" class="hidden fixed md:absolute top-16 left-4 right-4 z-50 bg-slate-900/95 backdrop-blur-sm text-white px-4 py-3 rounded-2xl shadow-xl border border-slate-700 text-xs font-semibold flex items-center justify-between transition-all duration-300">
+    <div id="toast-container" role="status" aria-live="polite" class="hidden fixed md:absolute top-16 left-4 right-4 z-50 bg-slate-900/95 backdrop-blur-sm text-white px-4 py-3 rounded-2xl shadow-xl border border-slate-700 text-xs font-semibold flex items-center justify-between transition-all duration-300">
       <div class="flex items-center space-x-2.5">
         <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
         <span id="toast-message">Mensagem do sistema</span>
@@ -993,6 +1051,7 @@
   <script>
     let isOffline = false;
     let toastTimeout = null;
+    let hasPhoto = false;
 
     function navigate(screenId) {
       const screens = [
@@ -1070,15 +1129,35 @@
       showToast(document.body.classList.contains('large-font') ? 'Tipografia ampliada (+150%)' : 'Tipografia normal');
     }
 
+    function toggleDataSaver() {
+      const chk = document.getElementById('check-data-saver');
+      showToast(chk && chk.checked ? 'Economia de Dados ativada (Imagens suprimidas)' : 'Modo padrão de dados restaurado');
+    }
+
     function simulatePhotoCapture() {
       const icon = document.getElementById('foto-preview-icon');
       const text = document.getElementById('foto-status-text');
-      icon.innerHTML = '<svg class="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>';
-      text.innerText = 'Foto capturada: torneira_seca_2026.webp (142 KB)';
-      showToast('Imagem comprimida em WebP (142 KB) com sucesso');
+      if (!hasPhoto) {
+        hasPhoto = true;
+        icon.innerHTML = '<svg class="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>';
+        text.innerText = 'Foto capturada: torneira_seca_2026.webp (142 KB)';
+        showToast('Imagem comprimida em WebP (142 KB) com sucesso');
+      } else {
+        hasPhoto = false;
+        icon.innerHTML = '<svg class="w-6 h-6 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" /></svg>';
+        text.innerText = 'Toque para Fotografar ou Escolher Imagem';
+        showToast('Foto removida');
+      }
     }
 
     function submitDenuncia() {
+      const enderecoInput = document.getElementById('denuncia-endereco');
+      const endereco = enderecoInput ? enderecoInput.value.trim() : '';
+      if (!endereco) {
+        showToast('Atenção: Por favor, informe a rua ou bairro do relato.');
+        if (enderecoInput) enderecoInput.focus();
+        return;
+      }
       if (isOffline) {
         showToast('Salvo no aparelho! Enviaremos automaticamente assim que o sinal voltar.');
         setTimeout(() => navigate('screen-offline'), 800);
@@ -1088,6 +1167,79 @@
       }
     }
 
+    function submitPipaForm(event) {
+      event.preventDefault();
+      const refInput = document.getElementById('pipa-referencia');
+      const ref = refInput ? refInput.value.trim() : '';
+      if (!ref) {
+        showToast('Atenção: Informe um ponto de referência para o caminhão-pipa.');
+        if (refInput) refInput.focus();
+        return;
+      }
+      showToast('Chamado PIP-2026-PB registrado na Defesa Civil!');
+      setTimeout(() => navigate('screen-home'), 900);
+    }
+
+    function selectMapPin(bairro) {
+      const data = {
+        'mangabeira': {
+          nome: 'Mangabeira (Zona Sul)',
+          status: 'Conforme',
+          badgeClass: 'bg-emerald-100 text-emerald-800 border-emerald-300',
+          cloro: '1.4 mg/L (Padrão: 0,2 a 2,0 mg/L)',
+          turbidez: '1.8 NTU (Limite máx: 5,0 NTU)',
+          coliformes: 'Ausência de coliformes totais em 100 mL.',
+          coleta: 'Coleta realizada hoje às 09:30 • CAGEPA'
+        },
+        'ilha': {
+          nome: 'Ilha do Bispo (Zona Oeste)',
+          status: 'Interrompida',
+          badgeClass: 'bg-rose-100 text-rose-800 border-rose-300',
+          cloro: '0.0 mg/L (Rede despressurizada)',
+          turbidez: 'Não mensurável (Sem vazão)',
+          coliformes: 'Risco de contaminação cruzada por pressão negativa.',
+          coleta: 'Ontem às 16:00 • Alerta Comunitário'
+        },
+        'mandacaru': {
+          nome: 'Mandacaru (Zona Norte)',
+          status: 'Turbidez Alta',
+          badgeClass: 'bg-amber-100 text-amber-800 border-amber-300',
+          cloro: '0.8 mg/L (Padrão: 0,2 a 2,0 mg/L)',
+          turbidez: '6.2 NTU (Acima do limite máx de 5.0 NTU)',
+          coliformes: 'Ausência de coliformes totais em 100 mL.',
+          coleta: 'Coleta hoje às 08:15 • Laudo Laboratorial'
+        }
+      };
+      const info = data[bairro];
+      if (!info) return;
+
+      const drawer = document.getElementById('map-pin-drawer');
+      const title = document.getElementById('drawer-bairro-nome');
+      const badge = document.getElementById('drawer-status-badge');
+      const cloro = document.getElementById('drawer-cloro');
+      const turb = document.getElementById('drawer-turbidez');
+      const coli = document.getElementById('drawer-coliformes');
+      const dataCol = document.getElementById('drawer-coleta');
+
+      if (title) title.innerText = info.nome;
+      if (badge) {
+        badge.innerText = info.status;
+        badge.className = 'px-2 py-0.5 rounded text-[11px] font-bold border ' + info.badgeClass;
+      }
+      if (cloro) cloro.innerText = info.cloro;
+      if (turb) turb.innerText = info.turbidez;
+      if (coli) coli.innerText = info.coliformes;
+      if (dataCol) dataCol.innerText = info.coleta;
+      if (drawer) drawer.classList.remove('hidden');
+
+      showToast('Laudo sanitário de ' + info.nome + ' carregado');
+    }
+
+    function closeMapDrawer() {
+      const drawer = document.getElementById('map-pin-drawer');
+      if (drawer) drawer.classList.add('hidden');
+    }
+
     function syncOfflineQueue() {
       if (isOffline) {
         showToast('Aparelho ainda offline. Seus dados permanecem seguros na memória.');
@@ -1095,7 +1247,15 @@
         showToast('Fila local sincronizada! Todos os relatos foram transmitidos.');
         const list = document.getElementById('offline-items-list');
         if (list) {
-          list.innerHTML = '<div class="p-4 text-center text-xs font-semibold text-emerald-700 bg-emerald-50">Tudo sincronizado com a central! Nenhuma pendência.</div>';
+          list.innerHTML = `
+            <div class="p-6 text-center space-y-2">
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-emerald-100 text-emerald-600">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              </span>
+              <p class="text-xs font-bold text-slate-900">Fila local 100% sincronizada</p>
+              <p class="text-[11px] text-slate-500">Nenhuma ocorrência pendente no aparelho. Central notificada com sucesso.</p>
+            </div>
+          `;
         }
       }
     }
