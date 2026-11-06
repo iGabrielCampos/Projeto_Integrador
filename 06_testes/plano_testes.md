@@ -14,7 +14,7 @@ versao_prototipo: 1.0
 
 ## 1. Contexto e Objetivos da Avaliação
 
-A solução **ÁguaViva PB** visa capacitar comunidades vulneráveis da Paraíba na fiscalização cidadã da água e saneamento (ODS 6). O presente plano define o protocolo de testes de usabilidade com protótipo de alta fidelidade e cenários interativos, focado em avaliar a eficácia, a eficiência, a tolerância a falhas e a satisfação de uso, em conformidade com as normas ISO 9241-11 e as diretrizes de acessibilidade WCAG 2.1 nível AA.
+A solução **ÁguaViva PB** visa capacitar comunidades vulneráveis da Paraíba na fiscalização cidadã da água e saneamento (ODS 6). O presente plano define o protocolo de testes de usabilidade com protótipo de alta fidelidade e cenários interativos, focado em avaliar a eficácia, a eficiência, a tolerância a falhas e a satisfação de uso, em conformidade com as normas ISO 9241-11 e as diretrizes de acessibilidade WCAG 2.2 nível AA.
 
 ### 1.1 Objetivos Específicos
 1. Mensurar a taxa de conclusão independente em 6 tarefas críticas do fluxo de monitoramento e denúncia comunitária.

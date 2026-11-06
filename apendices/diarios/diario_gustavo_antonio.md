@@ -42,7 +42,7 @@ periodo: 2026.2
 - **Atividade prática:** Condução do Experimento EXP-04 com Microsoft Copilot, submetendo cláusula de isenção total de danos por vazamento de dados e auditando a resposta gerada.
 - **Dificuldades:** Identificar quando a IA emitia interpretações baseadas no direito consuetudinário norte-americano (*common law*) em vez do direito brasileiro (*civil law*).
 - **Estratégias de superação:** Formulação de prompts restritivos exigindo enquadramento estrito na legislação brasileira e súmulas do STJ.
-- **Resultados obtidos:** Relatório de experimento auditado em `03_etica_ia/experimentos/exp_04_gustavo_antonio.md`.
+- **Resultados obtidos:** Relatório de experimento auditado em `03_etica_ia/experimentos/experimento_04_gustavo_antonio.md`.
 - **Novas ferramentas aprendidas:** Auditoria legal assistida por IA e detecção de vieses jurisdicionais em modelos proprietários.
 
 ---

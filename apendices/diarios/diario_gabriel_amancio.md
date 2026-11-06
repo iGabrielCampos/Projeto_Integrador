@@ -42,7 +42,7 @@ periodo: 2026.2
 - **Atividade prática:** Execução do Experimento EXP-01 utilizando ChatGPT (GPT-4o) para gerar endpoint de autenticação JWT, identificando ausência de rate limiting.
 - **Dificuldades:** Formular prompts que forçassem o modelo a explicitar as decisões de arquitetura e mitigação de força bruta.
 - **Estratégias de superação:** Aplicação de técnica *Chain-of-Thought* e auditoria estrita contra as diretrizes OWASP.
-- **Resultados obtidos:** Relatório prático documentado em `03_etica_ia/experimentos/exp_01_gabriel_amancio.md`.
+- **Resultados obtidos:** Relatório prático documentado em `03_etica_ia/experimentos/experimento_01_gabriel_amancio.md`.
 - **Novas ferramentas aprendidas:** OWASP API Security Guidelines e auditoria de vulnerabilidades em código gerado por IA.
 
 ---
@@ -60,7 +60,7 @@ periodo: 2026.2
 
 ---
 
-## Registro 05: Acessibilidade Web (WCAG 2.1 AA) e Design Responsável
+## Registro 05: Acessibilidade Web (WCAG 2.2 AA) e Design Responsável
 - **Data:** 2026-11-22 (Etapa 5 e 6)
 - **Conhecimento desenvolvido:** Critérios de contraste de cores, suporte a navegação por teclado e semântica WAI-ARIA em aplicações web móveis.
 - **Importância:** Permitir que pessoas idosas e com deficiência visual utilizem a plataforma cívica com autonomia.

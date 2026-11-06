@@ -114,7 +114,7 @@ ferramenta_slides: Figma / Google Slides
 - **Visual no Figma**: Telas navegáveis conceituais do protótipo no Figma (Tela Inicial, Mapa de Potabilidade por Bairro, Formulário de Denúncia em 2 passos, Central Emergencial de Carro-Pipa e Modo Alto Contraste).
 - **Orador**: Gabriel Amancio (2 minutos).
 - **Fala oral sugerida**:
-  > *"Aqui visualizamos as principais telas do nosso protótipo navegável de alta fidelidade desenhado no Figma. Priorizamos o minimalismo e a acessibilidade digital segundo os padrões WCAG 2.1 AA. Os botões de toque possuem área mínima generosa de 48 por 48 pixels para evitar toques acidentais por pessoas idosas. O mapa interativo utiliza cores semânticas intuitivas: verde para água potável e vermelha para áreas com interrupção ou contaminação. Com apenas três toques, o morador registra a falta d'água, anexa foto da torneira seca e recebe um número de protocolo coletivo, agrupando os vizinhos para cobrar celeridade da concessionária e acionar a Defesa Civil para envio de caminhão-pipa emergencial."*
+  > *"Aqui visualizamos as principais telas do nosso protótipo navegável de alta fidelidade desenhado no Figma. Priorizamos o minimalismo e a acessibilidade digital segundo os padrões WCAG 2.2 AA. Os botões de toque possuem área mínima generosa de 48 por 48 pixels para evitar toques acidentais por pessoas idosas. O mapa interativo utiliza cores semânticas intuitivas: verde para água potável e vermelha para áreas com interrupção ou contaminação. Com apenas três toques, o morador registra a falta d'água, anexa foto da torneira seca e recebe um número de protocolo coletivo, agrupando os vizinhos para cobrar celeridade da concessionária e acionar a Defesa Civil para envio de caminhão-pipa emergencial."*
 
 ---
 

@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-HTML5 semântico, Tailwind CSS (via CDN configurado com design tokens), Vanilla JavaScript (ES6+), Web Storage e IndexedDB simulado para persistência offline-first. Sem dependências pesadas de runtime para assegurar carregamento instantâneo em conexões 2G/3G e aparelhos de entrada.
+Protótipo em HTML/CSS/JS vanilla (HTML5 semântico, Tailwind CSS via CDN e Vanilla JavaScript ES6+); arquitetura-alvo React + Vite. Web Storage e modo offline simulado no protótipo para demonstração de fluxo; sem dependências pesadas de runtime para assegurar carregamento instantâneo em conexões 2G/3G e aparelhos de entrada.
 
 ## Users
 
@@ -20,7 +20,7 @@ Cidadãos e comunidades periféricas em situação de vulnerabilidade hídrica n
 
 ## Positioning
 
-A única solução de telemetria cidadã hiperlocal projetada especificamente para a realidade do Nordeste brasileiro: opera com 100% de funcionalidade offline (gravação local em IndexedDB quando o aparelho está sem crédito ou sinal de celular), consome menos de 300 KB por sessão completa e não exige login, CPF ou burocracia para acolher a denúncia comunitária.
+A única solução de telemetria cidadã hiperlocal projetada especificamente para a realidade do Nordeste brasileiro: protótipo conceitual navegável; a persistência offline real (Service Worker + IndexedDB) está especificada para a versão de produção (quando o aparelho está sem crédito ou sinal de celular), consome menos de 300 KB por sessão completa e não exige login, CPF ou burocracia para acolher a denúncia comunitária.
 
 ## Operating Context
 
@@ -31,9 +31,9 @@ A única solução de telemetria cidadã hiperlocal projetada especificamente pa
 
 ## Capabilities and Constraints
 
-- **Offline-First Nativo:** Armazenamento resiliente no navegador e fila automática de sincronização assim que a conectividade for detectada.
+- **Offline-First Nativo (arquitetura-alvo):** Armazenamento resiliente no navegador e fila automática de sincronização assim que a conectividade for detectada.
 - **Compressão de Mídia no Cliente:** Compressão client-side de fotografias em formato WebP (redução de 90% no tamanho do arquivo) para preservar a franquia de dados móveis do cidadão.
-- **Conformidade Acessível:** Nível WCAG 2.1 AA e AAA em itens críticos (alvos de toque mínimos de 48x48px, indicador de foco `:focus-visible` de 3px, ampliação tipográfica em +200%).
+- **Conformidade Acessível:** Nível WCAG 2.2 AA e AAA em itens críticos (alvos de toque mínimos de 48x48px, indicador de foco `:focus-visible` de 3px, ampliação tipográfica em +200%).
 - **Privacidade Cidadã Estrita (LGPD - Lei nº 13.709/2018):** Minimização radical de dados; proibição de coleta de CPF, RG ou números de telefone particulares. Geolocalização agregada por setor censitário para evitar retaliações.
 
 ## Brand Commitments
@@ -46,18 +46,18 @@ A única solução de telemetria cidadã hiperlocal projetada especificamente pa
 
 - **Dados Oficiais de Perdas:** SNIS (Sistema Nacional de Informações sobre Saneamento) comprovando 47,0% de perdas físicas na distribuição de água tratada na Paraíba.
 - **Parâmetros Sanitários:** Portaria GM/MS nº 888 do Ministério da Saúde para cloro residual (0,2 a 5,0 mg/L) e turbidez (≤ 5,0 NTU).
-- **Testes com Usuários Reais:** 36 participantes avaliados em testes de usabilidade, com tempo médio de relato de 1min 42s e taxa de sucesso de 91,7%.
+- **Testes com Usuários Reais:** 6 participantes voluntários (36 registros avaliados), com tempo médio de relato de 59,4 s, taxa de sucesso de 97,2% (35/36) e satisfação média de 4,58 / 5,0 (SUS 84,2).
 
 ## Product Principles
 
-1. **Estar offline é operação normal, não um erro:** O aplicativo nunca exibe telas de bloqueio de conexão; os dados são sempre guardados com segurança imediata no aparelho.
+1. **Estar offline é operação normal, não um erro:** O aplicativo nunca exibe telas de bloqueio de conexão; na versão de produção, os dados serão guardados localmente; o protótipo atual demonstra o fluxo visual.
 2. **Contraste e clareza salvam vidas:** Informações sanitárias e alertas devem ser legíveis sob sol a pino, sem degradar em cinzas lavados.
 3. **Respeito absoluto aos dados do cidadão:** Coletar estritamente o necessário para encaminhar a demanda pública, sem identificadores invasivos.
 4. **Agilidade máxima em emergências:** Toda ação prioritária (relatar falta d'água ou pedir caminhão-pipa) deve ser concluída em até 2 passos simples.
 
 ## Accessibility & Inclusion
 
-- Conformidade com as diretrizes WCAG 2.1 AA/AAA.
+- Conformidade com as diretrizes WCAG 2.2 AA/AAA.
 - Áreas de clique/toque de no mínimo 48x48px em todos os controles primários.
 - Modo de alto contraste verdadeiro (taxa > 14:1) e ampliação tipográfica (+200%).
 - Suporte total a leitores de tela com `aria-live="polite"` em notificações e atualizações de fila.

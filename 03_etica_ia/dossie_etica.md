@@ -101,13 +101,13 @@ A Tabela 1 detalha os 8 riscos prioritários mapeados pelo grupo, estabelecendo 
 | **RSK-E07** | Falhas de Disponibilidade e Perda de Backups | Ausência de redundância e negligência em testes de restore | Parada prolongada de serviços e perda irreversível de informações | Baixa | Alto | **Médio** | Estratégia de backup 3-2-1, monitoramento de saúde via Zabbix/Grafana e testes de recuperação de desastres. | Luiz Miguel (Infra) |
 | **RSK-E08** | Pegada Energética e Consumo de Nuvem (Green IT) | Microsserviços ociosos e pipelines de dados ineficientes | Desperdício de recursos naturais e impacto no aquecimento global | Média | Médio | **Médio** | Arquitetura de computação sustentável (Green IT): desligamento de ambientes ociosos e cache inteligente. | Luiz Miguel (Infra) |
 
-*Fonte: Consolidação analítica do artefato canônico [`03_etica_ia/matriz_riscos.md`](file:///home/campos/Documents/Projetos/Projeto_Integrador/03_etica_ia/matriz_riscos.md).*
+*Fonte: Consolidação analítica do artefato canônico [`03_etica_ia/matriz_riscos.md`](matriz_riscos.md).*
 
 ---
 
 ## 4. SÍNTESE DOS EXPERIMENTOS PRÁTICOS COM FERRAMENTAS DE IA REAL
 
-Em observância à regra de autoria e metodologia empírica do DESAFIO_PRATICO, os quatro estudantes conduziram experimentos práticos reais utilizando diferentes ferramentas de Inteligência Artificial generativa de mercado, registrando prompts exatos, avaliações críticas e a posterior conferência humana dos resultados. A Tabela 2 sintetiza os experimentos documentados em detalhes na pasta [`03_etica_ia/experimentos/`](file:///home/campos/Documents/Projetos/Projeto_Integrador/03_etica_ia/experimentos/).
+Em observância à regra de autoria e metodologia empírica do DESAFIO_PRATICO, os quatro estudantes conduziram experimentos práticos reais utilizando diferentes ferramentas de Inteligência Artificial generativa de mercado, registrando prompts exatos, avaliações críticas e a posterior conferência humana dos resultados. A Tabela 2 sintetiza os experimentos documentados em detalhes na pasta [`03_etica_ia/experimentos/`](experimentos/).
 
 ### Tabela 2: Síntese dos Experimentos Individuais com Ferramentas de IA
 

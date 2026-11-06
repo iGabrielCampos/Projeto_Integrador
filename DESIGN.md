@@ -150,7 +150,7 @@ A paleta equilibra tons de água tratada (Teal profundo e esmeralda) com amarelo
 - **Tela Base Claro** (`#f8fafc`): Fundo suave que previne fadiga ocular em uso contínuo.
 - **Superfície Card** (`#ffffff`): Painéis e cartões de conteúdo com bordas estruturais finas.
 - **Texto Principal** (`#0f172a`): Contraste 15.8:1 contra o fundo branco.
-- **Texto Secundário** (`#64748b`): Contraste 4.6:1 em corpo pequeno, garantindo cumprimento da norma WCAG 2.1 AA.
+- **Texto Secundário** (`#64748b`): Contraste 4.6:1 em corpo pequeno, garantindo cumprimento da norma WCAG 2.2 AA.
 - **Preto OLED (Black Theme)** (`#000000`): Fundo absoluto do modo foco para economia de bateria e contraste extremo.
 - **Amarelo Elétrico (High Contrast)** (`#ffe500`): Contraste 19.5:1 contra o fundo preto puro.
 

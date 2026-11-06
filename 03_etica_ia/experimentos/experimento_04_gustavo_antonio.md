@@ -61,7 +61,7 @@ O modelo gerou um termo de consentimento com seções identificadas:
 ## 6. Procedimento de Verificação Humana (Fact-Checking)
 1. O texto gerado foi comparado diretamente com a redação dos artigos 6º (Princípios), 7º (Bases Legais), 8º (Consentimento) e 18 (Direitos do Titular) da Lei nº 13.709/2018 `[F001]`.
 2. Foi suprimida a cláusula de isenção de responsabilidade abusiva.
-3. Inseriu-se a garantia explícita de anonimização (pseudônimos P1 a P6), alinhando o termo com o nosso modelo oficial [`apendices/termos/tcle_modelo.md`](file:///home/campos/Documents/Projetos/Projeto_Integrador/apendices/termos/tcle_modelo.md).
+3. Inseriu-se a garantia explícita de anonimização (pseudônimos P1 a P6), alinhando o termo com o nosso modelo oficial [`apendices/termos/tcle_modelo.md`](../../apendices/termos/tcle_modelo.md).
 
 ---
 

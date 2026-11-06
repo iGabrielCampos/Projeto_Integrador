@@ -46,7 +46,7 @@ A pesquisa adotou uma abordagem quanti-qualitativa, de natureza descritiva e exp
 - **Universo Amostral:** Plataformas de recrutamento e páginas corporativas oficiais, com ênfase no ecossistema Gupy `[F020]`, selecionado pela padronização e detalhamento de seus editais de vagas.
 - **Tamanho da Amostra:** 24 vagas reais analisadas (6 vagas para cada uma das 4 funções investigadas), superando o quantitativo mínimo regulamentar de 20 vagas exigido pelo `DESAFIO_PRATICO.md`.
 - **Filtros Aplicados:** Modelo de atuação Remoto (Home Office) ou polos tecnológicos no Nordeste (com destaque para Paraíba e Pernambuco) `[F022]`, nos níveis de experiência de Estágio e Júnior.
-- **Rastreabilidade e Não-Duplicação:** Todos os registros brutos foram catalogados sob o Contrato de Dados no arquivo [`01_mercado/vagas_brutas.csv`](file:///home/campos/Documents/Projetos/Projeto_Integrador/01_mercado/vagas_brutas.csv) e estruturados em formato JSON [`01_mercado/vagas_brutas.json`](file:///home/campos/Documents/Projetos/Projeto_Integrador/01_mercado/vagas_brutas.json), constituindo a **fonte única da verdade** para os cálculos estatísticos.
+- **Rastreabilidade e Não-Duplicação:** Todos os registros brutos foram catalogados sob o Contrato de Dados no arquivo [`01_mercado/vagas_brutas.csv`](vagas_brutas.csv) e estruturados em formato JSON [`01_mercado/vagas_brutas.json`](vagas_brutas.json), constituindo a **fonte única da verdade** para os cálculos estatísticos.
 
 ---
 
@@ -114,7 +114,7 @@ A padronização das competências brutas extraídas dos editais gerou a Tabela 
 | **LGPD e Privacidade de Dados `[F001]`** | Técnica / Legal | 0 (0,0%) | 0 (0,0%) | 1 (16,7%) | 3 (50,0%) | 4 | 16,7% |
 | **IA Generativa e Modelos de Linguagem (LLMs)** | Técnica | 1 (16,7%) | 0 (0,0%) | 2 (33,3%) | 0 (0,0%) | 3 | 12,5% |
 
-*Fonte: Compilação analítica derivada de [`01_mercado/planilha_Frequencia_por_Funcao.csv`](file:///home/campos/Documents/Projetos/Projeto_Integrador/01_mercado/planilha_Frequencia_por_Funcao.csv).*
+*Fonte: Compilação analítica derivada de [`01_mercado/planilha_Frequencia_por_Funcao.csv`](planilha_Frequencia_por_Funcao.csv).*
 
 ---
 

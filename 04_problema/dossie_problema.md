@@ -51,7 +51,7 @@ Antes da escolha definitiva, o grupo investigou três cenários de relevância s
 | **Problema 2: Insegurança Alimentar e Desperdício de Comida** | **ODS 2** (Fome Zero) e **ODS 12** (Consumo Responsável) | Índices de insegurança alimentar moderada/grave no Nordeste acima de 30% (dados IPEA); toneladas de perdas em feiras livres. | Famílias em vulnerabilidade extrema e cooperativas de coleta. | *Descartado.* Complexidade logística física excessiva de transporte refrigerado e perecibilidade de alimentos fora do escopo de software. |
 | **Problema 3: Alagamentos e Desastres em Encostas Urbanas** | **ODS 11** (Cidades Sustentáveis) e **ODS 13** (Ação Climática) | Centenas de pontos críticos mapeados pela Defesa Civil de João Pessoa em margens de rios (Jaguaribe/Santhau) e barreiras. | Comunidades ribeirinhas de João Pessoa e encostas urbanas. | *Descartado.* Elevada dependência de hardware e sensores geotécnicos/pluviométricos de alto custo, inviabilizando testes com protótipo visual. |
 
-*Fonte: Elaborado pelos autores com base em [`04_problema/matriz_decisao.md`](file:///home/campos/Documents/Projetos/Projeto_Integrador/04_problema/matriz_decisao.md).*
+*Fonte: Elaborado pelos autores com base em [`04_problema/matriz_decisao.md`](matriz_decisao.md).*
 
 ---
 

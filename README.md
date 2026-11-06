@@ -12,7 +12,7 @@
 
 Este repositório consolida o projeto acadêmico interdisciplinar desenvolvido por quatro discentes de Análise e Desenvolvimento de Sistemas do UNIPÊ. O trabalho conecta as demandas reais do mercado corporativo de Tecnologia da Informação (TI) à responsabilidade cívica e socioambiental no estado da Paraíba.
 
-A partir do diagnóstico empírico de carências em saneamento básico e vulnerabilidade hídrica com microdados do **Censo IBGE 2022**, **SNIS** e **DATASUS**, a equipe concebeu, modelou e validou empiricamente a plataforma cívica **ÁguaViva PB**: um Progressive Web App (PWA) de arquitetura *offline-first* para fiscalização participativa da qualidade da água, denúncia de desabastecimento e solicitação emergencial de suporte comunitário.
+A partir do diagnóstico empírico de carências em saneamento básico e vulnerabilidade hídrica com microdados do **Censo IBGE 2022**, **SNIS** e **DATASUS**, a equipe concebeu, modelou e validou empiricamente a plataforma cívica **ÁguaViva PB**: um protótipo conceitual de Progressive Web App (PWA) com arquitetura-alvo *offline-first* para fiscalização participativa da qualidade da água, denúncia de desabastecimento e solicitação emergencial de suporte comunitário.
 
 ```
                   ┌──────────────────────────────────────────────┐
@@ -25,7 +25,7 @@ A partir do diagnóstico empírico de carências em saneamento básico e vulnera
   [ MERCADO & CARREIRA ]        [ ÉTICA & AUDITORIA IA ]     [ ENGENHARIA CÍVICA: ÁGUAVIVA PB ]
   • 24 Vagas Reais em TI        • Casos Reais (CESeC/ANPD)   • Diagnóstico Censitário (ODS 6 PB)
   • Matrizes de Competências    • Matriz de 8 Riscos Éticos  • Arquitetura C4 Model & BDD
-  • 4 PDIs com Metas SMART      • 4 Experimentos com LLMs    • PWA Offline-First (IndexedDB)
+  • 4 PDIs com Metas SMART      • 4 Experimentos com LLMs    • PWA conceitual + offline-first
   • Portfólios no GitHub        • Detecção de Alucinações    • Testes SUS: 84,2 pts (N=6, 36 testes)
 ```
 
@@ -37,7 +37,7 @@ O projeto aplicou um modelo profissional de **rodízio obrigatório de lideranç
 
 | Integrante | Especialidade no Projeto | Liderança de Etapa | Subagente de Apoio IA | Contribuição Central |
 |---|---|---|---|---|
-| **Gabriel Amancio** | Desenvolvimento de Software | **Etapas 3 e 5** | SA-1 / SA-4 | Arquitetura C4, especificação BDD, PWA, WCAG 2.1 AA |
+| **Gabriel Amancio** | Desenvolvimento de Software | **Etapas 3 e 5** | SA-1 / SA-4 | Arquitetura C4, especificação BDD, PWA, WCAG 2.2 AA |
 | **Luiz Miguel** | Infraestrutura e Redes | **Etapas 2 e 6** | SA-2 / SA-4 | Resiliência offline, testes de usabilidade, cálculo SUS |
 | **Paulo Germano** | Ciência de Dados e IA | **Etapa 1** | SA-2 / SA-3 | Amostragem de vagas, estatística descritiva, microdados IBGE |
 | **Gustavo Antonio** | Segurança da Informação | **Etapas 0 e 4** | SA-3 / SA-1 | LGPD, matriz de conformidade, Ishikawa, modelagem STRIDE |
@@ -85,10 +85,10 @@ Se você é um colega de equipe, professor examinador ou um agente de Inteligên
 │   ├── dossie_etica.md                -> DOCUMENTO-MESTRE DA ETAPA 3 (Análise CESeC e ANPD)
 │   ├── matriz_riscos.md               -> Matriz com 8 riscos éticos, jurídicos e ambientais
 │   └── experimentos/                  -> 4 logs práticos de auditoria de alucinações em LLMs:
-│       ├── exp_01_gabriel_amancio.md  -> ChatGPT (GPT-4o): Falha de rate limiting em JWT
-│       ├── exp_02_luiz_miguel.md      -> Claude 3.5 Sonnet: Precedência de DROP em iptables
-│       ├── exp_03_paulo_germano.md    -> Gemini 1.5 Pro: Alucinação aritmética em soma contábil
-│       └── exp_04_gustavo_antonio.md  -> Copilot: Cláusula abusiva de isenção sob a LGPD/CDC
+│       ├── experimento_01_gabriel_amancio.md  -> ChatGPT (GPT-4o): Falha de rate limiting em JWT
+│       ├── experimento_02_luiz_miguel.md      -> Claude 3.5 Sonnet: Precedência de DROP em iptables
+│       ├── experimento_03_paulo_germano.md    -> Gemini 1.5 Pro: Alucinação aritmética em soma contábil
+│       └── experimento_04_gustavo_antonio.md  -> Copilot: Cláusula abusiva de isenção sob a LGPD/CDC
 │
 ├── 📁 04_problema/                    <-- Etapa 4: Diagnóstico socioambiental e seleção fundamentada
 │   ├── dossie_problema.md             -> DOCUMENTO-MESTRE DA ETAPA 4 (Ishikawa, Censo IBGE e Personas)
@@ -138,7 +138,7 @@ Se você é um colega de equipe, professor examinador ou um agente de Inteligên
 ## 🔬 Detalhamento das 7 Etapas do Projeto
 
 ### Etapa 1: Diagnóstico do Mercado de Trabalho em TI (Líder: Paulo Germano)
-- **Base empírica:** 24 anúncios reais coletados em plataformas públicas (Gupy, Indeed, InfoJobs) entre 08 e 10/11/2026, com paridade estrita de 6 vagas por especialidade.
+- **Base empírica:** 24 anúncios reais coletados na plataforma pública Portal Gupy [F020] em 06/11/2026, com paridade estrita de 6 vagas por especialidade.
 - **Achados quantitativos:** Controle de versão Git (87,5%), SQL (79,2%) e contêineres Docker (58,3%) surgiram como linha de base inegociável para início de carreira. Em desenvolvimento, React e Java Spring dominam; em infraestrutura, computação em nuvem AWS; em dados, Python puro; e em segurança, conhecimentos de LGPD e testes de intrusão.
 - **Dores dos contratantes:** Modernização de sistemas legados, adequação regulatória à ANPD e contenção de custos de nuvem (*FinOps*).
 - **Artefatos:** [`01_mercado/dossie_mercado.md`](01_mercado/dossie_mercado.md), [`01_mercado/vagas_brutas.csv`](01_mercado/vagas_brutas.csv).
@@ -163,8 +163,8 @@ Se você é um colega de equipe, professor examinador ou um agente de Inteligên
 - **Artefatos:** [`04_problema/dossie_problema.md`](04_problema/dossie_problema.md), [`04_problema/matriz_decisao.md`](04_problema/matriz_decisao.md).
 
 ### Etapa 5: Concepção da Solução Tecnológica "ÁguaViva PB" (Líder: Gabriel Amancio)
-- **Paradigma arquitetural:** Progressive Web App (PWA) *Offline-First*. Service Worker intercepta requisições e salva relatos com fotos comprimidas no IndexedDB do celular. Ao detectar conexão, sincroniza automaticamente com o backend em nuvem (Docker/Node.js/PostgreSQL).
-- **Requisitos e BDD:** 12 Requisitos Funcionais priorizados com MoSCoW, 8 Requisitos Não Funcionais com métricas de desempenho e acessibilidade (WCAG 2.1 AA) e 8 Histórias de Usuário em formato *Given-When-Then*.
+- **Paradigma arquitetural:** Protótipo conceitual de PWA; na arquitetura-alvo, o Service Worker intercepta requisições e salva relatos com fotos comprimidas no IndexedDB do celular, sincronizando automaticamente com o backend em nuvem (Docker/Node.js/PostgreSQL) ao detectar conexão.
+- **Requisitos e BDD:** 12 Requisitos Funcionais priorizados com MoSCoW, 8 Requisitos Não Funcionais com métricas de desempenho e acessibilidade (WCAG 2.2 AA) e 8 Histórias de Usuário em formato *Given-When-Then*.
 - **Telas:** Especificação ergonômica detalhada de 8 telas conceituais para prototipagem no Figma (botões táteis de 48x48px, alto contraste de 12:1 e seletor de fonte +200%).
 - **Artefatos:** [`05_solucao/dossie_solucao.md`](05_solucao/dossie_solucao.md), [`05_solucao/requisitos.md`](05_solucao/requisitos.md), [`05_solucao/diagramas/`](05_solucao/diagramas/), [`05_solucao/prototipo/`](05_solucao/prototipo/).
 
@@ -172,11 +172,11 @@ Se você é um colega de equipe, professor examinador ou um agente de Inteligên
 - **Amostra e ética:** 6 participantes voluntários adultos (P1 a P6) com diversidade etária (23 a 64 anos) e de letramento digital, todos com TCLE assinado sob a LGPD.
 - **Protocolo de testes:** 6 tarefas padronizadas (T01 a T06) avaliadas sob a técnica *Think-Aloud*, totalizando 36 observações controladas.
 - **Resultados empíricos:** 97,2% de taxa de eficácia (35/36 conclusões autônomas), tempo médio de 59,4 segundos e pontuação SUS de **84,2 pontos em 100** (classificação "Excelente", Grade A, percentil >90).
-- **Refatoração v1.0 -> v2.0:** Substituição de avisos com jargão técnico ("cache IndexedDB") por linguagem natural e acolhedora, fixação do botão de envio em barra flutuante inferior (*sticky bottom*), inclusão de botões grandes de zoom no mapa (+/-) e resposta com vibração háptica.
+- **Refatoração v1.0 -> v2.0:** Substituição de avisos com jargão técnico ("cache IndexedDB") por linguagem natural e acolhedora, fixação do botão de envio em barra flutuante inferior (*sticky bottom*), inclusão de botões grandes de zoom no mapa (+/-) e resposta com vibração háptica (prevista para a versão de produção).
 - **Artefatos:** [`06_testes/dossie_testes.md`](06_testes/dossie_testes.md), [`06_testes/plano_testes.md`](06_testes/plano_testes.md), [`06_testes/registros_anonimizados.csv`](06_testes/registros_anonimizados.csv).
 
 ### Etapa 7: Sistematização, Relatório ABNT e Defesa (Coordenação Coletiva)
-- **Monografia oficial:** Documento integrado completo em normas ABNT (10 capítulos, 10.548 palavras, ~25,7 páginas formatadas, 28 referências formais `[F001]` a `[F082]` e 3 apêndices).
+- **Monografia oficial:** Documento integrado completo em normas ABNT (10 capítulos, 11.860 palavras, 34 páginas no PDF, 28 referências formais `[F001]` a `[F082]` e 3 apêndices).
 - **Slides para Figma MCP:** Arquivo [`07_relatorio/slides_figma_spec.json`](07_relatorio/slides_figma_spec.json) estruturado com especificações prontas para montagem automatizada via IA.
 - **Roteiro e Script Oral:** 13 slides organizados com divisão equitativa de falas (18 a 20 minutos de apresentação).
 - **Banco de Defesa:** 20 perguntas prováveis da banca examinadora com gabarito técnico fundamentado para preparação individual dos discentes.

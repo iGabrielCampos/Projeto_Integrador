@@ -13,6 +13,8 @@ fontes:
 
 Esta especificação descreve a composição visual, elementos interativos, rotulagem acessível e comportamento das **8 telas e estados de interface** projetados para o protótipo da solução tecnológica no **Figma**.
 
+> **Nota de Alinhamento Metodológico:** A taxonomia final estrutural adotada no protótipo navegável (`05_solucao/prototipo/index.html`) e consolidada na monografia oficial (`07_relatorio/relatorio_final.md`) é **TEL-01 a TEL-08** (`screen-home`, `screen-denuncia-1`, `screen-denuncia-2`, `screen-mapa`, `screen-transparencia`, `screen-pipa`, `screen-offline`, `screen-acessibilidade`). Telas e estados conceituais da presente especificação preliminar que não viraram telas principais autônomas (Confirmação com Protocolo, Guia Prático, Módulo ACS e Estado de Erro) constituem estados/fluxos internos (toasts, cards contextuais e modais) ou estão especificados como escopo de evolução futura para a versão de produção, sem compor telas separadas no protótipo atual.
+
 ---
 
 ### Tela 01: Página Inicial / Dashboard Comunitário (Home)

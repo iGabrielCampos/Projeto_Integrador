@@ -94,7 +94,7 @@ graph TD
     subgraph CLIENTE["Camada Cliente (PWA Responsivo)"]
         USR["Cidadão Morador (Smartphone 3G/4G)"]
         ACS["Agente Comunitário de Saúde (Tablet/Celular)"]
-        PWA["Interface Web ÁguaViva PB (React + Vite + TailwindCSS)<br>WCAG 2.2 AA / Service Worker Offline"]
+        PWA["Interface Web ÁguaViva PB (Protótipo entregue: HTML/CSS/JS vanilla; Arquitetura-alvo: React + Vite)<br>WCAG 2.2 AA / Service Worker Offline"]
     end
 
     subgraph BORDA["Camada de Borda & Segurança"]
@@ -237,7 +237,7 @@ A escolha da stack foi orientada diretamente pelas competências identificadas c
 
 | Camada | Tecnologia Selecionada | Versão / Padrão | Justificativa Técnica e Acadêmica |
 |---|---|---|---|
-| **Frontend Web** | React + Vite + TailwindCSS | React 18+ / PWA | Ecossistema web leve, compatibilidade total com dispositivos móveis modestos e suporte nativo a acessibilidade WCAG. |
+| **Frontend Web** | Protótipo: HTML/CSS/JS vanilla; Arquitetura-alvo: React + Vite + TailwindCSS | Protótipo entregue / PWA alvo | Protótipo conceitual em vanilla JS para validação rápida; React + Vite como arquitetura-alvo para produção e ecossistema PWA. |
 | **Backend / API** | Node.js + Express + TypeScript | Node 20 LTS | Arquitetura RESTful tipada, assíncrona, de alto desempenho para concorrência de requisições e de fácil manutenção pelo estudante de Dev (Gabriel). |
 | **Banco de Dados** | PostgreSQL + PostGIS | Postgres 16 | Banco relacional robusto com extensão espacial líder mundial para consultas de latitude/longitude e agregação em polígonos de bairros (Paulo). |
 | **Borda e Infraestrutura** | Docker + Nginx Reverse Proxy | Nginx Alpine | Contêineres leves, baixo consumo de memória RAM, terminação SSL/TLS 1.3 e esteira de sustentação administrada pelo estudante de Infra (Luiz). |
@@ -248,7 +248,7 @@ A escolha da stack foi orientada diretamente pelas competências identificadas c
 
 ## 7. ESPECIFICAÇÃO DAS 8 TELAS E ESTADOS DE INTERFACE PARA O PROTÓTIPO (FIGMA)
 
-O protótipo do **ÁguaViva PB** contempla a jornada de ponta a ponta dos usuários, documentada detalhadamente no artefato canônico [`05_solucao/prototipo/especificacao_telas.md`](file:///home/campos/Documents/Projetos/Projeto_Integrador/05_solucao/prototipo/especificacao_telas.md):
+O protótipo do **ÁguaViva PB** contempla a jornada de ponta a ponta dos usuários, documentada detalhadamente no artefato canônico [`05_solucao/prototipo/especificacao_telas.md`](prototipo/especificacao_telas.md):
 
 1. **Tela 01 – Página Inicial / Dashboard Comunitário (Home):** Visão rápida de alertas de desabastecimento ativos no topo com alto contraste, botão central destacado de reporte ("Reportar Falta de Água ou Esgoto") e mini-mapa de queixas nas últimas 24 horas.
 2. **Tela 02 – Formulário Acessível de Registro de Ocorrência:** Seleção rápida em 4 cartões com ícones ilustrativos (Falta d'Água, Água Turva/Barrenta, Esgoto a Céu Aberto, Cano Estourado), localização assistida por GPS/Bairro e campo opcional de foto com metadados removidos.

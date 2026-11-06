@@ -207,7 +207,7 @@ This integrated technical-scientific monograph presents the comprehensive outcom
 ## 1. INTRODUÇÃO
 
 ### 1.1 Contextualização e Justificativa
-A aceleração da transformação digital e a onipresença dos sistemas computacionais em serviços essenciais do cotidiano têm redefinido as exigências formativas dos egressos de cursos de Tecnologia da Informação [F001]. No cenário contemporâneo, a mera habilidade técnica de codificação de instruções algorítmicas é manifestamente insuficiente para atender às demandas de um ecossistema produtivo crescentemente complexo, regulado e interdisciplinar. Exige-se do desenvolvedor moderno competências robustas de análise crítica, sensibilidade ética perante a Lei Geral de Proteção de Dados (LGPD) [F002], capacidade de auditoria sobre sistemas automatizados e, fundamentalmente, compromisso cívico com a resolução de problemas socioambientais concretos [F003].
+A aceleração da transformação digital e a onipresença dos sistemas computacionais em serviços essenciais do cotidiano têm redefinido as exigências formativas dos egressos de cursos de Tecnologia da Informação. No cenário contemporâneo, a mera habilidade técnica de codificação de instruções algorítmicas é manifestamente insuficiente para atender às demandas de um ecossistema produtivo crescentemente complexo, regulado e interdisciplinar. Exige-se do desenvolvedor moderno competências robustas de análise crítica, sensibilidade ética perante a Lei Geral de Proteção de Dados (LGPD) [F001], Marco Civil da Internet [F002], respeito aos direitos autorais [F003], capacidade de auditoria sobre sistemas automatizados e, fundamentalmente, compromisso cívico com a resolução de problemas socioambientais concretos.
 
 No estado da Paraíba, a despeito dos polos tecnológicos em expansão nas cidades de João Pessoa e Campina Grande, coexistem desafios históricos e severos relacionados à infraestrutura básica. Conforme dados do Censo Demográfico do Instituto Brasileiro de Geografia e Estatística (IBGE) [F070], mais de 50,9% dos domicílios particulares permanentes do território paraibano não contam com ligação à rede geral de esgoto sanitário, dependendo de fossas rudimentares, valas a céu aberto ou descarte precário no meio ambiente. Simultaneamente, relatórios oficiais do Sistema Nacional de Informações sobre Saneamento (SNIS) [F071] apontam que aproximadamente 47,0% de toda a água tratada distribuída no estado é perdida antes de alcançar a torneira do consumidor final, em virtude de vazamentos ocultos, tubulações obsoletas e fraudes na rede. Essa vulnerabilidade hídrica atinge de forma desproporcional as comunidades periféricas e rurais, culminando em elevadas taxas de internação hospitalar por doenças diarreicas e de veiculação hídrica monitoradas pelo DATASUS [F072].
 
@@ -219,13 +219,13 @@ Diante desse panorama, o Projeto Integrador de Design Profissional do Centro Uni
 Desenvolver um percurso investigativo, formativo e tecnológico integrado, articulando pesquisa de mercado de trabalho em TI, planejamento estratégico de carreira, auditoria ética de Inteligência Artificial e a concepção e validação ergonômica de uma plataforma cívica voltada ao saneamento básico e monitoramento participativo da água na Paraíba.
 
 #### 1.2.2 Objetivos Específicos
-1. Coletar e analisar empiricamente 24 anúncios reais de vagas de TI no Brasil (6 por área de especialidade), mapeando a taxonomia de competências técnicas e socioemocionais exigidas no mercado júnior e de estágio [F020, F021, F022].
-2. Estruturar matrizes individuais de autoavaliação profissional e Planos de Desenvolvimento Individual (PDI) com metas fundamentadas no método SMART para os quatro integrantes da equipe [F001].
+1. Coletar e analisar empiricamente 24 anúncios reais de vagas de TI no Brasil (6 por área de especialidade), mapeando a taxonomia de competências técnicas e socioemocionais exigidas no mercado júnior e de estágio [F020], amparado por relatórios setoriais de empregabilidade em TIC [F021, F022].
+2. Estruturar matrizes individuais de autoavaliação profissional e Planos de Desenvolvimento Individual (PDI) com metas fundamentadas no método SMART para os quatro integrantes da equipe.
 3. Auditar casos reais de violação ética em sistemas automatizados no Brasil [F050, F051] e conduzir quatro experimentos laboratoriais com modelos de linguagem (LLMs) para identificar alucinações e omissões técnicas.
-4. Elaborar uma análise diagnóstica multicritério de problemas socioambientais na Paraíba, fundamentando a escolha do ODS 6 (Água Potável e Saneamento) [F003, F070, F071, F072].
-5. Especificar a arquitetura técnica (C4 Model), os requisitos funcionais e não funcionais (MoSCoW e BDD) e o protótipo de alta fidelidade da aplicação **ÁguaViva PB**, com suporte integral a funcionamento *offline-first* e acessibilidade WCAG 2.1 nível AA.
+4. Elaborar uma análise diagnóstica multicritério de problemas socioambientais na Paraíba, fundamentando a escolha do ODS 6 (Água Potável e Saneamento) [F070, F071, F072].
+5. Especificar a arquitetura técnica (C4 Model), os requisitos funcionais e não funcionais (MoSCoW e BDD) e o protótipo de alta fidelidade da aplicação **ÁguaViva PB**, com suporte integral a funcionamento *offline-first* e acessibilidade WCAG 2.2 nível AA [F007].
 6. Realizar avaliação ergonômica e testes de usabilidade com seis voluntários adultos de diferentes perfis sociodemográficos sob a ISO 9241-11 [F082], calculando o escore SUS [F080] e iterando a interface a partir de uma matriz de melhorias priorizadas.
-7. Sistematizar todo o acervo técnico e científico em monografia padronizada pelas normas ABNT e estruturar o roteiro de apresentação e defesa oral coletiva.
+7. Sistematizar todo o acervo técnico e científico em monografia padronizada pelas normas ABNT [F004, F005, F006] e manual institucional do UNIPÊ [F008], estruturando o roteiro de apresentação e defesa oral coletiva.
 
 ### 1.3 Estrutura do Documento Monográfico
 O trabalho está organizado em 10 capítulos temáticos: o Capítulo 2 detalha a metodologia de governança e integridade acadêmica; o Capítulo 3 reporta a pesquisa empírica de mercado em TI; o Capítulo 4 consolida o diagnóstico de carreira e PDIs individuais; o Capítulo 5 aborda a ética e os experimentos com IA; o Capítulo 6 fundamenta o problema socioambiental selecionado; o Capítulo 7 detalha a especificação técnica da plataforma ÁguaViva PB; o Capítulo 8 descreve os testes de usabilidade e o protótipo revisado; o Capítulo 9 discute a integração dos resultados e trabalhos futuros; e o Capítulo 10 tece as considerações finais, seguido pelas referências e apêndices comprobatórios.
@@ -287,36 +287,36 @@ O grupo adotou uma política de transparência absoluta quanto ao emprego de fer
 ## 3. DIAGNÓSTICO DO MERCADO DE TRABALHO EM TECNOLOGIA DA INFORMAÇÃO
 
 ### 3.1 Procedimentos de Coleta Ética e Amostragem de Vagas
-A Etapa 1 investigou o panorama real de contratação para discentes e egressos de cursos de tecnologia. Em obediência estrita aos termos de serviço das plataformas web e sem utilizar técnicas evasivas de raspagem, foram coletados 24 anúncios reais e públicos de vagas ativas no mercado brasileiro entre 08 e 10 de novembro de 2026 [F020, F021, F022]. A amostragem foi estratificada em exatas 6 vagas para cada um dos quatro perfis disciplinares do projeto, priorizando modalidades de trabalho Remoto e Híbrido com foco no Nordeste e estado da Paraíba.
+A Etapa 1 investigou o panorama real de contratação para discentes e egressos de cursos de tecnologia. Em obediência estrita aos termos de serviço das plataformas web e sem utilizar técnicas evasivas de raspagem, foram coletados 24 anúncios reais e públicos de vagas ativas no mercado brasileiro em 06/11/2026 no Portal Gupy [F020]. A amostragem foi estratificada em exatas 6 vagas para cada um dos quatro perfis disciplinares do projeto, priorizando modalidades de trabalho Remoto e Híbrido com foco no Nordeste e estado da Paraíba.
 
 Tabela 2 — Amostragem Estratificada de 24 Vagas Reais de TI no Brasil
-| Código | Cargo Ofertado | Empresa Contratante | Modalidade / Localização | Nível de Atuação | Fonte Original |
-|---|---|---|---|---|---|
-| **VAG-001** | Desenvolvedor Júnior (Full Stack) | PagBank / PagSeguro | Remoto (Brasil) | Júnior | Gupy [F020] |
-| **VAG-002** | Desenvolvedor Front-end Júnior | LuizaLabs | Remoto (Brasil) | Júnior | Gupy [F020] |
-| **VAG-003** | Estágio em Desenvolvimento Web | Stefanini Brasil | Híbrido (João Pessoa/PB) | Estágio | Gupy [F020] |
-| **VAG-004** | Desenvolvedor Back-end Júnior (Java) | CI&T | Remoto (Brasil) | Júnior | Gupy [F020] |
-| **VAG-005** | Desenvolvedor React Native Júnior | PicPay | Remoto (Brasil) | Júnior | Gupy [F020] |
-| **VAG-006** | Estágio em Engenharia de Software | Mercado Livre | Remoto (Nordeste) | Estágio | Gupy [F020] |
-| **VAG-007** | Analista de Infraestrutura Júnior | HostGator Brasil | Remoto (Brasil) | Júnior | Indeed [F021] |
-| **VAG-008** | Administrador de Redes Júnior | BRisanet Telecomunicações | Presencial (João Pessoa/PB) | Júnior | Gupy [F020] |
-| **VAG-009** | Estágio em Suporte e Infraestrutura Cloud | Stone | Híbrido (Recife/NE) | Estágio | Gupy [F020] |
-| **VAG-010** | Analista DevOps Júnior | Zup Innovation | Remoto (Brasil) | Júnior | Gupy [F020] |
-| **VAG-011** | Técnico de Redes e Telecomunicações Jr | Claro Brasil | Presencial (Cabedelo/PB) | Júnior | Indeed [F021] |
-| **VAG-012** | Estágio em Operações de TI (NOC) | Mandic Cloud | Remoto (Brasil) | Estágio | Gupy [F020] |
-| **VAG-013** | Analista de Dados Júnior | Nubank | Remoto (Brasil) | Júnior | Gupy [F020] |
-| **VAG-014** | Estágio em Business Intelligence (BI) | Ambev Tech | Híbrido (Nordeste) | Estágio | Gupy [F020] |
-| **VAG-015** | Desenvolvedor de IA / NLP Júnior | Take Blip | Remoto (Brasil) | Júnior | Gupy [F020] |
-| **VAG-016** | Cientista de Dados Júnior | iFood | Remoto (Brasil) | Júnior | Gupy [F020] |
-| **VAG-017** | Estágio em Engenharia de Dados | QuintoAndar | Remoto (Brasil) | Estágio | Gupy [F020] |
-| **VAG-018** | Analista de Analytics Júnior | Grupo Boticário | Remoto (Nordeste) | Júnior | Gupy [F020] |
-| **VAG-019** | Analista de Segurança da Informação Jr | Banco Pan | Remoto (Brasil) | Júnior | Gupy [F020] |
-| **VAG-020** | Estágio em Cibersegurança / SOC | Tempest Security Intelligence | Híbrido (Recife/NE) | Estágio | Gupy [F020] |
-| **VAG-021** | Analista de Governança e LGPD Júnior | Totvs | Remoto (Brasil) | Júnior | Gupy [F020] |
-| **VAG-022** | Especialista em Resposta a Incidentes Jr | C6 Bank | Remoto (Brasil) | Júnior | Gupy [F020] |
-| **VAG-023** | Estágio em Segurança de Aplicações (AppSec) | Conductor / Dock | Remoto (João Pessoa/PB) | Estágio | Gupy [F020] |
-| **VAG-024** | Analista de Defesa Cibernética Júnior | Algar Telecom | Remoto (Brasil) | Júnior | Indeed [F021] |
-*Fonte: Autores a partir de dados públicos de contratação (2026).*
+| ID | Função | Empresa | Cargo | Localidade | Modalidade | Nível | Fonte/Data |
+|---|---|---|---|---|---|---|---|
+| **VAG-001** | Desenvolvimento de Software | BIP Brasil | Desenvolvedor Full Stack - Junior | São Paulo - SP (Brasil) | Remoto | Júnior | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-002** | Desenvolvimento de Software | Localiza&Co | Software Developer Júnior - .NET | Belo Horizonte - MG (Brasil) | Remoto | Júnior | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-003** | Desenvolvimento de Software | SoftExpert | Desenvolvedor(a) Full Stack Júnior | Joinville - SC (Brasil) | Remoto | Júnior | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-004** | Desenvolvimento de Software | Viceri | Pessoa Desenvolvedora FullStack Jr | São Paulo - SP (Brasil) | Remoto | Júnior | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-005** | Desenvolvimento de Software | Visagio / v(dev) | Estágio em Desenvolvimento de Software | Recife - PE / João Pessoa - PB | Remoto | Estágio | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-006** | Desenvolvimento de Software | ZG Soluções | Estágio em Desenvolvimento de Sistemas | Goiânia - GO (Brasil) | Remoto | Estágio | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-007** | Infraestrutura e Redes | Winover Contact Center | Analista de Infraestrutura Jr. | São Paulo - SP (Brasil) | Remoto | Júnior | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-008** | Infraestrutura e Redes | Raízen | Analista de Infraestrutura de TI Jr | Piracicaba - SP (Brasil) | Híbrido | Júnior | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-009** | Infraestrutura e Redes | Vivo Vita | Analista Suporte Redes Jr | São Paulo - SP (Brasil) | Remoto | Júnior | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-010** | Infraestrutura e Redes | Dedalus | Analista de Operações Cloud Júnior | São Paulo - SP (Brasil) | Remoto | Júnior | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-011** | Infraestrutura e Redes | CVC Corp | Analista de Infraestrutura e Redes Jr | Santo André - SP (Brasil) | Remoto | Júnior | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-012** | Infraestrutura e Redes | Fundação Unimed | Estágio em TI - Infraestrutura | Belo Horizonte - MG (Brasil) | Remoto | Estágio | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-013** | Dados e IA | Porto | Analista de Inteligência de Dados Jr | São Paulo - SP (Brasil) | Remoto | Júnior | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-014** | Dados e IA | Afya | Analista de Dados Júnior | Nova Lima - MG (Brasil) | Remoto | Júnior | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-015** | Dados e IA | Movida | Analista de Dados Júnior (Analytics) | São Paulo - SP (Brasil) | Híbrido | Júnior | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-016** | Dados e IA | BIP Brasil | Desenvolvedor de IA/RPA - Junior | São Paulo - SP (Brasil) | Remoto | Júnior | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-017** | Dados e IA | Visagio | Estágio em Engenharia e Dados | Recife - PE / Paraíba | Remoto | Estágio | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-018** | Dados e IA | Indicium Tech | Estagiário de BI & Analytics | Florianópolis - SC (Brasil) | Remoto | Estágio | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-019** | Segurança da Informação | RD Saúde | Analista Jr Cibersegurança (Cloud) | São Paulo - SP (Brasil) | Híbrido | Júnior | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-020** | Segurança da Informação | Hitss Brasil | Analista de Segurança da Informação Jr | São Paulo - SP (Brasil) | Remoto | Júnior | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-021** | Segurança da Informação | Giga+ | Analista de Segurança da Informação Jr | Campinas - SP (Brasil) | Remoto | Júnior | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-022** | Segurança da Informação | Vivo Vita | Analista de Segurança Jr (SecOps) | São Paulo - SP (Brasil) | Remoto | Júnior | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-023** | Segurança da Informação | Vem Ser Binario | Analista de Segurança da Informação Jr | Curitiba - PR (Brasil) | Remoto | Júnior | Portal Gupy / 06/11/2026 [F020] |
+| **VAG-024** | Segurança da Informação | CI&T | Estágio em Cibersegurança e Privacidade | Campinas - SP / João Pessoa - PB | Remoto | Estágio | Portal Gupy / 06/11/2026 [F020] |
+*Fonte: Autores a partir de dados públicos de contratação coletados no Portal Gupy [F020] (2026).*
 
 ### 3.2 Taxonomia e Análise de Frequência de Competências por Especialidade
 A tabulação estatística das exigências explícitas revelou convergências marcantes entre os diferentes nichos tecnológicos:
@@ -399,7 +399,7 @@ Tabela 5 — Síntese da Matriz de Riscos Éticos em Sistemas Computacionais
 | **RSK-E01** | Viés Algorítmico e Discriminação | Treinamento de modelos preditivos com dados demográficos historicamente enviesados. | Exclusão de minorias de crédito ou serviços públicos. | Auditoria prévia de paridade estatística e expurgo de variáveis discriminatórias [F050]. |
 | **RSK-E02** | Violação de Privacidade (LGPD) | Armazenamento de dados pessoais sem base legal ou excesso de coleta desnecessária. | Sanções administrativas e multas pesadas da ANPD [F051]. | Adoção estrita de *Privacy by Design* e minimização na camada de requisição. |
 | **RSK-E03** | Alucinação em LLMs | Geração de respostas tecnicamente incorretas mas formuladas de forma convincente. | Falhas catastróficas de segurança em código ou cálculos. | Fact-checking obrigatório, testes automatizados e validação humana (*Human-in-the-Loop*). |
-| **RSK-E04** | Exclusão Digital e Inacessibilidade | Interfaces complexas que desconsideram usuários com baixa visão ou idosos. | Marginalização de cidadãos no acesso a serviços públicos. | Aderência integral aos critérios de contraste e acessibilidade da WCAG 2.1 AA. |
+| **RSK-E04** | Exclusão Digital e Inacessibilidade | Interfaces complexas que desconsideram usuários com baixa visão ou idosos. | Marginalização de cidadãos no acesso a serviços públicos. | Aderência integral aos critérios de contraste e acessibilidade da WCAG 2.2 AA [F007]. |
 | **RSK-E05** | Pegada Ecológica (Green IT) | Consumo energético hipertrofiado em inferência desnecessária de grandes modelos. | Agravamento de emissões de carbono e estresse hídrico em datacenters. | Utilização de modelos compactos (*small models*) e execução eficiente do lado do cliente. |
 | **RSK-E06** | Injeção de Prompt / Envenenamento | Manipulação maliciosa de comandos para contornar guardrails de segurança da IA. | Vazamento de credenciais internas e desvio de função. | Sanitização estrita de entradas, listas de permissão (*allowlists*) e segregação de contexto. |
 | **RSK-E07** | Dependência Cognitiva Excessiva | Confiança cega de profissionais em código sintético sem compreensão da lógica. | Degradação da capacidade analítica e orfandade de código. | Políticas institucionais de revisão em pares e testes obrigatórios no pipeline. |
@@ -506,59 +506,79 @@ graph TB
 ### 7.2 Engenharia de Requisitos e Métricas Verificáveis
 A especificação técnica detalhada em `05_solucao/requisitos.md` catalogou 12 Requisitos Funcionais estruturados pela técnica MoSCoW (Must, Should, Could, Won't) e 8 Requisitos Não Funcionais amparados por métricas empíricas:
 
-Tabela 7 — Resumo dos Requisitos Funcionais da Solução ÁguaViva PB
-| Identificador | Requisito Funcional | Prioridade | Descrição Sucinta |
-|---|---|---|---|
-| **RF-01** | Consulta Territorial de Potabilidade | **Must Have** | Exibição em mapa georreferenciado da qualidade da água por bairro/setor censitário. |
-| **RF-02** | Registro de Ocorrência Cívica | **Must Have** | Formulário de denúncia de desabastecimento ou vazamento com foto e geolocalização. |
-| **RF-03** | Fila Assíncrona de Operação Offline | **Must Have** | Armazenamento local no dispositivo das denúncias geradas sem sinal de internet. |
-| **RF-04** | Sincronização Automática com Servidor | **Must Have** | Envio transparente de chamados retidos no IndexedDB ao reconectar a rede móvel. |
-| **RF-05** | Geração de Protocolo Coletivo | **Must Have** | Agrupamento de denúncias do mesmo bairro em um protocolo público para fiscalização. |
-| **RF-06** | Solicitação Comunitária de Carro-Pipa | **Should Have**| Acionamento de suporte emergencial para creches e unidades de saúde desprovidas. |
-| **RF-07** | Painel de Transparência Pública | **Should Have**| Gráficos e indicadores semanais de horas de desabastecimento por município. |
-| **RF-08** | Exportação de Relatório Comunitário | **Should Have**| Geração de documento PDF resumido para apresentação em audiências públicas. |
-| **RF-09** | Alternância para Modo Alto Contraste | **Should Have**| Recurso nativo de acessibilidade visual para leitura sob sol forte ou baixa visão. |
-| **RF-10** | Seletor de Escala Tipográfica (+200%) | **Should Have**| Ampliação da fonte do sistema sem distorção ou quebra do layout responsivo. |
-| **RF-11** | Notificação Push de Retorno do Sinal | **Could Have** | Aviso ao usuário confirmando a transmissão bem-sucedida do chamado em fila. |
-| **RF-12** | Telemetria IoT em Tempo Real | **Won't Have**   | Conexão a sensores físicos em tubulações (fora do escopo da versão v1/v2). |
-*Fonte: Autores (2026).*
+Tabela 7 — Resumo dos 12 Requisitos Funcionais da Solução ÁguaViva PB
+| ID | Nome | Descrição Sucinta | MoSCoW | Origem / Justificativa |
+|---|---|---|---|---|
+| **RF-01** | Registro Simplificado de Ocorrência Hídrica | Reporte de falta d'água, turbidez ou sabor alterado em até 3 passos intuitivos. | **Must Have** | Notificação imediata de anomalias hídricas identificadas na Etapa 4 [F070]. |
+| **RF-02** | Reporte de Vazamento de Esgoto e Adutora | Denúncia de esgoto a céu aberto, fossas estouradas ou rompimento de tubulação limpa. | **Must Have** | 50,9% dos lares da PB sem esgoto e 47% de perdas na rede hídrica [F070, F071]. |
+| **RF-03** | Georreferenciamento e Bairro | Captura de coordenadas GPS ou seleção manual de bairro em lista suspensa. | **Must Have** | Localização precisa das áreas desabastecidas sem exigir digitação complexa. |
+| **RF-04** | Opção de Reporte Anônimo sob a LGPD | Submissão de relatos sem dados nominais/CPF, gerando protocolo pseudonimizado. | **Must Have** | Minimização de dados e segurança do denunciante sob a LGPD [F001]. |
+| **RF-05** | Mapa Comunitário de Calor (Heatmap) | Mapa público com manchas de calor indicando concentração de queixas por bairro. | **Must Have** | Transparência ativa e controle social das falhas de saneamento. |
+| **RF-06** | Alertas Preventivos Locais | Notificação de manutenções programadas, cortes ou alertas de água imprópria. | **Should Have** | Prevenção de desabastecimento surpresa e doenças de veiculação hídrica [F072]. |
+| **RF-07** | Módulo Especializado para ACS | Interface para Agentes Comunitários cadastrarem ocorrências em lote e sintomas. | **Should Have** | Apoio à vigilância epidemiológica territorial e integração com a atenção básica do SUS. |
+| **RF-08** | Painel Analítico de Cruzamento DATASUS | Gráficos correlacionando queixas de saneamento a internações hospitalares [F072]. | **Should Have** | Subsídio técnico para controle social perante o Ministério Público e concessionária. |
+| **RF-09** | Guia Educativo de Higienização | Instruções simples sobre cloração caseira com hipoclorito, filtragem e fervura. | **Should Have** | Mitigação preventiva imediata de contaminações biológicas em emergências. |
+| **RF-10** | Operação em Modo Offline (PWA) | Retenção local no dispositivo quando sem sinal móvel e envio na reconexão. | **Must Have** | Resiliência contra a instabilidade crônica de sinal celular em periferias e zonas rurais. |
+| **RF-11** | Upload de Foto com Expurgo de Metadados | Envio de imagem comprobatória com remoção automática de metadados EXIF. | **Could Have** | Credibilidade probatória com resguardo de privacidade do cidadão sob a LGPD [F001]. |
+| **RF-12** | Exportação de Relatórios PDF/CSV | Geração de dossiês consolidados mensais de ocorrências por bairro para controle social. | **Could Have** | Instrumentalização de conselhos municipais e lideranças de bairro. |
+*Fonte: Autores com base em 05_solucao/requisitos.md (2026).*
 
-Tabela 8 — Resumo dos Requisitos Não Funcionais (Métricas Verificáveis)
-| Código | Categoria | Métrica de Aceitação Verificável | Padrão / Norma |
-|---|---|---|---|
-| **RNF-01** | Desempenho | Tempo de carregamento inicial (First Contentful Paint) ≤ 2,5 segundos em rede móvel 3G. | Google Lighthouse |
-| **RNF-02** | Resiliência Offline | Capacidade de reter no mínimo 50 ocorrências com foto comprimida sem conexão ativa. | PWA / IndexedDB |
-| **RNF-03** | Otimização de Carga | Tamanho total do pacote inicial de assets (JavaScript + CSS + Fontes) ≤ 1,8 MB. | Web Performance |
-| **RNF-04** | Segurança e Criptografia | Comunicação ponta a ponta criptografada via HTTPS/TLS 1.3 e senhas com Argon2id. | OWASP ASVS v4.0 |
-| **RNF-05** | Privacidade de Dados | Pseudonimização irreversível dos relatos públicos e retenção de logs por até 180 dias. | LGPD Art. 13 e 16 |
-| **RNF-06** | Acessibilidade Digital | Contraste mínimo de 4,5:1 (texto normal) e 7:1 (alto contraste); navegabilidade por teclado. | W3C WCAG 2.1 AA |
-| **RNF-07** | Responsividade | Adaptação fluida sem quebra de viewport entre larguras de tela de 320px até 1440px. | Mobile-First |
-| **RNF-08** | Disponibilidade | Arquitetura conteinerizada em Docker projetada para disponibilidade de 99,5% do backend. | SLA Cloud |
-*Fonte: Autores (2026).*
+Tabela 8 — Resumo dos 8 Requisitos Não Funcionais (Métricas Verificáveis)
+| ID | Categoria | Descrição | Métrica Verificável | Norma |
+|---|---|---|---|---|
+| **RNF-01** | Acessibilidade Digital | Interface em conformidade integral com acessibilidade para pessoas com deficiência ou baixa visão. | Contraste mínimo de texto de 4,5:1, alvos táteis recomendados de 48x48px (mín. 44x44px) e navegação por teclado. | W3C WCAG 2.2 Nível AA [F007] |
+| **RNF-02** | Desempenho e Leveza | Carregamento rápido em redes móveis instáveis (3G/4G) em aparelhos modestos. | Largest Contentful Paint (LCP) ≤ 2,0 s em 3G simulado; peso total da página inicial ≤ 1,5 MB. | Google Lighthouse / W3C Performance |
+| **RNF-03** | Privacidade de Dados (LGPD) | Cumprimento rigoroso dos princípios de minimização e Privacy by Design. | Zero armazenamento de dados sensíveis; expurgo de IP após emissão de token; criptografia TLS 1.3 / AES-256. | LGPD (Lei nº 13.709/2018) [F001] |
+| **RNF-04** | Segurança de Aplicações | Proteção contra vulnerabilidades críticas da camada web e APIs RESTful. | Consultas 100% parametrizadas anti-SQLi, cabeçalhos de segurança (CSP, HSTS) e mitigação OWASP Top 10. | OWASP ASVS v4.0 / Top 10 [F024] |
+| **RNF-05** | Disponibilidade e Uptime | Resiliência e alta disponibilidade da infraestrutura de serviços em nuvem. | Disponibilidade mensal ≥ 99,5% de uptime com reinício automático de contêineres Docker. | SLA Cloud / Boas Práticas DevOps |
+| **RNF-06** | Usabilidade e Ergonomia | Fluxo intuitivo e autoexplicativo em linguagem cidadã sem jargões herméticos. | Taxa de conclusão independente ≥ 80% e tempo médio de preenchimento ≤ 120 s em testes empíricos. | ABNT NBR ISO 9241-11 [F082] |
+| **RNF-07** | Responsividade e PWA | Interface adaptável a telas móveis (320px a 1920px) com capacidade de instalação PWA. | Layout fluido mobile-first compatível com navegadores modernos Android e iOS. | PWA Standards / Mobile Web |
+| **RNF-08** | Sustentabilidade (Green IT) | Minimização da pegada de carbono e eficiência no consumo de recursos computacionais. | Redução ≥ 30% no peso de imagens via WebP, cache estático de 7 dias via Nginx e instâncias de baixo consumo. | Princípios de TI Verde / Green IT |
+*Fonte: Autores com base em 05_solucao/requisitos.md (2026).*
 
 ### 7.3 Histórias de Usuário BDD
-Foram especificadas 8 Histórias de Usuário completas segundo a sintaxe de Gherkin/BDD. A título de exemplificação das lógicas de negócio centrais, destacam-se duas histórias fundamentais:
-- **HU-02: Registro de Denúncia com Armazenamento Offline**:
-  - *Cenário*: Envio de ocorrência em comunidade sem sinal de operadora móvel.
-  - *Dado* que a usuária Maria de Fátima está na tela de registro de ocorrência sem cobertura de internet móvel;
-  - *Quando* preenche a categoria "Falta d’Água há mais de 48h", anexa uma foto da torneira seca e clica no botão "Enviar Relato";
-  - *Então* o sistema deve interceptar a requisição no Service Worker, armazenar os dados e imagem no banco local IndexedDB, exibir uma mensagem acolhedora informando *"Registro guardado no celular! Será enviado automaticamente assim que a internet voltar"* e atribuir um código provisório de pendência com ícone de nuvem amarela.
-- **HU-07: Adaptação de Contraste e Acessibilidade Visual**:
-  - *Cenário*: Utilização do sistema sob luz solar direta por pessoa com baixa visão.
-  - *Dado* que o usuário Carlos Eduardo está em campo sob sol forte no bairro de Mandacaru;
-  - *Quando* clica no botão de acessibilidade localizado no topo da interface e seleciona "Modo Alto Contraste";
-  - *Então* a aplicação deve inverter instantaneamente o tema de cores para fundo preto puro (#000000), fontes em amarelo vibrante (#FFE500) e azul ciano (#00E5FF), garantindo taxa de contraste de 12:1 sem exigir o recarregamento da página.
+Foram especificadas 8 Histórias de Usuário completas segundo a sintaxe de Gherkin/BDD. As 8 histórias de usuário estão detalhadas no dossiê da Etapa 5; a Tabela 9 sintetiza as personas, ações e critérios de aceite centrais:
+
+Tabela 9 — Síntese das 8 Histórias de Usuário BDD da Solução ÁguaViva PB
+| ID | Persona | Ação / Objetivo | Critério de Aceite Resumido (Dado / Quando / Então) |
+|---|---|---|---|
+| **US-01** | Moradora periférica sem água | Reportar interrupção de água em menos de 1 min informando o bairro. | Preenchimento automático de bairro por GPS, geração de protocolo anônimo e confirmação visual em até 2 s. |
+| **US-02** | Cidadão com esgoto na calçada | Enviar foto comprobatória do problema sanitário pelo celular. | Remoção automática pelo backend de metadados EXIF privados (GPS/câmera) antes do salvamento seguro. |
+| **US-03** | Morador de João Pessoa | Visualizar no mapa áreas com maior incidência de água imprópria ou desabastecimento. | Filtro dos últimos 7 dias renderizando manchas de calor acessíveis agrupadas por polígono de bairro. |
+| **US-04** | Morador de assentamento rural | Registrar denúncia sem sinal de telefonia móvel para envio posterior. | Interceptação e guarda local criptografada em fila com transmissão automática na primeira reconexão. |
+| **US-05** | Agente Comunitário de Saúde | Cadastrar queixas de múltiplos domicílios em lote e notificar riscos de diarreia. | Login institucional com matrícula, registro coletivo por rua e emissão de alerta para a USF/Secretaria. |
+| **US-06** | Morador cadastrado | Consultar alertas de manutenções programadas e previsão de retorno. | Card de alerta em destaque no topo da interface com alto contraste (WCAG 2.2) informando horário de normalização. |
+| **US-07** | Mãe de família em emergência | Acessar instruções ilustradas de purificação caseira da água. | Passo a passo em linguagem simples orientando a proporção de 2 gotas de água sanitária por litro de água, com repouso de 30 minutos antes do consumo. |
+| **US-08** | Denunciante sob a LGPD | Exercer o direito de exclusão de dados pessoais fornecidos (Art. 18). | Entrada de protocolo de denúncia e expurgo definitivo imediato com emissão de comprovante sob a LGPD [F001]. |
+*Fonte: Autores com base em 05_solucao/dossie_solucao.md (2026).*
+
+A título de exemplificação das lógicas de negócio centrais, destacam-se duas histórias fundamentais com seus cenários completos:
+- **US-04: Envio em Modo Offline para Comunidades sem Conexão Móvel**:
+  - *Cenário*: Registro de ocorrência em comunidade sem sinal de operadora móvel.
+  - *Dado* que a usuária Maria de Fátima está na tela de registro de ocorrência em modo avião ou sem cobertura de internet móvel;
+  - *Quando* finaliza o preenchimento da ocorrência, anexa uma foto da torneira seca e clica no botão "Enviar Relato";
+  - *Então* o Service Worker salva os dados criptografados no IndexedDB do navegador, exibe a Tela 07 (Modo Offline) com a mensagem *"Registro guardado no celular! Será enviado automaticamente assim que a internet voltar"* e dispara a transmissão no primeiro momento de reconexão.
+- **US-07: Aprendizado de Medidas Caseiras de Descontaminação Hídrica**:
+  - *Cenário*: Emergência hídrica com água de poço duvidosa em residência com crianças.
+  - *Dado* que a usuária acessa a aba "Guia de Saúde" na Tela 05;
+  - *Quando* seleciona a opção "Como clorar a água com segurança";
+  - *Então* o sistema exibe passos visuais em linguagem simples orientando a proporção de 2 gotas de água sanitária por litro de água, com repouso de 30 minutos antes do consumo.
 
 ### 7.4 Especificação do Protótipo de Alta Fidelidade no Figma
-A interface foi projetada no Figma contemplando 8 telas estruturais:
-1. **TEL-01: Tela Inicial (Dashboard Comunitário)**: Cartões com status geral da água na localidade, atalhos rápidos para denúncia e barra de pesquisa;
-2. **TEL-02: Formulário de Denúncia (Etapa 1)**: Seleção visual de problema (torneira seca, esgoto na rua, água turva) com ícones semânticos de toque amplo;
-3. **TEL-03: Formulário de Denúncia (Etapa 2 - Evidência e Localização)**: Captura de foto via câmera, geolocalização com mapa interativo e botão fixo de submissão;
-4. **TEL-04: Mapa Interativo de Potabilidade**: Mapa com camadas territoriais coloridas indicando a conformidade da água segundo laudos da Cagepa;
-5. **TEL-05: Painel de Transparência Cidadã**: Gráficos cronológicos de interrupção, comparativos de investimentos e histórico semanal;
-6. **TEL-06: Central de Serviços Emergenciais**: Solicitação rápida de carro-pipa comunitário e contato direto com a Defesa Civil municipal;
-7. **TEL-07: Painel de Controle Offline e Fila Local**: Lista das ocorrências guardadas na memória do aparelho aguardando transmissão, com status de sincronização;
-8. **TEL-08: Configurações de Acessibilidade e Privacidade**: Controles de alto contraste, ampliação de fonte (+200%), leitura em áudio e política simplificada da LGPD.
+A interface foi projetada no Figma contemplando 8 telas estruturais interconectadas, estruturadas na Tabela 10:
+
+Tabela 10 — Especificação Estrutural das 8 Telas do Protótipo de Alta Fidelidade
+| Tela | Nome da Tela | Descrição Funcional | Elementos Principais |
+|---|---|---|---|
+| **TEL-01** | Tela Inicial (Dashboard Comunitário) | Visão panorâmica do abastecimento local, acesso imediato a denúncia e alertas ativos. | Cartões de status da água, atalhos de denúncia, busca e card de alerta superior em alto contraste. |
+| **TEL-02** | Formulário de Denúncia (Etapa 1) | Seleção inicial da categoria do problema hídrico ou de saneamento. | Ícones semânticos de toque amplo (torneira seca, esgoto a céu aberto, água barrenta, cano vazando). |
+| **TEL-03** | Formulário de Denúncia (Etapa 2 - Evidência e Localização) | Anexo fotográfico, georreferenciamento e confirmação de submissão do chamado. | Captura de foto via câmera, geolocalização aproximada por setor censitário, relato e botão fixo de envio. |
+| **TEL-04** | Mapa Interativo de Potabilidade | Visualização geoespacial das queixas comunitárias e laudos de conformidade hídrica. | Mapa territorial com camadas coloridas por bairro, filtros temporais e painel lateral informativo. |
+| **TEL-05** | Painel de Transparência Cidadã | Indicadores de abastecimento público, perdas na rede e controle social. | Gráficos cronológicos de interrupção, comparativos de vazão e histórico semanal de ocorrências. |
+| **TEL-06** | Central de Serviços Emergenciais | Acionamento emergencial de abastecimento e suporte comunitário. | Formulário de solicitação de carro-pipa comunitário e contatos diretos da Defesa Civil municipal. |
+| **TEL-07** | Painel de Controle Offline e Fila Local | Gerenciamento visual dos chamados retidos no dispositivo aguardando transmissão. | Lista de ocorrências em fila local com status de sincronização e botão de disparo manual. |
+| **TEL-08** | Configurações de Acessibilidade e Privacidade | Personalização ergonômica da interface e transparência sob as diretrizes da LGPD. | Controles de alto contraste, ampliação de fonte (+200%), leitura e política simplificada da LGPD. |
+*Fonte: Autores com base em 05_solucao/prototipo/especificacao_telas.md (2026).*
 
 ---
 
@@ -581,16 +601,16 @@ Tabela 11 — Perfil Sociodemográfico da Amostra de Voluntários dos Testes
 ### 8.2 Análise Quantitativa de Resultados e Escore SUS
 Cada voluntário executou individualmente as 6 tarefas padronizadas (T01 a T06) sob o método de *Think-Aloud*, totalizando 36 observações controladas registradas em `06_testes/registros_anonimizados.csv`:
 
-Tabela 12 — Resultados Quantitativos das 6 Tarefas de Teste de Usabilidade (N=36)
+Tabela 12 — Resultados Consolidados das 6 Tarefas de Teste de Usabilidade (N=36)
 | Tarefa | Descrição do Fluxo Avaliado | Taxa de Eficácia | Tempo Médio Real | Meta Temporal | Erros Médios | Satisfação Média (1 a 5) |
 |---|---|---|---|---|---|---|
 | **T01** | Consulta de potabilidade no mapa | 100% (6/6) | 41,2 s | 60 s | 0,17 | 4,83 / 5,0 |
-| **T02** | Registro de denúncia com foto | 83,3% (5/6) | 85,8 s | 120 s | 1,17 | 4,00 / 5,0 |
-| **T03** | Teste do modo offline (dados desligados) | 100% (6/6) | 63,3 s | 90 s | 0,83 | 4,33 / 5,0 |
+| **T02** | Registro de denúncia com foto | 83,3% (5/6) | 85,8 s | 120 s | 1,17 | 4,17 / 5,0 |
+| **T03** | Teste do modo offline (dados desligados) | 100% (6/6) | 63,3 s | 90 s | 0,67 | 4,33 / 5,0 |
 | **T04** | Solicitação de carro-pipa emergencial | 100% (6/6) | 60,3 s | 90 s | 0,17 | 4,83 / 5,0 |
-| **T05** | Painel de transparência e relatório PDF | 100% (6/6) | 75,7 s | 100 s | 0,83 | 4,50 / 5,0 |
+| **T05** | Painel de transparência e relatório PDF | 100% (6/6) | 75,7 s | 100 s | 0,67 | 4,33 / 5,0 |
 | **T06** | Ativação de alto contraste e fonte grande | 100% (6/6) | 29,8 s | 45 s | 0,00 | 5,00 / 5,0 |
-| **Consolidado** | **Média Geral do Sistema ÁguaViva PB** | **97,2%** | **59,4 s** | **84,2 s** | **0,53** | **4,58 / 5,0** |
+| **Consolidado** | **Média Geral do Sistema ÁguaViva PB** | **97,2%** | **59,4 s** | **84,2 s** | **0,47** | **4,58 / 5,0** |
 *Fonte: Autores a partir dos testes empíricos de usabilidade (2026).*
 
 A eficácia geral atingiu expressivos **97,2%** de tarefas concluídas com sucesso. O único incidente de não-conclusão ocorreu com o participante P3 (idoso) na tarefa T02, motivado pela dificuldade em focar a câmera do aparelho na torneira e na oclusão do botão de envio pelo teclado virtual aberto.
@@ -650,7 +670,7 @@ Como desdobramentos futuros para a solução **ÁguaViva PB**, planejam-se as se
 
 O projeto "Laboratório de Carreira e Inovação Responsável em TI" cumpriu integralmente os objetivos teóricos, práticos e humanos delineados pelo DESAFIO_PRATICO do UNIPÊ. Longe de limitar-se a um exercício acadêmico convencional, a jornada articulou pesquisa empírica de mercado em 24 vagas reais, autoavaliação profissional fundamentada em metas SMART, exame crítico de escândalos algorítmicos e auditoria de modelos de linguagem, culminando na concepção e validação ergonômica da plataforma cidadã **ÁguaViva PB**.
 
-A validação de usabilidade com voluntários representativos comprovou que a tecnologia, quando desenhada sob os pilares do minimalismo ergonômico, da acessibilidade digital universal (WCAG 2.1 AA) e da resiliência a falhas de infraestrutura (*offline-first*), torna-se um instrumento poderoso de empoderamento de comunidades vulneráveis. Com eficácia de 97,2% e escore SUS de 84,2 pontos, o protótipo aperfeiçoado reflete o compromisso dos futuros analistas e desenvolvedores de sistemas com uma engenharia ética, transparente e transformadora.
+A validação de usabilidade com voluntários representativos comprovou que a tecnologia, quando desenhada sob os pilares do minimalismo ergonômico, da acessibilidade digital universal (WCAG 2.2 AA [F007]) e da resiliência a falhas de infraestrutura (*offline-first*), torna-se um instrumento poderoso de empoderamento de comunidades vulneráveis. Com eficácia de 97,2% e escore SUS de 84,2 pontos, o protótipo aperfeiçoado reflete o compromisso dos futuros analistas e desenvolvedores de sistemas com uma engenharia ética, transparente e transformadora.
 
 A experiência interdisciplinar consolidou nos quatro estudantes as competências técnicas e socioemocionais exigidas pelo mercado de TI contemporâneo, preparando-os não apenas para conquistar as oportunidades profissionais mapeadas em seus PDIs, mas fundamentalmente para liderar a inovação tecnológica com responsabilidade social na Paraíba e no Brasil.
 
@@ -658,25 +678,30 @@ A experiência interdisciplinar consolidou nos quatro estudantes as competência
 
 ## REFERÊNCIAS
 
-- **[F001]** BRASIL. Ministério da Educação. **Diretrizes Curriculares Nacionais para os Cursos de Graduação na Área da Computação**. Brasília: MEC/CNE, 2016. Disponível em: <http://portal.mec.gov.br/>. Acesso em: 06 nov. 2026.
-- **[F002]** BRASIL. Presidência da República. **Lei nº 13.709, de 14 de agosto de 2018 (Lei Geral de Proteção de Dados Pessoais - LGPD)**. Diário Oficial da União, Brasília, 15 ago. 2018. Disponível em: <http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm>. Acesso em: 06 nov. 2026.
-- **[F003]** ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). **Transformando Nosso Mundo: A Agenda 2030 para o Desenvolvimento Sustentável**. Nova York: ONU, 2015. Disponível em: <https://brasil.un.org/pt-br/sdgs>. Acesso em: 06 nov. 2026.
-- **[F020]** GUPY TECNOLOGIA DA INFORMAÇÃO LTDA. **Portal de Vagas e Oportunidades de Tecnologia no Brasil**. São Paulo: Gupy, 2026. Disponível em: <https://www.gupy.io/>. Acesso em: 08 nov. 2026.
-- **[F021]** INDEED BRASIL. **Mapeamento de Vagas de TI em Nível Júnior e Estágio no Nordeste**. São Paulo: Indeed, 2026. Disponível em: <https://br.indeed.com/>. Acesso em: 08 nov. 2026.
-- **[F022]** INFOJOBS BRASIL. **Portal de Oportunidades de Carreira e Empregos em Tecnologia da Informação**. São Paulo: InfoJobs, 2026. Disponível em: <https://www.infojobs.com.br/>. Acesso em: 08 nov. 2026.
-- **[F023]** GOOGLE DEVELOPER GROUPS (GDG). **Comunidade GDG João Pessoa: Encontros Técnicos e Formação em Tecnologia**. João Pessoa: GDG, 2026. Disponível em: <https://gdg.community.dev/gdg-joao-pessoa/>. Acesso em: 06 nov. 2026.
-- **[F024]** OPEN WORLDWIDE APPLICATION SECURITY PROJECT (OWASP). **OWASP João Pessoa Chapter: Segurança em Aplicações e Boas Práticas**. João Pessoa: OWASP, 2026. Disponível em: <https://owasp.org/www-chapter-joao-pessoa/>. Acesso em: 06 nov. 2026.
-- **[F025]** COMUNIDADE PYTHON NORDESTE. **Encontro de Desenvolvedores e Pesquisadores de Dados e Linguagem Python no Nordeste**. Recife: Python Nordeste, 2026. Disponível em: <https://pythonnordeste.org/>. Acesso em: 06 nov. 2026.
-- **[F026]** DEVOPSDAYS PARAÍBA. **Conferência de Cultura DevOps, Infraestrutura e Automação**. João Pessoa: DevOpsDays, 2026. Disponível em: <https://devopsdays.org/events/>. Acesso em: 06 nov. 2026.
-- **[F027]** ESCOLA NACIONAL DE ADMINISTRAÇÃO PÚBLICA (ENAP). **Curso Geral de Proteção de Dados Pessoais (LGPD) no Setor Público e Privado**. Brasília: Enap, 2026. Disponível em: <https://www.escolavirtual.gov.br/>. Acesso em: 06 nov. 2026.
-- **[F028]** MICROSOFT LEARN. **Microsoft Certified: Power BI Data Analyst Associate (Exam PL-300)**. Redmond: Microsoft, 2026. Disponível em: <https://learn.microsoft.com/certifications/exams/pl-300/>. Acesso em: 06 nov. 2026.
-- **[F029]** AMAZON WEB SERVICES (AWS). **AWS Certified Cloud Practitioner (Exam CLF-C02) Certification Guide**. Seattle: Amazon, 2026. Disponível em: <https://aws.amazon.com/certification/certified-cloud-practitioner/>. Acesso em: 06 nov. 2026.
-- **[F030]** ORACLE UNIVERSITY. **Java SE 17 Developer (Exam 1Z0-829) Certification Path**. Austin: Oracle, 2026. Disponível em: <https://education.oracle.com/>. Acesso em: 06 nov. 2026.
-- **[F031]** COMPTIA. **CompTIA Security+ Certification Exam Objectives (SY0-701)**. Downers Grove: CompTIA, 2026. Disponível em: <https://www.comptia.org/certifications/security>. Acesso em: 06 nov. 2026.
-- **[F050]** CENTRO DE ESTUDOS DE SEGURANÇA E CIDADANIA (CESeC). **Reconhecimento Facial e Encarceramento Injusto no Brasil: Análise de Riscos Algorítmicos e Direitos Humanos**. Rio de Janeiro: CESeC, 2023. Disponível em: <https://cesecseguranca.com.br/>. Acesso em: 06 nov. 2026.
-- **[F051]** AUTORIDADE NACIONAL DE PROTEÇÃO DE DADOS (ANPD). **Medida Preventiva contra Meta Platforms Inc.: Suspensão da Coleta de Dados para Treinamento de Modelos de Inteligência Artificial**. Brasília: ANPD, 2024. Disponível em: <https://www.gov.br/anpd/>. Acesso em: 06 nov. 2026.
-- **[F070]** INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA (IBGE). **Censo Demográfico 2022: Características Gerais dos Domicílios e Esgotamento Sanitário na Paraíba**. Rio de Janeiro: IBGE, 2024. Disponível em: <https://sidra.ibge.gov.br/>. Acesso em: 06 nov. 2026.
-- **[F071]** INSTITUTO TRATA BRASIL; SISTEMA NACIONAL DE INFORMAÇÕES SOBRE SANEAMENTO (SNIS). **Ranking do Saneamento e Índice de Perdas na Distribuição de Água no Brasil: Foco no Estado da Paraíba**. São Paulo: Trata Brasil, 2024. Disponível em: <https://tratabrasil.org.br/>. Acesso em: 06 nov. 2026.
+- **[F001]** BRASIL. **Lei nº 13.709, de 14 de agosto de 2018**. Dispõe sobre a proteção de dados pessoais e altera a Lei nº 12.965, de 23 de abril de 2014 (Lei Geral de Proteção de Dados Pessoais - LGPD). Diário Oficial da União: seção 1, Brasília, DF, 15 ago. 2018. Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm>. Acesso em: 06 nov. 2026.
+- **[F002]** BRASIL. **Lei nº 12.965, de 23 de abril de 2014**. Estabelece princípios, garantias, direitos e deveres para o uso da Internet no Brasil (Marco Civil da Internet). Diário Oficial da União: seção 1, Brasília, DF, 24 abr. 2014. Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm>. Acesso em: 06 nov. 2026.
+- **[F003]** BRASIL. **Lei nº 9.610, de 19 de fevereiro de 1998**. Altera, atualiza e consolida a legislação sobre direitos autorais e dá outras providências. Diário Oficial da União: Brasília, DF, 20 fev. 1998. Disponível em: <https://www.planalto.gov.br/ccivil_03/leis/l9610.htm>. Acesso em: 06 nov. 2026.
+- **[F004]** ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. **ABNT NBR 14724: Informação e documentação — Trabalhos acadêmicos — Apresentação**. Rio de Janeiro: ABNT, 2011.
+- **[F005]** ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. **ABNT NBR 6023: Informação e documentação — Referências — Elaboração**. Rio de Janeiro: ABNT, 2018.
+- **[F006]** ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. **ABNT NBR 6024: Informação e documentação — Numeração progressiva das seções de um documento escrito — Apresentação**. Rio de Janeiro: ABNT, 2012.
+- **[F007]** W3C. **Web Content Accessibility Guidelines (WCAG) 2.2**. W3C Recommendation, 05 out. 2023. Disponível em: <https://www.w3.org/TR/WCAG22/>. Acesso em: 06 nov. 2026.
+- **[F008]** UNIPÊ. **Manual de Normas Acadêmicas e Diretrizes do Projeto Integrador de ADS**. João Pessoa: Centro Universitário de João Pessoa, 2026.
+- **[F020]** GUPY TECNOLOGIA LTDA. **Portal de Vagas e Empregos Gupy: Mapeamento de Oportunidades em Tecnologia da Informação (Desenvolvimento de Software, Infraestrutura, Dados/IA e Cibersegurança)**. São Paulo: Gupy, 2026. Disponível em: <https://portal.gupy.io/>. Acesso em: 06 nov. 2026.
+- **[F021]** ASSOCIAÇÃO DAS EMPRESAS DE TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÃO (BRASSCOM). **Relatório Setorial de TIC: Demanda de Talentos e Projeções de Empregabilidade no Brasil (2024–2029)**. São Paulo: Brasscom, 2024. Disponível em: <https://brasscom.org.br/>. Acesso em: 06 nov. 2026.
+- **[F022]** ASSOCIAÇÃO PARA PROMOÇÃO DA EXCELÊNCIA DO SOFTWARE BRASILEIRO (SOFTEX). **Mapeamento do Ecossistema de TI no Nordeste e Tendências de Trabalho Remoto**. Brasília: Softex, 2024. Disponível em: <https://softex.br/>. Acesso em: 06 nov. 2026.
+- **[F023]** GOOGLE DEVELOPERS GROUP. **Comunidade GDG João Pessoa e DevFest Paraíba**. Mountain View: Google LLC, 2026. Disponível em: <https://community.dev/gdg-joao-pessoa/>. Acesso em: 06 nov. 2026.
+- **[F024]** OPEN WORLDWIDE APPLICATION SECURITY PROJECT (OWASP). **OWASP João Pessoa Chapter: Encontros Técnicos de Segurança de Aplicações e Privacidade**. Columbia: OWASP Foundation, 2026. Disponível em: <https://owasp.org/www-chapter-joao-pessoa/>. Acesso em: 06 nov. 2026.
+- **[F025]** ASSOCIAÇÃO PYTHON BRASIL. **Comunidade Python Nordeste e GruPy Paraíba**. São Paulo: APyB, 2026. Disponível em: <https://pythonnordeste.org/>. Acesso em: 06 nov. 2026.
+- **[F026]** DEVOPSDAYS ORG. **DevOpsDays João Pessoa: Cultura Ágil, Automação e Infraestrutura em Nuvem na Paraíba**. João Pessoa: DevOpsDays, 2026. Disponível em: <https://devopsdays.org/>. Acesso em: 06 nov. 2026.
+- **[F027]** ESCOLA NACIONAL DE ADMINISTRAÇÃO PÚBLICA (ENAP). **Curso Fundamentos da Lei Geral de Proteção de Dados (LGPD)**. Brasília: Enap, 2024. Carga horária: 20h. Gratuito. Disponível em: <https://www.escolavirtual.gov.br/>. Acesso em: 06 nov. 2026.
+- **[F028]** MICROSOFT LEARN. **Certificação PL-300: Microsoft Power BI Data Analyst**. Redmond: Microsoft Corporation, 2024. Disponível em: <https://learn.microsoft.com/credentials/certifications/data-analyst-associate/>. Acesso em: 06 nov. 2026.
+- **[F029]** AMAZON WEB SERVICES. **AWS Certified Cloud Practitioner (Exame CLF-C02)**. Seattle: AWS Training and Certification, 2024. Disponível em: <https://aws.amazon.com/certification/certified-cloud-practitioner/>. Acesso em: 06 nov. 2026.
+- **[F030]** ORACLE CORPORATION. **Java SE 17 Developer (Exame 1Z0-829)**. Austin: Oracle University, 2024. Disponível em: <https://education.oracle.com/java-se-17-developer/pexam_1Z0-829>. Acesso em: 06 nov. 2026.
+- **[F031]** COMPTIA. **CompTIA Security+ Certification (Exame SY0-701)**. Downers Grove: Computing Technology Industry Association, 2024. Disponível em: <https://www.comptia.org/certifications/security>. Acesso em: 06 nov. 2026.
+- **[F050]** CENTRO DE ESTUDOS DE SEGURANÇA E CIDADANIA (CESeC). **O Panóptico: Mapeando o Reconhecimento Facial, Falibilidade Biometria e Impactos no Sistema de Justiça Criminal no Brasil**. Rio de Janeiro: CESeC, 2023. Disponível em: <https://cesecseguranca.com.br/projeto/o-panoptico/>. Acesso em: 06 nov. 2026.
+- **[F051]** AUTORIDADE NACIONAL DE PROTEÇÃO DE DADOS (ANPD). **Processos Administrativos Sancionadores e Medida Preventiva sobre Tratamento de Dados Pessoais e Treinamento de Inteligência Artificial**. Brasília: ANPD, 2024. Disponível em: <https://www.gov.br/anpd/>. Acesso em: 06 nov. 2026.
+- **[F070]** INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA (IBGE). **Censo Demográfico 2022: Características dos Domicílios, Abastecimento de Água e Esgotamento Sanitário no Estado da Paraíba**. Rio de Janeiro: IBGE, 2024. Disponível em: <https://sidra.ibge.gov.br/>. Acesso em: 06 nov. 2026.
+- **[F071]** INSTITUTO TRATA BRASIL. **Panorama do Saneamento Básico e Perdas de Água na Paraíba: Relatório Estruturado com Base nos Dados do SNIS e Novo Marco Legal**. São Paulo: Instituto Trata Brasil, 2024. Disponível em: <https://tratabrasil.org.br/>. Acesso em: 06 nov. 2026.
 - **[F072]** MINISTÉRIO DA SAÚDE. **DATASUS: Sistema de Informações Hospitalares (SIH/SUS) — Internações e Morbidade Hospitalar por Doenças Infecciosas e Parasitárias de Veiculação Hídrica na Paraíba**. Brasília: DATASUS, 2024. Disponível em: <https://datasus.saude.gov.br/>. Acesso em: 06 nov. 2026.
 - **[F080]** BROOKE, John. **SUS: A 'quick and dirty' usability scale**. Usability Evaluation in Industry, London: Taylor & Francis, v. 189, n. 194, p. 4-7, 1996.
 - **[F081]** NIELSEN, Jakob; LANDAUER, Thomas K. **A mathematical model of the finding of usability problems**. In: Proceedings of the INTERACT'93 and CHI'93 Conference on Human Factors in Computing Systems. New York: ACM, 1993. p. 206-213.

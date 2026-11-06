@@ -42,7 +42,7 @@ periodo: 2026.2
 - **Atividade prática:** Condução do Experimento EXP-02 com Claude 3.5 Sonnet, solicitando script iptables e identificando que o modelo aplicava a política DROP antes de liberar a porta 22 (SSH).
 - **Dificuldades:** Explicar tecnicamente o risco da ordem sequencial das regras de firewall na documentação acadêmica.
 - **Estratégias de superação:** Teste prático do fluxo lógico em máquina virtual isolada para demonstrar a perda de conectividade imediata.
-- **Resultados obtidos:** Log de experimento auditado em `03_etica_ia/experimentos/exp_02_luiz_miguel.md`.
+- **Resultados obtidos:** Log de experimento auditado em `03_etica_ia/experimentos/experimento_02_luiz_miguel.md`.
 - **Novas ferramentas aprendidas:** Depuração avançada de regras de iptables e técnicas de prompt para engenharia de infraestrutura.
 
 ---

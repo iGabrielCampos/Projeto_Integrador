@@ -42,7 +42,7 @@ periodo: 2026.2
 - **Atividade prática:** Realização do Experimento EXP-03 submetendo tabela com 10 observações numéricas ao Gemini e descobrindo erro de soma aritmética (erro de R$ 380,00 na agregação).
 - **Dificuldades:** Isolar o mecanismo de alucinação do modelo sem introduzir vieses nas instruções do prompt.
 - **Estratégias de superação:** Criação de scripts comparativos em Python (`sum()` nativo) para auditar a resposta da IA com precisão matemática absoluta.
-- **Resultados obtidos:** Log completo de auditoria registrado em `03_etica_ia/experimentos/exp_03_paulo_germano.md`.
+- **Resultados obtidos:** Log completo de auditoria registrado em `03_etica_ia/experimentos/experimento_03_paulo_germano.md`.
 - **Novas ferramentas aprendidas:** Métodos de fact-checking automatizado para saídas de IA generativa.
 
 ---

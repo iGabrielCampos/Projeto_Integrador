@@ -6,6 +6,7 @@ Uso: python scripts/verificar.py  (a partir da raiz do projeto)
 """
 
 from pathlib import Path
+import csv
 import json
 import re
 import sys
@@ -101,11 +102,14 @@ def count_rows() -> None:
     else:
         print("[PENDENTE] 01_mercado/vagas_brutas.csv (Etapa 1 não iniciada)")
 
-    # Checagem de participantes de teste (Etapa 6)
+    # Checagem de registros e participantes de teste (Etapa 6)
     csv_testes = ROOT / "06_testes/registros_anonimizados.csv"
     if csv_testes.exists():
-        participantes = sum(1 for _ in csv_testes.open(encoding="utf-8")) - 1
-        print(("[OK] " if participantes >= 6 else "[!!] ") + f"participantes de teste: {participantes} (mín. 6)")
+        with csv_testes.open(encoding="utf-8", newline="") as f:
+            registros = list(csv.DictReader(f))
+        participantes = len({r["participante_id"] for r in registros})
+        label = f"registros de teste: {len(registros)} | participantes únicos: {participantes} (mín. 6)"
+        print(("[OK] " if participantes >= 6 else "[!!] ") + label)
     else:
         print("[PENDENTE] 06_testes/registros_anonimizados.csv (Etapa 6 não iniciada)")
 

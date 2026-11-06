@@ -58,10 +58,10 @@ Para assegurar a integridade e evitar avaliações genéricas, as matrizes de co
 - **Nível 5 (Referência Técnica):** Capacidade comprovada de orientar terceiros e desenhar soluções inovadoras.
 
 Todos os artefatos individuais completos foram organizados em pastas próprias no repositório:
-- [`02_carreira/por_integrante/gabriel_amancio/`](file:///home/campos/Documents/Projetos/Projeto_Integrador/02_carreira/por_integrante/gabriel_amancio/)
-- [`02_carreira/por_integrante/luiz_miguel/`](file:///home/campos/Documents/Projetos/Projeto_Integrador/02_carreira/por_integrante/luiz_miguel/)
-- [`02_carreira/por_integrante/paulo_germano/`](file:///home/campos/Documents/Projetos/Projeto_Integrador/02_carreira/por_integrante/paulo_germano/)
-- [`02_carreira/por_integrante/gustavo_antonio/`](file:///home/campos/Documents/Projetos/Projeto_Integrador/02_carreira/por_integrante/gustavo_antonio/)
+- [`02_carreira/por_integrante/gabriel_amancio/`](por_integrante/gabriel_amancio/)
+- [`02_carreira/por_integrante/luiz_miguel/`](por_integrante/luiz_miguel/)
+- [`02_carreira/por_integrante/paulo_germano/`](por_integrante/paulo_germano/)
+- [`02_carreira/por_integrante/gustavo_antonio/`](por_integrante/gustavo_antonio/)
 
 ---
 
