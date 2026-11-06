@@ -22,13 +22,13 @@ Esta matriz audita a rastreabilidade direta entre cada uma das exigências forma
 | Elaboração de pelo menos 4 gráficos com interpretação | Etapa 1.9 | `01_mercado/dossie_mercado.md` (4 gráficos Mermaid) | Conforme | Luiz Miguel | Gate 1 |
 | Comparação de perfis, interpretação de dados e discussão de limitações | Etapa 1.10 | `01_mercado/dossie_mercado.md` | Conforme | Gustavo Antonio | Gate 1 |
 | Dossiê consolidado de análise do mercado de trabalho | Produto Etapa 1 | `01_mercado/dossie_mercado.md` | Conforme | Gabriel Amancio | Gate 1 |
-| Matriz de autoavaliação com >= 10 competências para cada estudante | Etapa 2.1 | `02_carreira/por_integrante/*/matriz.md` | Pendente | Todos os 4 | Gate 2 |
-| Identificação individual de conhecimentos adquiridos e lacunas | Etapa 2.2 | `02_carreira/por_integrante/*/matriz.md` | Pendente | Todos os 4 | Gate 2 |
-| Construção ou aperfeiçoamento de perfil profissional digital | Etapa 2.3 | `02_carreira/por_integrante/*/perfil.md` | Pendente | Todos os 4 | Gate 2 |
-| Portfólio de projetos no GitHub com README profissional documentado | Etapa 2.4 e 2.5 | `02_carreira/por_integrante/*/README.md` | Pendente | Todos os 4 | Gate 2 |
-| Pesquisa de formação continuada, comunidades, eventos e networking | Etapa 2.6 e 2.7 | `02_carreira/dossie_carreira.md` | Pendente | Luiz Miguel | Gate 2 |
-| PDI individual com pelo menos 3 metas SMART por integrante | Etapa 2.8 | `02_carreira/por_integrante/*/pdi.md` | Pendente | Todos os 4 | Gate 2 |
-| Análise comparativa coletiva dos quatro perfis profissionais | Etapa 2 (Coletivo) | `02_carreira/dossie_carreira.md` | Pendente | Luiz Miguel | Gate 2 |
+| Matriz de autoavaliação com >= 10 competências para cada estudante | Etapa 2.1 | `02_carreira/por_integrante/*/matriz.md` (4 matrizes de 11 comp) | Conforme | Todos os 4 | Gate 2 |
+| Identificação individual de conhecimentos adquiridos e lacunas | Etapa 2.2 | `02_carreira/por_integrante/*/matriz.md` | Conforme | Todos os 4 | Gate 2 |
+| Construção ou aperfeiçoamento de perfil profissional digital | Etapa 2.3 | `02_carreira/por_integrante/*/perfil.md` (4 perfis LinkedIn) | Conforme | Todos os 4 | Gate 2 |
+| Portfólio de projetos no GitHub com README profissional documentado | Etapa 2.4 e 2.5 | `02_carreira/por_integrante/*/README.md` (4 READMEs GitHub) | Conforme | Todos os 4 | Gate 2 |
+| Pesquisa de formação continuada, comunidades, eventos e networking | Etapa 2.6 e 2.7 | `02_carreira/dossie_carreira.md` (Seções 5 e 6) | Conforme | Luiz Miguel | Gate 2 |
+| PDI individual com pelo menos 3 metas SMART por integrante | Etapa 2.8 | `02_carreira/por_integrante/*/pdi.md` (12 metas SMART) | Conforme | Todos os 4 | Gate 2 |
+| Análise comparativa coletiva dos quatro perfis profissionais | Etapa 2 (Coletivo) | `02_carreira/dossie_carreira.md` (Seção 7) | Conforme | Luiz Miguel | Gate 2 |
 | Investigação de 2 casos reais de ética tecnológica (>= 1 sobre IA) | Etapa 3.1, 3.2, 3.3 | `03_etica_ia/dossie_etica.md` | Pendente | Paulo Germano | Gate 3 |
 | Exame de princípios éticos e aspectos legais (LGPD, Marco Civil etc.) | Etapa 3.4 | `03_etica_ia/dossie_etica.md` | Pendente | Paulo Germano | Gate 3 |
 | Matriz contendo pelo menos 8 riscos com causas e medidas de mitigação | Etapa 3.5 | `03_etica_ia/matriz_riscos.md` | Pendente | Paulo Germano | Gate 3 |

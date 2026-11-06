@@ -18,11 +18,11 @@ Para assegurar o protagonismo, a responsabilidade compartilhada e a avaliação 
 
 | Etapa | Tema Central | Integrante Líder (Coordenação) | Subagente de Suporte | Revisores Obrigatórios |
 |---|---|---|---|---|
-| **Etapa 0** | Governança, Infraestrutura e Gates | Gabriel Amancio | SA-1 | Luiz Miguel, Gustavo Antonio |
-| **Etapa 1** | Investigação do Mercado de TI (20 Vagas) | Gabriel Amancio | SA-1 | Luiz Miguel, Paulo Germano |
-| **Etapa 2** | Identidade Profissional e Carreira (4 PDIs) | Luiz Miguel | SA-2 | Gabriel Amancio, Gustavo Antonio |
-| **Etapa 3** | Ética Tecnológica, LGPD e Experimentos IA | Paulo Germano | SA-3 | Gabriel Amancio, Luiz Miguel |
-| **Etapa 4** | Diagnóstico de Problema Social/Ambiental | Gustavo Antonio | SA-4 / SA-1 | Paulo Germano, Luiz Miguel |
+| **Etapa 0** | Governança, Infraestrutura e Gates | Paulo Germano | SA-1 | Luiz Miguel, Gustavo Antonio |
+| **Etapa 1** | Investigação do Mercado de TI (24 Vagas) | Paulo Germano | SA-1 | Gabriel Amancio, Luiz Miguel |
+| **Etapa 2** | Identidade Profissional e Carreira (4 PDIs) | Luiz Miguel | SA-2 | Paulo Germano, Gustavo Antonio |
+| **Etapa 3** | Ética Tecnológica, LGPD e Experimentos IA | Gabriel Amancio | SA-3 | Paulo Germano, Luiz Miguel |
+| **Etapa 4** | Diagnóstico de Problema Social/Ambiental | Gustavo Antonio | SA-4 / SA-1 | Gabriel Amancio, Luiz Miguel |
 | **Etapa 5** | Projeto Técnico da Solução e Protótipo | Gabriel Amancio | SA-4 / SA-3 | Gustavo Antonio, Paulo Germano |
 | **Etapa 6** | Testes de Usabilidade (6 voluntários) | Luiz Miguel | SA-2 / SA-4 | Gabriel Amancio, Gustavo Antonio |
 | **Etapa 7** | Relatório Integrado ABNT, Slides e Defesa | Todos (Coordenação Conjunta) | SA-1, 2, 3, 4 | Todos os 4 Integrantes |

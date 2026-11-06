@@ -21,7 +21,7 @@
       "nome": "Gabriel Amancio",
       "funcao_principal": "Desenvolvimento de Software",
       "subagente_apoio": "SA-1",
-      "lideranca_etapas": [1, 5]
+      "lideranca_etapas": [3, 5]
     },
     {
       "id": "INT-02",
@@ -35,7 +35,7 @@
       "nome": "Paulo Germano",
       "funcao_principal": "Dados e IA",
       "subagente_apoio": "SA-3",
-      "lideranca_etapas": [3]
+      "lideranca_etapas": [1]
     },
     {
       "id": "INT-04",
@@ -45,13 +45,13 @@
       "lideranca_etapas": [4]
     }
   ],
-  "etapa_atual": 1,
-  "status_geral": "Etapa 1 Concluída - Aguardando Validação do Gate 1",
-  "percentual_concluido": 20,
+  "etapa_atual": 2,
+  "status_geral": "Etapa 2 Concluída - Aguardando Validação do Gate 2",
+  "percentual_concluido": 35,
   "gates": {
     "etapa_0_governanca": "concluido",
-    "etapa_1_mercado": "pronto_para_aprovacao",
-    "etapa_2_carreira": "pendente",
+    "etapa_1_mercado": "concluido",
+    "etapa_2_carreira": "pronto_para_aprovacao",
     "etapa_3_etica_ia": "pendente",
     "etapa_4_problema": "pendente",
     "etapa_5_solucao": "pendente",
@@ -65,9 +65,9 @@
     "SA-4": "Prototipagem, testes e documentação técnica"
   },
   "pendencias_humanas": [
-    "Revisar o dossie_mercado.md e autorizar a passagem para a Etapa 2 (Gate 1)",
-    "Luiz Miguel: abrir e vincular a planilha Google Sheets com os 4 CSVs gerados em 01_mercado/",
-    "Integrantes: preparar para preencher suas matrizes de autoavaliação individuais (>= 10 competências) na Etapa 2"
+    "Revisar o dossie_carreira.md e aprovar o fechamento do Gate 2",
+    "Cada integrante (Gabriel, Luiz, Paulo, Gustavo) revisar e ajustar suas notas individuais de autoavaliação (0-5) em sua respectiva matriz.md",
+    "Preparar a escolha dos 2 casos reais de ética e IA para a Etapa 3 sob liderança de Gabriel Amancio"
   ],
-  "ultima_atualizacao": "2026-11-06T10:41:00-03:00"
+  "ultima_atualizacao": "2026-11-06T10:50:30-03:00"
 }

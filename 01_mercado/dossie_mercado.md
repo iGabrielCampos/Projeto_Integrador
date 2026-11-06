@@ -19,8 +19,8 @@ fontes:
 **Instituição:** UNIPÊ – Centro Universitário de João Pessoa  
 **Curso:** Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (ADS)  
 **Disciplina:** Projeto Integrador – Design Profissional  
-**Líder da Etapa 1:** Gabriel Amancio (Coordenação e Mercado de TI)  
-**Revisores Pares:** Luiz Miguel, Paulo Germano, Gustavo Antonio  
+**Líder da Etapa 1:** Paulo Germano (Coordenação e Mercado de TI)  
+**Revisores Pares:** Gabriel Amancio, Luiz Miguel, Gustavo Antonio  
 
 ---
 
