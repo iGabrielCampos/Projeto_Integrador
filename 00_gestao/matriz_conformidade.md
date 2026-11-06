@@ -34,10 +34,10 @@ Esta matriz audita a rastreabilidade direta entre cada uma das exigências forma
 | Matriz contendo pelo menos 8 riscos com causas e medidas de mitigação | Etapa 3.5 | `03_etica_ia/matriz_riscos.md` (8 riscos detalhados) | Conforme | Gabriel Amancio | Gate 3 |
 | 4 experimentos reais com ferramentas de IA registrados com prompts | Etapa 3.6, 3.7, 3.8 | `03_etica_ia/experimentos/` (4 logs individuais) | Conforme | Todos os 4 | Gate 3 |
 | Recomendações para desenvolvimento responsável de tecnologias | Etapa 3.9 | `03_etica_ia/dossie_etica.md` (Seção 5) | Conforme | Gabriel Amancio | Gate 3 |
-| Identificação de pelo menos 3 problemas sociais ou ambientais | Etapa 4.1 e 4.2 | `04_problema/dossie_problema.md` | Pendente | Gustavo Antonio | Gate 4 |
-| Investigação de causas, públicos afetados e soluções existentes | Etapa 4.3, 4.4, 4.5 | `04_problema/dossie_problema.md` | Pendente | Gustavo Antonio | Gate 4 |
-| Matriz comparativa e justificativa de seleção fundamentada | Etapa 4.6 e 4.7 | `04_problema/matriz_decisao.md` | Pendente | Gustavo Antonio | Gate 4 |
-| Delimitação do problema, objetivos, resultados esperados e limitações | Etapa 4.8, 4.9, 4.10 | `04_problema/dossie_problema.md` | Pendente | Gustavo Antonio | Gate 4 |
+| Identificação de pelo menos 3 problemas sociais ou ambientais | Etapa 4.1 e 4.2 | `04_problema/dossie_problema.md` (3 cenários investigados) | Conforme | Gustavo Antonio | Gate 4 |
+| Investigação de causas, públicos afetados e soluções existentes | Etapa 4.3, 4.4, 4.5 | `04_problema/dossie_problema.md` (Ishikawa e personas) | Conforme | Gustavo Antonio | Gate 4 |
+| Matriz comparativa e justificativa de seleção fundamentada | Etapa 4.6 e 4.7 | `04_problema/matriz_decisao.md` (Critérios ponderados) | Conforme | Gustavo Antonio | Gate 4 |
+| Delimitação do problema, objetivos, resultados esperados e limitações | Etapa 4.8, 4.9, 4.10 | `04_problema/dossie_problema.md` (Seções 7, 8 e 9) | Conforme | Gustavo Antonio | Gate 4 |
 | Nome, finalidade da solução, usuários e necessidades (personas) | Etapa 5.1 e 5.2 | `05_solucao/dossie_solucao.md` | Pendente | Gabriel Amancio | Gate 5 |
 | Pelo menos 10 requisitos funcionais com priorização | Etapa 5.3 | `05_solucao/requisitos.md` | Pendente | Gabriel Amancio | Gate 5 |
 | Pelo menos 6 requisitos não funcionais com métricas verificáveis | Etapa 5.4 | `05_solucao/requisitos.md` | Pendente | Gabriel Amancio | Gate 5 |

@@ -12,7 +12,7 @@
     "recorte_geografico_padrao": "Brasil (Remoto e Híbrido Nordeste / PB)",
     "normas_formatacao": "ABNT (NBR 6023, 6024, 14724)",
     "ferramenta_prototipagem": "Figma",
-    "tema_social_ambiental": "Aberto (seleção via matriz comparativa na Etapa 4)",
+    "tema_social_ambiental": "Monitoramento Participativo da Qualidade da Água e Saneamento Básico em Comunidades Vulneráveis da Paraíba (ODS 6)",
     "modelo_ia_orquestrador": "Gemini 3.8 Flash (High)"
   },
   "integrantes": [
@@ -45,15 +45,15 @@
       "lideranca_etapas": [4]
     }
   ],
-  "etapa_atual": 3,
-  "status_geral": "Etapa 3 Concluída - Aguardando Validação do Gate 3",
-  "percentual_concluido": 50,
+  "etapa_atual": 4,
+  "status_geral": "Etapa 4 Concluída - Aguardando Validação do Gate 4",
+  "percentual_concluido": 60,
   "gates": {
     "etapa_0_governanca": "concluido",
     "etapa_1_mercado": "concluido",
     "etapa_2_carreira": "concluido",
-    "etapa_3_etica_ia": "pronto_para_aprovacao",
-    "etapa_4_problema": "pendente",
+    "etapa_3_etica_ia": "concluido",
+    "etapa_4_problema": "pronto_para_aprovacao",
     "etapa_5_solucao": "pendente",
     "etapa_6_testes": "pendente",
     "etapa_7_relatorio": "pendente"
@@ -65,8 +65,8 @@
     "SA-4": "Prototipagem, testes e documentação técnica"
   },
   "pendencias_humanas": [
-    "Revisar o dossie_etica.md e aprovar o fechamento do Gate 3",
-    "Confirmar a aprovação dos 3 problemas sociais/ambientais para a Etapa 4 sob liderança de Gustavo Antonio"
+    "Revisar o dossie_problema.md e aprovar o fechamento do Gate 4",
+    "Autorizar o início da Etapa 5 (Desenvolvimento da Solução Tecnológica) sob liderança de Gabriel Amancio"
   ],
-  "ultima_atualizacao": "2026-11-06T10:59:00-03:00"
+  "ultima_atualizacao": "2026-11-06T11:03:00-03:00"
 }
