@@ -38,14 +38,14 @@ Esta matriz audita a rastreabilidade direta entre cada uma das exigências forma
 | Investigação de causas, públicos afetados e soluções existentes | Etapa 4.3, 4.4, 4.5 | `04_problema/dossie_problema.md` (Ishikawa e personas) | Conforme | Gustavo Antonio | Gate 4 |
 | Matriz comparativa e justificativa de seleção fundamentada | Etapa 4.6 e 4.7 | `04_problema/matriz_decisao.md` (Critérios ponderados) | Conforme | Gustavo Antonio | Gate 4 |
 | Delimitação do problema, objetivos, resultados esperados e limitações | Etapa 4.8, 4.9, 4.10 | `04_problema/dossie_problema.md` (Seções 7, 8 e 9) | Conforme | Gustavo Antonio | Gate 4 |
-| Nome, finalidade da solução, usuários e necessidades (personas) | Etapa 5.1 e 5.2 | `05_solucao/dossie_solucao.md` | Pendente | Gabriel Amancio | Gate 5 |
-| Pelo menos 10 requisitos funcionais com priorização | Etapa 5.3 | `05_solucao/requisitos.md` | Pendente | Gabriel Amancio | Gate 5 |
-| Pelo menos 6 requisitos não funcionais com métricas verificáveis | Etapa 5.4 | `05_solucao/requisitos.md` | Pendente | Gabriel Amancio | Gate 5 |
-| Diagrama de funcionamento e fluxo de interação do usuário | Etapa 5.5 e 5.6 | `05_solucao/diagramas/` | Pendente | Gabriel Amancio | Gate 5 |
-| Pelo menos 8 histórias de usuário com critérios de aceitação | Etapa 5.7 | `05_solucao/dossie_solucao.md` | Pendente | Gabriel Amancio | Gate 5 |
-| Definição de tecnologias e recursos necessários fundamentados | Etapa 5.8 | `05_solucao/dossie_solucao.md` | Pendente | Gustavo Antonio | Gate 5 |
-| Protótipo visual ou conceitual com pelo menos 8 telas/estados | Etapa 5.9 e 5.10 | `05_solucao/prototipo/` | Pendente | Gustavo Antonio | Gate 5 |
-| Justificativas de design e plano responsável (LGPD, WCAG) | Etapa 5.11 e 5.12 | `05_solucao/dossie_solucao.md` | Pendente | Gabriel Amancio | Gate 5 |
+| Nome, finalidade da solução, usuários e necessidades (personas) | Etapa 5.1 e 5.2 | `05_solucao/dossie_solucao.md` | Conforme | Gabriel Amancio | Gate 5 |
+| Pelo menos 10 requisitos funcionais com priorização | Etapa 5.3 | `05_solucao/requisitos.md` (12 RF com MoSCoW) | Conforme | Gabriel Amancio | Gate 5 |
+| Pelo menos 6 requisitos não funcionais com métricas verificáveis | Etapa 5.4 | `05_solucao/requisitos.md` (8 RNF com métricas) | Conforme | Gabriel Amancio | Gate 5 |
+| Diagrama de funcionamento e fluxo de interação do usuário | Etapa 5.5 e 5.6 | `05_solucao/diagramas/` (C4 e Fluxo Mermaid) | Conforme | Gabriel Amancio | Gate 5 |
+| Pelo menos 8 histórias de usuário com critérios de aceitação | Etapa 5.7 | `05_solucao/dossie_solucao.md` (8 HU BDD) | Conforme | Gabriel Amancio | Gate 5 |
+| Definição de tecnologias e recursos necessários fundamentados | Etapa 5.8 | `05_solucao/dossie_solucao.md` (Stack e Justificativas) | Conforme | Gustavo Antonio | Gate 5 |
+| Protótipo visual ou conceitual com pelo menos 8 telas/estados | Etapa 5.9 e 5.10 | `05_solucao/prototipo/especificacao_telas.md` (8 telas) | Conforme | Gustavo Antonio | Gate 5 |
+| Justificativas de design e plano responsável (LGPD, WCAG) | Etapa 5.11 e 5.12 | `05_solucao/dossie_solucao.md` (Seção 8 e 9) | Conforme | Gabriel Amancio | Gate 5 |
 | Plano com pelo menos 6 tarefas de teste e critérios de sucesso | Etapa 6.1 e 6.2 | `06_testes/plano_testes.md` | Pendente | Luiz Miguel | Gate 6 |
 | Avaliação exploratória com pelo menos 6 voluntários reais anonimizados | Etapa 6.3 e 6.4 | `06_testes/registros_anonimizados.csv` | Pendente | Luiz Miguel | Gate 6 |
 | Dificuldades, indicadores de conclusão, tabelas/gráficos de usabilidade | Etapa 6.5, 6.6, 6.7 | `06_testes/dossie_testes.md` | Pendente | Paulo Germano | Gate 6 |

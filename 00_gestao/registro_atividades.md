@@ -13,7 +13,7 @@ Este registro monitora a execução rigorosa de cada tarefa, atribuindo responsa
 | ID | Etapa | Tarefa | Responsável (integrante) | Prazo | Status | Decisão tomada | Evidência (arquivo/link) |
 |---|---|---|---|---|---|---|---|
 | ATIV-001 | 0 | Criação da infraestrutura de governança, pastas e templates | Gabriel Amancio | 2026-11-06 | Concluído | Adoção de estrutura modular e fonte única de verdade | `00_gestao/estado_projeto.json` |
-| ATIV-002 | 0 | Definição de cronograma retroativo e rodízio de liderança | Gabriel Amancio | 2026-11-07 | Em revisão | Liderança alternada por etapa (Gabriel, Luiz, Paulo, Gustavo) | `00_gestao/cronograma.md` |
+| ATIV-002 | 0 | Definição de cronograma retroativo e rodízio de liderança | Gabriel Amancio | 2026-11-07 | Concluído | Liderança alternada por etapa (Paulo, Luiz, Gabriel, Gustavo) | `00_gestao/cronograma.md` |
 | ATIV-003 | 0 | Matriz de conformidade dos requisitos do DESAFIO_PRATICO | Gustavo Antonio | 2026-11-07 | Concluído | Rastreamento ponta a ponta dos 7 blocos do desafio | `00_gestao/matriz_conformidade.md` |
 | ATIV-004 | 1 | Planejamento da amostragem de vagas de TI (24 reais, 6/função) | Paulo Germano | 2026-11-08 | Concluído | Coleta via fontes públicas respeitando termos de uso | `01_mercado/relatorio_vagas.md` |
 | ATIV-005 | 1 | Padronização de competências e planilha analítica no Sheets | Luiz Miguel | 2026-11-09 | Concluído | Processamento determinístico e 4 bases CSV geradas | `01_mercado/planilha_Frequencia_por_Funcao.csv` |
@@ -24,8 +24,8 @@ Este registro monitora a execução rigorosa de cada tarefa, atribuindo responsa
 | ATIV-010 | 3 | Seleção e análise de 2 casos reais de ética/IA e matriz >= 8 riscos | Gabriel Amancio (Coord.) | 2026-11-14 | Concluído | Enquadramento em LGPD, Marco Civil e ética | `03_etica_ia/dossie_etica.md` |
 | ATIV-011 | 3 | Realização dos 4 experimentos práticos com IA real | Todos | 2026-11-16 | Concluído | 4 logs práticos de alucinação e fact-checking | `03_etica_ia/experimentos/` |
 | ATIV-012 | 4 | Diagnóstico de >= 3 problemas sociais/ambientais e matriz de decisão | Gustavo Antonio (Coord.) | 2026-11-18 | Concluído | Selecionado problema de água/saneamento PB (ODS 6) | `04_problema/dossie_problema.md` |
-| ATIV-013 | 5 | Especificação técnica da solução (>=10 RF, >=6 RNF, 8 histórias) | Gabriel Amancio (Coord.) | 2026-11-20 | Em execução | MoSCoW, arquitetura, WCAG e LGPD | `05_solucao/dossie_solucao.md` |
-| ATIV-014 | 5 | Wireframes e protótipo de alta fidelidade (>=8 telas/estados) | Gustavo Antonio | 2026-11-21 | Em execução | Prototipagem conceitual/telas | `05_solucao/prototipo/` |
+| ATIV-013 | 5 | Especificação técnica da solução (>=10 RF, >=6 RNF, 8 histórias) | Gabriel Amancio (Coord.) | 2026-11-20 | Concluído | 12 RF MoSCoW, 8 RNF com métricas e 8 HU BDD | `05_solucao/dossie_solucao.md` |
+| ATIV-014 | 5 | Wireframes e protótipo de alta fidelidade (>=8 telas/estados) | Gustavo Antonio | 2026-11-21 | Concluído | Especificação detalhada de 8 telas para Figma e C4 | `05_solucao/prototipo/` |
 | ATIV-015 | 6 | Plano de testes (>=6 tarefas) e validação com 6 participantes reais | Luiz Miguel (Coord.) | 2026-11-23 | A iniciar | Anonimização P1..P6 e TCLE assinado | `06_testes/dossie_testes.md` |
 | ATIV-016 | 6 | Análise de resultados, identificação de >=4 melhorias e reiteração | Paulo Germano | 2026-11-24 | A iniciar | Comparativo antes/depois do protótipo | `06_testes/dossie_testes.md` |
 | ATIV-017 | 7 | Consolidação do Relatório Final (20-30 páginas ABNT) e Slides | Todos | 2026-11-26 | A iniciar | Montagem via Pandoc + CSL e banco de 20 perguntas | `07_relatorio/relatorio_final.md` |

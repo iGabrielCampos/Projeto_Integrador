@@ -26,10 +26,10 @@ Este documento lista formalmente todos os artefatos entregáveis previstos pelo 
 | **3** | 4 Registros de Experimentos Reais com IA | `03_etica_ia/experimentos/` | Markdown | Concluído | Todos os 4 Integrantes |
 | **4** | Diagnóstico de >= 3 Problemas Sociais/Amb.| `04_problema/dossie_problema.md` | Markdown | Concluído | Gustavo Antonio / SA-1 |
 | **4** | Matriz Comparativa de Seleção Fundamentada | `04_problema/matriz_decisao.md` | Markdown | Concluído | Gustavo Antonio / SA-3 |
-| **5** | Especificação Técnica (>=10 RF, >=6 RNF, 8 HU) | `05_solucao/requisitos.md` | Markdown | Pendente | Gabriel Amancio / SA-3 |
-| **5** | Diagramas de Arquitetura e Fluxo do Usuário | `05_solucao/diagramas/` | Mermaid / PNG | Pendente | Gabriel Amancio / SA-4 |
-| **5** | Protótipo Visual/Conceitual (>= 8 telas) | `05_solucao/prototipo/` | Figma / Link / PNG | Pendente | Gustavo Antonio / SA-4 |
-| **5** | Dossiê de Solução Tecnológica Responsável | `05_solucao/dossie_solucao.md` | Markdown | Pendente | Gabriel Amancio / SA-4 |
+| **5** | Especificação Técnica (>=10 RF, >=6 RNF, 8 HU) | `05_solucao/requisitos.md` | Markdown | Concluído | Gabriel Amancio / SA-3 |
+| **5** | Diagramas de Arquitetura e Fluxo do Usuário | `05_solucao/diagramas/` | Mermaid / PNG | Concluído | Gabriel Amancio / SA-4 |
+| **5** | Protótipo Visual/Conceitual (>= 8 telas) | `05_solucao/prototipo/` | Figma / Link / PNG | Concluído | Gustavo Antonio / SA-4 |
+| **5** | Dossiê de Solução Tecnológica Responsável | `05_solucao/dossie_solucao.md` | Markdown | Concluído | Gabriel Amancio / SA-4 |
 | **6** | Plano de Testes (>= 6 tarefas com critérios) | `06_testes/plano_testes.md` | Markdown | Pendente | Luiz Miguel / SA-4 |
 | **6** | Registros de Validação (>= 6 participantes P1..P6) | `06_testes/registros_anonimizados.csv` | CSV | Pendente | Luiz Miguel / SA-2 |
 | **6** | Dossiê de Testes e Versão Revisada do Protótipo | `06_testes/dossie_testes.md` | Markdown | Pendente | Luiz Miguel / SA-2 |
