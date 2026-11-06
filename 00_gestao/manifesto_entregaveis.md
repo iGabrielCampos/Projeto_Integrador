@@ -33,8 +33,8 @@ Este documento lista formalmente todos os artefatos entregáveis previstos pelo 
 | **6** | Plano de Testes (>= 6 tarefas com critérios) | `06_testes/plano_testes.md` | Markdown | Concluído | Luiz Miguel / SA-4 |
 | **6** | Registros de Validação (>= 6 participantes P1..P6) | `06_testes/registros_anonimizados.csv` | CSV | Concluído | Luiz Miguel / SA-2 |
 | **6** | Dossiê de Testes e Versão Revisada do Protótipo | `06_testes/dossie_testes.md` | Markdown | Concluído | Luiz Miguel / SA-2 |
-| **7** | Relatório Técnico-Científico Integrado (20-30 p)| `07_relatorio/relatorio_final.md` | MD / PDF / DOCX | Pendente | Todos os 4 Integrantes |
-| **7** | Roteiro de Apresentação e Slides | `07_relatorio/apresentacao.md` | Markdown | Pendente | Todos os 4 Integrantes |
-| **7** | Banco de Perguntas Prováveis da Banca (>=20) | `07_relatorio/roteiro_defesa.md` | Markdown | Pendente | Todos os 4 Integrantes |
-| **Ap.** | 4 Diários de Aprendizagem (>=6 registros cada) | `apendices/diarios/` | Markdown | Pendente | Todos os 4 Integrantes |
+| **7** | Relatório Técnico-Científico Integrado (20-30 p)| `07_relatorio/relatorio_final.md` | MD / HTML / PDF | Concluído | Todos os 4 Integrantes |
+| **7** | Roteiro de Apresentação e Slides | `07_relatorio/apresentacao.md` | Markdown | Concluído | Todos os 4 Integrantes |
+| **7** | Banco de Perguntas Prováveis da Banca (>=20) | `07_relatorio/roteiro_defesa.md` | Markdown | Concluído | Todos os 4 Integrantes |
+| **Ap.** | 4 Diários de Aprendizagem (>=6 registros cada) | `apendices/diarios/` | Markdown | Concluído | Todos os 4 Integrantes |
 | **Ap.** | Modelos de TCLE e Declaração de Uso de IA | `apendices/termos/` | Markdown | Concluído | Main Agent |

@@ -51,8 +51,8 @@ Esta matriz audita a rastreabilidade direta entre cada uma das exigências forma
 | Dificuldades, indicadores de conclusão, tabelas/gráficos de usabilidade | Etapa 6.5, 6.6, 6.7 | `06_testes/dossie_testes.md` (97,2% sucesso, SUS 84,2) | Conforme | Paulo Germano | Gate 6 |
 | Pelo menos 4 oportunidades de melhoria e revisão do protótipo | Etapa 6.8 e 6.9 | `06_testes/dossie_testes.md` (Matriz 4 melhorias) | Conforme | Gustavo Antonio | Gate 6 |
 | Comparação inicial x final do protótipo e discussão de limitações | Etapa 6.10 e 6.11 | `06_testes/dossie_testes.md` (Seções 7 e 8) | Conforme | Luiz Miguel | Gate 6 |
-| Relatório final único (20 a 30 páginas de texto principal ABNT) | Etapa 7 e Seção 7 | `07_relatorio/relatorio_final.md` | Pendente | Todos os 4 | Gate 7 |
-| Apresentação oral coletiva e roteiro com divisão de falas | Etapa 7 (Apresentação) | `07_relatorio/apresentacao.md` | Pendente | Todos os 4 | Gate 7 |
-| Demonstração do protótipo e banco de perguntas para defesa individual | Etapa 7 (Defesa) | `07_relatorio/roteiro_defesa.md` | Pendente | Todos os 4 | Gate 7 |
-| Diário Individual com pelo menos 6 registros por integrante (24 total) | Seção 6 (Diário) | `apendices/diarios/` | Pendente | Todos os 4 | Gate 7 |
-| Aprendizagem e aplicação comprovada de >= 2 novas ferramentas/aluno | Seção 6 (Diário) | `apendices/diarios/` | Pendente | Todos os 4 | Gate 7 |
+| Relatório final único (20 a 30 páginas de texto principal ABNT) | Etapa 7 e Seção 7 | `07_relatorio/relatorio_final.md` (~26 p. estimadas) | Conforme | Todos os 4 | Gate 7 |
+| Apresentação oral coletiva e roteiro com divisão de falas | Etapa 7 (Apresentação) | `07_relatorio/apresentacao.md` (13 slides Figma) | Conforme | Todos os 4 | Gate 7 |
+| Demonstração do protótipo e banco de perguntas para defesa individual | Etapa 7 (Defesa) | `07_relatorio/roteiro_defesa.md` (20 questões gabaritadas) | Conforme | Todos os 4 | Gate 7 |
+| Diário Individual com pelo menos 6 registros por integrante (24 total) | Seção 6 (Diário) | `apendices/diarios/` (4 diários completos) | Conforme | Todos os 4 | Gate 7 |
+| Aprendizagem e aplicação comprovada de >= 2 novas ferramentas/aluno | Seção 6 (Diário) | `apendices/diarios/` (Git, SUS, C4, Mermaid etc.) | Conforme | Todos os 4 | Gate 7 |

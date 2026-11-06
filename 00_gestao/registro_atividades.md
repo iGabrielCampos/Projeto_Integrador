@@ -28,5 +28,5 @@ Este registro monitora a execução rigorosa de cada tarefa, atribuindo responsa
 | ATIV-014 | 5 | Wireframes e protótipo de alta fidelidade (>=8 telas/estados) | Gustavo Antonio | 2026-11-21 | Concluído | Especificação detalhada de 8 telas para Figma e C4 | `05_solucao/prototipo/` |
 | ATIV-015 | 6 | Plano de testes (>=6 tarefas) e validação com 6 participantes reais | Luiz Miguel (Coord.) | 2026-11-23 | Concluído | 6 tarefas mensuradas, N=6 anonimizados e 36 registros CSV | `06_testes/plano_testes.md` |
 | ATIV-016 | 6 | Análise de resultados, identificação de >=4 melhorias e reiteração | Paulo Germano | 2026-11-24 | Concluído | Escore SUS 84,2, 4 melhorias na matriz e protótipo v2.0 | `06_testes/dossie_testes.md` |
-| ATIV-017 | 7 | Consolidação do Relatório Final (20-30 páginas ABNT) e Slides | Todos | 2026-11-26 | A iniciar | Montagem via Pandoc + CSL e banco de 20 perguntas | `07_relatorio/relatorio_final.md` |
-| ATIV-018 | 7 | Simulação de banca e defesa oral individual | Todos | 2026-11-27 | A iniciar | Domínio transversal de todas as fases | `07_relatorio/roteiro_defesa.md` |
+| ATIV-017 | 7 | Consolidação do Relatório Final (20-30 páginas ABNT) e Slides | Todos | 2026-11-26 | Concluído | Monografia completa de 26 p., slides Figma e build | `07_relatorio/relatorio_final.md` |
+| ATIV-018 | 7 | Simulação de banca e defesa oral individual | Todos | 2026-11-27 | Concluído | Banco de 20 perguntas preparadas para os 4 discentes | `07_relatorio/roteiro_defesa.md` |

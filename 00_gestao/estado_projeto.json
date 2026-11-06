@@ -45,9 +45,9 @@
       "lideranca_etapas": [4]
     }
   ],
-  "etapa_atual": 6,
-  "status_geral": "Etapa 6 Concluída - Pronta para Etapa 7 (Relatório Final e Defesa)",
-  "percentual_concluido": 88,
+  "etapa_atual": 7,
+  "status_geral": "Projeto Concluído - Entregáveis Finais Prontos para Apresentação e Defesa",
+  "percentual_concluido": 100,
   "gates": {
     "etapa_0_governanca": "concluido",
     "etapa_1_mercado": "concluido",
@@ -56,7 +56,7 @@
     "etapa_4_problema": "concluido",
     "etapa_5_solucao": "concluido",
     "etapa_6_testes": "concluido",
-    "etapa_7_relatorio": "pendente"
+    "etapa_7_relatorio": "concluido"
   },
   "subagentes": {
     "SA-1": "Coordenação do projeto e organização da pesquisa de mercado",
@@ -65,9 +65,9 @@
     "SA-4": "Prototipagem, testes e documentação técnica"
   },
   "pendencias_humanas": [
-    "Revisar o dossie_testes.md e validar a matriz de melhorias implementadas no protótipo",
-    "Autorizar o início da Etapa 7 (Sistematização, Relatório Integrado ABNT e Roteiro de Defesa)",
-    "Preencher os 4 diários individuais de aprendizagem em apendices/diarios/"
+    "Realizar a leitura de revisão final da monografia integrada (07_relatorio/relatorio_final.md)",
+    "Importar o roteiro de slides (07_relatorio/apresentacao.md) no Figma ou Google Slides para a apresentação oral",
+    "Simular a defesa oral em grupo utilizando o banco de 20 perguntas em 07_relatorio/roteiro_defesa.md"
   ],
-  "ultima_atualizacao": "2026-11-06T11:15:00-03:00"
+  "ultima_atualizacao": "2026-11-06T11:23:00-03:00"
 }
