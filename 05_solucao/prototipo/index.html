@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ÁguaViva PB — Protótipo Navegável Cívico (ODS 6)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfeff',
+              500: '#06b6d4',
+              600: '#0891b2',
+              700: '#0e7490',
+              900: '#164e63',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Modo Alto Contraste (WCAG 2.1 AA - Taxa 12:1) */
+    body.high-contrast {
+      background-color: #000000 !important;
+      color: #ffffff !important;
+    }
+    body.high-contrast .bg-white,
+    body.high-contrast .bg-slate-50,
+    body.high-contrast .bg-slate-100 {
+      background-color: #121212 !important;
+      color: #ffffff !important;
+      border-color: #ffe500 !important;
+    }
+    body.high-contrast .text-slate-600,
+    body.high-contrast .text-slate-500,
+    body.high-contrast .text-slate-400 {
+      color: #e2e8f0 !important;
+    }
+    body.high-contrast .bg-cyan-600,
+    body.high-contrast .bg-brand-600 {
+      background-color: #ffe500 !important;
+      color: #000000 !important;
+      font-weight: bold !important;
+    }
+    body.high-contrast a,
+    body.high-contrast button {
+      border: 2px solid #ffe500 !important;
+    }
+    /* Escala Tipográfica Ampliada (+200%) */
+    body.large-font {
+      font-size: 130% !important;
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans min-h-screen flex justify-center items-start p-0 md:p-6 transition-all duration-200">
+
+  <!-- Mobile App Frame Container -->
+  <div class="w-full max-w-md bg-white min-h-screen md:min-h-[844px] md:rounded-3xl shadow-2xl flex flex-col overflow-hidden relative border border-slate-200">
+
+    <!-- Top App Bar -->
+    <header class="bg-cyan-600 text-white px-4 py-3 flex items-center justify-between shadow-md z-30 sticky top-0">
+      <div class="flex items-center space-x-2">
+        <span class="text-2xl">💧</span>
+        <div>
+          <h1 class="font-bold text-lg leading-tight tracking-wide">ÁguaViva PB</h1>
+          <p class="text-xs text-cyan-100">João Pessoa e Região Metropolitana</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-2">
+        <!-- Online/Offline Simulator Button -->
+        <button id="toggle-network-btn" onclick="toggleNetworkMode()" class="px-2 py-1 bg-cyan-700 hover:bg-cyan-800 text-xs rounded-full font-medium flex items-center space-x-1" title="Clique para alternar conexão">
+          <span id="network-dot" class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span id="network-text">Online</span>
+        </button>
+        <!-- Acessibilidade Rápida -->
+        <button onclick="toggleHighContrast()" class="p-1.5 hover:bg-cyan-700 rounded-lg text-lg" title="Alto Contraste (WCAG)">
+          👁️
+        </button>
+      </div>
+    </header>
+
+    <!-- Offline Alert Banner (TEL-07 Humanizado pós-testes) -->
+    <div id="offline-banner" class="hidden bg-amber-500 text-slate-900 px-4 py-2 text-xs font-semibold flex items-center justify-between shadow-sm">
+      <div class="flex items-center space-x-2">
+        <span>📶</span>
+        <span>Modo Sem Internet: Suas denúncias serão salvas no celular e enviadas sozinhas!</span>
+      </div>
+      <button onclick="navigate('screen-offline')" class="underline text-slate-950 font-bold ml-1">Ver Fila</button>
+    </div>
+
+    <!-- Main Dynamic Screen Content Area -->
+    <main class="flex-1 p-4 pb-20 overflow-y-auto">
+
+      <!-- ============================================== -->
+      <!-- TELA 1: TEL-01 Dashboard Comunitário (Home)   -->
+      <!-- ============================================== -->
+      <section id="screen-home" class="space-y-4">
+        <!-- Localização atual -->
+        <div class="bg-cyan-50 border border-cyan-200 rounded-2xl p-3 flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <span class="text-xl text-cyan-600">📍</span>
+            <div>
+              <p class="text-xs text-slate-500 font-medium">Sua Comunidade</p>
+              <p class="font-bold text-slate-800 text-sm">Ilha do Bispo — João Pessoa/PB</p>
+            </div>
+          </div>
+          <span class="bg-amber-100 text-amber-800 text-xs px-2.5 py-1 rounded-full font-bold">Interrompida</span>
+        </div>
+
+        <!-- Card de Status Rápido da Água -->
+        <div class="bg-gradient-to-br from-cyan-600 to-cyan-800 rounded-2xl p-4 text-white shadow-lg space-y-3">
+          <div class="flex justify-between items-start">
+            <div>
+              <span class="text-xs bg-white/20 px-2 py-0.5 rounded-full uppercase tracking-wider font-semibold">Boletim Cidadão</span>
+              <h2 class="text-xl font-bold mt-1">Alerta de Desabastecimento</h2>
+            </div>
+            <span class="text-3xl">⚠️</span>
+          </div>
+          <p class="text-sm text-cyan-50 leading-relaxed">
+            Há relatos de torneira seca há mais de 48 horas em 3 ruas da sua microárea.
+          </p>
+          <div class="pt-1 flex space-x-2">
+            <button onclick="navigate('screen-denuncia-1')" class="flex-1 bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold py-2.5 px-3 rounded-xl text-xs text-center shadow-md transition">
+              📢 Relatar Falta d'Água
+            </button>
+            <button onclick="navigate('screen-mapa')" class="bg-white/10 hover:bg-white/20 text-white font-medium py-2.5 px-3 rounded-xl text-xs transition">
+              🗺️ Ver Mapa
+            </button>
+          </div>
+        </div>
+
+        <!-- Acesso Rápido a Serviços Cívicos -->
+        <div>
+          <h3 class="font-bold text-slate-700 text-sm mb-2">Serviços Cidadãos</h3>
+          <div class="grid grid-cols-2 gap-3">
+            <button onclick="navigate('screen-denuncia-1')" class="bg-white p-3 rounded-xl border border-slate-200 text-left hover:border-cyan-400 transition shadow-sm">
+              <span class="text-2xl block mb-1">🚨</span>
+              <p class="font-bold text-xs text-slate-800">Nova Denúncia</p>
+              <p class="text-[11px] text-slate-500">Torneira seca ou vazamento</p>
+            </button>
+            <button onclick="navigate('screen-mapa')" class="bg-white p-3 rounded-xl border border-slate-200 text-left hover:border-cyan-400 transition shadow-sm">
+              <span class="text-2xl block mb-1">🗺️</span>
+              <p class="font-bold text-xs text-slate-800">Mapa do Bairro</p>
+              <p class="text-[11px] text-slate-500">Qualidade e potabilidade</p>
+            </button>
+            <button onclick="navigate('screen-pipa')" class="bg-white p-3 rounded-xl border border-slate-200 text-left hover:border-cyan-400 transition shadow-sm">
+              <span class="text-2xl block mb-1">🚛</span>
+              <p class="font-bold text-xs text-slate-800">Carro-Pipa</p>
+              <p class="text-[11px] text-slate-500">Pedido para creche/posto</p>
+            </button>
+            <button onclick="navigate('screen-transparencia')" class="bg-white p-3 rounded-xl border border-slate-200 text-left hover:border-cyan-400 transition shadow-sm">
+              <span class="text-2xl block mb-1">📊</span>
+              <p class="font-bold text-xs text-slate-800">Transparência</p>
+              <p class="text-[11px] text-slate-500">Horas de falta d'água</p>
+            </button>
+          </div>
+        </div>
+
+        <!-- Chamados Recentes na Comunidade -->
+        <div class="space-y-2">
+          <div class="flex justify-between items-center">
+            <h3 class="font-bold text-slate-700 text-sm">Ocorrências Coletivas</h3>
+            <span class="text-xs text-cyan-600 font-semibold">Atualizado há 15 min</span>
+          </div>
+          <div class="bg-white p-3 rounded-xl border border-slate-200 flex justify-between items-center text-xs">
+            <div>
+              <p class="font-bold text-slate-800">Rua das Trincheiras — Várzea</p>
+              <p class="text-slate-500">Vazamento de cano mestre na calçada</p>
+            </div>
+            <span class="bg-cyan-100 text-cyan-800 px-2 py-0.5 rounded font-bold">14 apoios</span>
+          </div>
+          <div class="bg-white p-3 rounded-xl border border-slate-200 flex justify-between items-center text-xs">
+            <div>
+              <p class="font-bold text-slate-800">Comunidade São Rafael</p>
+              <p class="text-slate-500">Água turva com odor forte há 24h</p>
+            </div>
+            <span class="bg-red-100 text-red-800 px-2 py-0.5 rounded font-bold">Crítico</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- TELA 2: TEL-02 Formulário de Denúncia Passo 1  -->
+      <!-- ============================================== -->
+      <section id="screen-denuncia-1" class="hidden space-y-4">
+        <div class="flex items-center space-x-2">
+          <button onclick="navigate('screen-home')" class="p-1 text-slate-600 hover:text-slate-900 text-lg">←</button>
+          <h2 class="font-bold text-base text-slate-800">Nova Denúncia (Passo 1 de 2)</h2>
+        </div>
+
+        <p class="text-xs text-slate-600">Qual problema você está enfrentando na sua torneira ou rua hoje?</p>
+
+        <!-- Seletor de Categoria com Toque Amplo (48px) -->
+        <div class="space-y-2.5">
+          <label class="flex items-center p-3.5 bg-white border-2 border-cyan-600 rounded-xl cursor-pointer shadow-sm">
+            <input type="radio" name="cat-problema" value="falta_agua" checked class="w-5 h-5 text-cyan-600">
+            <span class="ml-3 text-2xl">🚱</span>
+            <div class="ml-3">
+              <p class="font-bold text-xs text-slate-800">Falta d'Água (Torneira Seca)</p>
+              <p class="text-[11px] text-slate-500">Interrupção há mais de 12 horas</p>
+            </div>
+          </label>
+
+          <label class="flex items-center p-3.5 bg-white border border-slate-200 rounded-xl cursor-pointer hover:border-cyan-400">
+            <input type="radio" name="cat-problema" value="agua_suja" class="w-5 h-5 text-cyan-600">
+            <span class="ml-3 text-2xl">🍂</span>
+            <div class="ml-3">
+              <p class="font-bold text-xs text-slate-800">Água Barrenta ou com Odor</p>
+              <p class="text-[11px] text-slate-500">Coloração escura, gosto ruim ou ferrugem</p>
+            </div>
+          </label>
+
+          <label class="flex items-center p-3.5 bg-white border border-slate-200 rounded-xl cursor-pointer hover:border-cyan-400">
+            <input type="radio" name="cat-problema" value="vazamento" class="w-5 h-5 text-cyan-600">
+            <span class="ml-3 text-2xl">🌊</span>
+            <div class="ml-3">
+              <p class="font-bold text-xs text-slate-800">Vazamento na Rua / Cano Estourado</p>
+              <p class="text-[11px] text-slate-500">Desperdício de água limpa na calçada</p>
+            </div>
+          </label>
+
+          <label class="flex items-center p-3.5 bg-white border border-slate-200 rounded-xl cursor-pointer hover:border-cyan-400">
+            <input type="radio" name="cat-problema" value="esgoto" class="w-5 h-5 text-cyan-600">
+            <span class="ml-3 text-2xl">⚠️</span>
+            <div class="ml-3">
+              <p class="font-bold text-xs text-slate-800">Esgoto a Céu Aberto</p>
+              <p class="text-[11px] text-slate-500">Transbordamento na porta de residências</p>
+            </div>
+          </label>
+        </div>
+
+        <button onclick="navigate('screen-denuncia-2')" class="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-4 rounded-xl text-sm shadow-md transition">
+          Avançar para Evidências →
+        </button>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- TELA 3: TEL-03 Formulário de Denúncia Passo 2  -->
+      <!-- ============================================== -->
+      <section id="screen-denuncia-2" class="hidden space-y-4">
+        <div class="flex items-center space-x-2">
+          <button onclick="navigate('screen-denuncia-1')" class="p-1 text-slate-600 hover:text-slate-900 text-lg">←</button>
+          <h2 class="font-bold text-base text-slate-800">Evidência e Local (Passo 2 de 2)</h2>
+        </div>
+
+        <!-- Anexo de Foto Simulado -->
+        <div class="space-y-1">
+          <label class="block text-xs font-bold text-slate-700">Foto da Situação (Torneira ou Rua)</label>
+          <div class="border-2 border-dashed border-slate-300 rounded-xl p-4 text-center hover:border-cyan-500 cursor-pointer bg-slate-50">
+            <span class="text-3xl block mb-1">📷</span>
+            <p class="text-xs font-semibold text-slate-700">Clique para Tirar Foto ou Anexar</p>
+            <p class="text-[10px] text-slate-400">Comprimida automaticamente para economizar dados</p>
+          </div>
+        </div>
+
+        <!-- Endereço e GPS -->
+        <div class="space-y-1">
+          <label class="block text-xs font-bold text-slate-700">Onde está acontecendo?</label>
+          <div class="relative">
+            <input type="text" id="denuncia-endereco" value="Rua da Areia, Ilha do Bispo, João Pessoa" class="w-full p-2.5 text-xs border border-slate-300 rounded-xl pr-10">
+            <span class="absolute right-3 top-2.5 text-base text-cyan-600">📍</span>
+          </div>
+          <p class="text-[10px] text-slate-500">Geolocalização obtida automaticamente pelo GPS</p>
+        </div>
+
+        <!-- Descrição Livre Opcional -->
+        <div class="space-y-1">
+          <label class="block text-xs font-bold text-slate-700">Relato Livre (Opcional)</label>
+          <textarea id="denuncia-relato" rows="2" placeholder="Ex.: Já ligamos para a Cagepa e não deram prazo..." class="w-full p-2.5 text-xs border border-slate-300 rounded-xl"></textarea>
+        </div>
+
+        <!-- Sticky Submit Action Bar (Refatoração v2.0 pós-testes) -->
+        <div class="pt-2">
+          <button onclick="submitDenuncia()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl text-sm shadow-lg flex items-center justify-center space-x-2 transition">
+            <span>🚀 Confirmar e Enviar Relato</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- TELA 4: TEL-04 Mapa Interativo de Potabilidade -->
+      <!-- ============================================== -->
+      <section id="screen-mapa" class="hidden space-y-3">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <button onclick="navigate('screen-home')" class="p-1 text-slate-600 hover:text-slate-900 text-lg">←</button>
+            <h2 class="font-bold text-base text-slate-800">Mapa de Qualidade da Água</h2>
+          </div>
+        </div>
+
+        <!-- Mapa Simulado Interativo -->
+        <div class="bg-slate-800 rounded-2xl h-64 p-3 relative flex flex-col justify-between text-white overflow-hidden shadow-inner border border-slate-700">
+          <!-- Camada de Ruas e Pontos -->
+          <div class="absolute inset-0 opacity-30 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:16px_16px]"></div>
+          
+          <div class="relative z-10 flex justify-between items-start">
+            <span class="text-xs bg-slate-900/80 px-2.5 py-1 rounded-full border border-slate-600">João Pessoa / Paraíba</span>
+            <!-- Botões Táteis de Zoom (+ / -) Melhoria v2.0 -->
+            <div class="flex flex-col space-y-1">
+              <button onclick="alert('Zoom ampliado (+)')" class="w-9 h-9 bg-slate-900/90 text-white font-bold rounded-lg border border-slate-600 flex items-center justify-center text-sm shadow">+</button>
+              <button onclick="alert('Zoom reduzido (-)')" class="w-9 h-9 bg-slate-900/90 text-white font-bold rounded-lg border border-slate-600 flex items-center justify-center text-sm shadow">-</button>
+            </div>
+          </div>
+
+          <!-- Pins Geográficos Simulados -->
+          <div class="relative z-10 space-y-2">
+            <div class="bg-emerald-500/90 p-2 rounded-xl text-slate-950 font-bold text-[11px] flex items-center justify-between">
+              <span>💧 Mangabeira (Zona Sul)</span>
+              <span class="bg-white text-emerald-900 px-1.5 py-0.5 rounded text-[10px]">Água Própria</span>
+            </div>
+            <div class="bg-rose-500/95 p-2 rounded-xl text-white font-bold text-[11px] flex items-center justify-between animate-pulse">
+              <span>⚠️ Ilha do Bispo (Zona Oeste)</span>
+              <span class="bg-black/40 text-white px-1.5 py-0.5 rounded text-[10px]">Desabastecida (48h)</span>
+            </div>
+            <div class="bg-amber-400 p-2 rounded-xl text-slate-950 font-bold text-[11px] flex items-center justify-between">
+              <span>🍂 Mandacaru (Zona Norte)</span>
+              <span class="bg-slate-900 text-amber-300 px-1.5 py-0.5 rounded text-[10px]">Turbidez Alta</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-3 bg-white rounded-xl border border-slate-200 text-xs space-y-1">
+          <p class="font-bold text-slate-800">Legenda dos Laudos Sanitários:</p>
+          <div class="flex items-center space-x-3 text-[11px]">
+            <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 mr-1"></span> Própria</span>
+            <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-amber-400 mr-1"></span> Alerta de Turbidez</span>
+            <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-rose-500 mr-1"></span> Sem Abastecimento</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- TELA 5: TEL-05 Painel de Transparência        -->
+      <!-- ============================================== -->
+      <section id="screen-transparencia" class="hidden space-y-3">
+        <div class="flex items-center space-x-2">
+          <button onclick="navigate('screen-home')" class="p-1 text-slate-600 hover:text-slate-900 text-lg">←</button>
+          <h2 class="font-bold text-base text-slate-800">Painel de Transparência Cívica</h2>
+        </div>
+
+        <!-- Indicador Consolidado -->
+        <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm space-y-2">
+          <p class="text-xs text-slate-500 font-semibold uppercase">Índice Semanal da Paraíba</p>
+          <div class="flex items-baseline space-x-2">
+            <span class="text-3xl font-black text-rose-600">47,0%</span>
+            <span class="text-xs text-slate-600 font-medium">De perda de água na rede (SNIS)</span>
+          </div>
+          <div class="w-full bg-slate-200 h-2.5 rounded-full overflow-hidden">
+            <div class="bg-rose-500 h-full w-[47%]"></div>
+          </div>
+        </div>
+
+        <!-- Gráfico de Horas sem Água nos Últimos 7 Dias -->
+        <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm space-y-2">
+          <p class="text-xs font-bold text-slate-800">Horas Acumuladas Sem Água (Por Bairro)</p>
+          <div class="space-y-1.5 text-xs">
+            <div>
+              <div class="flex justify-between text-[11px] font-semibold text-slate-600 mb-0.5">
+                <span>Ilha do Bispo</span>
+                <span class="text-rose-600 font-bold">54 horas</span>
+              </div>
+              <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                <div class="bg-rose-500 h-full w-[75%]"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-[11px] font-semibold text-slate-600 mb-0.5">
+                <span>Mandacaru</span>
+                <span class="text-amber-600 font-bold">28 horas</span>
+              </div>
+              <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                <div class="bg-amber-500 h-full w-[40%]"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-[11px] font-semibold text-slate-600 mb-0.5">
+                <span>Mangabeira</span>
+                <span class="text-emerald-600 font-bold">6 horas</span>
+              </div>
+              <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                <div class="bg-emerald-500 h-full w-[10%]"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botão de Exportar Relatório PDF Comunitário -->
+        <button onclick="alert('Relatório Comunitário gerado em PDF com sucesso! (CAGEPA/Defesa Civil)')" class="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-4 rounded-xl text-xs flex items-center justify-center space-x-2 shadow-sm transition">
+          <span>📄 Baixar Resumo Comunitário em PDF</span>
+        </button>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- TELA 6: TEL-06 Central de Carro-Pipa          -->
+      <!-- ============================================== -->
+      <section id="screen-pipa" class="hidden space-y-3">
+        <div class="flex items-center space-x-2">
+          <button onclick="navigate('screen-home')" class="p-1 text-slate-600 hover:text-slate-900 text-lg">←</button>
+          <h2 class="font-bold text-base text-slate-800">Abastecimento Emergencial</h2>
+        </div>
+
+        <div class="bg-amber-50 border border-amber-200 p-3 rounded-2xl text-xs text-amber-900 space-y-1">
+          <p class="font-bold">Prioridade Pública:</p>
+          <p>Solicitações de caminhão-pipa da Defesa Civil são direcionadas para Creches, Escolas e Unidades Básicas de Saúde (UBS).</p>
+        </div>
+
+        <div class="space-y-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Instituição ou Coletivo:</label>
+            <select class="w-full p-2.5 text-xs border border-slate-300 rounded-xl bg-white">
+              <option>Creche Comunitária do Bairro</option>
+              <option>Unidade de Saúde da Família (USF)</option>
+              <option>Associação de Moradores</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Dias sem abastecimento contínuo:</label>
+            <input type="number" value="4" class="w-full p-2.5 text-xs border border-slate-300 rounded-xl">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Ponto de Referência no Bairro:</label>
+            <input type="text" value="Próximo à pracinha da Igreja Matriz" class="w-full p-2.5 text-xs border border-slate-300 rounded-xl">
+          </div>
+
+          <button onclick="alert('Solicitação protocolada sob nº PIP-2026-PB! Prazo estimado de resposta: 4h.')" class="w-full bg-cyan-700 hover:bg-cyan-800 text-white font-bold py-3 px-4 rounded-xl text-xs shadow-md transition">
+            🚛 Solicitar Caminhão-Pipa Emergencial
+          </button>
+        </div>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- TELA 7: TEL-07 Fila Offline e Sincronização   -->
+      <!-- ============================================== -->
+      <section id="screen-offline" class="hidden space-y-3">
+        <div class="flex items-center space-x-2">
+          <button onclick="navigate('screen-home')" class="p-1 text-slate-600 hover:text-slate-900 text-lg">←</button>
+          <h2 class="font-bold text-base text-slate-800">Fila Local de Sincronização</h2>
+        </div>
+
+        <div class="bg-cyan-50 border border-cyan-200 p-3.5 rounded-2xl text-xs space-y-2">
+          <p class="font-bold text-cyan-900">🛡️ Seus Dados Estão Seguros!</p>
+          <p class="text-slate-700 leading-relaxed">
+            Mesmo quando o celular fica sem internet ou sem crédito, nada é perdido. Guardamos sua denúncia na memória protegida do aparelho (IndexedDB) e enviamos sozinhos assim que o sinal voltar.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <p class="text-xs font-bold text-slate-700">Denúncias no Aparelho (Fila):</p>
+          <div id="offline-items-list" class="space-y-2">
+            <div class="bg-white p-3 rounded-xl border border-amber-300 flex justify-between items-center text-xs shadow-sm">
+              <div>
+                <p class="font-bold text-slate-800">Torneira Seca (Rua da Areia)</p>
+                <p class="text-[11px] text-slate-500">Gravado localmente há 10 min</p>
+              </div>
+              <span class="bg-amber-100 text-amber-800 text-[10px] px-2 py-0.5 rounded-full font-bold">Aguardando Sinal</span>
+            </div>
+          </div>
+        </div>
+
+        <button onclick="syncOfflineQueue()" class="w-full bg-slate-800 hover:bg-slate-900 text-white font-bold py-3 px-4 rounded-xl text-xs flex items-center justify-center space-x-1 transition">
+          <span>🔄 Tentar Sincronizar Agora</span>
+        </button>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- TELA 8: TEL-08 Configurações de Acessibilidade -->
+      <!-- ============================================== -->
+      <section id="screen-acessibilidade" class="hidden space-y-3">
+        <div class="flex items-center space-x-2">
+          <button onclick="navigate('screen-home')" class="p-1 text-slate-600 hover:text-slate-900 text-lg">←</button>
+          <h2 class="font-bold text-base text-slate-800">Acessibilidade e Privacidade</h2>
+        </div>
+
+        <div class="space-y-3 bg-white p-4 rounded-2xl border border-slate-200 text-xs">
+          <div class="flex items-center justify-between py-2 border-b border-slate-100">
+            <div>
+              <p class="font-bold text-slate-800">Modo Alto Contraste (WCAG 2.1)</p>
+              <p class="text-[11px] text-slate-500">Preto puro e amarelo para sol forte</p>
+            </div>
+            <input type="checkbox" id="check-contrast" onchange="toggleHighContrast()" class="w-5 h-5 text-cyan-600">
+          </div>
+
+          <div class="flex items-center justify-between py-2 border-b border-slate-100">
+            <div>
+              <p class="font-bold text-slate-800">Aumento de Letra (+200%)</p>
+              <p class="text-[11px] text-slate-500">Fontes ampliadas para facilitar leitura</p>
+            </div>
+            <input type="checkbox" id="check-font" onchange="toggleLargeFont()" class="w-5 h-5 text-cyan-600">
+          </div>
+
+          <div class="py-2 space-y-1">
+            <p class="font-bold text-slate-800">Privacidade Cidadã (LGPD)</p>
+            <p class="text-[11px] text-slate-500 leading-relaxed">
+              Não coletamos seu CPF, nem seu número de telefone. As denúncias no mapa são anônimas para proteger você e seus vizinhos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Bottom Navigation Bar (TEL-01 a TEL-08) -->
+    <nav class="bg-white border-t border-slate-200 py-2 px-6 flex justify-between items-center fixed md:absolute bottom-0 left-0 right-0 z-40">
+      <button onclick="navigate('screen-home')" class="flex flex-col items-center text-cyan-600">
+        <span class="text-xl">🏠</span>
+        <span class="text-[10px] font-bold">Início</span>
+      </button>
+      <button onclick="navigate('screen-mapa')" class="flex flex-col items-center text-slate-400 hover:text-cyan-600">
+        <span class="text-xl">🗺️</span>
+        <span class="text-[10px]">Mapa</span>
+      </button>
+      <button onclick="navigate('screen-denuncia-1')" class="flex flex-col items-center text-amber-500 hover:text-amber-600">
+        <span class="text-xl">➕</span>
+        <span class="text-[10px] font-bold">Relatar</span>
+      </button>
+      <button onclick="navigate('screen-offline')" class="flex flex-col items-center text-slate-400 hover:text-cyan-600">
+        <span class="text-xl">📦</span>
+        <span class="text-[10px]">Fila</span>
+      </button>
+      <button onclick="navigate('screen-acessibilidade')" class="flex flex-col items-center text-slate-400 hover:text-cyan-600">
+        <span class="text-xl">⚙️</span>
+        <span class="text-[10px]">Ajustes</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <!-- Script Lógico do Protótipo -->
+  <script>
+    let isOffline = false;
+
+    function navigate(screenId) {
+      const screens = [
+        'screen-home',
+        'screen-denuncia-1',
+        'screen-denuncia-2',
+        'screen-mapa',
+        'screen-transparencia',
+        'screen-pipa',
+        'screen-offline',
+        'screen-acessibilidade'
+      ];
+      screens.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.add('hidden');
+      });
+      const target = document.getElementById(screenId);
+      if (target) target.classList.remove('hidden');
+      window.scrollTo(0, 0);
+    }
+
+    function toggleNetworkMode() {
+      isOffline = !isOffline;
+      const dot = document.getElementById('network-dot');
+      const text = document.getElementById('network-text');
+      const banner = document.getElementById('offline-banner');
+
+      if (isOffline) {
+        dot.className = 'w-2 h-2 rounded-full bg-amber-400';
+        text.innerText = 'Offline';
+        banner.classList.remove('hidden');
+      } else {
+        dot.className = 'w-2 h-2 rounded-full bg-emerald-400 animate-pulse';
+        text.innerText = 'Online';
+        banner.classList.add('hidden');
+      }
+    }
+
+    function toggleHighContrast() {
+      document.body.classList.toggle('high-contrast');
+      const chk = document.getElementById('check-contrast');
+      if (chk) chk.checked = document.body.classList.contains('high-contrast');
+    }
+
+    function toggleLargeFont() {
+      document.body.classList.toggle('large-font');
+      const chk = document.getElementById('check-font');
+      if (chk) chk.checked = document.body.classList.contains('large-font');
+    }
+
+    function submitDenuncia() {
+      if (isOffline) {
+        alert("📶 Modo Offline detectado!\nSua denúncia foi guardada no celular com segurança (IndexedDB).\nAssim que o sinal de internet voltar, ela será transmitida sozinha!");
+        navigate('screen-offline');
+      } else {
+        alert("✅ Denúncia enviada com sucesso para a CAGEPA e Comitê Cívico!\nProtocolo Coletivo Gerado: PB-2026-98124\nObrigado por ajudar sua comunidade!");
+        navigate('screen-home');
+      }
+    }
+
+    function syncOfflineQueue() {
+      if (isOffline) {
+        alert("Ainda sem conexão de internet. Os itens continuam guardados com segurança no aparelho!");
+      } else {
+        alert("🎉 Sincronização concluída com sucesso!\nTodos os relatos da fila foram transmitidos para a central.");
+        document.getElementById('offline-items-list').innerHTML = '<p class="text-emerald-700 text-xs font-semibold py-2">Nenhuma ocorrência pendente. Tudo sincronizado!</p>';
+      }
+    }
+  </script>
+</body>
+</html>
