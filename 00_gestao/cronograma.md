@@ -18,7 +18,7 @@ Para assegurar o protagonismo, a responsabilidade compartilhada e a avaliação 
 
 | Etapa | Tema Central | Integrante Líder (Coordenação) | Subagente de Suporte | Revisores Obrigatórios |
 |---|---|---|---|---|
-| **Etapa 0** | Governança, Infraestrutura e Gates | Paulo Germano | SA-1 | Luiz Miguel, Gustavo Antonio |
+| **Etapa 0** | Governança, Infraestrutura e Gates | Gabriel Amancio | SA-1 | Luiz Miguel, Gustavo Antonio |
 | **Etapa 1** | Investigação do Mercado de TI (24 Vagas) | Paulo Germano | SA-1 | Gabriel Amancio, Luiz Miguel |
 | **Etapa 2** | Identidade Profissional e Carreira (4 PDIs) | Luiz Miguel | SA-2 | Paulo Germano, Gustavo Antonio |
 | **Etapa 3** | Ética Tecnológica, LGPD e Experimentos IA | Gabriel Amancio | SA-3 | Paulo Germano, Luiz Miguel |

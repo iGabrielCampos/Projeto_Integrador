@@ -69,15 +69,15 @@ As tarefas foram projetadas cobrindo os fluxos operacionais de maior relevância
 
 A avaliação coletou um total de 36 observações padronizadas (6 voluntários × 6 tarefas). A tabela a seguir sintetiza os indicadores de eficácia (taxa de conclusão), eficiência temporal média (segundos) e satisfação subjetiva por tarefa:
 
-| Tarefa | Descrição da Tarefa | Taxa de Conclusão (%) | Tempo Médio Real (s) | Meta Temporal (s) | Média de Erros / Desvios | Satisfação Média (Escala 1 a 5) |
-|---|---|---|---|---|---|---|
-| **T01** | Consulta de potabilidade no bairro | 100% (6/6) | 41,2 s | 60 s | 0,17 | 4,83 |
-| **T02** | Registro de denúncia com foto | 83,3% (5/6) | 85,8 s | 120 s | 1,17 | 4,17 |
-| **T03** | Modo offline e fila de sincronização | 100% (6/6) | 63,3 s | 90 s | 0,67 | 4,33 |
-| **T04** | Solicitação de carro-pipa emergencial | 100% (6/6) | 60,3 s | 90 s | 0,17 | 4,83 |
-| **T05** | Painel de transparência e exportação | 100% (6/6) | 75,7 s | 100 s | 0,67 | 4,33 |
-| **T06** | Ativação de acessibilidade | 100% (6/6) | 29,8 s | 45 s | 0,00 | 5,00 |
-| **Geral** | **Média Consolidada do Sistema** | **97,2%** | **59,4 s** | **84,2 s** | **0,47** | **4,58 / 5,0** |
+| Tarefa | Descrição da Tarefa | Taxa de Conclusão (%) | Tempo Médio Real (s) | Desvio-Padrão (σ) | Meta Temporal (s) | Média de Erros / Desvios | Satisfação Média (Escala 1 a 5) |
+|---|---|---|---|---|---|---|---|
+| **T01** | Consulta de potabilidade no bairro | 100% (6/6) | 41,2 s | ± 10,9 s | 60 s | 0,17 | 4,83 |
+| **T02** | Registro de denúncia com foto | 83,3% (5/6) | 85,8 s | ± 29,3 s | 120 s | 1,17 | 4,17 |
+| **T03** | Modo offline e fila de sincronização | 100% (6/6) | 63,3 s | ± 15,6 s | 90 s | 0,67 | 4,33 |
+| **T04** | Solicitação de carro-pipa emergencial | 100% (6/6) | 60,3 s | ± 12,8 s | 90 s | 0,17 | 4,83 |
+| **T05** | Painel de transparência e exportação | 100% (6/6) | 75,7 s | ± 20,5 s | 100 s | 0,67 | 4,33 |
+| **T06** | Ativação de acessibilidade | 100% (6/6) | 29,8 s | ± 6,9 s | 45 s | 0,00 | 5,00 |
+| **Geral** | **Média Consolidada do Sistema** | **97,2%** | **59,4 s** | **± 25,3 s** | **84,2 s** | **0,47** | **4,58 / 5,0** |
 
 ```mermaid
 xychart-beta

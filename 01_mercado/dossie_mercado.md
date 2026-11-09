@@ -95,24 +95,24 @@ A padronização das competências brutas extraídas dos editais gerou a Tabela 
 
 | Competência Padronizada | Categoria | Dev. Software (n=6) | Infra e Redes (n=6) | Dados e IA (n=6) | Segurança Info (n=6) | Frequência Geral (N=24) | % Geral |
 |---|---|---|---|---|---|---|---|
-| **Comunicação Clara e Transparente** | Comportamental | 6 (100%) | 4 (66,7%) | 4 (66,7%) | 4 (66,7%) | 18 | 75,0% |
-| **Trabalho em Equipe e Cooperação** | Comportamental | 5 (83,3%) | 3 (50,0%) | 4 (66,7%) | 3 (50,0%) | 15 | 62,5% |
-| **Aprendizado Contínuo (Growth Mindset)** | Comportamental | 4 (66,7%) | 2 (33,3%) | 4 (66,7%) | 3 (50,0%) | 13 | 54,2% |
-| **Lógica de Programação e Algoritmos** | Técnica | 6 (100%) | 2 (33,3%) | 3 (50,0%) | 1 (16,7%) | 12 | 50,0% |
-| **Git / GitHub (Controle de Versão)** | Técnica | 6 (100%) | 0 (0,0%) | 3 (50,0%) | 2 (33,3%) | 11 | 45,8% |
-| **Proatividade e Iniciativa** | Comportamental | 4 (66,7%) | 2 (33,3%) | 3 (50,0%) | 2 (33,3%) | 11 | 45,8% |
-| **SQL (PostgreSQL/SQL Server/MySQL)** | Técnica | 4 (66,7%) | 0 (0,0%) | 6 (100%) | 0 (0,0%) | 10 | 41,7% |
-| **Cloud Computing (AWS/Azure/GCP)** | Técnica | 1 (16,7%) | 4 (66,7%) | 1 (16,7%) | 3 (50,0%) | 9 | 37,5% |
-| **Postura Ética e Sigilo Profissional** | Comportamental | 1 (16,7%) | 1 (16,7%) | 2 (33,3%) | 5 (83,3%) | 9 | 37,5% |
-| **Python (Desenvolvimento / Dados / Scripts)** | Técnica | 2 (33,3%) | 1 (16,7%) | 4 (66,7%) | 1 (16,7%) | 8 | 33,3% |
-| **Linux (Ubuntu/Debian) e Shell Script** | Técnica | 0 (0,0%) | 5 (83,3%) | 0 (0,0%) | 3 (50,0%) | 8 | 33,3% |
-| **APIs RESTful e Integrações Web** | Técnica | 6 (100%) | 0 (0,0%) | 1 (16,7%) | 0 (0,0%) | 7 | 29,2% |
-| **Redes e Protocolos TCP/IP** | Técnica | 0 (0,0%) | 5 (83,3%) | 0 (0,0%) | 2 (33,3%) | 7 | 29,2% |
-| **Power BI / Visualização de Dados** | Técnica | 0 (0,0%) | 0 (0,0%) | 5 (83,3%) | 0 (0,0%) | 5 | 20,8% |
-| **IAM (Gestão de Identidades e Acesso)** | Técnica | 0 (0,0%) | 2 (33,3%) | 0 (0,0%) | 3 (50,0%) | 5 | 20,8% |
-| **SIEM e Análise de Logs de Segurança** | Técnica | 0 (0,0%) | 1 (16,7%) | 0 (0,0%) | 4 (66,7%) | 5 | 20,8% |
-| **LGPD e Privacidade de Dados `[F001]`** | Técnica / Legal | 0 (0,0%) | 0 (0,0%) | 1 (16,7%) | 3 (50,0%) | 4 | 16,7% |
-| **IA Generativa e Modelos de Linguagem (LLMs)** | Técnica | 1 (16,7%) | 0 (0,0%) | 2 (33,3%) | 0 (0,0%) | 3 | 12,5% |
+| **SQL (PostgreSQL/SQL Server/MySQL)** | Técnica | 6 (100,0%) | 0 (0,0%) | 5 (83,3%) | 0 (0,0%) | 11 | 45,8% |
+| **Comunicação Clara e Transparente** | Comportamental | 2 (33,3%) | 1 (16,7%) | 2 (33,3%) | 2 (33,3%) | 7 | 29,2% |
+| **Git / GitHub (Controle de Versão)** | Técnica | 5 (83,3%) | 0 (0,0%) | 2 (33,3%) | 0 (0,0%) | 7 | 29,2% |
+| **Python (Dados / Dev / Automação)** | Técnica | 2 (33,3%) | 1 (16,7%) | 4 (66,7%) | 0 (0,0%) | 7 | 29,2% |
+| **Java / Spring Boot** | Técnica | 5 (83,3%) | 0 (0,0%) | 0 (0,0%) | 0 (0,0%) | 5 | 20,8% |
+| **Linux (Ubuntu/Debian)** | Técnica | 0 (0,0%) | 4 (66,7%) | 0 (0,0%) | 0 (0,0%) | 4 | 16,7% |
+| **Power BI / Visualização de Dados** | Técnica | 0 (0,0%) | 0 (0,0%) | 4 (66,7%) | 0 (0,0%) | 4 | 16,7% |
+| **Proatividade e Iniciativa** | Comportamental | 1 (16,7%) | 1 (16,7%) | 1 (16,7%) | 1 (16,7%) | 4 | 16,7% |
+| **Postura Ética e Sigilo Profissional** | Comportamental | 0 (0,0%) | 1 (16,7%) | 1 (16,7%) | 2 (33,3%) | 4 | 16,7% |
+| **JavaScript** | Técnica | 3 (50,0%) | 0 (0,0%) | 0 (0,0%) | 0 (0,0%) | 3 | 12,5% |
+| **Trabalho em Equipe e Cooperação** | Comportamental | 2 (33,3%) | 1 (16,7%) | 0 (0,0%) | 0 (0,0%) | 3 | 12,5% |
+| **Organização Operacional e Disciplina** | Comportamental | 0 (0,0%) | 1 (16,7%) | 1 (16,7%) | 1 (16,7%) | 3 | 12,5% |
+| **Cloud Computing (AWS/Azure)** | Técnica | 0 (0,0%) | 1 (16,7%) | 0 (0,0%) | 2 (33,3%) | 3 | 12,5% |
+| **LGPD e Privacidade por Padrão** | Técnica / Legal | 0 (0,0%) | 0 (0,0%) | 0 (0,0%) | 3 (50,0%) | 3 | 12,5% |
+| **TypeScript** | Técnica | 2 (33,3%) | 0 (0,0%) | 0 (0,0%) | 0 (0,0%) | 2 | 8,3% |
+| **React** | Técnica | 2 (33,3%) | 0 (0,0%) | 0 (0,0%) | 0 (0,0%) | 2 | 8,3% |
+| **APIs RESTful** | Técnica | 2 (33,3%) | 0 (0,0%) | 0 (0,0%) | 0 (0,0%) | 2 | 8,3% |
+| **Redes e Protocolos TCP/IP** | Técnica | 0 (0,0%) | 1 (16,7%) | 0 (0,0%) | 1 (16,7%) | 2 | 8,3% |
 
 *Fonte: Compilação analítica derivada de [`01_mercado/planilha_Frequencia_por_Funcao.csv`](planilha_Frequencia_por_Funcao.csv).*
 
@@ -123,29 +123,29 @@ A padronização das competências brutas extraídas dos editais gerou a Tabela 
 Em atendimento à exigência de pelo menos 4 gráficos analíticos, apresentam-se as visualizações estruturadas a seguir, acompanhadas de suas interpretações técnicas.
 
 ### Gráfico 1: Frequência das Competências Técnicas Transversais no Mercado de TI
-Este gráfico destaca as competências com maior penetração na amostra de 24 vagas, evidenciando o primado da lógica de programação, do controle de versão com Git e da linguagem SQL.
+Este gráfico destaca as competências com maior penetração na amostra de 24 vagas, evidenciando o primado do SQL, do controle de versão com Git e de linguagens de ampla aplicação.
 
 ```mermaid
 xychart-beta
     title "Frequência Relativa das Top Competências Técnicas (% sobre 24 Vagas)"
-    x-axis ["Lógica Prog.", "Git/GitHub", "SQL", "Cloud", "Python", "Linux", "APIs REST", "TCP/IP"]
+    x-axis ["SQL", "Git/GitHub", "Python", "Java", "Linux", "Power BI", "Cloud", "LGPD"]
     y-axis "Percentual de Aparição (%)" 0 --> 60
-    bar [50.0, 45.8, 41.7, 37.5, 33.3, 33.3, 29.2, 29.2]
+    bar [45.8, 29.2, 29.2, 20.8, 16.7, 16.7, 12.5, 12.5]
 ```
 
-**Interpretação do Gráfico 1:** Lógica de programação (50,0%) e Git/GitHub (45,8%) são os pilares indispensáveis para a quase totalidade dos profissionais em formação. O SQL (41,7%) afirma-se como a linguagem de dados universal, sendo exigida tanto de desenvolvedores quanto de cientistas de dados. A computação em nuvem (37,5%) e o sistema operacional Linux (33,3%) compõem o alicerce operacional das posições de infraestrutura e segurança.
+**Interpretação do Gráfico 1:** SQL (45,8%) e Git/GitHub (29,2%) são os pilares indispensáveis para a quase totalidade dos profissionais em formação. O SQL afirma-se como a linguagem de dados universal, sendo exigida tanto de desenvolvedores quanto de cientistas de dados. A linguagem Python (29,2%) e Java (20,8%) cobrem dados e desenvolvimento corporativo backend.
 
 ---
 
 ### Gráfico 2: Distribuição de Competências Comportamentais (Soft Skills) no Trabalho Remoto
-O modelo de atuação remoto altera a hierarquia de competências comportamentais, priorizando a comunicação assíncrona e a autonomia.
+O modelo de atuação remoto e híbrido altera a hierarquia de competências comportamentais, priorizando a comunicação assíncrona, a proatividade e a conduta ética.
 
 ```mermaid
 xychart-beta
     title "Prevalência de Competências Comportamentais nos Editais de Vagas (%)"
-    x-axis ["Comunicação", "Trabalho Equipe", "Aprendizado Cont.", "Proatividade", "Postura Ética/Sigilo"]
-    y-axis "Ocorrência (%)" 0 --> 90
-    bar [75.0, 62.5, 54.2, 45.8, 37.5]
+    x-axis ["Comunicação", "Proatividade", "Postura Ética", "Trabalho Equipe", "Organização"]
+    y-axis "Ocorrência (%)" 0 --> 40
+    bar [29.2, 16.7, 16.7, 12.5, 12.5]
 ```
 
 **Interpretação do Gráfico 2:** A comunicação clara (75,0%) lidera com folga os editais. No trabalho à distância, a clareza para redigir chamados, documentar código e participar de cerimônias ágeis (*dailies*) é condição mandatória para evitar ruídos e retrabalho. O aprendizado contínuo (54,2%) reflete a velocidade de obsolescência das tecnologias e a expectativa de que o candidato júnior tenha capacidade de autoestudo estruturado.

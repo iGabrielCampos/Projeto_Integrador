@@ -87,7 +87,7 @@ Se você é um colega de equipe, professor examinador ou um agente de Inteligên
 │   └── experimentos/                  -> 4 logs práticos de auditoria de alucinações em LLMs:
 │       ├── experimento_01_gabriel_amancio.md  -> ChatGPT (GPT-4o): Falha de rate limiting em JWT
 │       ├── experimento_02_luiz_miguel.md      -> Claude 3.5 Sonnet: Precedência de DROP em iptables
-│       ├── experimento_03_paulo_germano.md    -> Gemini 1.5 Pro: Alucinação aritmética em soma contábil
+│       ├── experimento_03_paulo_germano.md    -> Gemini 1.5 Pro: Alucinação aritmética em média etária de candidatos
 │       └── experimento_04_gustavo_antonio.md  -> Copilot: Cláusula abusiva de isenção sob a LGPD/CDC
 │
 ├── 📁 04_problema/                    <-- Etapa 4: Diagnóstico socioambiental e seleção fundamentada

@@ -40,7 +40,7 @@ fontes:
 
 Com base nas evidências empíricas de precariedade hídrica levantadas no Censo 2022 do IBGE `[F070]` e no Instituto Trata Brasil `[F071]`, foram estruturadas três personas representativas:
 
-### Persona 1: Dona Maria de Lourdes (Cidadã / Moradora de Periferia)
+### Persona 1: Dona Maria de Fátima (Cidadã / Moradora de Periferia)
 - **Perfil Demográfico:** 52 anos, residente no bairro Mandacaru (João Pessoa - PB), trabalhadora autônoma, usuária de smartphone Android de entrada com plano de dados pré-pago limitado.
 - **Dores e Necessidades:** Sofre com cortes de água sem aviso que duram dias e, quando a água retorna, apresenta cor barrenta e cheiro forte. Precisa de uma ferramenta extremamente simples, em português direto, que permita registrar a falta d'água em poucos segundos sem burocracias cadastrais e que ensine como higienizar a água para as crianças.
 

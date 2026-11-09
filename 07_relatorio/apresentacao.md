@@ -10,7 +10,7 @@ equipe:
   - Luiz Miguel (Infraestrutura e Redes)
   - Paulo Germano (Dados e IA)
   - Gustavo Antonio (Segurança da Informação)
-tempo_total_estimado: "18 a 20 minutos"
+tempo_total_estimado: "25 a 30 minutos (23 min de slides + 5 a 7 min de demonstração do protótipo) + 10 min de arguição"
 ferramenta_slides: Figma / Google Slides
 ---
 

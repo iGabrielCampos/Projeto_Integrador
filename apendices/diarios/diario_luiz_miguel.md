@@ -17,7 +17,7 @@ periodo: 2026.2
 - **Dificuldades:** Lidar com inconsistências de encoding (UTF-8 com e sem BOM) que causavam quebra de acentuação no Excel/Sheets.
 - **Estratégias de superação:** Padronização estrita de encoding UTF-8 com sanitização automática nos scripts.
 - **Resultados obtidos:** Tabelas prontas para importação direta e fórmulas de agregação consolidadas.
-- **Novas ferramentas aprendidas:** Automação de CSV em Python nativo e modelagem tabular do Google Sheets.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Automação de CSV em Python nativo e modelagem tabular do Google Sheets.
 
 ---
 
@@ -30,7 +30,7 @@ periodo: 2026.2
 - **Dificuldades:** Estipular prazos realistas e métricas tangíveis de validação prática para competências de infraestrutura complexas.
 - **Estratégias de superação:** Conexão com comunidades locais de tecnologia da Paraíba (DevOpsDays PB e GDG João Pessoa).
 - **Resultados obtidos:** PDI aprovado pelo grupo e perfil profissional no LinkedIn e GitHub modernizados.
-- **Novas ferramentas aprendidas:** Metodologia SMART aplicada a carreiras e GitHub Profile README dinâmico.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Metodologia SMART aplicada a carreiras e GitHub Profile README dinâmico.
 
 ---
 
@@ -43,7 +43,7 @@ periodo: 2026.2
 - **Dificuldades:** Explicar tecnicamente o risco da ordem sequencial das regras de firewall na documentação acadêmica.
 - **Estratégias de superação:** Teste prático do fluxo lógico em máquina virtual isolada para demonstrar a perda de conectividade imediata.
 - **Resultados obtidos:** Log de experimento auditado em `03_etica_ia/experimentos/experimento_02_luiz_miguel.md`.
-- **Novas ferramentas aprendidas:** Depuração avançada de regras de iptables e técnicas de prompt para engenharia de infraestrutura.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Depuração avançada de regras de iptables e técnicas de prompt para engenharia de infraestrutura.
 
 ---
 
@@ -56,7 +56,7 @@ periodo: 2026.2
 - **Dificuldades:** Definir a estratégia de resolução de conflitos de dados quando a conexão é restabelecida após longos períodos offline.
 - **Estratégias de superação:** Implementação de política *Last-Write-Wins* baseada em timestamp seguro com filas segregadas por protocolo.
 - **Resultados obtidos:** Diagrama de fluxo offline e requisitos RNF-02 e RNF-03 completamente fundamentados.
-- **Novas ferramentas aprendidas:** Service Worker Cache Storage e IndexedDB para arquitetura offline-first.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Service Worker Cache Storage e IndexedDB para arquitetura offline-first.
 
 ---
 
@@ -69,7 +69,7 @@ periodo: 2026.2
 - **Dificuldades:** Manter a neutralidade durante os testes com voluntários idosos que hesitavam frente a jargões técnicos.
 - **Estratégias de superação:** Aplicação rigorosa da técnica *Think-Aloud* sem induzir respostas ou ações dos participantes.
 - **Resultados obtidos:** Dossiê de testes concluído com taxa de 97,2% de eficácia e 4 oportunidades de melhoria aplicadas no protótipo.
-- **Novas ferramentas aprendidas:** Cálculo matemático de pontuação SUS e moderação de testes de usabilidade com gravação de tela.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Cálculo matemático de pontuação SUS e moderação de testes de usabilidade com gravação de tela.
 
 ---
 
@@ -82,4 +82,4 @@ periodo: 2026.2
 - **Dificuldades:** Sintetizar conceitos complexos de redes e escalabilidade em falas de 3 minutos durante a apresentação do grupo.
 - **Estratégias de superação:** Simulação de banca interna cronometrada com os quatro integrantes do grupo.
 - **Resultados obtidos:** Roteiro de defesa alinhado e domínio consolidado de todas as fases do projeto.
-- **Novas ferramentas aprendidas:** Figma para visualização de arquitetura e cálculo de custo total de propriedade (TCO) em nuvem.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Figma para visualização de arquitetura e cálculo de custo total de propriedade (TCO) em nuvem.

@@ -17,7 +17,7 @@ periodo: 2026.2
 - **Dificuldades:** Adaptar o jargão jurídico da lei para requisitos práticos de desenvolvimento de software em nível de estudante.
 - **Estratégias de superação:** Consulta ao curso oficial de LGPD da Enap e debate com os demais integrantes.
 - **Resultados obtidos:** Sistema de governança 100% alinhado à legislação e aos critérios do DESAFIO_PRATICO.
-- **Novas ferramentas aprendidas:** Framework de Privacy by Design e elaboração de Matrizes de Conformidade.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Framework de Privacy by Design e elaboração de Matrizes de Conformidade.
 
 ---
 
@@ -30,7 +30,7 @@ periodo: 2026.2
 - **Dificuldades:** Encontrar projetos práticos de cibersegurança em nível júnior que pudessem ser publicados publicamente sem expor infraestruturas reais.
 - **Estratégias de superação:** Foco em laboratórios controlados do TryHackMe e repositórios de auditoria de código seguro.
 - **Resultados obtidos:** PDI e portfólio GitHub consolidados em `02_carreira/por_integrante/gustavo_antonio/`.
-- **Novas ferramentas aprendidas:** Metodologia STRIDE para análise de vulnerabilidades e laboratórios do TryHackMe.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Metodologia STRIDE para análise de vulnerabilidades e laboratórios do TryHackMe.
 
 ---
 
@@ -43,7 +43,7 @@ periodo: 2026.2
 - **Dificuldades:** Identificar quando a IA emitia interpretações baseadas no direito consuetudinário norte-americano (*common law*) em vez do direito brasileiro (*civil law*).
 - **Estratégias de superação:** Formulação de prompts restritivos exigindo enquadramento estrito na legislação brasileira e súmulas do STJ.
 - **Resultados obtidos:** Relatório de experimento auditado em `03_etica_ia/experimentos/experimento_04_gustavo_antonio.md`.
-- **Novas ferramentas aprendidas:** Auditoria legal assistida por IA e detecção de vieses jurisdicionais em modelos proprietários.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Auditoria legal assistida por IA e detecção de vieses jurisdicionais em modelos proprietários.
 
 ---
 
@@ -56,7 +56,7 @@ periodo: 2026.2
 - **Dificuldades:** Atribuir pesos objetivos e justificar as notas dos 3 problemas socioambientais concorrentes.
 - **Estratégias de superação:** Uso direto dos microdados censitários do IBGE e do SNIS para calcular a severidade populacional.
 - **Resultados obtidos:** Dossiê da Etapa 4 e matriz de decisão concluídos com nota 9,05 para o ODS 6.
-- **Novas ferramentas aprendidas:** Diagramação de Ishikawa em Mermaid e matriz de decisão multicritério (MCDA).
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Diagramação de Ishikawa em Mermaid e matriz de decisão multicritério (MCDA).
 
 ---
 
@@ -69,7 +69,7 @@ periodo: 2026.2
 - **Dificuldades:** Equilibrar a sobrecarga computacional da criptografia local em dispositivos móveis populares de baixo desempenho.
 - **Estratégias de superação:** Adoção de chaves simétricas e limites de tamanho para anexos fotográficos sanitizados.
 - **Resultados obtidos:** Especificação técnica de segurança consolidada no Dossiê da Etapa 5.
-- **Novas ferramentas aprendidas:** Web Cryptography API nativa e sanitização de dados móveis.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Web Cryptography API nativa e sanitização de dados móveis.
 
 ---
 
@@ -82,4 +82,4 @@ periodo: 2026.2
 - **Dificuldades:** Prever perguntas capciosas da banca sobre riscos de denúncias falsas ou ataques de negação de serviço (DoS) contra a plataforma comunitária.
 - **Estratégias de superação:** Formulação prévia de respostas técnicas demonstrando os mecanismos de rate limiting, validação por geolocalização e aprovação cruzada por outros cidadãos do bairro.
 - **Resultados obtidos:** Roteiro de defesa estruturado com 20 perguntas gabaritadas e matriz de conformidade 100% cumprida.
-- **Novas ferramentas aprendidas:** Técnicas de auditoria de conformidade de projetos acadêmicos e oratória de defesa técnica.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Técnicas de auditoria de conformidade de projetos acadêmicos e oratória de defesa técnica.

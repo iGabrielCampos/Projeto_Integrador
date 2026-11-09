@@ -17,7 +17,7 @@ periodo: 2026.2
 - **Dificuldades:** Evitar anúncios que exigiam login ou páginas dinâmicas que bloqueavam a visualização pública.
 - **Estratégias de superação:** Filtragem estrita de páginas públicas corporativas com registro imediato de URLs, datas de acesso e cópias textuais.
 - **Resultados obtidos:** Base de 24 vagas aprovada com 100% de fontes ativas e rastreáveis.
-- **Novas ferramentas aprendidas:** Curadoria de datasets públicos e validação de schema JSON estruturado.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Curadoria de datasets públicos e validação de schema JSON estruturado.
 
 ---
 
@@ -30,7 +30,7 @@ periodo: 2026.2
 - **Dificuldades:** Limitações de formatação de rótulos com caracteres especiais no motor do Mermaid.
 - **Estratégias de superação:** Ajuste de sintaxe e uso de strings delimitadas por aspas duplas nos nós do grafo.
 - **Resultados obtidos:** Gráficos interativos perfeitamente renderizados no repositório.
-- **Novas ferramentas aprendidas:** Mermaid.js para visualização declarativa de dados estatísticos.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Mermaid.js para visualização declarativa de dados estatísticos.
 
 ---
 
@@ -43,7 +43,7 @@ periodo: 2026.2
 - **Dificuldades:** Isolar o mecanismo de alucinação do modelo sem introduzir vieses nas instruções do prompt.
 - **Estratégias de superação:** Criação de scripts comparativos em Python (`sum()` nativo) para auditar a resposta da IA com precisão matemática absoluta.
 - **Resultados obtidos:** Log completo de auditoria registrado em `03_etica_ia/experimentos/experimento_03_paulo_germano.md`.
-- **Novas ferramentas aprendidas:** Métodos de fact-checking automatizado para saídas de IA generativa.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Métodos de fact-checking automatizado para saídas de IA generativa.
 
 ---
 
@@ -56,7 +56,7 @@ periodo: 2026.2
 - **Dificuldades:** Normalizar nomenclaturas entre as bases do IBGE e os relatórios operacionais do SNIS.
 - **Estratégias de superação:** Criação de dicionário de correspondência de variáveis territoriais.
 - **Resultados obtidos:** Matriz de decisão com pontuação ponderada comprovando a prioridade do saneamento com nota 9,05.
-- **Novas ferramentas aprendidas:** Consulta ao SIDRA IBGE e análise de indicadores de saúde pública no DATASUS.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Consulta ao SIDRA IBGE e análise de indicadores de saúde pública no DATASUS.
 
 ---
 
@@ -69,7 +69,7 @@ periodo: 2026.2
 - **Dificuldades:** Tratamento do caso de não-conclusão da tarefa T02 pelo participante P3 para não distorcer as médias ponderadas.
 - **Estratégias de superação:** Segregação entre análise de intenção de uso (*Intention-to-Treat*) e tempo das tarefas concluídas com sucesso.
 - **Resultados obtidos:** Tabelas e gráficos consolidados no Dossiê de Testes da Etapa 6.
-- **Novas ferramentas aprendidas:** Cálculo psicométrico da escala SUS e análise estatística de usabilidade.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Cálculo psicométrico da escala SUS e análise estatística de usabilidade.
 
 ---
 
@@ -82,4 +82,4 @@ periodo: 2026.2
 - **Dificuldades:** Garantir que o texto acadêmico integrasse as 4 disciplinas sem soar fragmentado ou redundante.
 - **Estratégias de superação:** Alinhamento contínuo em sessões diárias com os quatro integrantes.
 - **Resultados obtidos:** Monografia completa aprovada sem nenhuma inconsistência factual ou numérica.
-- **Novas ferramentas aprendidas:** Auditoria cruzada de monografias acadêmicas e técnicas de defesa oral de dados.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Auditoria cruzada de monografias acadêmicas e técnicas de defesa oral de dados.

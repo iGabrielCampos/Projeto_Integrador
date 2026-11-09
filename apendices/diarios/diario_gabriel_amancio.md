@@ -17,7 +17,7 @@ periodo: 2026.2
 - **Dificuldades:** Conciliar a rigidez dos critérios de conformidade acadêmica com a agilidade de versionamento no terminal Linux.
 - **Estratégias de superação:** Criação de scripts determinísticos em Python para pré-validação antes dos commits.
 - **Resultados obtidos:** Repositório inicializado, commits semânticos padronizados e tags semânticas ativas.
-- **Novas ferramentas aprendidas:** Git Avançado (Tags anotadas e Conventional Commits) e Python pathlib.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Git Avançado (Tags anotadas e Conventional Commits) e Python pathlib.
 
 ---
 
@@ -30,7 +30,7 @@ periodo: 2026.2
 - **Dificuldades:** Discrepância entre anúncios genéricos que exigem múltiplos frameworks simultâneos e o foco real de um perfil Júnior.
 - **Estratégias de superação:** Normalização taxonômica dos termos técnicos em colaboração com Paulo Germano (Dados).
 - **Resultados obtidos:** Tabela de frequências técnicas gerada e incorporada ao Dossiê de Mercado da Etapa 1.
-- **Novas ferramentas aprendidas:** Análise taxonômica de competências e manipulação de CSV via terminal.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Análise taxonômica de competências e manipulação de CSV via terminal.
 
 ---
 
@@ -43,7 +43,7 @@ periodo: 2026.2
 - **Dificuldades:** Formular prompts que forçassem o modelo a explicitar as decisões de arquitetura e mitigação de força bruta.
 - **Estratégias de superação:** Aplicação de técnica *Chain-of-Thought* e auditoria estrita contra as diretrizes OWASP.
 - **Resultados obtidos:** Relatório prático documentado em `03_etica_ia/experimentos/experimento_01_gabriel_amancio.md`.
-- **Novas ferramentas aprendidas:** OWASP API Security Guidelines e auditoria de vulnerabilidades em código gerado por IA.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** OWASP API Security Guidelines e auditoria de vulnerabilidades em código gerado por IA.
 
 ---
 
@@ -56,7 +56,7 @@ periodo: 2026.2
 - **Dificuldades:** Garantir que os critérios de aceitação fossem estritamente verificáveis sem depender de ambiguidades textuais.
 - **Estratégias de superação:** Revisão cruzada com Gustavo Antonio (Segurança) e Luiz Miguel (Infraestrutura).
 - **Resultados obtidos:** Documentos `05_solucao/requisitos.md` e diagramas C4 em Mermaid aprovados.
-- **Novas ferramentas aprendidas:** Mermaid.js para diagramação arquitetural e sintaxe Gherkin para BDD.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Mermaid.js para diagramação arquitetural e sintaxe Gherkin para BDD.
 
 ---
 
@@ -69,7 +69,7 @@ periodo: 2026.2
 - **Dificuldades:** Manter uma identidade visual moderna e atrativa ao mesmo tempo em que se garante contraste rígido de 7:1 em modo ampliado.
 - **Estratégias de superação:** Testes com simuladores de daltonismo e contrast checkers integrados.
 - **Resultados obtidos:** Aprovação integral nos testes de usabilidade com a voluntária idosa e participantes com baixa visão.
-- **Novas ferramentas aprendidas:** WebAIM Contrast Checker e simuladores de daltonismo no navegador.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** WebAIM Contrast Checker e simuladores de daltonismo no navegador.
 
 ---
 
@@ -82,4 +82,4 @@ periodo: 2026.2
 - **Dificuldades:** Ajustar a paginação, sumário e legendas de figuras de acordo com os padrões rigorosos da ABNT.
 - **Estratégias de superação:** Revisão coletiva em pares e validação automatizada das citações `[Fxxx]`.
 - **Resultados obtidos:** Relatório final de 28 páginas compilado e roteiro de defesa ensaiado.
-- **Novas ferramentas aprendidas:** Pandoc Markdown, templates CSL ABNT e estruturação de slides interativos no Figma.
+- **Evidências que demonstram a aprendizagem (novas ferramentas):** Pandoc Markdown, templates CSL ABNT e estruturação de slides interativos no Figma.
