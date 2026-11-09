@@ -8,7 +8,7 @@ status: ativo
 
 # Registro de Decisões de Arquitetura e Governança (ADRs)
 
-Este documento registra todas as decisões fundamentais do projeto no padrão ADR (Architecture Decision Record): Contexto, Decisão e Consequências.
+Este documento registra as decisões do projeto no padrão ADR (Architecture Decision Record): Contexto, Decisão e Consequências.
 
 ---
 
@@ -19,17 +19,17 @@ Este documento registra todas as decisões fundamentais do projeto no padrão AD
 - **Decisores:** Gabriel Amancio, Luiz Miguel, Paulo Germano, Gustavo Antonio, Main Agent (Orca)
 
 ### Contexto
-O projeto integrador do UNIPÊ exige rigor acadêmico, rastreabilidade de dados factuais, colaboração ativa entre 4 estudantes e integração de 7 etapas distintas. Notas soltas ou múltiplos arquivos dispersos geram inconsistências numéricas, duplicação de dados e descontrole de versões.
+O projeto integrador reúne sete etapas com dados empíricos e trabalho conjunto de quatro estudantes. Documentos dispersos poderiam gerar inconsistências em números e versões.
 
 ### Decisão
-1. Cada etapa terá **exatamente um documento-mestre entregável** (`dossie_<etapa>.md`).
-2. As notas de trabalho dos subagentes em `subagentes/SA-X/` são intermediárias e não constituem entregáveis finais.
-3. Os dados brutos residirão exclusivamente em arquivos-fonte canônicos (ex.: `vagas_brutas.csv` e `fontes.md`). Nenhuma cifra ou percentual poderá ser inserido manualmente nos textos sem derivação direta dessas fontes.
-4. O Relatório Final da Etapa 7 será montado programmaticamente pela unificação harmonizada dos dossiês-mestres via pipeline Pandoc/Markdown.
+1. Cada etapa terá um documento-mestre principal (`dossie_<etapa>.md`).
+2. As notas de trabalho dos subagentes em `subagentes/SA-X/` servem como rascunhos intermediários e não são entregáveis finais.
+3. Os dados brutos ficam concentrados em arquivos-fonte específicos (como `vagas_brutas.csv` e `fontes.md`). Números e percentuais nos textos devem derivar dessas bases.
+4. O relatório final da Etapa 7 unifica os dossiês das etapas anteriores.
 
 ### Consequências
-- **Positivas:** Rastreabilidade absoluta, eliminação de divergências numéricas, facilidade de auditoria via `verificar.py`.
-- **Mitigações/Atenção:** Qualquer alteração em dados brutos exige reexecução dos scripts de verificação para atualizar os textos consolidados.
+- **Positivas:** Melhor rastreabilidade dos dados, redução de divergências numéricas e verificação automatizada via `verificar.py`.
+- **Pontos de atenção:** Qualquer alteração em dados brutos exige reexecução dos scripts de verificação para atualizar os textos consolidados.
 
 ---
 
@@ -40,13 +40,13 @@ O projeto integrador do UNIPÊ exige rigor acadêmico, rastreabilidade de dados 
 - **Decisores:** Gabriel Amancio, Luiz Miguel, Paulo Germano, Gustavo Antonio, Main Agent (Orca)
 
 ### Contexto
-O DESAFIO_PRATICO estabelece que a IA deve atuar como catalisador de estrutura e rascunhos técnicos, mas jamais fabricar experiências vividas, diários individuais, autoavaliações, experimentos ou sessões de teste com usuários. Além disso, a liderança das etapas deve ser compartilhada e rotativa.
+As diretrizes do projeto acadêmico orientam o uso de IA como ferramenta de apoio para estrutura e formatação, vedando a geração artificial de experiências pessoais, autoavaliações ou testes com usuários. A liderança das etapas também deve ser rotativa.
 
 ### Decisão
-1. Subagentes (`SA-1` a `SA-4`) são papéis funcionais analíticos atribuídos ao sistema de IA para apoiar as etapas, enquanto os 4 estudantes são os autores, revisores e líderes rotativos.
-2. É expressamente vedado ao orquestrador ou subagentes simular ou redigir experiências vividas de aprendizagem ou inventar participantes de testes. O orquestrador bloqueará a evolução do projeto caso evidências humanas não sejam inseridas pelos integrantes.
-3. Cada entrega exige validação de no mínimo 2 pares em `revisoes.md`.
+1. Os subagentes (`SA-1` a `SA-4`) representam papéis funcionais do sistema de IA para apoio técnico, enquanto os quatro estudantes respondem pela autoria, liderança e revisão do trabalho.
+2. É vedada a geração artificial de relatos de aprendizagem ou de participantes de testes. O avanço do projeto requer as evidências práticas registradas pelos próprios estudantes.
+3. Cada entrega passa por revisão de pelo menos dois colegas em `revisoes.md`.
 
 ### Consequências
-- **Positivas:** Conformidade com as normas acadêmicas e de integridade do UNIPÊ; garantia de autoria e defesa sólida perante a banca examinadora.
-- **Mitigações/Atenção:** O avanço entre etapas dependerá estritamente do cumprimento dos checklists e das tarefas humanas.
+- **Positivas:** Atendimento às normas de integridade acadêmica do UNIPÊ e garantia da autoria discente nas entregas e na defesa.
+- **Pontos de atenção:** O avanço entre etapas depende da conclusão prévia das atividades e registros individuais.

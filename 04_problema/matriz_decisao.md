@@ -12,7 +12,7 @@ fontes:
 
 # Matriz Comparativa de Decisão para Seleção do Problema Socioambiental
 
-Esta matriz avalia quanti-qualitativamente as três alternativas de problemas socioambientais investigadas pelo grupo, fundamentando a escolha prioritária com base em critérios técnicos, operacionais, regulatórios e de relevância pública no estado da Paraíba.
+Esta matriz avalia as três alternativas de problemas socioambientais investigadas pela equipe técnica, fundamentando a escolha prioritária com base em critérios técnicos, operacionais, regulatórios e de relevância pública no estado da Paraíba.
 
 ---
 
@@ -48,7 +48,7 @@ Esta matriz avalia quanti-qualitativamente as três alternativas de problemas so
 
 ## 4. Justificativa Técnica da Seleção
 
-O **Problema A (Monitoramento da Qualidade da Água e Saneamento Básico)** obteve a pontuação máxima de **9,05 pontos**, destacando-se pelos seguintes fatores decisivos:
-1. **Gravidade Extrema e Dados Oficiais Alarmantes:** O Censo 2022 do IBGE `[F070]` revelou que mais de 50,9% dos lares paraibanos não têm rede geral de esgoto e 8 dos 10 municípios com abastecimento mais precário do Brasil situam-se na Paraíba. Além disso, as perdas na distribuição chegam a 47% `[F071]`.
-2. **Alta Aderência ao Perfil Multidisciplinar do Grupo:** A solução permite integrar coleta de relatos georreferenciados de cidadãos (Desenvolvimento Web e Mobile - Gabriel), visualização de indicadores de turbidez/cloro/interrupção e cruzamento com internações DATASUS `[F072]` (Dados e IA - Paulo), infraestrutura resiliente de baixo custo (Infra - Luiz) e governança segura de denúncias anônimas sob a LGPD (Segurança - Gustavo).
-3. **Superação dos Trade-offs das Outras Alternativas:** O Problema C exigiria sensores físicos IoT de alto custo e integração governamental de emergência difícil de simular no ambiente acadêmico; o Problema B enfrentaria desafios logísticos operacionais complexos de transporte e perecibilidade física de alimentos.
+O **Problema A (Monitoramento da Qualidade da Água e Saneamento Básico)** obteve a pontuação ponderada de **9,05 pontos**, selecionado pelos seguintes fatores:
+1. **Gravidade dos Indicadores Oficiais:** O Censo 2022 do IBGE `[F070]` registrou que 50,92% dos lares paraibanos não possuem rede geral de esgoto e 8 dos 10 municípios com abastecimento mais precário do Brasil situam-se na Paraíba. Além disso, as perdas físicas na distribuição alcançam 47% `[F071]`.
+2. **Aderência ao Perfil Técnico da Equipe:** O tema possibilita integrar o desenvolvimento de interfaces acessíveis (Gabriel - Dev), consultas espaciais e correlação com o DATASUS `[F072]` (Paulo - Dados), infraestrutura de baixo consumo computacional (Luiz - Infra) e governança de dados anônimos sob a LGPD (Gustavo - Segurança).
+3. **Viabilidade Operacional Frente às Alternativas:** O Problema C demandaria sensores físicos geotécnicos e pluviométricos de alto custo, enquanto o Problema B envolveria logística física de transporte refrigerado de perecíveis fora do escopo de software. O Problema A concentra-se em coleta comunitária de dados, georreferenciamento e inteligência analítica em saúde pública.

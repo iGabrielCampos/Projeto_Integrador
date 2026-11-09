@@ -6,9 +6,9 @@ data: 2026-11-06
 status: ativo
 ---
 
-# Registro Central de Utilização de Inteligência Artificial (Trilha de Auditoria)
+# Registro de Uso de Inteligência Artificial
 
-Este registro documenta de forma transparente todas as interações com sistemas de Inteligência Artificial generativa realizadas no projeto, explicitando ferramenta, versão, data, prompt, saída, modificações humanas e destino da entrega, em conformidade com as diretrizes de integridade acadêmica.
+Este registro documenta as interações com ferramentas de Inteligência Artificial ao longo do projeto, indicando datas, objetivos dos prompts, resultados obtidos, validações humanas e artefatos correspondentes.
 
 | ID | Data | Integrante / Agente | Ferramenta e Versão | Prompt / Objetivo (Resumo) | Saída Gerada (Resumo) | Ação Humana (Aceito / Editado / Descartado) | Destino / Artefato |
 |---|---|---|---|---|---|---|---|

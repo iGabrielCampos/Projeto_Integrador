@@ -1,7 +1,7 @@
-# Avaliação do Escore SUS (System Usability Scale) — ÁguaViva PB
+# Avaliação do Escore SUS (System Usability Scale): ÁguaViva PB
 
 ## 1. Metodologia do Questionário SUS
-Ao término das 6 tarefas padronizadas de teste de usabilidade, cada um dos 6 participantes voluntários respondeu individualmente ao questionário padronizado **System Usability Scale (SUS)**, desenvolvido por John Brooke (1996) `[F080]`.
+Ao término das 6 tarefas de teste de usabilidade, cada um dos 6 participantes respondeu individualmente ao questionário **System Usability Scale (SUS)**, desenvolvido por John Brooke (1996) `[F080]`.
 
 O instrumento consiste em 10 afirmações avaliadas em escala Likert de 5 pontos (1 = Discordo Totalmente a 5 = Concordo Totalmente):
 1. Eu acho que gostaria de usar este sistema com frequência.
@@ -33,10 +33,10 @@ Para cada respondente:
 | **P6** | 45 anos, trabalhador autônomo | Ensino Fundamental / Básica | **82,5** | Excelente (Grade A) |
 | **Média Geral** | **Amostra Diversificada (N = 6)** | — | **84,2 / 100** | **Excelente (Grade A)** |
 
-## 4. Interpretação Científica dos Resultados
+## 4. Interpretação dos Resultados
 De acordo com os referenciais de Bangor, Kortum e Miller (2008):
-- Uma pontuação média de **84,2 pontos** situa o **ÁguaViva PB** no percentil superior a 90% dos sistemas interativos avaliados na literatura mundial de IHC.
-- A classificação adjetiva correspondente é **"Excelente" (Grade A)**, ultrapassando amplamente o limiar médio global da indústria (68,0 pontos).
-- Mesmo entre usuários com proficiência digital elementar (P1 e P3), a pontuação manteve-se acima de 77,5 pontos, demonstrando a eficácia ergonômica da tipografia ampliada, botões táteis generosos (WCAG 2.5.5) e linguagem descomplicada.
+- A pontuação média de **84,2 pontos** posiciona o **ÁguaViva PB** no percentil superior a 90% dos sistemas interativos avaliados na literatura de IHC.
+- A classificação adjetiva correspondente é **"Excelente" (Grade A)**, superando a média de referência global de 68,0 pontos.
+- Mesmo entre participantes com menor proficiência digital (P1 e P3), a pontuação manteve-se igual ou superior a 77,5 pontos, indicando a adequação da tipografia ampliada, botões com dimensões acessíveis (WCAG 2.5.5) e redação direta.
 
 A base anonimizada completa de respostas encontra-se registrada em `06_testes/registros_anonimizados.csv` e sintetizada no [Dossiê de Testes](file:///home/campos/Documents/Projetos/Projeto_Integrador/06_testes/dossie_testes.md).

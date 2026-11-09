@@ -29,13 +29,13 @@ fontes:
 
 ## 1. INTRODUÇÃO E DELIBERAÇÃO DO GRUPO
 
-A formação de tecnólogos em Análise e Desenvolvimento de Sistemas pelo UNIPÊ orienta-se pela premissa de que a inovação tecnológica só atinge sua plenitude quando colocada a serviço da cidadania, da redução das desigualdades históricas e da sustentabilidade socioambiental `[F008]`. 
+A formação de tecnólogos em Análise e Desenvolvimento de Sistemas pelo UNIPÊ orienta o desenvolvimento de software para demandas sociais concretas, como a melhoria de serviços essenciais e a sustentabilidade socioambiental `[F008]`. 
 
-Em cumprimento às diretrizes do DESAFIO_PRATICO e com base na deliberação consensual da equipe técnica e aprovação dos gates de governança, o grupo definiu como tema prioritário a ser enfrentado no Projeto Integrador:
+Com base na deliberação da equipe e nos critérios de avaliação estabelecidos, o grupo definiu como tema para o Projeto Integrador:
 
 > **"Ineficiência no monitoramento participativo da qualidade da água potável, desabastecimento crônico e déficit de esgotamento sanitário em comunidades vulneráveis e periferias no Estado da Paraíba (Alinhamento direto ao ODS 6 da ONU: Água Potável e Saneamento Básico)."**
 
-Este Dossiê Mestre apresenta o diagnóstico estruturado e cientificamente fundamentado desse problema socioambiental, ancorando-se em indicadores censitários e epidemiológicos oficiais do IBGE `[F070]`, do Sistema Nacional de Informações sobre Saneamento (SNIS / Instituto Trata Brasil) `[F071]` e do DATASUS `[F072]`.
+Este documento apresenta o diagnóstico do problema fundamentado em indicadores censitários e epidemiológicos oficiais do IBGE `[F070]`, do Sistema Nacional de Informações sobre Saneamento (SNIS / Instituto Trata Brasil) `[F071]` e do DATASUS `[F072]`.
 
 ---
 
@@ -57,28 +57,28 @@ Antes da escolha definitiva, o grupo investigou três cenários de relevância s
 
 ## 3. FUNDAMENTAÇÃO E ESTATÍSTICAS OFICIAIS DO PROBLEMA SELECIONADO
 
-A seleção do monitoramento de água e saneamento apoia-se em evidências empíricas contundentes colhidas de fontes governamentais e institucionais de referência:
+A escolha do monitoramento de água e saneamento fundamenta-se em indicadores de fontes governamentais e setoriais:
 
 ### 3.1 O Abastecimento de Água e a Precariedade Censitária (Censo 2022 - IBGE `[F070]`)
-- Conforme o Censo Demográfico 2022 do IBGE `[F070]`, embora 74,49% dos lares paraibanos possuam conexão à rede geral, a distribuição padece de intermitência severa.
+- Conforme o Censo Demográfico 2022 do IBGE `[F070]`, embora 74,49% dos lares paraibanos possuam conexão à rede geral, a distribuição sofre com intermitência de fornecimento.
 - Em termos comparativos nacionais, **8 dos 10 municípios com os piores índices de atendimento hídrico do Brasil situam-se no estado da Paraíba** (casos de Santa Cecília e Baraúna, onde a taxa de inadequação do fornecimento ultrapassa 99%) `[F070]`.
-- Nesses territórios, a população depende historicamente de reservatórios comunitários precários e carros-pipa sem certificação contínua de potabilidade, expondo cidadãos a águas salobras ou contaminadas.
+- Nesses territórios, a população depende frequentemente de reservatórios comunitários sem tratamento contínuo e carros-pipa sem certificação sistemática de potabilidade, o que expõe cidadãos ao consumo de águas salobras ou impróprias.
 
-### 3.2 O Abismo do Esgotamento Sanitário e Perdas Hídricas (Trata Brasil / SNIS `[F071]`)
+### 3.2 Indicadores de Esgotamento Sanitário e Perdas Hídricas (Trata Brasil / SNIS `[F071]`)
 - **50,92% dos domicílios da Paraíba** (totalizando 698.949 residências) não possuem ligação à rede geral de esgotamento sanitário `[F070]`.
-- Aproximadamente **1,4 milhão de pessoas** (35% da população paraibana) realizam o descarte de dejetos por fossas rudimentares, buracos a céu aberto ou deságue direto em rios, lagoas e córregos urbanos `[F070]`.
-- Mesmo na capital, **João Pessoa**, mais de 88 mil moradores (cerca de 11% da população municipal) vivem em áreas desprovidas de esgoto tratado, concentrando-se em comunidades periféricas e bairros informais `[F070]`.
-- O relatório do Instituto Trata Brasil `[F071]` aponta que o índice de perdas de água tratada na distribuição física da concessionária estadual alcança alarmantes **47%**, demonstrando que quase metade da água limpa se perde por vazamentos em tubulações obsoletas antes de alcançar a torneira da população vulnerável.
+- Aproximadamente **1,4 milhão de pessoas** (35% da população paraibana) realizam o descarte de dejetos por fossas rudimentares, valas a céu aberto ou deságue direto em corpos hídricos urbanos `[F070]`.
+- Mesmo na capital, **João Pessoa**, mais de 88 mil moradores (cerca de 11% da população municipal) vivem em áreas desprovidas de esgoto tratado, concentrando-se em comunidades periféricas `[F070]`.
+- O relatório do Instituto Trata Brasil `[F071]` aponta que o índice de perdas de água tratada na distribuição física da concessionária estadual atinge **47%**, indicando que expressiva parcela do volume hídrico se perde em vazamentos antes de chegar às residências.
 
 ### 3.3 Impactos Diretos na Saúde Pública e Doenças de Veiculação Hídrica (DATASUS `[F072]`)
-- Dados do Sistema de Informações Hospitalares do SUS (SIH/DATASUS `[F072]`) evidenciam correlação direta entre o déficit de saneamento e picos recorrentes de internações hospitalares por Doenças Diarreicas Agudas (DDA), esquistossomose, hepatite A, febre tifóide e gastroenterites bacterianas infecciosas na Paraíba.
-- O contingente mais impactado recai sobre a faixa etária pediátrica (crianças de 0 a 5 anos) e idosos, gerando despesas hospitalares vultosas ao erário e perpetuando o ciclo de absenteísmo escolar e laboral nas famílias de baixa renda `[F072]`.
+- Dados do Sistema de Informações Hospitalares do SUS (SIH/DATASUS `[F072]`) registram correlação entre a falta de saneamento básico e internações por Doenças Diarreicas Agudas (DDA), esquistossomose, hepatite A, febre tifóide e outras infecções gastrointestinais na Paraíba.
+- A incidência concentra-se na faixa pediátrica (crianças de 0 a 5 anos) e em idosos, demandando gastos públicos com internações hospitalares e provocando absenteísmo escolar e laboral nas famílias de baixa renda `[F072]`.
 
 ---
 
 ## 4. ANÁLISE DE CAUSAS-RAIZ (DIAGRAMA DE ISHIKAWA)
 
-Para compreender as múltiplas dimensões que alimentam a crise hídrica e sanitária no estado, estruturou-se o Diagrama de Ishikawa (Espinha de Peixe) abaixo:
+Para analisar as causas estruturais do déficit de água e saneamento no estado, elaborou-se o Diagrama de Ishikawa abaixo:
 
 ```mermaid
 graph LR
@@ -116,12 +116,12 @@ graph LR
 
 ## 5. CARACTERIZAÇÃO DOS PÚBLICOS AFETADOS
 
-A identificação precisa das personas orientará a formulação dos requisitos e a interface na Etapa 5:
+A identificação dos públicos-alvo orienta a especificação dos requisitos e a usabilidade da interface na Etapa 5:
 1. **Cidadãos e Famílias Residentes em Periferias e Assentamentos Rurais:**
-   - *Perfil:* Renda de até 2 salários mínimos, usuários de smartphones Android de entrada, alfabetização funcional, enfrentam constantes interrupções no fornecimento de água e utilizam fossas sépticas precárias.
+   - *Perfil:* Renda de até 2 salários mínimos, usuários de smartphones Android de entrada, letramento digital básico, sujeitos a cortes frequentes no fornecimento e dependentes de fossas rudimentares.
    - *Necessidade:* Canal gratuito, rápido, visualmente simples e sem consumo excessivo de dados para reportar falta de água, coloração turva ou vazamento de esgoto e receber alertas no celular.
 2. **Agentes Comunitários de Saúde (ACS) e Lideranças de Bairro:**
-   - *Perfil:* Profissionais que visitam os domicílios e mantêm contato diário com a comunidade, necessitando registrar ocorrências locais de contaminação e surtos de vômito/diarreia.
+   - *Perfil:* Profissionais que realizam visitas domiciliares periódicas na comunidade e necessitam registrar ocorrências locais de contaminação e sintomas associados a doenças de veiculação hídrica.
    - *Necessidade:* Painel simples para registrar relatórios em lote, visualizar histórico georreferenciado e cobrar ações emergenciais das concessionárias.
 3. **Gestores Públicos, Concessionárias e Órgãos de Defesa do Consumidor (PROCON/ANVISA):**
    - *Perfil:* Técnicos que necessitam de dados consolidados e mapas de calor para priorizar reparos e fiscalizar o cumprimento das metas do Novo Marco Legal `[F071]`.
@@ -140,34 +140,34 @@ A pesquisa analisou as ferramentas digitais e canais atualmente operantes no est
 
 ---
 
-## 7. DELIMITAÇÃO RIGOROSA DO ESCOPO DA PROPOSTA
+## 7. DELIMITAÇÃO DO ESCOPO DA PROPOSTA
 
-Para garantir viabilidade técnica dentro do cronograma do Projeto Integrador e consonância com a formação dos estudantes em ADS, o escopo da solução foi delimitado com exatidão:
+Para assegurar viabilidade técnica no cronograma do Projeto Integrador e consonância com a formação em ADS, o escopo da solução estabelece fronteiras claras:
 
-### 7.1 O que a Solução Tecnológica FARÁ (Dentro do Escopo)
-- Plataforma web e mobile responsiva (aplicação web progressiva / PWA) focada em acessibilidade WCAG 2.2 `[F007]`;
-- Registro simplificado e georreferenciado de ocorrências relatadas pela população (falta d'água, água com cor/odor/sabor alterado, vazamento de esgoto a céu aberto, tubulação estourada);
-- Painel analítico com mapas de calor e gráficos de tendências cruzando as denúncias comunitárias com dados abertos históricos de saúde do DATASUS `[F072]`;
-- Sistema preventivo de alertas comunitários avisando os moradores sobre cortes programados ou riscos sanitários identificados na localidade;
-- Blindagem total de privacidade, permitindo denúncias e relatos 100% anonimizados em observância estrita à LGPD `[F001]`.
+### 7.1 Funcionalidades no Escopo
+- Plataforma web responsiva (Progressive Web App - PWA) desenvolvida sob as diretrizes de acessibilidade WCAG 2.2 Nível AA `[F007]`;
+- Registro simplificado e georreferenciado de ocorrências relatadas por moradores (falta de água, alteração visual ou de odor, vazamento de esgoto e tubulação danificada);
+- Painel analítico com mapas de concentração de queixas e indicadores de correlação com dados epidemiológicos do DATASUS `[F072]`;
+- Módulo de alertas comunitários sobre manutenções programadas ou anomalias sanitárias na localidade;
+- Conformidade com a LGPD `[F001]`, oferecendo opção de reporte anônimo sem retenção de identificadores pessoais diretos.
 
-### 7.2 O que a Solução Tecnológica NÃO FARÁ (Fora do Escopo)
-- Não realizará intervenções físicas na rede hidráulica ou obras de canalização de esgoto;
-- Não substituirá laudos físico-químicos e bacteriológicos laboratoriais certificados da concessionária ou vigilância sanitária;
-- Não exigirá a instalação de sensores físicos proprietários (IoT) de alto custo nas residências, garantindo gratuidade e ampla acessibilidade digital.
+### 7.2 Funcionalidades Fora do Escopo
+- Intervenções de engenharia civil ou reparos na rede hidráulica e de saneamento;
+- Emissão de laudos físico-químicos ou análises microbiológicas laboratoriais certificadas;
+- Dependência de sensores físicos proprietários instalados nas residências, priorizando a utilização por software acessível.
 
 ---
 
 ## 8. OBJETIVOS E RESULTADOS ESPERADOS (MENSURÁVEIS)
 
 ### 8.1 Objetivo Geral
-Projetar e prototipar uma plataforma tecnológica aberta, participativa, ética e inclusiva para monitoramento comunitário da qualidade da água, mapeamento de falhas de saneamento e apoio à vigilância em saúde ambiental em territórios vulneráveis da Paraíba.
+Projetar e prototipar uma plataforma tecnológica aberta para monitoramento comunitário da qualidade da água, mapeamento de falhas de saneamento e suporte à vigilância em saúde ambiental em territórios vulneráveis da Paraíba.
 
 ### 8.2 Objetivos Específicos
-1. Desenvolver a especificação técnica completa (mínimo de 10 requisitos funcionais e 6 não funcionais) com foco em privacidade por padrão (LGPD `[F001]`) e acessibilidade WCAG 2.2 `[F007]`;
-2. Modelar a arquitetura de software, diagramas de fluxo de usuário e modelo relacional de banco de dados;
-3. Prototipar a interface visual (mínimo de 8 telas e estados) orientada a dispositivos móveis de baixo custo;
-4. Validar o protótipo através de sessões de teste de usabilidade empíricas com pelo menos 6 voluntários adultos anonimizados (P1 a P6), medindo tempo de conclusão e taxa de sucesso.
+1. Elaborar a especificação técnica completa (mínimo de 10 requisitos funcionais e 6 não funcionais) alinhada às normas da LGPD `[F001]` e WCAG 2.2 `[F007]`;
+2. Modelar a arquitetura de software, fluxos de usuário e o esquema relacional de banco de dados;
+3. Desenvolver o protótipo de alta fidelidade da interface visual (mínimo de 8 telas e estados), voltado a smartphones de entrada;
+4. Validar o protótipo por meio de testes de usabilidade empíricos com 6 voluntários adultos (P1 a P6), medindo tempos de conclusão e taxa de sucesso.
 
 ### 8.3 Resultados Esperados Mensuráveis
 - **Taxa de Conclusão de Tarefas:** Conclusão de mais de 80% das tarefas de reporte de água em até 2 minutos por usuários leigos;
@@ -178,9 +178,9 @@ Projetar e prototipar uma plataforma tecnológica aberta, participativa, ética 
 
 ## 9. LIMITAÇÕES DA PROPOSTA
 
-1. **Dependência de Conectividade:** A ferramenta depende de acesso esporádico à internet móvel ou Wi-Fi comunitário para sincronização das ocorrências, embora possa armazenar dados em cache offline local (*Service Workers*).
-2. **Triagem de Relatos Subjetivos:** A percepção do cidadão sobre turbidez ou odor é subjetiva, exigindo algoritmos de agregação de ocorrências por bairro para validação de anomalias estatísticas antes da emissão de alertas públicos.
-3. **Escopo Acadêmico do Protótipo:** Trata-se de um projeto integrador acadêmico focado em modelagem, arquitetura e prototipagem de alta fidelidade com testes de usabilidade, não operando como serviço governamental oficial no presente ciclo.
+1. **Conectividade Intermitente:** O envio em tempo real depende de acesso a rede móvel ou Wi-Fi, demandando cache local via *Service Workers* para operação offline.
+2. **Subjetividade dos Relatos Populares:** A percepção visual de coloração ou odor possui variação individual, exigindo agregação territorial de chamados antes da confirmação de alertas.
+3. **Natureza Acadêmica do Projeto:** O trabalho consiste em modelagem, prototipagem de alta fidelidade e validação ergonômica de software, sem integração direta aos sistemas legados das concessionárias nesta etapa.
 
 ---
 

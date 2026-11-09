@@ -6,9 +6,9 @@ data: 2026-11-06
 status: ativo
 ---
 
-# Manifesto Oficial de Entregáveis do Projeto Integrador
+# Manifesto de Entregáveis do Projeto Integrador
 
-Este documento lista formalmente todos os artefatos entregáveis previstos pelo DESAFIO_PRATICO, registrando sua localização, status de conformidade e integridade.
+Este documento relaciona os artefatos previstos nas diretrizes do projeto, com localização, status e responsáveis.
 
 | Etapa | Artefato Entregável | Caminho no Repositório | Formato | Status | Responsável |
 |---|---|---|---|---|---|

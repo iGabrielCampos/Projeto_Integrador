@@ -6,9 +6,9 @@ data: 2026-11-06
 status: ativo
 ---
 
-# Glossário Canônico de Termos Padronizados
+# Glossário de Termos do Projeto
 
-Para garantir a coerência terminológica em todas as etapas, relatórios e planilhas, este glossário estabelece as definições e grafias canônicas adotadas no projeto.
+Este glossário padroniza termos e conceitos utilizados nos relatórios e documentos do projeto.
 
 | Termo Padronizado | Variantes a Evitar | Definição / Aplicação no Projeto |
 |---|---|---|

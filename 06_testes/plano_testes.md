@@ -14,19 +14,19 @@ versao_prototipo: 1.0
 
 ## 1. Contexto e Objetivos da Avaliação
 
-A solução **ÁguaViva PB** visa capacitar comunidades vulneráveis da Paraíba na fiscalização cidadã da água e saneamento (ODS 6). O presente plano define o protocolo de testes de usabilidade com protótipo de alta fidelidade e cenários interativos, focado em avaliar a eficácia, a eficiência, a tolerância a falhas e a satisfação de uso, em conformidade com as normas ISO 9241-11 e as diretrizes de acessibilidade WCAG 2.2 nível AA.
+A solução **ÁguaViva PB** apoia comunidades da Paraíba no acompanhamento cidadão do abastecimento de água e saneamento (ODS 6). Este plano estabelece o protocolo de testes de usabilidade com protótipo de alta fidelidade, avaliando eficácia, eficiência e satisfação de uso segundo a norma ISO 9241-11 e as diretrizes de acessibilidade WCAG 2.2 Nível AA.
 
 ### 1.1 Objetivos Específicos
-1. Mensurar a taxa de conclusão independente em 6 tarefas críticas do fluxo de monitoramento e denúncia comunitária.
-2. Identificar gargalos cognitivos, ruídos visuais e barreiras de acessibilidade para usuários com baixa escolaridade ou baixo letramento digital.
-3. Testar a clareza da comunicação do estado de rede offline (PWA) e fila de sincronização.
-4. Coletar percepções qualitativas e pontuações na escala SUS (*System Usability Scale*) para fundamentar a matriz de melhorias e a iteração do protótipo (Versão 2.0).
+1. Mensurar a taxa de conclusão independente em 6 tarefas do fluxo de monitoramento e denúncia comunitária.
+2. Identificar dificuldades de navegação, ruídos visuais e barreiras de acessibilidade para usuários com diferentes níveis de letramento digital.
+3. Avaliar a compreensão do estado de rede offline (PWA) e da fila local de sincronização.
+4. Coletar percepções qualitativas e pontuações na escala SUS (*System Usability Scale*) para orientar a matriz de melhorias e a iteração do protótipo (Versão 2.0).
 
 ---
 
 ## 2. Perfil da Amostra de Participantes (Critérios Éticos e LGPD)
 
-Para evitar viés exclusivo de estudantes da área de computação, a amostra de 6 participantes voluntários adultos foi desenhada para contemplar diversidade etária, socioeconômica e níveis de proficiência digital, representando as personas estabelecidas na Etapa 4 (Maria de Fátima, Carlos Eduardo e comunidade geral):
+Para evitar viés restrito a estudantes da área de computação, a amostra de 6 participantes voluntários adultos foi selecionada para contemplar diversidade etária, socioeconômica e proficiência digital, representando as personas estabelecidas na Etapa 4 (Dona Maria de Fátima, de 52 anos; Carlos Eduardo e comunidade em geral):
 
 | ID | Faixa Etária | Ocupação / Perfil | Nível de Letramento Digital | Dispositivo Utilizado no Teste |
 |---|---|---|---|---|
@@ -38,9 +38,9 @@ Para evitar viés exclusivo de estudantes da área de computação, a amostra de
 | **P6** | 41 anos | Professora do Ensino Fundamental da rede pública | Intermediário (Sistemas de gestão escolar e navegação mobile) | Smartphone iPhone iOS 6.1" |
 
 ### 2.1 Salvaguardas Éticas e Consentimento
-- **Anonimização estrita**: Nenhum nome civil, CPF, endereço domiciliar ou número telefônico foi coletado ou persistido nos registros do projeto.
-- **TCLE**: Todos os voluntários assinaram previamente o Termo de Consentimento Livre e Esclarecido (`apendices/termos/tcle.md`), com autorização para registro de métricas de tempo e observações de tela.
-- **Voluntariedade e Parada Livre**: Os participantes foram informados de que o teste avaliava o sistema, e não a capacidade individual do usuário, podendo interromper a sessão a qualquer momento sem qualquer ônus.
+- **Anonimização dos dados**: Nenhum nome civil, CPF, endereço domiciliar ou número telefônico foi armazenado nos registros de teste.
+- **TCLE**: Todos os voluntários assinaram previamente o Termo de Consentimento Livre e Esclarecido (`apendices/termos/tcle.md`), com autorização para coleta de métricas de tempo e observações de tela.
+- **Voluntariedade e Parada Livre**: Os participantes foram esclarecidos de que a avaliação recaía sobre a interface, não sobre o usuário, mantendo a liberdade de interromper a sessão a qualquer momento sem qualquer prejuízo.
 
 ---
 
@@ -94,9 +94,9 @@ Para evitar viés exclusivo de estudantes da área de computação, a amostra de
 
 ## 5. Indicadores e Métricas de Usabilidade Coletadas
 
-Para cada par (Participante x Tarefa), foram aferidas quatro métricas rigorosas:
-1. **Taxa de Eficácia (Conclusão)**: Binário (S/N) — Se a tarefa foi realizada com sucesso sem intervenção direta do moderador.
-2. **Eficiência Temporal (Duração)**: Tempo total em segundos desde a leitura da instrução até o alcance do estado final da tarefa.
-3. **Frequência de Erros e Desvios**: Quantidade de cliques errôneos, retornos de tela desnecessários ou dúvidas de navegação.
-4. **Nível de Satisfação Subjetiva**: Escala Likert de 1 (Muito Difícil/Insatisfeito) a 5 (Muito Fácil/Satisfeito) atribuída imediatamente após a conclusão da tarefa.
-5. **Escore SUS Consolidado**: Questionário padronizado de 10 perguntas aplicado ao encerramento da bateria de testes.
+Para cada par (Participante x Tarefa), foram registradas as seguintes métricas de usabilidade:
+1. **Taxa de Eficácia (Conclusão)**: Indicador binário (Sim/Não) registrando se a tarefa foi finalizada com êxito e sem intervenção direta do moderador.
+2. **Eficiência Temporal (Duração)**: Tempo total em segundos desde o início da instrução até o alcance do estado final da tarefa.
+3. **Frequência de Erros e Desvios**: Quantidade de cliques equivocados, navegações incorretas ou dúvidas manifestadas durante o percurso.
+4. **Nível de Satisfação Subjetiva**: Escala Likert de 1 (Muito Difícil) a 5 (Muito Fácil) respondida imediatamente após a conclusão da tarefa.
+5. **Escore SUS Consolidado**: Questionário padronizado de 10 afirmações aplicado ao encerramento da sessão de testes.

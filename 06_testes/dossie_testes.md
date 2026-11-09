@@ -15,9 +15,9 @@ versao: 2.0
 
 ## 1. Introdução e Enquadramento Metodológico
 
-O sucesso de uma plataforma cívica voltada ao saneamento e cidadania hídrica depende criticamente de sua facilidade de uso, clareza informativa e resiliência em condições adversas de infraestrutura [F082]. Em comunidades periféricas, barreiras cognitivas, letramento digital heterogêneo e conexões móveis instáveis costumam inviabilizar a adoção de tecnologias convencionais.
+A adoção de uma ferramenta cívica voltada ao monitoramento da água depende de clareza na interface, facilidade de preenchimento e funcionamento adequado sob conexões móveis instáveis [F082]. Em contextos de periferia e áreas rurais, diferenças no grau de letramento digital exigem fluxos objetivos e acessíveis.
 
-Em cumprimento aos requisitos da Etapa 6 do Projeto Integrador, este documento-mestre consolida os resultados da avaliação de usabilidade e validação técnica da solução **ÁguaViva PB**. A avaliação combinou métodos quantitativos e qualitativos, estruturada a partir da norma internacional ABNT NBR ISO 9241-11 [F082], da modelagem amostral de identificação de problemas de usabilidade de Nielsen e Landauer [F081] e da consagrada Escala de Usabilidade do Sistema (*System Usability Scale* - SUS) de John Brooke [F080].
+Este documento consolida os resultados dos testes de usabilidade e da validação técnica do protótipo **ÁguaViva PB**. A avaliação combinou métodos quantitativos e qualitativos, estruturada a partir da norma ABNT NBR ISO 9241-11 [F082], da modelagem amostral de identificação de problemas de usabilidade de Nielsen e Landauer [F081] e do questionário *System Usability Scale* (SUS) de John Brooke [F080].
 
 ```mermaid
 flowchart TD
@@ -56,12 +56,12 @@ Em estrita conformidade com a LGPD (Lei Federal nº 13.709/2018) e o comitê de 
 
 As tarefas foram projetadas cobrindo os fluxos operacionais de maior relevância definidos na especificação de requisitos da Etapa 5:
 
-* **T01: Consulta de Potabilidade e Qualidade da Água do Bairro** — Localizar a situação do bairro no mapa interativo e identificar se a água distribuída está classificada como própria ou imprópria (Meta: ≤ 60s).
-* **T02: Registro de Denúncia de Desabastecimento com Anexo de Foto** — Preencher formulário de falta d’água, capturar foto da torneira seca e enviar o relato para emissão de protocolo coletivo (Meta: ≤ 120s).
-* **T03: Funcionamento e Verificação de Sincronização em Modo Offline** — Com dados móveis e Wi-Fi desligados, submeter denúncia e confirmar que o chamado foi retido com segurança na fila local (Meta: ≤ 90s).
-* **T04: Solicitação Comunitária de Abastecimento Emergencial (Carro-Pipa)** — Identificar a instituição desassistida (UBS/creche) e acionar a Defesa Civil pelo aplicativo (Meta: ≤ 90s).
-* **T05: Visualização do Painel de Transparência e Exportação de Relatório Comunitário** — Filtrar dados de interrupção dos últimos 30 dias e exportar documento comprobatório em PDF (Meta: ≤ 100s).
-* **T06: Ativação de Recursos de Acessibilidade (Alto Contraste e Fonte Ampliada)** — Localizar os controles visuais e adaptar a interface para leitura sob sol forte ou baixa visão (Meta: ≤ 45s).
+* **T01: Consulta de Potabilidade e Qualidade da Água do Bairro:** Localizar a situação do bairro no mapa interativo e verificar se a água distribuída está classificada como própria ou imprópria (Meta: ≤ 60s).
+* **T02: Registro de Denúncia de Desabastecimento com Anexo de Foto:** Preencher o formulário de falta d’água, anexar foto da torneira e enviar o relato para emissão de protocolo (Meta: ≤ 120s).
+* **T03: Funcionamento e Verificação de Sincronização em Modo Offline:** Com dados móveis e Wi-Fi desligados, submeter denúncia e confirmar que o chamado foi retido com segurança na fila local (Meta: ≤ 90s).
+* **T04: Solicitação Comunitária de Abastecimento Emergencial (Carro-Pipa):** Identificar a instituição desassistida (UBS/creche) e registrar pedido de caminhão-pipa pelo aplicativo (Meta: ≤ 90s).
+* **T05: Visualização do Painel de Transparência e Exportação de Relatório Comunitário:** Filtrar dados de interrupção dos últimos 30 dias e exportar documento comprobatório em PDF (Meta: ≤ 100s).
+* **T06: Ativação de Recursos de Acessibilidade (Alto Contraste e Fonte Ampliada):** Localizar os controles visuais e adaptar a interface para leitura com alto contraste e fonte aumentada (Meta: ≤ 45s).
 
 ---
 
@@ -91,13 +91,13 @@ xychart-beta
 ### 4.1 Avaliação do Escore SUS (System Usability Scale)
 Ao término da sessão, cada participante respondeu ao questionário SUS padronizado de 10 itens [F080]. A pontuação consolidada do protótipo alcançou a marca de **84,2 pontos em 100**.
 
-Na escala de aceitabilidade e adjetivação de Bangor, Kortum e Miller (2008), uma nota SUS de 84,2 pontos posiciona o sistema na faixa de classificação **"Excelente" (Grade A)**, situando-se no percentil superior a 90% da indústria de software interativo. Essa pontuação comprova que as decisões ergonômicas de design, minimalismo e componentes grandes favoreceram fortemente a navegação autônoma.
+Na escala de aceitabilidade e adjetivação de Bangor, Kortum e Miller (2008), uma nota SUS de 84,2 pontos posiciona o sistema na faixa de classificação **"Excelente" (Grade A)**, situando-se no percentil superior a 90% da indústria de software interativo. O resultado indica que os componentes visuais simplificados e as áreas táteis ampliadas facilitaram a navegação independente.
 
 ---
 
 ## 5. Análise Qualitativa dos Achados e Pontos de Fricção
 
-Apesar da alta taxa de sucesso global (97,2%), a observação atenta com a técnica *Think-Aloud* revelou pontos de atrito cognitivo e barreiras ergonômicas que necessitaram de atenção imediata:
+Durante a aplicação do protocolo de testes com a técnica *Think-Aloud*, foram registrados pontos de atrito e dificuldades de interação que orientaram ajustes no protótipo:
 
 1. **Jargão Técnico na Notificação Offline (Tarefa T03)**:
    - *Evidência*: O participante P3 (líder comunitário idoso) relatou perplexidade ao ler o aviso original: *"Registro armazenado em cache local IndexedDB; aguardando handshake HTTP"*. O usuário expressou apreensão de que sua denúncia tivesse sido "travada" ou deletada.
@@ -150,7 +150,7 @@ Com base nas decisões da matriz de melhorias, as telas principais da solução 
 | Componente / Tela | Versão Inicial (v1.0) | Versão 2.0 Revisada (Pós-Testes) | Justificativa Ergonômica |
 |---|---|---|---|
 | **Tela de Denúncia (TEL-02 e 03)** | Botão "Enviar Relato" no fim da página rolável; exige rolagem manual em telas menores. | Botão "Enviar Relato" fixo na barra inferior (*sticky bottom*), com sombra de destaque e contraste reforçado. | Elimina o atrito do teclado virtual aberto e evita o abandono observado no teste de P3. |
-| **Aviso de Modo Offline (TEL-07)** | Alerta textual técnico: *"Cache IndexedDB ativo. Sincronização pendente via API REST"*. | Card com ícone de nuvem amigável: *"Tudo salvo no celular! Não se preocupe: assim que o sinal voltar, seu chamado será enviado automaticamente"*. | Humaniza a interface e elimina a insegurança cognitiva relatada por P1 e P3. |
+| **Aviso de Modo Offline (TEL-07)** | Alerta textual técnico: *"Cache IndexedDB ativo. Sincronização pendente via API REST"*. | Card com ícone de nuvem: *"Tudo salvo no celular! Não se preocupe: assim que o sinal voltar, seu chamado será enviado automaticamente"*. | Substitui mensagens técnicas por redação compreensível por usuários leigos (P1 e P3). |
 | **Mapa de Potabilidade (TEL-04)** | Navegação cartográfica controlada exclusivamente por gestos multitouch (*pinch-to-zoom*). | Adição de botões flutuantes grandes de zoom (+ / -) e recentralização no canto inferior direito. | Atende a diretriz WCAG 2.5.5 (*Target Size*), apoiando usuários com dificuldades motoras ou celulares de baixa sensibilidade. |
 | **Painel de Transparência (TEL-05)** | Legendas dos gráficos em 10px com escala monocromática suave. | Legendas ampliadas para 13px em negrito com paleta de alto contraste e ícones de identificação rápida. | Facilita a leitura para usuários idosos e permite consulta confortável sob luminosidade solar direta. |
 | **Feedback de Sincronização (TEL-07)** | Notificação silenciosa na barra superior do navegador. | Disparo de vibração háptica suave (100ms) no smartphone e aviso sonoro opcional de sucesso. | Fornece confirmação multissensorial, útil para usuários que guardam o celular no bolso enquanto aguardam sinal. |
@@ -159,17 +159,17 @@ Com base nas decisões da matriz de melhorias, as telas principais da solução 
 
 ## 8. Discussão Crítica sobre as Limitações da Avaliação
 
-Para manter a honestidade intelectual e o rigor científico exigidos no meio acadêmico, o grupo registra as seguintes limitações do processo de validação:
+A interpretação dos resultados deve considerar as seguintes restrições metodológicas:
 
-1. **Tamanho Amostral Restrito (N = 6)**: Embora a clássica literatura de Engenharia de Usabilidade demonstre que 5 a 6 usuários revelam aproximadamente 80% a 85% dos problemas ergonômicos mais severos de uma interface [F081], a amostra é insuficiente para análises de inferência estatística complexa ou estratificações populacionais formais.
-2. **Amostragem por Conveniência Territorial**: Os participantes residem na Região Metropolitana de João Pessoa (João Pessoa, Cabedelo e Santa Rita). Moradores do semiárido profundo da Paraíba (Cariri e Sertão), onde o desabastecimento d'água possui dinâmicas sazonais ainda mais extremas, não puderam ser ouvidos presencialmente nesta fase.
-3. **Simulação Laboratorial do Modo Offline**: A desconexão de rede foi induzida desligando voluntariamente o sinal de dados e Wi-Fi no dispositivo. No contexto real, oscilações parciais de sinal (redes instáveis com alta perda de pacotes e alta latência) podem gerar comportamentos de *timeout* que exigirão testes de estresse em campo antes da implantação final.
-4. **Protótipo Interativo vs. Aplicação em Produção**: Os testes foram executados sobre protótipo de alta fidelidade navegável no Figma e mockups PWA. A validação final de latência de upload de imagens pesadas dependerá dos testes de carga na infraestrutura de nuvem.
+1. **Tamanho Amostral Restrito (N = 6)**: Embora a literatura de Engenharia de Usabilidade aponte que amostras de 5 a 6 usuários revelam a maioria dos problemas de interface [F081], o tamanho amostral é insuficiente para inferências estatísticas formais ou estratificações amplas.
+2. **Amostragem por Conveniência Territorial**: Os participantes residem na Região Metropolitana de João Pessoa (João Pessoa, Cabedelo e Santa Rita). Moradores do semiárido da Paraíba (Cariri e Sertão), onde o desabastecimento possui padrões sazonais distintos, não foram incluídos presencialmente nesta rodada.
+3. **Simulação Laboratorial do Modo Offline**: A perda de conectividade foi testada desligando dados e Wi-Fi no aparelho. Em contexto de uso diário, conexões intermitentes com oscilações graduais de sinal exigirão testes adicionais de campo antes do lançamento.
+4. **Protótipo Interativo vs. Aplicação em Produção**: Os testes foram realizados sobre protótipo de alta fidelidade no Figma e mockups PWA. A confirmação de tempos de resposta e upload em redes reais dependerá de testes de carga na infraestrutura de nuvem.
 
 ---
 
-## 9. Conclusão e Fechamento do Gate 6
+## 9. Conclusão e Fechamento da Etapa 6
 
-A Etapa 6 demonstrou empiricamente que a solução **ÁguaViva PB** atinge padrões superiores de usabilidade, eficiência e inclusão digital, com taxa de sucesso de 97,2% e escore SUS de 84,2 pontos. O ciclo de testes cumpriu integralmente seu papel formativo ao identificar falhas de comunicação técnica e oclusão de elementos visuais antes da consolidação do relatório acadêmico final.
+Os testes de usabilidade com o protótipo da solução **ÁguaViva PB** registraram taxa de eficácia de 97,2% nas 36 tarefas observadas e escore SUS de 84,2 pontos (Classificação Excelente / Grade A). A rodada experimental permitiu identificar falhas de diagramação e jargões técnicos antes do encerramento do projeto.
 
-Com a documentação do plano de testes, o registro da base anonimizada com 36 observações em `06_testes/registros_anonimizados.csv`, o mapeamento das 4 melhorias na matriz de priorização e a implementação das correções no protótipo v2.0, o **Gate 6 está plenamente concluído e validado** sob a liderança de Luiz Miguel.
+A partir do plano de testes formalizado, da base de dados com 36 registros em `06_testes/registros_anonimizados.csv`, das 4 melhorias catalogadas (MELH-01 a MELH-04) e da revisão do protótipo na Versão 2.0, a Etapa 6 conclui seu ciclo de validação técnica sob a coordenação de Luiz Miguel.

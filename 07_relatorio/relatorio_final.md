@@ -64,9 +64,67 @@ normas: "ABNT NBR 14724 / NBR 6023 / NBR 6024"
 
 ---
 
+<br><br><br>
+
+### GABRIEL AMANCIO
+### LUIZ MIGUEL
+### PAULO GERMANO
+### GUSTAVO ANTONIO
+
+<br><br>
+
+# FOLHA DE APROVAÇÃO
+
+<br>
+
+> Relatório Técnico-Científico Integrado apresentado ao Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas do Centro Universitário de João Pessoa (UNIPÊ), como requisito parcial e obrigatório para conclusão do Projeto Integrador de Design Profissional.
+
+<br>
+
+Aprovado em: ___ de _____________ de 2026.
+
+<br><br>
+
+**BANCA EXAMINADORA:**
+
+<br><br>
+
+____________________________________________________  
+Prof. Orientador / Coordenador — UNIPÊ
+
+<br><br>
+
+____________________________________________________  
+Prof. Avaliador Convidado 1 — UNIPÊ
+
+<br><br>
+
+____________________________________________________  
+Prof. Avaliador Convidado 2 — UNIPÊ
+
+<br><br>
+
+---
+
+## DEDICATÓRIA
+
+Dedicamos este trabalho às comunidades periféricas e rurais da Paraíba que enfrentam diariamente a insegurança hídrica e a escassez de saneamento básico, bem como aos nossos familiares pelo incentivo constante ao longo de nossa trajetória acadêmica.
+
+---
+
+## AGRADECIMENTOS
+
+Agradecemos aos docentes do Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas do UNIPÊ pela orientação, rigor e estímulo ao longo deste semestre letivo.
+
+Aos seis participantes voluntários que disponibilizaram seu tempo e colaboraram com as sessões de teste de usabilidade, fornecendo críticas e sugestões fundamentais para o aprimoramento da interface cidadã ÁguaViva PB.
+
+Aos colegas de turma e aos profissionais das comunidades de tecnologia da Paraíba pelo compartilhamento de experiências e incentivo à formação continuada.
+
+---
+
 ## RESUMO
 
-O presente relatório técnico-científico consolida os resultados do Projeto Integrador intitulado "Laboratório de Carreira e Inovação Responsável em TI", conduzido por um grupo multidisciplinar de quatro estudantes de Análise e Desenvolvimento de Sistemas do Centro Universitário de João Pessoa (UNIPÊ). O trabalho foi estruturado em um ciclo metodológico rigoroso de sete etapas integradas, abarcando: (i) a investigação empírica de 24 anúncios reais de contratação de profissionais de TI no Brasil, com foco nas especialidades de Desenvolvimento de Software, Infraestrutura e Redes, Ciência de Dados e Inteligência Artificial, e Segurança da Informação; (ii) a autoavaliação diagnóstica de competências individuais e o planejamento estratégico de carreira (PDI) alinhado à metodologia SMART; (iii) o exame crítico de dilemas éticos, riscos algorítmicos e testes experimentais de alucinação e confiabilidade com modelos de Inteligência Artificial generativa sob a égide da LGPD e do Marco Civil da Internet; (iv) o diagnóstico socioambiental fundamentado em microdados públicos do Censo IBGE 2022, SNIS e DATASUS sobre o déficit de saneamento básico e vulnerabilidade hídrica na Paraíba; (v) a especificação arquitetural, modelagem de requisitos (MoSCoW e BDD) e prototipagem de alta fidelidade da plataforma cívica **ÁguaViva PB**; (vi) a validação ergonômica e testes de usabilidade com seis voluntários reais de diferentes perfis sociodemográficos sob a norma ABNT NBR ISO 9241-11 e a escala SUS; e (vii) a sistematização dos resultados e planejamento de defesa acadêmica. A avaliação empírica de usabilidade alcançou 97,2% de eficácia nas tarefas e pontuação SUS de 84,2 pontos (classificação "Excelente"), validando a eficácia de uma abordagem *offline-first* orientada à cidadania e inclusão digital no semiárido paraibano.
+O presente relatório técnico-científico consolida os resultados do Projeto Integrador intitulado "Laboratório de Carreira e Inovação Responsável em TI", conduzido por quatro estudantes de Análise e Desenvolvimento de Sistemas do Centro Universitário de João Pessoa (UNIPÊ). O trabalho foi estruturado em sete etapas integradas: (i) a investigação empírica de 24 anúncios reais de contratação de profissionais de TI no Brasil, distribuídos entre Desenvolvimento de Software, Infraestrutura e Redes, Ciência de Dados e Inteligência Artificial, e Segurança da Informação; (ii) a autoavaliação diagnóstica de competências individuais e o planejamento de carreira (PDI) alinhado à metodologia SMART; (iii) o exame crítico de dilemas éticos, riscos algorítmicos e testes experimentais de alucinação e confiabilidade com modelos de Inteligência Artificial generativa sob as diretrizes da LGPD e do Marco Civil da Internet; (iv) o diagnóstico socioambiental fundamentado em microdados públicos do Censo IBGE 2022, SNIS e DATASUS sobre o déficit de saneamento básico e vulnerabilidade hídrica na Paraíba; (v) a especificação arquitetural, modelagem de requisitos (MoSCoW e BDD) e prototipagem da plataforma cívica **ÁguaViva PB**; (vi) a validação ergonômica e testes de usabilidade com seis voluntários reais de diferentes perfis sociodemográficos sob a norma ABNT NBR ISO 9241-11 e a escala SUS; e (vii) a sistematização dos resultados e planejamento de defesa acadêmica. A avaliação de usabilidade alcançou 97,2% de eficácia nas tarefas e pontuação SUS de 84,2 pontos (classificação "Excelente"), comprovando a viabilidade de uma aplicação com funcionamento *offline-first* orientada à cidadania e inclusão digital no semiárido paraibano.
 
 **Palavras-chave:** Projeto Integrador; Tecnologia da Informação; Carreira em TI; Ética Algorítmica; Saneamento Básico; Cidadania Hídrica; Usabilidade (SUS); ÁguaViva PB.
 
@@ -99,7 +157,7 @@ This integrated technical-scientific monograph presents the comprehensive outcom
 - Tabela 1 — Matriz de Governança, Rodízio de Liderança e Papéis Técnicos
 - Tabela 2 — Amostragem Estratificada de 24 Vagas Reais de TI no Brasil
 - Tabela 3 — Mapeamento Comparativo Coletivo de Competências e Gaps Compartilhados
-- Tabela 4 — Catálogo de Cursos, Certificações Oficiais e Comunidades da Paraíba
+- Tabela 4 — Matriz Consolidada de Competências Individuais da Equipe Técnica
 - Tabela 5 — Matriz de Riscos Éticos e Jurídicos em Sistemas Digitais
 - Tabela 6 — Matriz de Decisão Multicritério para Seleção do Problema Socioambiental
 - Tabela 7 — Resumo dos 12 Requisitos Funcionais com Priorização MoSCoW
@@ -162,47 +220,47 @@ This integrated technical-scientific monograph presents the comprehensive outcom
    - 2.3 Ética Tecnológica, Cidadania e Marco Regulatório Digital Brasileiro
    - 2.4 Inteligência Artificial Responsável, Vieses Algorítmicos e Supervisão Humana
    - 2.5 Sustentabilidade Socioambiental (ODS), Green IT e Inclusão Acessível
-3. **METODOLOGIA E GOVERNANÇA DO PROJETO**
+3. **METODOLOGIA CIENTÍFICA E OPERACIONAL**
    - 3.1 Modelo Operacional e Rodízio de Liderança
    - 3.2 Estrutura Modular de Repositório e Fonte Única da Verdade
    - 3.3 Sistema de Verificação Determinística e Rastreabilidade
    - 3.4 Diretrizes de Integridade e Uso Ético de Inteligência Artificial
-4. **INVESTIGAÇÃO DO MERCADO DE TRABALHO EM TECNOLOGIA DA INFORMAÇÃO**
+4. **ANÁLISE DO MERCADO PROFISSIONAL EM TI**
    - 4.1 Procedimentos de Coleta Ética e Amostragem de Vagas
    - 4.2 Taxonomia e Análise de Frequência de Competências por Especialidade
    - 4.3 Mapeamento dos Desafios Operacionais dos Contratantes
    - 4.4 Implicações para a Formação Superior em ADS
-5. **IDENTIDADE PROFISSIONAL E PLANEJAMENTO DE CARREIRA**
+5. **IDENTIDADE PROFISSIONAL, CARREIRA E APRENDIZAGEM CONTÍNUA**
    - 5.1 Diagnóstico de Competências Individuais dos Integrantes
    - 5.2 Análise Comparativa Coletiva e Gaps Compartilhados
    - 5.3 Planos de Desenvolvimento Individual (PDI) com Metas SMART
    - 5.4 Portfólios Digitais, Presença Pública e Ecossistema Tecnológico da Paraíba
-6. **ÉTICA E RESPONSABILIDADE DIGITAL**
+6. **ÉTICA, LEGISLAÇÃO E GOVERNANÇA EM INTELIGÊNCIA ARTIFICIAL**
    - 6.1 Estudo de Casos Reais de Violação Ética e Regulamentação no Brasil
    - 6.2 Matriz de Riscos Éticos, Jurídicos e Ambientais em Sistemas de TI
    - 6.3 Experimentos Empíricos com LLMs: Detecção de Alucinações e Falhas de Segurança
    - 6.4 Diretrizes para Concepção e Governança Responsável de Tecnologias
-7. **INVESTIGAÇÃO DO PROBLEMA SOCIAL OU AMBIENTAL**
+7. **O PROBLEMA SOCIOAMBIENTAL**
    - 7.1 Investigação Preliminar de Três Cenários de Vulnerabilidade na Paraíba
    - 7.2 Matriz de Decisão Multicritério e Seleção do ODS 6 (Água e Saneamento)
    - 7.3 Análise Causa-Raiz (Ishikawa) e Fundamentação Censitária Oficial
    - 7.4 Personas, Jornadas de Usuário e Delimitação Estrita de Escopo
-8. **DESENVOLVIMENTO DA SOLUÇÃO TECNOLÓGICA "ÁGUAVIVA PB"**
+8. **A SOLUÇÃO TECNOLÓGICA (ÁGUAVIVA PB)**
    - 8.1 Visão Geral do Produto e Modelo de Arquitetura C4
    - 8.2 Engenharia de Requisitos (MoSCoW) e Métricas Verificáveis de Qualidade
    - 8.3 Histórias de Usuário em Formato BDD (Behavior-Driven Development)
    - 8.4 Especificação do Protótipo de Alta Fidelidade e Diretrizes de Acessibilidade (WCAG)
-9. **TESTES E RESULTADOS DE USABILIDADE**
+9. **TESTES DE USABILIDADE, ACESSIBILIDADE E RESULTADOS**
    - 9.1 Protocolo Experimental de Testes e Salvaguardas Éticas
    - 9.2 Análise Quantitativa de Resultados e Escore SUS (System Usability Scale)
    - 9.3 Análise Qualitativa, Heurísticas de Usabilidade e Pontos de Fricção
    - 9.4 Matriz de Melhorias Priorizadas (Impacto × Esforço) e Refatoração do Protótipo
    - 9.5 Limitações Metodológicas do Estudo
-10. **DISCUSSÃO INTEGRADORA**
+10. **DISCUSSÃO INTEGRADORA E IMPACTO SOCIOAMBIENTAL**
     - 10.1 Articulação Interdisciplinar das Quatro Competências Técnicas
     - 10.2 Contribuições para a Aprendizagem e Formação Tecnológica no UNIPÊ
     - 10.3 Roadmap Estratégico de Evolução da Plataforma Cívica
-11. **CONSIDERAÇÕES FINAIS**
+11. **CONSIDERAÇÕES FINAIS E TRABALHOS FUTUROS**
 - **REFERÊNCIAS**
 - **APÊNDICE A — Diários Individuais de Aprendizagem dos Integrantes**
 - **APÊNDICE B — Termo de Consentimento Livre e Esclarecido (TCLE)**
@@ -213,16 +271,16 @@ This integrated technical-scientific monograph presents the comprehensive outcom
 ## 1. INTRODUÇÃO
 
 ### 1.1 Contextualização e Justificativa
-A aceleração da transformação digital e a onipresença dos sistemas computacionais em serviços essenciais do cotidiano têm redefinido as exigências formativas dos egressos de cursos de Tecnologia da Informação. No cenário contemporâneo, a mera habilidade técnica de codificação de instruções algorítmicas é manifestamente insuficiente para atender às demandas de um ecossistema produtivo crescentemente complexo, regulado e interdisciplinar. Exige-se do desenvolvedor moderno competências robustas de análise crítica, sensibilidade ética perante a Lei Geral de Proteção de Dados (LGPD) [F001], Marco Civil da Internet [F002], respeito aos direitos autorais [F003], capacidade de auditoria sobre sistemas automatizados e, fundamentalmente, compromisso cívico com a resolução de problemas socioambientais concretos.
+A digitalização de serviços públicos e privados alterou o perfil exigido de profissionais formados em Tecnologia da Informação. Apenas conhecer sintaxes de linguagens de programação não basta para atender a projetos sujeitos a marcos regulatórios e impactos sociais amplos. O desenvolvedor precisa aliar raciocínio técnico à análise crítica, observando legislações como a Lei Geral de Proteção de Dados (LGPD) [F001], o Marco Civil da Internet [F002] e a Lei de Direitos Autorais [F003], além de manter o compromisso ético na resolução de problemas socioambientais concretos.
 
-No estado da Paraíba, a despeito dos polos tecnológicos em expansão nas cidades de João Pessoa e Campina Grande, coexistem desafios históricos e severos relacionados à infraestrutura básica. Conforme dados do Censo Demográfico do Instituto Brasileiro de Geografia e Estatística (IBGE) [F070], mais de 50,9% dos domicílios particulares permanentes do território paraibano não contam com ligação à rede geral de esgoto sanitário, dependendo de fossas rudimentares, valas a céu aberto ou descarte precário no meio ambiente. Simultaneamente, relatórios oficiais do Sistema Nacional de Informações sobre Saneamento (SNIS) [F071] apontam que aproximadamente 47,0% de toda a água tratada distribuída no estado é perdida antes de alcançar a torneira do consumidor final, em virtude de vazamentos ocultos, tubulações obsoletas e fraudes na rede. Essa vulnerabilidade hídrica atinge de forma desproporcional as comunidades periféricas e rurais, culminando em elevadas taxas de internação hospitalar por doenças diarreicas e de veiculação hídrica monitoradas pelo DATASUS [F072].
+No estado da Paraíba, ao mesmo tempo em que crescem os polos de tecnologia em João Pessoa e Campina Grande, persistem carências graves de saneamento básico. De acordo com o Censo 2022 do IBGE [F070], 50,9% dos domicílios particulares permanentes do estado não contam com ligação à rede geral de esgoto, utilizando fossas rudimentares, valas a céu aberto ou descarte direto no meio ambiente. Além disso, o Sistema Nacional de Informações sobre Saneamento (SNIS) [F071] aponta que 47,0% da água tratada na distribuição estadual é perdida antes de alcançar as torneiras, em razão de vazamentos e tubulações antigas. Essa situação atinge com mais força bairros periféricos e áreas rurais, o que se reflete nas internações hospitalares por doenças de veiculação hídrica registradas pelo DATASUS [F072].
 
-Diante desse panorama, o Projeto Integrador de Design Profissional do Centro Universitário de João Pessoa (UNIPÊ) estabelece um laboratório prático para conectar o aprendizado acadêmico às urgências do mundo do trabalho e da sociedade civil. O desafio consiste em mobilizar quatro competências estruturantes de Tecnologia da Informação — Desenvolvimento de Software, Infraestrutura e Redes, Ciência de Dados e Inteligência Artificial, e Segurança da Informação — para diagnosticar carências profissionais, auditar ferramentas emergentes e conceber uma solução tecnológica cidadã com alto potencial de impacto social.
+Nesse contexto, o Projeto Integrador de Design Profissional do Centro Universitário de João Pessoa (UNIPÊ) busca aproximar a formação acadêmica das demandas reais do mercado de trabalho e de desafios sociais. A proposta articulou quatro especialidades de formação em TI (Desenvolvimento de Software, Infraestrutura e Redes, Ciência de Dados e Inteligência Artificial, e Segurança da Informação) para diagnosticar requisitos profissionais, avaliar ferramentas de IA e desenvolver uma solução digital voltada ao monitoramento comunitário da água.
 
 ### 1.2 Objetivos do Trabalho
 
 #### 1.2.1 Objetivo Geral
-Desenvolver um percurso investigativo, formativo e tecnológico integrado, articulando pesquisa de mercado de trabalho em TI, planejamento estratégico de carreira, auditoria ética de Inteligência Artificial e a concepção e validação ergonômica de uma plataforma cívica voltada ao saneamento básico e monitoramento participativo da água na Paraíba.
+Articular a pesquisa empírica sobre o mercado de trabalho em TI, a autoavaliação profissional de competências, a análise ética e experimental de modelos de inteligência artificial e o desenvolvimento e teste de usabilidade de uma aplicação cívica voltada ao saneamento e monitoramento da água na Paraíba.
 
 #### 1.2.2 Objetivos Específicos
 1. Coletar e analisar empiricamente 24 anúncios reais de vagas de TI no Brasil (6 por área de especialidade), mapeando a taxonomia de competências técnicas e socioemocionais exigidas no mercado júnior e de estágio [F020], amparado por relatórios setoriais de empregabilidade em TIC [F021, F022].
@@ -234,40 +292,40 @@ Desenvolver um percurso investigativo, formativo e tecnológico integrado, artic
 7. Sistematizar todo o acervo técnico e científico em monografia padronizada pelas normas ABNT [F004, F005, F006] e manual institucional do UNIPÊ [F008], estruturando o roteiro de apresentação e defesa oral coletiva.
 
 ### 1.3 Estrutura do Documento Monográfico
-O trabalho está organizado em 11 capítulos temáticos em estrita conformidade com as diretrizes do regulamento do Projeto Integrador: o Capítulo 2 estabelece a fundamentação teórica multidisciplinar; o Capítulo 3 detalha a metodologia de governança e integridade acadêmica; o Capítulo 4 reporta a investigação empírica do mercado de trabalho em TI; o Capítulo 5 consolida o diagnóstico de carreira, matrizes de competência e PDIs individuais; o Capítulo 6 aborda a ética tecnológica, privacidade e experimentos práticos com IA; o Capítulo 7 fundamenta o diagnóstico socioambiental e a seleção do ODS 6; o Capítulo 8 detalha a concepção, arquitetura C4, requisitos e protótipo da plataforma ÁguaViva PB; o Capítulo 9 descreve os testes de usabilidade, métricas e o protótipo revisado; o Capítulo 10 desenvolve a discussão integradora conectando competências e impacto social; e o Capítulo 11 tece as considerações finais, seguido pelas referências normativas e apêndices comprobatórios.
-
----
+O trabalho está organizado em 11 capítulos: o Capítulo 2 traz a fundamentação teórica; o Capítulo 3 detalha a metodologia e governança; o Capítulo 4 analisa o mercado de TI; o Capítulo 5 consolida diagnósticos e PDIs; o Capítulo 6 trata de ética e IA; o Capítulo 7 fundamenta o diagnóstico do ODS 6; o Capítulo 8 descreve o ÁguaViva PB; o Capítulo 9 traz os testes de usabilidade; o Capítulo 10 discute os resultados e o impacto social; e o Capítulo 11 reúne as considerações finais e trabalhos futuros, seguidos pelas referências e apêndices.
 
 ---
 
 ## 2. FUNDAMENTAÇÃO TEÓRICA
 
 ### 2.1 Mercado de Tecnologia da Informação e Demanda por Competências
-O setor de Tecnologia da Informação e Comunicação (TIC) no Brasil vivencia uma expansão estrutural impulsionada pela digitalização dos serviços essenciais, pela sofisticação das arquiteturas em nuvem e pela crescente centralidade dos dados na tomada de decisão estratégica. De acordo com relatórios setoriais da Associação das Empresas de Tecnologia da Informação e Comunicação (Brasscom) [F021] e da Associação para Promoção da Excelência do Software Brasileiro (Softex) [F022], a demanda anual por profissionais qualificados em computação supera largamente o contingente de egressos formados pelas instituições de ensino superior no país, gerando um déficit de talentos que exige rápida adaptação curricular e sólida fundamentação técnica.
+O setor de Tecnologia da Informação e Comunicação (TIC) no Brasil mantém demanda aquecida por profissionais capacitados. Relatórios setoriais da Associação das Empresas de Tecnologia da Informação e Comunicação (Brasscom) [F021] e da Associação para Promoção da Excelência do Software Brasileiro (Softex) [F022] apontam que o número de vagas abertas anualmente no país supera o total de novos graduados na área de computação, gerando uma escassez de mão de obra que pressiona cursos superiores a atualizarem seus projetos pedagógicos.
 
-No contexto regional do Nordeste e, especificamente, do estado da Paraíba, destacam-se os polos tecnológicos consolidados em João Pessoa e Campina Grande, que combinam centros acadêmicos de referência e empresas de desenvolvimento de software em franca expansão. As exigências do mercado para posições de entrada (estágios e nível júnior) transcendem a mera codificação sintática em linguagens específicas. Observa-se uma valorização cada vez mais incisiva de competências fundamentais como modelagem relacional em bancos de dados (SQL), versionamento distribuído com Git, modularização em containers (Docker) e capacidade de articular requisitos técnicos em sintonia com os objetivos de negócio das organizações contratantes [F020].
+Na Paraíba, os polos de João Pessoa e Campina Grande concentram empresas de tecnologia, instituições de ensino e centros de inovação. As exigências para contratação de estagiários e desenvolvedores juniores vão além da escrita de código básico. Os anúncios valorizam requisitos práticos como modelagem em bancos de dados relacionais (SQL), controle de versão com Git, uso de contêineres Docker e compreensão dos requisitos de negócio das organizações contratantes [F020].
 
 ### 2.2 Formação Continuada, Identidade Digital e Aprendizagem ao Longo da Vida
-A velocidade com que novas tecnologias, frameworks e paradigmas computacionais são introduzidos no mercado impõe aos futuros profissionais de TI a assimilação da aprendizagem contínua (*lifelong learning*) como pilar inegociável de sua identidade profissional. As Diretrizes Curriculares Nacionais e o Projeto Pedagógico do Curso de Tecnologia em Análise e Desenvolvimento de Sistemas do UNIPÊ [F008] ressaltam que o egresso deve atuar como sujeito autônomo, dotado de postura investigativa e capacitado a identificar lacunas em seu repertório e superá-las por meio de cursos de extensão, certificações oficiais e participação em comunidades técnicas abertas.
+A evolução frequente de ferramentas e padrões de arquitetura exige que o profissional de TI adote o aprendizado contínuo (*lifelong learning*). As Diretrizes Curriculares Nacionais e o Projeto Pedagógico do Curso de Tecnologia em Análise e Desenvolvimento de Sistemas do UNIPÊ [F008] ressaltam que o egresso deve desenvolver postura autônoma, sabendo identificar lacunas em sua formação e supri-las por meio de certificações, cursos práticos e interação com comunidades de tecnologia.
 
-Nesse cenário, a construção da identidade digital e a organização de portfólios públicos de código-fonte — prioritariamente em plataformas colaborativas como o GitHub — desempenham papel preponderante na inserção profissional do estudante. A apresentação de repositórios estruturados, acompanhados de documentação técnica acessível (`README.md`), testes automatizados e evidências tangíveis de projetos executados, confere materialidade às competências declaradas, diferenciando positivamente o candidato em processos seletivos baseados em evidências práticas.
+Nesse sentido, a organização de portfólios públicos de código, prioritariamente em plataformas como o GitHub, é decisiva para a inserção profissional do estudante. A apresentação de repositórios estruturados com documentação técnica acessível (`README.md`), testes automatizados e evidências tangíveis de projetos executados confere materialidade às competências declaradas, diferenciando positivamente o candidato em processos seletivos baseados em evidências práticas.
 
 ### 2.3 Ética Tecnológica, Cidadania e Marco Regulatório Digital Brasileiro
-O desenvolvimento de sistemas de informação não pode prescindir de um compromisso intransigente com os princípios éticos e com o ordenamento jurídico vigente. A Constituição da República Federativa do Brasil de 1988 consagra como fundamentos e direitos invioláveis a dignidade da pessoa humana (art. 1º, III), a intimidade, a vida privada, a honra e a imagem das pessoas (art. 5º, X). No ambiente digital, essas salvaguardas constitucionais são regulamentadas pelo Marco Civil da Internet (Lei nº 12.965/2014) [F002], que estabelece os princípios da neutralidade de rede, da proteção da privacidade e da responsabilização civil na rede.
+O desenvolvimento de sistemas de informação precisa respeitar preceitos éticos e as leis em vigor. A Constituição Federal de 1988 consagra como fundamentos e direitos invioláveis a dignidade da pessoa humana (art. 1º, III), a intimidade, a vida privada, a honra e a imagem das pessoas (art. 5º, X). No meio digital, essas salvaguardas constitucionais são regulamentadas pelo Marco Civil da Internet (Lei nº 12.965/2014) [F002], que estabelece os princípios da neutralidade de rede, da proteção da privacidade e da responsabilização civil na rede.
 
-Com o advento da Lei Geral de Proteção de Dados Pessoais (LGPD — Lei nº 13.709/2018) [F001], a disciplina da proteção de dados pessoais passou a exigir que qualquer aplicação computacional incorpore o princípio do *Privacy by Design* e *Privacy by Default*. Os artigos 6º e 7º da referida lei determinam a observância dos princípios da finalidade, adequação, necessidade (minimização de dados), livre acesso, transparência e segurança. Para soluções cívicas e comunitárias, isso implica que a coleta de relatos cidadãos e denúncias ambientais deve prescindir de identificação pessoal invasiva, salvaguardando a integridade dos titulares contra represálias ou exposições indevidas. Da mesma forma, a Lei de Direitos Autorais (Lei nº 9.610/1998) [F003] impõe limites estritos à apropriação não autorizada de códigos, bases de dados e conteúdos de terceiros.
+Com a Lei Geral de Proteção de Dados Pessoais (LGPD, Lei nº 13.709/2018) [F001], a disciplina da proteção de dados pessoais passou a exigir que qualquer aplicação computacional incorpore o princípio do *Privacy by Design* e *Privacy by Default*. Os artigos 6º e 7º da referida lei determinam a observância dos princípios da finalidade, adequação, necessidade (minimização de dados), livre acesso, transparência e segurança. Para soluções cívicas e comunitárias, isso implica que a coleta de relatos cidadãos e denúncias ambientais deve prescindir de identificação pessoal invasiva, resguardando os titulares contra represálias ou exposições indevidas. Da mesma forma, a Lei de Direitos Autorais (Lei nº 9.610/1998) [F003] veda a apropriação não autorizada de códigos, bases de dados e conteúdos de terceiros.
 
 ### 2.4 Inteligência Artificial Responsável, Vieses Algorítmicos e Supervisão Humana
 A consolidação de modelos de Inteligência Artificial generativa e sistemas de aprendizado de máquina nas esteiras de desenvolvimento de software introduz simultaneamente ganhos de produtividade e riscos severos à segurança e aos direitos fundamentais. A literatura e os órgãos reguladores [F050, F051] alertam para o perigo das caixas-pretas algorítmicas (*black-box systems*), nas quais a opacidade das decisões automatizadas impede o escrutínio e a auditoria por cidadãos e autoridades.
 
-Entre os riscos mais prementes destacam-se os vieses algorítmicos decorrentes de dados de treinamento históricos desbalanceados, que resultam em discriminação indireta contra populações vulneráveis, e as alucinações de modelos de linguagem (LLMs), caracterizadas pela geração convincente de informações falsas, cálculos aritméticos errôneos ou bibliotecas vulneráveis. Torna-se mandatório adotar o paradigma do *Human-in-the-Loop* (supervisão humana obrigatória), no qual nenhuma decisão crítica ou agregação estatística é delegada cegamente ao motor probabilístico de um modelo de linguagem sem verificação empírica determinística por profissionais capacitados.
+Dois problemas frequentes são os vieses algorítmicos decorrentes de dados de treinamento históricos desbalanceados, que resultam em discriminação indireta contra populações vulneráveis, e as alucinações de modelos de linguagem (LLMs), caracterizadas pela geração convincente de informações falsas, cálculos aritméticos errôneos ou bibliotecas vulneráveis. Por essa razão, a supervisão humana (*Human-in-the-Loop*) é mandatória: nenhuma decisão crítica ou agregação estatística deve ser delegada ao motor probabilístico de um modelo de linguagem sem verificação empírica determinística por profissionais capacitados.
 
 ### 2.5 Sustentabilidade Socioambiental (ODS), Green IT e Inclusão Acessível
-O compromisso social da Tecnologia da Informação materializa-se na convergência entre inovação digital e a Agenda 2030 da Organização das Nações Unidas (ONU). Em especial, o Objetivo de Desenvolvimento Sustentável nº 6 (ODS 6 — Água Potável e Saneamento) estabelece a meta de assegurar a disponibilidade e a gestão sustentável da água e do saneamento para todas as pessoas. Sistemas de informação cívica atuam como catalisadores desse objetivo, fornecendo dados abertos e empoderamento comunitário para monitorar a potabilidade e as interrupções de fornecimento em áreas negligenciadas.
+O compromisso social da Tecnologia da Informação materializa-se na convergência entre inovação digital e a Agenda 2030 da Organização das Nações Unidas (ONU). Em especial, o Objetivo de Desenvolvimento Sustentável nº 6 (ODS 6, Água Potável e Saneamento) estabelece a meta de assegurar a disponibilidade e a gestão sustentável da água e do saneamento para todas as pessoas. Sistemas de informação cívica colaboram com essa meta ao fornecer dados abertos e ferramentas comunitárias para monitorar a potabilidade e as interrupções de fornecimento em áreas negligenciadas.
 
-Paralelamente, a sustentabilidade da própria tecnologia deve ser contemplada sob os princípios de *Green IT* (TI Verde), priorizando arquiteturas eficientes, minimização do consumo energético de servidores e baixa pegada computacional. Por fim, a democratização do acesso impõe o cumprimento rigoroso dos padrões internacionais de acessibilidade na web WCAG 2.2 nível AA [F007] e das diretrizes de usabilidade ergonômica da ISO 9241-11 [F082], assegurando que idosos, analfabetos digitais e pessoas com deficiência motora ou visual exerçam plenamente sua cidadania por meio de interfaces contrastantes, ampliação visual e navegação simplificada.
+Paralelamente, a sustentabilidade da própria tecnologia deve ser contemplada sob os princípios de *Green IT* (TI Verde), priorizando arquiteturas eficientes, minimização do consumo energético de servidores e baixa pegada computacional. Por fim, a democratização do acesso impõe o cumprimento das diretrizes internacionais de acessibilidade na web WCAG 2.2 nível AA [F007] e das diretrizes de usabilidade da ISO 9241-11 [F082], de modo que idosos, analfabetos digitais e pessoas com deficiência motora ou visual utilizem a aplicação com facilidade por meio de interfaces contrastantes, ampliação visual e navegação simplificada.
 
-## 3. METODOLOGIA E GOVERNANÇA DO PROJETO
+---
+
+## 3. METODOLOGIA CIENTÍFICA E OPERACIONAL
 
 ### 3.1 Modelo Operacional e Rodízio de Liderança
 Para simular as práticas de governança vigentes em equipes profissionais de engenharia de software e assegurar corresponsabilidade acadêmica, o projeto adotou um modelo de **rodízio obrigatório de liderança técnica** por etapa. Cada fase do ciclo foi chefiada nominalmente por um dos discentes, incumbido de coordenar as tarefas, presidir as reuniões técnicas, revisar as contribuições dos pares e submeter a entrega ao portão de qualidade (*Quality Gate*) correspondente.
@@ -303,7 +361,7 @@ O acervo do projeto foi hospedado em monorepositório versionado sob controle do
 ```
 
 ### 3.3 Sistema de Verificação Determinística e Rastreabilidade
-Para certificar a integridade do trabalho antes de cada commit e transição de portão de qualidade, foi desenvolvido um script autônomo em Python (`scripts/verificar.py`). O programa realiza varredura determinística no repositório checando cinco dimensões inegociáveis:
+Para certificar a integridade do trabalho antes de cada commit e transição de portão de qualidade, foi desenvolvido um script em Python (`scripts/verificar.py`). O programa realiza varredura determinística no repositório checando cinco dimensões:
 1. Existência e acessibilidade dos arquivos obrigatórios de cada etapa;
 2. Validade sintática e consistência de estado no arquivo `00_gestao/estado_projeto.json`;
 3. Detecção e bloqueio de lacunas textuais, marcadores de rascunho (reticências entre colchetes) ou pendências de edição;
@@ -311,15 +369,15 @@ Para certificar a integridade do trabalho antes de cada commit e transição de 
 5. Validação de quantitativos mínimos em bases de dados (exigência de ≥ 20 vagas reais e ≥ 6 sessões de teste anonimizadas).
 
 ### 3.4 Diretrizes de Integridade e Uso Ético de Inteligência Artificial
-O grupo adotou uma política de transparência absoluta quanto ao emprego de ferramentas de Inteligência Artificial generativa. Em conformidade com as diretrizes do UNIPÊ e os padrões internacionais de autoria científica:
-- A IA generativa atuou estritamente como **ferramenta de apoio instrumental**, auxiliando na formatação de esqueletos estruturais, conversão de dados em tabelas Markdown e sugestões de sintaxe em diagramas Mermaid;
-- Foi expressamente vedada a fabricação algorítmica de vivências pessoais (os Diários de Aprendizagem foram integralmente redigidos com base na experiência real dos discentes), de perfis profissionais, de dados de vagas ou de resultados de testes com voluntários;
+O grupo adotou uma política de transparência quanto ao emprego de ferramentas de Inteligência Artificial generativa. Em conformidade com as diretrizes do UNIPÊ e os padrões de autoria científica:
+- A IA generativa foi utilizada apenas como **ferramenta de apoio instrumental**, auxiliando na formatação de esqueletos estruturais, conversão de dados em tabelas Markdown e sugestões de sintaxe em diagramas Mermaid;
+- Foi vedada a fabricação de vivências pessoais (os Diários de Aprendizagem foram integralmente redigidos com base na experiência real dos discentes), de perfis profissionais, de dados de vagas ou de resultados de testes com voluntários;
 - Todas as interações com sistemas de IA foram registradas cronologicamente na trilha de auditoria (`00_gestao/uso_ia.md`), explicitando modelo, versão, prompt, saída, julgamento humano aplicado e artefato de destino;
 - Cada integrante assinou a Declaração Formal de Uso Ético de Inteligência Artificial (`apendices/termos/declaracao_uso_ia.md`).
 
 ---
 
-## 4. INVESTIGAÇÃO DO MERCADO DE TRABALHO EM TECNOLOGIA DA INFORMAÇÃO
+## 4. ANÁLISE DO MERCADO PROFISSIONAL EM TI
 
 ### 4.1 Procedimentos de Coleta Ética e Amostragem de Vagas
 A Etapa 1 investigou o panorama real de contratação para discentes e egressos de cursos de tecnologia. Em obediência estrita aos termos de serviço das plataformas web e sem utilizar técnicas evasivas de raspagem, foram coletados 24 anúncios reais e públicos de vagas ativas no mercado brasileiro em 06/11/2026 no Portal Gupy [F020]. A amostragem foi estratificada em exatas 6 vagas para cada um dos quatro perfis disciplinares do projeto, priorizando modalidades de trabalho Remoto e Híbrido com foco no Nordeste e estado da Paraíba.
@@ -355,15 +413,15 @@ Tabela 2 — Amostragem Estratificada de 24 Vagas Reais de TI no Brasil
 
 ### 4.2 Taxonomia e Análise de Frequência de Competências por Especialidade
 A tabulação estatística das exigências explícitas registradas na planilha canônica `planilha_Frequencia_por_Funcao.csv` revelou a distribuição quantitativa exata das competências na amostra de 24 vagas:
-- **Banco de Dados e SQL**: Requisitado em 45,8% (11/24) da amostragem global de vagas, destacando-se como competência indispensável em 100,0% (6/6) dos anúncios de Desenvolvimento de Software e em 83,3% (5/6) das vagas de Ciência de Dados e IA;
-- **Controle de Versão (Git / GitHub)**: Presente em 29,2% (7/24) do total geral de vagas, com forte concentração nas funções de Desenvolvimento de Software (83,3% - 5/6) e Dados/IA (33,3% - 2/6);
-- **Linguagem Python**: Exigida em 29,2% (7/24) do total de vagas, constituindo a tecnologia predominante em Ciência de Dados e IA (66,7% - 4/6), com ocorrências registradas em Desenvolvimento (33,3%) e Infraestrutura (16,7%);
+- **Banco de Dados e SQL**: Requisitado em 45,8% (11/24) da amostragem global de vagas, presente em 100,0% (6/6) dos anúncios de Desenvolvimento de Software e em 83,3% (5/6) das vagas de Ciência de Dados e IA;
+- **Controle de Versão (Git / GitHub)**: Presente em 29,2% (7/24) do total geral de vagas, com concentração nas funções de Desenvolvimento de Software (83,3%, 5/6) e Dados/IA (33,3%, 2/6);
+- **Linguagem Python**: Exigida em 29,2% (7/24) do total de vagas, constituindo a tecnologia predominante em Ciência de Dados e IA (66,7%, 4/6), com ocorrências registradas em Desenvolvimento (33,3%) e Infraestrutura (16,7%);
 - **Java com Spring Boot**: Presente em 20,8% (5/24) da amostra global, correspondendo a 83,3% (5/6) dos requisitos específicos de Desenvolvimento de Software no backend corporativo;
 - **Sistemas Operacionais Linux**: Exigido em 16,7% (4/24) do total de vagas, representando 66,7% (4/6) dos anúncios de Infraestrutura e Redes;
 - **Power BI e Visualização de Dados**: Presente em 16,7% (4/24) da amostra total, concentrado em 66,7% (4/6) dos anúncios de Dados e IA;
 - **Computação em Nuvem (AWS / Azure)**: Mencionada em 12,5% (3/24) dos anúncios, com presença em Segurança da Informação (33,3%) e Infraestrutura (16,7%);
 - **LGPD e Privacidade por Padrão**: Requisito explícito em 12,5% (3/24) da amostra geral, correspondendo a 50,0% (3/6) das vagas de Segurança da Informação;
-- **Competências Socioemocionais**: Comunicação clara e transparente liderou os requisitos comportamentais com 29,2% (7/24), seguida de proatividade (16,7%), postura ética (16,7%) e cooperação em equipe (12,5%).
+- **Competências Socioemocionais**: Comunicação clara liderou os requisitos comportamentais com 29,2% (7/24), seguida de proatividade (16,7%), postura ética (16,7%) e trabalho em equipe (12,5%).
 
 ```mermaid
 xychart-beta
@@ -383,11 +441,11 @@ A análise textual das seções "O que você fará" e "Principais desafios" evid
 
 ---
 
-## 5. IDENTIDADE PROFISSIONAL E PLANEJAMENTO DE CARREIRA
+## 5. IDENTIDADE PROFISSIONAL, CARREIRA E APRENDIZAGEM CONTÍNUA
 
 ### 5.1 Diagnóstico de Competências Individuais dos Integrantes
 Na Etapa 2, os quatro discentes submeteram suas trajetórias a uma matriz diagnóstica com 11 competências padronizadas (6 técnicas e 5 socioemocionais), avaliadas em escala ordinal de 1 a 5 (onde 1 representa nível básico/conceitual e 5 representa proficiência autônoma com capacidade de tutoria):
-- **Gabriel Amancio (Desenvolvimento)**: Destacou-se em lógica algorítmica, Git e desenvolvimento front-end com React/TypeScript, identificando lacunas em conteinerização com Docker e modelagem de microsserviços.
+- **Gabriel Amancio (Desenvolvimento)**: Apresentou bom desempenho em lógica algorítmica, Git e desenvolvimento front-end com React/TypeScript, identificando lacunas em conteinerização com Docker e modelagem de microsserviços.
 - **Luiz Miguel (Infraestrutura)**: Apresentou sólido domínio de sistemas operacionais Linux, endereçamento de redes TCP/IP e hardware, apontando necessidade de aprofundamento prático em serviços gerenciados de nuvem pública (AWS) e automação com Ansible.
 - **Paulo Germano (Dados e IA)**: Evidenciou fluência em lógica matemática, manipulação de bases SQL e programação Python básica, mapeando como lacunas a engenharia de prompt avançada, técnicas de MLOps e manipulação de grandes volumes de dados não estruturados.
 - **Gustavo Antonio (Segurança)**: Demonstrou sólida base jurídica sobre a LGPD, princípios de integridade da informação e auditoria conceitual, registrando necessidade de evolução em pentest prático, análise estática de código seguro (SAST) e configuração de firewalls NGFW.
@@ -417,9 +475,9 @@ Cada estudante elaborou seu PDI individual contendo exatamente três metas estru
 4. **Gustavo Antonio**: (Meta 1) Alcançar a certificação internacional CompTIA Security+ (SY0-701) até setembro de 2027; (Meta 2) Concluir 30 laboratórios de segurança ofensiva e análise de vulnerabilidades no TryHackMe até abril de 2027; (Meta 3) Elaborar manual prático de conformidade com a LGPD voltado a startups de software até fevereiro de 2027.
 
 ### 5.4 Portfólios Digitais, Presença Pública e Ecossistema Tecnológico da Paraíba
-Para transpor o planejamento à prática, os discentes reestruturaram seus perfis no LinkedIn e desenvolveram repositórios temáticos de portfólio no GitHub com arquivos `README.md` dinâmicos, detalhando stacks técnicas, projetos práticos e métricas de desempenho. Ademais, foi catalogada uma rede de suporte e engajamento profissional na Paraíba, integrando comunidades locais como o GDG João Pessoa [F023], o capítulo OWASP João Pessoa [F024], a comunidade Python Nordeste [F025] e o evento anual DevOpsDays PB [F026], propiciando espaços fundamentais para networking, mentoria e inserção no mercado local.
+Para colocar o planejamento em prática, os integrantes reestruturaram seus perfis no LinkedIn e organizaram repositórios de portfólio no GitHub, documentando tecnologias dominadas, projetos autorais e rotinas de teste. Além disso, mapeamos comunidades técnicas e eventos regionais na Paraíba, como o GDG João Pessoa [F023], o capítulo OWASP [F024], a comunidade Python Nordeste [F025] e o DevOpsDays PB [F026], facilitando a troca de experiências e a conexão com profissionais locais.
 
-Tabela 4 — Catálogo de Cursos, Certificações Oficiais e Comunidades da Paraíba
+Tabela 4 — Matriz Consolidada de Competências Individuais da Equipe Técnica
 | Área / Função | Curso / Certificação Mapeada | Instituição Provedora | Carga Horária / Formato | Custo Aproximado | Fonte / Acesso [Fxxx] |
 |---|---|---|---|---|---|
 | **Desenvolvimento** | Java SE 17 Developer (Exame 1Z0-829) | Oracle University | Formato autoestudo + Exame Oficial | Exame: ~US$ 245 | Oracle [F030] |
@@ -434,11 +492,11 @@ Tabela 4 — Catálogo de Cursos, Certificações Oficiais e Comunidades da Para
 
 ---
 
-## 6. ÉTICA E RESPONSABILIDADE DIGITAL
+## 6. ÉTICA, LEGISLAÇÃO E GOVERNANÇA EM INTELIGÊNCIA ARTIFICIAL
 
 ### 6.1 Estudo de Casos Reais de Violação Ética e Regulamentação no Brasil
-A Etapa 3 examinou a materialização de riscos éticos em solo nacional por meio de dois casos emblemáticos:
-- **Caso 1: Reconhecimento Facial e Encarceramento Injusto no Rio de Janeiro (Relatório CESeC)** [F050]: A investigação do Centro de Estudos de Segurança e Cidadania revelou que entre 2019 e 2023, mais de 90% das pessoas presas preventivamente no Brasil a partir de câmeras com reconhecimento facial automatizado eram cidadãos negros, culminando em dezenas de prisões arbitrárias de inocentes devido a taxas intoleráveis de falsos positivos em tons de pele escuros. O caso viola frontalmente o Art. 20 da LGPD (direito à revisão humana de decisões automatizadas) e os preceitos constitucionais de presunção de inocência e dignidade humana.
+A Etapa 3 analisou o impacto de riscos éticos e jurídicos a partir de dois casos reais ocorridos no Brasil:
+- **Caso 1: Reconhecimento Facial e Encarceramento Injusto (Relatório CESeC)** [F050]: O relatório do Centro de Estudos de Segurança e Cidadania apontou que entre 2019 e 2023 mais de 90% das pessoas presas preventivamente no Brasil a partir de câmeras com reconhecimento facial eram negras. O índice elevado de falsos positivos em pessoas de pele escura resultou em prisões indevidas de inocentes. Esse cenário fere o Artigo 20 da LGPD, que assegura o direito à revisão humana de decisões automatizadas, além de violar a garantia constitucional de presunção de inocência.
 - **Caso 2: Medida Preventiva da ANPD contra o Treinamento Abusivo de IA pela Meta** [F051]: Em julho de 2024, a Autoridade Nacional de Proteção de Dados determinou a suspensão imediata da política de privacidade da Meta que autorizava o uso irrestrito de publicações, fotos e textos de usuários brasileiros para treinar seus modelos de IA generativa sob a alegação de "legítimo interesse", sem propiciar mecanismo acessível de recusa (*opt-out*). O episódio consolidou jurisprudência sobre os limites da reutilização comercial de dados pessoais por corporações multinacionais.
 
 ### 6.2 Matriz de Riscos Éticos, Jurídicos e Ambientais em Sistemas de TI
@@ -448,31 +506,31 @@ Tabela 5 — Síntese da Matriz de Riscos Éticos em Sistemas Computacionais
 | Código | Categoria do Risco | Descrição do Risco | Impacto Potencial | Medida Técnica e Preventiva de Mitigação |
 |---|---|---|---|---|
 | **RSK-E01** | Viés Algorítmico e Discriminação Indireta | O software ou modelo reproduz ou amplia disparidades contra grupos vulneráveis [F050]. | Decisões discriminatórias e danos morais coletivos. | Auditorias de paridade estatística e supervisão humana obrigatória (*Human-in-the-Loop*). |
-| **RSK-E02** | Vazamento de Dados e Não Conformidade LGPD | Exposição indevida de dados pessoais de cidadãos sob custódia da aplicação [F001]. | Sanções administrativas e multas pesadas da ANPD [F051]. | Adoção estrita de *Privacy by Design*, princípio da minimização e HTTPS/TLS 1.3. |
+| **RSK-E02** | Vazamento de Dados e Não Conformidade LGPD | Exposição indevida de dados pessoais de cidadãos sob custódia da aplicação [F001]. | Sanções administrativas e multas da ANPD [F051]. | Adoção de *Privacy by Design*, princípio da minimização e HTTPS/TLS 1.3. |
 | **RSK-E03** | Alucinação Factual e Dependência de IA | Publicação de informações inverídicas, códigos vulneráveis ou referências falsas por LLMs. | Falhas de segurança no código em produção e premissas errôneas. | Checagem factual obrigatória (*fact-checking*), testes em compilador e log de prompts. |
 | **RSK-E04** | Opacidade Algorítmica e Falta de Explicabilidade | Impossibilidade de explicar ao usuário a razão de uma resposta ou decisão do sistema. | Violação da transparência do Marco Civil [F002] e da LGPD [F001]. | Modelos interpretáveis, justificativas em linguagem simples e direito à revisão humana. |
-| **RSK-E05** | Barreiras de Acessibilidade e Exclusão Digital | Interface inacessível para pessoas com deficiência visual, auditiva ou motora [F007]. | Exclusão de cidadãos no acesso a serviços públicos essenciais. | Implementação estrita das diretrizes WCAG 2.2 nível AA [F007] e testes com voluntários. |
+| **RSK-E05** | Barreiras de Acessibilidade e Exclusão Digital | Interface inacessível para pessoas com deficiência visual, auditiva ou motora [F007]. | Exclusão de cidadãos no acesso a serviços públicos essenciais. | Implementação das diretrizes WCAG 2.2 nível AA [F007] e testes com voluntários. |
 | **RSK-E06** | Injeção de Código e Vulnerabilidades (OWASP) | Invasão do backend por injeção SQL, XSS ou Broken Access Control. | Comprometimento da base de dados e roubo de credenciais. | Validação estrita de tipos, ORM parametrizado e esteiras de análise estática (SAST). |
 | **RSK-E07** | Falhas de Disponibilidade e Perda de Backups | Indisponibilidade do serviço e perda de dados por falhas de hardware ou picos de carga. | Interrupção prolongada da solução e prejuízo à comunidade. | Estratégia de backup automatizado 3-2-1, monitoramento contínuo e redundância. |
 | **RSK-E08** | Pegada Hídrica e Energética (Green IT) | Consumo excessivo de eletricidade e emissões por processamento em nuvem ineficiente. | Impacto socioambiental negativo contrário aos ODS da ONU. | Princípios de Green IT: consultas otimizadas, ambientes ociosos desligados e cache local. |
 *Fonte: Autores a partir de 03_etica_ia/matriz_riscos.md (2026).*
 
 ### 6.3 Experimentos Empíricos com LLMs: Detecção de Alucinações e Falhas de Segurança
-Para comprovar cientificamente que modelos de IA generativa não podem ser utilizados sem supervisão humana rigorosa, cada integrante planejou e executou um experimento prático real com logs integrais de prompts e auditoria:
-- **EXP-01 (Gabriel Amancio - ChatGPT GPT-4o)**: Solicitação de endpoint de autenticação JWT em Node.js. O modelo gerou código funcional, porém omitiu completamente mecanismos de limitação de taxa (*rate limiting*), deixando o serviço vulnerável a ataques de força bruta de credenciais. A auditoria humana inseriu middleware de controle baseado em Redis.
-- **EXP-02 (Luiz Miguel - Claude 3.5 Sonnet)**: Solicitação de script de firewall em iptables para servidor Linux. O modelo instruiu aplicar a política restritiva `iptables -P INPUT DROP` antes de registrar a regra liberando o tráfego da porta 22 (SSH). Em ambiente de produção, a execução sequencial do script bloquearia imediatamente o acesso remoto do administrador. A auditoria corrigiu a precedência lógica.
-- **EXP-03 (Paulo Germano - Gemini 1.5 Pro)**: Submissão de conjunto com 15 idades de candidatos inscritos em vaga de TI para cálculo de estatística descritiva (média, mediana e desvio-padrão). O modelo cometeu erro aritmético elementar na soma dos valores (afirmou soma de 498 e média de 33,2 anos), enquanto o script determinístico em Python revelou soma de 442 e média real de 29,47 anos (alucinação de +3,73 anos). O teste comprovou empiricamente que modelos de linguagem probabilísticos não realizam cálculos determinísticos sem ferramentas externas acopladas.
+Para comprovar cientificamente que modelos de IA generativa não podem ser utilizados sem supervisão humana, cada integrante planejou e executou um experimento prático real com logs integrais de prompts e auditoria:
+- **EXP-01 (Gabriel Amancio - ChatGPT GPT-4o)**: Solicitação de endpoint de autenticação JWT em Node.js. O modelo gerou código funcional, porém omitiu mecanismos de limitação de taxa (*rate limiting*), deixando o serviço vulnerável a ataques de força bruta de credenciais. A auditoria humana inseriu middleware de controle baseado em Redis.
+- **EXP-02 (Luiz Miguel - Claude 3.5 Sonnet)**: Solicitação de script de firewall em iptables para servidor Linux. O modelo instruiu aplicar a política restritiva `iptables -P INPUT DROP` antes de registrar a regra liberando o tráfego da porta 22 (SSH). Em ambiente de produção, a execução sequencial do script bloquearia o acesso remoto do administrador. A auditoria corrigiu a ordem lógica das regras.
+- **EXP-03 (Paulo Germano - Gemini 1.5 Pro)**: Submissão de conjunto com 15 idades de candidatos inscritos em vaga de TI para cálculo de estatística descritiva (média, mediana e desvio-padrão). O modelo cometeu erro aritmético elementar na soma dos valores (afirmou soma de 498 e média de 33,2 anos), enquanto o script determinístico em Python revelou soma de 442 e média real de 29,47 anos (alucinação de +3,73 anos). O teste comprovou que modelos de linguagem probabilísticos não realizam cálculos determinísticos sem ferramentas externas acopladas.
 - **EXP-04 (Gustavo Antonio - Microsoft Copilot)**: Análise jurídica de cláusula abusiva de isenção de responsabilidade por vazamento de dados. O modelo inicialmente tendeu a validar a limitação com base no direito norte-americano. A intervenção humana forçou o enquadramento na LGPD e no CDC (Art. 51, I), que declaram a nulidade de pleno direito de cláusulas excludentes de responsabilidade civil em relações de consumo.
 
 ---
 
-## 7. INVESTIGAÇÃO DO PROBLEMA SOCIAL OU AMBIENTAL
+## 7. O PROBLEMA SOCIOAMBIENTAL
 
 ### 7.1 Investigação Preliminar de Três Cenários de Vulnerabilidade na Paraíba
 Na Etapa 4, o grupo realizou uma varredura sobre problemas sociais e ambientais no estado da Paraíba com interface direta para soluções de TIC, documentada em `04_problema/matriz_decisao.md`:
-1. **Problema A (ODS 6 — Água Potável e Saneamento Básico)**: Ineficiência no monitoramento da qualidade da água potável, histórico crítico de interrupções no fornecimento e descarte inadequado de esgoto em comunidades periféricas e rurais da Paraíba [F070, F071];
-2. **Problema B (ODS 2 e ODS 12 — Fome Zero e Consumo Responsável)**: Desperdício de alimentos na cadeia de hortifrúti e barreiras logísticas de intermediação entre produtores/varejistas e cozinhas comunitárias/bancos de alimentos em feiras livres de João Pessoa;
-3. **Problema C (ODS 11 e ODS 13 — Cidades Sustentáveis e Ação Climática)**: Vulnerabilidade a desastres hidrometeorológicos, alagamentos urbanos e deslizamento de encostas em comunidades ribeirinhas e encostas da capital paraibana.
+1. **Problema A (ODS 6, Água Potável e Saneamento Básico)**: Ineficiência no monitoramento da qualidade da água potável, histórico crítico de interrupções no fornecimento e descarte inadequado de esgoto em comunidades periféricas e rurais da Paraíba [F070, F071];
+2. **Problema B (ODS 2 e ODS 12, Fome Zero e Consumo Responsável)**: Desperdício de alimentos na cadeia de hortifrúti e barreiras logísticas de intermediação entre produtores/varejistas e cozinhas comunitárias/bancos de alimentos em feiras livres de João Pessoa;
+3. **Problema C (ODS 11 e ODS 13, Cidades Sustentáveis e Ação Climática)**: Vulnerabilidade a desastres hidrometeorológicos, alagamentos urbanos e deslizamento de encostas em comunidades ribeirinhas e encostas da capital paraibana.
 
 ### 7.2 Matriz de Decisão Multicritério e Seleção do ODS 6 (Água e Saneamento)
 Para fundamentar a escolha sem subjetivismo, foi aplicada uma Matriz de Decisão Multicritério (MCDA) com cinco critérios ponderados avaliados em escala de 1 a 10, conforme estabelecido no documento canônico da Etapa 4:
@@ -485,7 +543,7 @@ Tabela 6 — Resultado Consolidado da Matriz de Decisão Multicritério Ponderad
 | **Problema C: Alagamentos e Encostas (ODS 11/13)** | 9,0 (2,250) | 6,5 (1,625) | 7,5 (1,500) | 7,0 (1,050) | 8,0 (1,200) | 7,63 | 3º Lugar |
 *Fonte: Autores a partir de 04_problema/matriz_decisao.md (2026).*
 
-A alternativa do **ODS 6 (Água Potável e Saneamento Básico)** sagrou-se vencedora com a nota máxima de **9,05 em 10,0**, respaldada pela extrema urgência sanitária na Paraíba (50,9% dos lares sem esgoto geral pelo IBGE e 47% de perdas no SNIS) e pela excelente aderência multidisciplinar aos quatro perfis de TI da equipe.
+A proposta do **ODS 6 (Água Potável e Saneamento Básico)** obteve a maior pontuação na matriz, com **9,05 em 10,0**, justificada pela gravidade dos dados oficiais do estado (50,9% dos lares sem rede de esgoto segundo o IBGE e 47% de perdas de água pelo SNIS) e pela viabilidade de desenvolvimento pelas quatro especialidades da equipe.
 
 ### 7.3 Análise Causa-Raiz (Ishikawa) e Fundamentação Censitária Oficial
 A investigação das causas do desabastecimento na Paraíba foi modelada por meio de um Diagrama de Ishikawa estruturado em cinco dimensões operacionais:
@@ -493,7 +551,7 @@ A investigação das causas do desabastecimento na Paraíba foi modelada por mei
 - **Governança**: Ausência de canais transparentes de comunicação bilateral entre concessionária e moradores de comunidades periféricas;
 - **Clima e Geografia**: Severidade da estiagem no semiárido associada a reservatórios com baixos volumes úteis;
 - **Métodos**: Monitoramento manual de turbidez e cloro residual feito de forma esporádica e com baixa granularidade temporal;
-- **Cidadania**: Ausência de ferramentas tecnológicas simplificadas para registro de ocorrências coletivas sem exigência de pagamento de taxas ou burocracia de call center.
+- **Cidadania**: Ausência de ferramentas tecnológicas simplificadas para registro de ocorrências coletivas sem burocracia de call center.
 
 ```mermaid
 graph TD
@@ -514,10 +572,10 @@ Foram concebidas duas personas primárias para nortear o design centrado no usu�
 
 ---
 
-## 8. DESENVOLVIMENTO DA SOLUÇÃO TECNOLÓGICA "ÁGUAVIVA PB"
+## 8. A SOLUÇÃO TECNOLÓGICA (ÁGUAVIVA PB)
 
 ### 8.1 Visão Geral do Produto e Modelo de Arquitetura C4
-A solução **ÁguaViva PB** constitui uma plataforma cívica móvel projetada para atuar em condições severas de baixa conectividade, democratizando a informação hidrossanitária e conferindo voz ativa às populações vulneráveis do estado da Paraíba.
+A aplicação **ÁguaViva PB** é uma plataforma cívica desenvolvida como Progressive Web App (PWA), desenhada para operar mesmo em situações de instabilidade ou ausência de sinal de internet, auxiliando moradores a acompanhar e relatar problemas no abastecimento de água e esgotamento sanitário na Paraíba.
 
 ```mermaid
 graph TB
@@ -573,11 +631,11 @@ Tabela 7 — Resumo dos 12 Requisitos Funcionais da Solução ÁguaViva PB
 Tabela 8 — Resumo dos 8 Requisitos Não Funcionais (Métricas Verificáveis)
 | ID | Categoria | Descrição | Métrica Verificável | Norma |
 |---|---|---|---|---|
-| **RNF-01** | Acessibilidade Digital | Interface em conformidade integral com acessibilidade para pessoas com deficiência ou baixa visão. | Contraste mínimo de texto de 4,5:1, alvos táteis recomendados de 48x48px (mín. 44x44px) e navegação por teclado. | W3C WCAG 2.2 Nível AA [F007] |
+| **RNF-01** | Acessibilidade Digital | Interface em conformidade com acessibilidade para pessoas com deficiência ou baixa visão. | Contraste mínimo de texto de 4,5:1, alvos táteis recomendados de 48x48px (mín. 44x44px) e navegação por teclado. | W3C WCAG 2.2 Nível AA [F007] |
 | **RNF-02** | Desempenho e Leveza | Carregamento rápido em redes móveis instáveis (3G/4G) em aparelhos modestos. | Largest Contentful Paint (LCP) ≤ 2,0 s em 3G simulado; peso total da página inicial ≤ 1,5 MB. | Google Lighthouse / W3C Performance |
-| **RNF-03** | Privacidade de Dados (LGPD) | Cumprimento rigoroso dos princípios de minimização e Privacy by Design. | Zero armazenamento de dados sensíveis; expurgo de IP após emissão de token; criptografia TLS 1.3 / AES-256. | LGPD (Lei nº 13.709/2018) [F001] |
+| **RNF-03** | Privacidade de Dados (LGPD) | Cumprimento dos princípios de minimização e Privacy by Design. | Zero armazenamento de dados sensíveis; expurgo de IP após emissão de token; criptografia TLS 1.3 / AES-256. | LGPD (Lei nº 13.709/2018) [F001] |
 | **RNF-04** | Segurança de Aplicações | Proteção contra vulnerabilidades críticas da camada web e APIs RESTful. | Consultas 100% parametrizadas anti-SQLi, cabeçalhos de segurança (CSP, HSTS) e mitigação OWASP Top 10. | OWASP ASVS v4.0 / Top 10 [F024] |
-| **RNF-05** | Disponibilidade e Uptime | Resiliência e alta disponibilidade da infraestrutura de serviços em nuvem. | Disponibilidade mensal ≥ 99,5% de uptime com reinício automático de contêineres Docker. | SLA Cloud / Boas Práticas DevOps |
+| **RNF-05** | Disponibilidade e Uptime | Resiliência e disponibilidade da infraestrutura de serviços em nuvem. | Disponibilidade mensal ≥ 99,5% de uptime com reinício automático de contêineres Docker. | SLA Cloud / Boas Práticas DevOps |
 | **RNF-06** | Usabilidade e Ergonomia | Fluxo intuitivo e autoexplicativo em linguagem cidadã sem jargões herméticos. | Taxa de conclusão independente ≥ 80% e tempo médio de preenchimento ≤ 120 s em testes empíricos. | ABNT NBR ISO 9241-11 [F082] |
 | **RNF-07** | Responsividade e PWA | Interface adaptável a telas móveis (320px a 1920px) com capacidade de instalação PWA. | Layout fluido mobile-first compatível com navegadores modernos Android e iOS. | PWA Standards / Mobile Web |
 | **RNF-08** | Sustentabilidade (Green IT) | Minimização da pegada de carbono e eficiência no consumo de recursos computacionais. | Redução ≥ 30% no peso de imagens via WebP, cache estático de 7 dias via Nginx e instâncias de baixo consumo. | Princípios de TI Verde / Green IT |
@@ -599,7 +657,7 @@ Tabela 9 — Síntese das 8 Histórias de Usuário BDD da Solução ÁguaViva PB
 | **US-08** | Denunciante sob a LGPD | Exercer o direito de exclusão de dados pessoais fornecidos (Art. 18). | Entrada de protocolo de denúncia e expurgo definitivo imediato com emissão de comprovante sob a LGPD [F001]. |
 *Fonte: Autores com base em 05_solucao/dossie_solucao.md (2026).*
 
-A título de exemplificação das lógicas de negócio centrais, destacam-se duas histórias fundamentais com seus cenários completos:
+A título de exemplificação das lógicas de negócio centrais, destacam-se duas histórias com seus cenários completos:
 - **US-04: Envio em Modo Offline para Comunidades sem Conexão Móvel**:
   - *Cenário*: Registro de ocorrência em comunidade sem sinal de operadora móvel.
   - *Dado* que a usuária Maria de Fátima está na tela de registro de ocorrência em modo avião ou sem cobertura de internet móvel;
@@ -629,10 +687,10 @@ Tabela 10 — Especificação Estrutural das 8 Telas do Protótipo de Alta Fidel
 
 ---
 
-## 9. TESTES E RESULTADOS DE USABILIDADE
+## 9. TESTES DE USABILIDADE, ACESSIBILIDADE E RESULTADOS
 
 ### 9.1 Protocolo Experimental de Testes e Salvaguardas Éticas
-A Etapa 6 submeteu a solução à prova empírica. Sob a liderança de Luiz Miguel (Infraestrutura) e o apoio técnico de Paulo Germano e Gabriel Amancio, foi conduzida uma bateria de testes de usabilidade supervisionada com seis participantes voluntários externos [F081, F082]. O protocolo assegurou estrita observância à LGPD: todos os voluntários assinaram o TCLE individual previamente, nenhuma informação pessoal identificável foi retida e os participantes foram codificados de P1 a P6.
+A Etapa 6 submeteu a solução à validação empírica. Sob a coordenação de Luiz Miguel (Infraestrutura) e o apoio técnico de Paulo Germano e Gabriel Amancio, foi conduzida uma bateria de testes de usabilidade com seis voluntários externos [F081, F082]. O protocolo assegurou observância à LGPD: todos os voluntários assinaram o TCLE individual previamente, nenhuma informação pessoal identificável foi retida e os participantes foram codificados de P1 a P6.
 
 Tabela 11 — Perfil Sociodemográfico da Amostra de Voluntários dos Testes
 | Código | Idade | Ocupação / Perfil Sociodemográfico | Nível de Letramento Digital | Dispositivo Utilizado |
@@ -660,15 +718,15 @@ Tabela 12 — Resultados Consolidados das 6 Tarefas de Teste de Usabilidade (N=3
 | **Consolidado** | **Média Geral do Sistema ÁguaViva PB** | **97,2%** | **59,4 s** | **± 25,3 s** | **84,2 s** | **0,47** | **4,58 / 5,0** |
 *Fonte: Autores a partir dos testes empíricos de usabilidade (2026).*
 
-A eficácia geral atingiu expressivos **97,2%** de tarefas concluídas com sucesso. O único incidente de não-conclusão ocorreu com o participante P3 (idoso) na tarefa T02, motivado pela dificuldade em focar a câmera do aparelho na torneira e na oclusão do botão de envio pelo teclado virtual aberto.
+A eficácia geral atingiu **97,2%** de tarefas concluídas com sucesso. O único incidente de não conclusão ocorreu com o participante P3 (idoso) na tarefa T02, motivado pela dificuldade em focar a câmera do aparelho na torneira e na oclusão do botão de envio pelo teclado virtual aberto.
 
-Ao final do teste, a aplicação do questionário SUS padronizado de 10 perguntas [F080] resultou em um escore consolidado de **84,2 pontos em 100**. Segundo o modelo psicométrico de Bangor, Kortum e Miller (2008), notas superiores a 80,3 pontos classificam o produto na faixa **"Excelente" (Grade A)**, situando o ÁguaViva PB no decil superior de qualidade de software público e cívico.
+Ao final do teste, a aplicação do questionário SUS padronizado de 10 perguntas [F080] resultou em um escore consolidado de **84,2 pontos em 100**. Segundo o modelo de Bangor, Kortum e Miller (2008), notas superiores a 80,3 pontos classificam o produto na faixa **"Excelente" (Grade A)**, situando o ÁguaViva PB em patamar elevado de qualidade para softwares de uso público e cívico.
 
 ### 9.3 Análise Qualitativa e Heurísticas de Usabilidade
 A observação comportamental e os relatos verbais expuseram oportunidades de refinamento:
-1. **Mensagem Técnica Excessiva no Modo Offline**: No protótipo inicial (v1.0), o aviso offline continha o texto: *"Cache IndexedDB ativo. Sincronização pendente via API REST"*. O participante P3 declarou receio de que sua denúncia houvesse falhado ou estivesse "travada no chip". Esse achado apontou que a interface revelava detalhes de infraestrutura em vez de tranquilizar o usuário cidadão.
+1. **Mensagem Técnica no Modo Offline**: No protótipo inicial (v1.0), o aviso offline continha o texto: *"Cache IndexedDB ativo. Sincronização pendente via API REST"*. O participante P3 declarou receio de que sua denúncia houvesse falhado ou estivesse "travada no chip". Esse achado apontou que a interface revelava detalhes de infraestrutura em vez de tranquilizar o usuário cidadão.
 2. **Oclusão de Botão de Ação Primária**: Em dispositivos móveis de tela reduzida, o teclado virtual aberto cobria o botão "Enviar Relato" no formulário de denúncia, exigindo rolagem manual não óbvia para usuários iniciantes.
-3. **Ausência de Confirmação Multissensorial**: A participante P1 sugeriu que o aparelho vibrasse ou emitisse aviso sonoro quando o sinal de dados móveis retornasse e o chamado retido no bolso fosse sincronizado com sucesso.
+3. **Confirmação Multissensorial**: A participante P1 sugeriu que o aparelho vibrasse ou emitisse aviso quando o sinal de dados móveis retornasse e o chamado retido no bolso fosse sincronizado com sucesso.
 
 ### 9.4 Matriz de Melhorias Priorizadas e Refatoração para a Versão 2.0
 Em resposta aos dados empíricos, a equipe priorizou e implementou quatro alterações imediatas na interface, dando origem à **Versão 2.0 Revisada do Protótipo**:
@@ -684,26 +742,26 @@ Tabela 13 — Comparativo das Alterações entre o Protótipo v1.0 e a Versão v
 
 ### 9.5 Limitações Metodológicas do Estudo
 Com base no rigor científico indispensável a um projeto acadêmico, o grupo reconhece as seguintes limitações metodológicas:
-- **Tamanho Amostral (N=6)**: Embora atenda às recomendações consagradas de Nielsen e Landauer [F081] para identificação de mais de 80% dos problemas ergonômicos críticos, a amostra é reduzida para permitir extrapolações estatísticas probabilísticas formais para toda a população da Paraíba;
-- **Recorte Territorial Metropolitano**: Os testes foram executados com voluntários residentes em João Pessoa, Cabedelo e Santa Rita. A dinâmica de conectividade do semiárido profundo do Sertão e Cariri paraibano demandará futuros testes de campo locais;
-- **Ambiente de Teste Supervisionado**: As sessões ocorreram com a mediação presencial ou remota dos discentes, o que pode mitigar parcialmente a ansiedade natural de usuários não familiarizados com ferramentas digitais (*efeito Hawthorne*).
+- **Tamanho Amostral (N=6)**: Embora atenda às recomendações consagradas de Nielsen e Landauer [F081] para identificação de mais de 80% dos problemas ergonômicos críticos, a amostra é reduzida para permitir extrapolações estatísticas probabilísticas para toda a população da Paraíba;
+- **Recorte Territorial Metropolitano**: Os testes foram executados com voluntários residentes em João Pessoa, Cabedelo e Santa Rita. A dinâmica de conectividade do interior do Sertão e Cariri paraibano demandará futuros testes de campo locais;
+- **Ambiente de Teste Supervisionado**: As sessões ocorreram com a mediação dos discentes, o que pode mitigar parcialmente a ansiedade natural de usuários não familiarizados com ferramentas digitais (*efeito Hawthorne*).
 
 ---
 
-## 10. DISCUSSÃO INTEGRADORA
+## 10. DISCUSSÃO INTEGRADORA E IMPACTO SOCIOAMBIENTAL
 
 ### 10.1 Articulação Interdisciplinar das Quatro Competências Técnicas
-O maior mérito do Projeto Integrador reside na demonstração empírica de que nenhuma tecnologia social relevante pode ser construída de forma isolada por uma única especialidade da computação:
-- O **Desenvolvimento de Software** (Gabriel Amancio) conferiu vida aos requisitos através de arquitetura limpa, componentes acessíveis e implementação de BDD;
-- A **Infraestrutura e Redes** (Luiz Miguel) solucionou o desafio mais crítico do projeto — a resiliência *offline-first* via Service Workers e IndexedDB —, garantindo que a ausência de sinal móvel não silenciasse a comunidade;
-- A **Ciência de Dados e IA** (Paulo Germano) fundamentou a escolha do problema socioambiental com microdados oficiais do Censo IBGE e desmistificou o uso acrítico de modelos neurais ao demonstrar alucinações aritméticas em tarefas analíticas;
-- A **Segurança da Informação** (Gustavo Antonio) blindou a plataforma contra abusos regulatórios, garantindo conformidade irrestrita com a LGPD, criptografia de ponta a ponta e anonimização de denúncias públicas.
+O desenvolvimento do projeto evidenciou que soluções com propósito social exigem a integração de múltiplas áreas da computação:
+- O **Desenvolvimento de Software** (Gabriel Amancio) estruturou a aplicação por meio de arquitetura em componentes acessíveis e especificação BDD;
+- A **Infraestrutura e Redes** (Luiz Miguel) estruturou a resiliência offline (Service Workers e IndexedDB), permitindo que moradores registrem ocorrências mesmo sem cobertura de dados móveis no momento;
+- A **Ciência de Dados e IA** (Paulo Germano) fundamentou a escolha do problema socioambiental com microdados oficiais do Censo IBGE e desmistificou o uso acrítico de modelos generativos ao demonstrar alucinações aritméticas em tarefas analíticas;
+- A **Segurança da Informação** (Gustavo Antonio) definiu as proteções de privacidade em conformidade com a LGPD, aplicando criptografia na transmissão, remoção de metadados de imagens e anonimização das queixas públicas.
 
 ### 10.2 Contribuições para a Aprendizagem e Formação Tecnológica no UNIPÊ
-Para os quatro estudantes envolvidos, a vivência de um ciclo completo de concepção, governança de repositório, validação ética e contato com voluntários reais gerou impactos formativos transformadores:
-1. **Domínio de Novas Ferramentas**: Conforme evidenciado nos 24 registros individuais dos Diários de Aprendizagem (`apendices/diarios/`), cada integrante aprendeu e aplicou formalmente mais de duas novas tecnologias até então inexploradas em sua formação (Mermaid.js, C4 Model, cálculo da escala SUS, engenharia de prompt auditada e arquitetura de Service Workers);
-2. **Desenvolvimento de Letramento Ético**: A constatação prática de que ferramentas de IA generativa produzem alucinações e omissões críticas em código alterou radicalmente a postura da equipe, consolidando um perfil profissional cético, diligente e fundamentado na verificação empírica;
-3. **Senso de Propósito e Compromisso Social**: A conexão direta da tecnologia com o ODS 6 (Água e Saneamento) demonstrou que a computação possui o dever cívico de reduzir assimetrias sociais, e não apenas maximizar métricas mercadológicas abstratas.
+Para os quatro estudantes envolvidos, a vivência de um ciclo completo de concepção, governança de repositório, validação ética e contato com voluntários reais gerou impactos formativos concretos:
+1. **Domínio de Novas Ferramentas**: Conforme registrado nos Diários de Aprendizagem (`apendices/diarios/`), cada integrante aprendeu e aplicou formalmente mais de duas novas tecnologias ao longo do semestre (Mermaid.js, C4 Model, cálculo da escala SUS, auditoria de prompts e Service Workers);
+2. **Desenvolvimento de Letramento Ético**: A constatação prática de que ferramentas de IA generativa produzem alucinações e omissões críticas em código alterou a postura da equipe, consolidando um perfil profissional atento e fundamentado na verificação empírica;
+3. **Responsabilidade Social**: O foco no ODS 6 (Água e Saneamento) mostrou na prática como a tecnologia pode servir diretamente a demandas da comunidade, reduzindo barreiras de acesso à informação pública.
 
 ### 10.3 Roadmap Estratégico de Evolução da Plataforma Cívica
 Como desdobramentos futuros para a solução **ÁguaViva PB**, planejam-se as seguintes fases:
@@ -713,13 +771,13 @@ Como desdobramentos futuros para a solução **ÁguaViva PB**, planejam-se as se
 
 ---
 
-## 11. CONSIDERAÇÕES FINAIS
+## 11. CONSIDERAÇÕES FINAIS E TRABALHOS FUTUROS
 
-O projeto "Laboratório de Carreira e Inovação Responsável em TI" cumpriu integralmente os objetivos teóricos, práticos e humanos delineados pelo DESAFIO_PRATICO do UNIPÊ. Longe de limitar-se a um exercício acadêmico convencional, a jornada articulou pesquisa empírica de mercado em 24 vagas reais, autoavaliação profissional fundamentada em metas SMART, exame crítico de escândalos algorítmicos e auditoria de modelos de linguagem, culminando na concepção e validação ergonômica da plataforma cidadã **ÁguaViva PB**.
+O projeto "Laboratório de Carreira e Inovação Responsável em TI" integrou pesquisa empírica de mercado em 24 vagas reais, autoavaliação profissional com metas SMART, auditoria prática de modelos de linguagem e o desenvolvimento da aplicação cívica **ÁguaViva PB**.
 
-A validação de usabilidade com voluntários representativos comprovou que a tecnologia, quando desenhada sob os pilares do minimalismo ergonômico, da acessibilidade digital universal (WCAG 2.2 AA [F007]) e da resiliência a falhas de infraestrutura (*offline-first*), torna-se um instrumento poderoso de empoderamento de comunidades vulneráveis. Com eficácia de 97,2% e escore SUS de 84,2 pontos, o protótipo aperfeiçoado reflete o compromisso dos futuros analistas e desenvolvedores de sistemas com uma engenharia ética, transparente e transformadora.
+A avaliação de usabilidade com seis voluntários indicou que o design focado em acessibilidade (WCAG 2.2 AA [F007]) e funcionamento offline viabiliza o uso da plataforma por pessoas com diferentes níveis de contato com a tecnologia. Com eficácia média de 97,2% e escore SUS de 84,2 pontos, a versão revisada atendeu aos critérios de facilidade de uso propostos para o projeto.
 
-A experiência interdisciplinar consolidou nos quatro estudantes as competências técnicas e socioemocionais exigidas pelo mercado de TI contemporâneo, preparando-os não apenas para conquistar as oportunidades profissionais mapeadas em seus PDIs, mas fundamentalmente para liderar a inovação tecnológica com responsabilidade social na Paraíba e no Brasil.
+O trabalho permitiu à equipe vivenciar na prática as etapas de um ciclo de engenharia de software, desde a definição de requisitos e testes com usuários até os cuidados com privacidade e integridade acadêmica, preparando os estudantes para os desafios do mercado de TI.
 
 ---
 

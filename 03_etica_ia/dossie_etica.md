@@ -32,13 +32,13 @@ fontes:
 
 ## 1. INTRODUÇÃO E OBJETIVOS DA INVESTIGAÇÃO ÉTICA
 
-O avanço vertiginoso dos ecossistemas digitais e a integração acelerada de sistemas de Inteligência Artificial generativa e preditiva no cotidiano das organizações impõem uma reflexão ética inadiável sobre a responsabilidade social dos futuros tecnólogos em ADS `[F008]`. Longe de constituir uma ferramenta neutra, o software reflete as intenções, os vieses históricos e os modelos econômicos de seus desenvolvedores e gestores `[F021]`.
+A integração de sistemas de Inteligência Artificial generativa e preditiva nas organizações exige análise técnica e ética sobre a responsabilidade social dos futuros profissionais de Análise e Desenvolvimento de Sistemas `[F008]`. Os sistemas de software reproduzem critérios, modelos de dados e decisões de projeto definidos por seus desenvolvedores e gestores `[F021]`.
 
-Nesse sentido, a **Etapa 3** do Projeto Integrador tem como propósito investigar as fronteiras entre inovação tecnológica, integridade ética, cidadania digital e conformidade regulatória no Brasil. O presente Dossiê Mestre consolida quatro eixos investigativos estruturados:
-1. **Análise Crítica e Documentada de Dois Casos Reais:** Um dilema envolvendo sistemas de Inteligência Artificial e direitos fundamentais (biometria e viés algorítmico) e um caso focado em governança de privacidade, incidentes de segurança e sanções regulatórias da ANPD sob a LGPD `[F001]`;
-2. **Matriz de Riscos Éticos e Operacionais:** Mapeamento preventivo de 8 ameaças críticas inerentes ao desenvolvimento de sistemas, com causas-raiz e planos de mitigação;
-3. **Consolidação dos Experimentos Práticos com Ferramentas de IA:** Avaliação empírica realizada individualmente pelos quatro integrantes do grupo (Gabriel, Luiz, Paulo e Gustavo), demonstrando na prática as limitações, alucinações e riscos de automação cega;
-4. **Recomendações para o Desenvolvimento Responsável de Tecnologias:** Diretrizes operacionais para nortear a concepção da solução tecnológica do grupo nas Etapas 4 e 5.
+Nesse contexto, a **Etapa 3** do Projeto Integrador investiga a relação entre inovação tecnológica, integridade ética, cidadania digital e conformidade regulatória no Brasil. O documento consolida quatro eixos investigativos:
+1. **Análise Crítica de Dois Casos Reais:** Um estudo sobre sistemas de reconhecimento facial e direitos fundamentais (biometria e viés algorítmico) e um caso focado em governança de privacidade, incidentes de segurança e sanções regulatórias da ANPD sob a LGPD `[F001]`;
+2. **Matriz de Riscos Éticos e Operacionais:** Mapeamento de 8 ameaças técnicas e éticas inerentes ao desenvolvimento de sistemas, com causas-raiz e planos de mitigação;
+3. **Consolidação dos Experimentos Práticos com Ferramentas de IA:** Avaliação empírica conduzida individualmente pelos quatro integrantes da equipe (Gabriel, Luiz, Paulo e Gustavo), demonstrando limitações, erros de predição e riscos da automação não supervisionada;
+4. **Diretrizes para o Desenvolvimento Responsável de Tecnologias:** Recomendações operacionais para orientar a concepção da solução tecnológica nas Etapas 4 e 5.
 
 ---
 
@@ -47,15 +47,15 @@ Nesse sentido, a **Etapa 3** do Projeto Integrador tem como propósito investiga
 ### 2.1 Caso Real 1: Algoritmos de Reconhecimento Facial na Segurança Pública e o Viés Racial no Brasil
 
 #### 2.1.1 Contexto e Organizações Envolvidas
-A partir de 2019, diversas secretarias estaduais de segurança pública no Brasil passaram a implantar sistemas automatizados de videovigilância por reconhecimento facial em espaços públicos (estações de metrô, vias urbanas e eventos populares) `[F050]`. A tecnologia foi adquirida de fornecedores privados sob a premissa de modernização investigativa e captura de foragidos da justiça. O processo gerou intensa contestação por parte de entidades da sociedade civil, destacando-se o Centro de Estudos de Segurança e Cidadania (CESeC, através do projeto *O Panóptico*) `[F050]` e as Defensorias Públicas dos Estados do Rio de Janeiro, Bahia, Ceará e da União.
+A partir de 2019, secretarias estaduais de segurança pública no Brasil implantaram sistemas de videovigilância com reconhecimento facial em espaços públicos (estações de transporte, vias urbanas e eventos populares) `[F050]`. A tecnologia foi adquirida de fornecedores privados para modernização do trabalho policial e captura de foragidos da justiça. O processo gerou contestações de entidades civis e órgãos de justiça, como o Centro de Estudos de Segurança e Cidadania (CESeC, pelo projeto *O Panóptico*) `[F050]` e as Defensorias Públicas dos Estados do Rio de Janeiro, Bahia, Ceará e da União.
 
 #### 2.1.2 Cronologia dos Acontecimentos e Consequências
-- **2019–2021:** Implantação massiva de câmeras com algoritmos biométricos sem audiências públicas ou estudos prévios de impacto aos direitos fundamentais.
-- **2021–2024:** Relatórios técnicos consolidados pelas Defensorias Públicas estaduais revelaram que mais de **80% das pessoas presas ou abordadas indevidamente** por falsos positivos do reconhecimento facial eram **homens negros** `[F050]`. Casos emblemáticos documentaram cidadãos inocentes encarcerados por semanas devido a alertas errôneos de softwares que confundiram fotos de documentos com transeuntes em vias públicas.
-- **Consequências:** Graves violações da dignidade da pessoa humana, estigmatização social, traumas psicológicos profundos às vítimas e judicialização em massa, culminando em diretrizes do Conselho Nacional de Justiça (CNJ) que vedaram prisões baseadas exclusivamente em reconhecimento fotográfico ou automatizado sem confirmação probatória idônea.
+- **2019–2021:** Implantação de câmeras com algoritmos biométricos em vias públicas sem audiências públicas ou estudos prévios de impacto aos direitos fundamentais.
+- **2021–2024:** Relatórios técnicos consolidados pelas Defensorias Públicas estaduais revelaram que mais de **80% das pessoas presas ou abordadas indevidamente** por falsos positivos do reconhecimento facial eram **homens negros** `[F050]`. Casos documentados registraram cidadãos inocentes detidos por semanas devido a erros de identificação visual automatizada.
+- **Consequências:** Violações de direitos fundamentais, estigmatização de minorias e abertura de processos de reparação civil contra o poder público. O Conselho Nacional de Justiça (CNJ) publicou diretrizes que vedam prisões fundamentadas unicamente em reconhecimento fotográfico ou automatizado sem confirmação probatória autônoma.
 
 #### 2.1.3 Problema Ético Central
-O dilema ético primordial reside no **Viés Algorítmico Estrutural e na Discriminação Algorítmica**. Os modelos de visão computacional foram treinados majoritariamente sobre bases fotográficas desbalanceadas (predomínio de rostos de indivíduos brancos), resultando em taxas de erro exponencialmente mais elevadas na identificação de pessoas negras `[F050]`. Além disso, a confiança cega depositada pelos agentes policiais na máquina eliminou a presunção de inocência, transformando a opacidade matemática em instrumento de violência institucional.
+O problema ético central decorre do **viés algorítmico estrutural e da discriminação algorítmica**. Os modelos de visão computacional foram treinados predominantemente com bases fotográficas de pessoas brancas, apresentando taxas de falsos positivos mais altas na identificação de pessoas negras `[F050]`. A automação das abordagens sem validação humana crítica fragilizou a presunção de inocência e transferiu decisões operacionais a modelos estatísticos opacos.
 
 #### 2.1.4 Enquadramento Legal e Ético
 - **Constituição Federal de 1988:** Violação do princípio da dignidade da pessoa humana (art. 1º, III), da igualdade perante a lei (art. 5º, *caput*) e da presunção de inocência (art. 5º, LVII).
@@ -67,16 +67,16 @@ O dilema ético primordial reside no **Viés Algorítmico Estrutural e na Discri
 ### 2.2 Caso Real 2: Processos Administrativos Sancionadores da ANPD e o Treinamento Não Autorizado de IA
 
 #### 2.2.1 Contexto e Organizações Envolvidas
-Com a plena vigência das sanções administrativas da Lei Geral de Proteção de Dados Pessoais `[F001]`, a Autoridade Nacional de Proteção de Dados (ANPD) iniciou processos sancionadores contra organizações públicas e privadas por incidentes de vazamento, comercialização irregular de dados e coleta predatória de dados de usuários `[F051]`. Casos de destaque incluíram a primeira multa aplicada à empresa Telekall Infoservice (por comércio ilícito de dados de eleitores sem Encarregado de Dados) e a medida preventiva histórica contra a Meta (Facebook/Instagram), que alterou unilateralmente seus termos de uso para capturar postagens públicas, fotos e textos de brasileiros com o fito de treinar seus modelos de IA generativa `[F051]`.
+Com a entrada em vigor das sanções administrativas da Lei Geral de Proteção de Dados Pessoais `[F001]`, a Autoridade Nacional de Proteção de Dados (ANPD) instaurou processos de fiscalização contra organizações públicas e privadas por vazamentos, comercialização ilícita e coleta excessiva de dados de usuários `[F051]`. As ações incluíram a primeira sanção pecuniária aplicada à empresa Telekall Infoservice (por venda irregular de dados de eleitores sem nomeação de Encarregado de Dados) e a medida preventiva contra a Meta (controladora de Facebook e Instagram), que alterou unilateralmente sua política de privacidade para utilizar publicações, imagens e textos de usuários brasileiros no treinamento de modelos de IA generativa `[F051]`.
 
 #### 2.2.2 Cronologia dos Acontecimentos e Consequências
 - **Agosto de 2021:** Entrada em vigor dos artigos 52 a 54 da LGPD relativos a penalidades administrativas.
 - **Julho de 2023:** Aplicação da primeira sanção pecuniária pela ANPD no caso Telekall, com multas simples cumulativas e determinação de eliminação de bases ilegais `[F051]`.
-- **Julho de 2024:** Abertura de processo de fiscalização e expedição de **Medida Cautelar Preventiva** pela Coordenação-Geral de Fiscalização da ANPD com imposição de multa diária de R$ 50 mil, suspendendo no Brasil a eficácia da nova política de privacidade da Meta que pretendia treinar IA generativa com dados de titulares brasileiros sem fornecer transparência adequada ou mecanismo viável de recusa (*opt-out*) `[F051]`.
-- **Consequências:** Fixação de precedente regulatório nacional de que o treinamento de algoritmos de inteligência artificial em território brasileiro deve respeitar estritamente a autodeterminação informativa e a soberania dos dados pessoais dos cidadãos.
+- **Julho de 2024:** Expedição de **Medida Cautelar Preventiva** pela Coordenação-Geral de Fiscalização da ANPD com fixação de multa diária de R$ 50 mil, determinando a suspensão da política de privacidade da Meta no Brasil para o treinamento de modelos com dados de titulares locais sem consentimento explícito e sem opção simples de recusa (*opt-out*) `[F051]`.
+- **Consequências:** Estabelecimento de parâmetro regulatório nacional indicando que o treinamento de modelos de inteligência artificial em território brasileiro deve respeitar a autodeterminação informativa e a transparência no tratamento de dados pessoais.
 
 #### 2.2.3 Problema Ético Central
-O cerne do conflito abrange **Privacidade, Autonomia Individual e Consentimento Informado**. Grandes corporações trataram o patrimônio de dados pessoais de milhões de indivíduos como "recurso natural livremente explorável" para ganho corporativo, omitindo dos usuários o impacto do processamento de suas criações e comunicações para geração de modelos de linguagem proprietários.
+O problema ético envolve **privacidade, autonomia individual e consentimento informado**. O uso de publicações e comunicações de usuários para alimentação de modelos proprietários de linguagem sem consentimento prévio e sem opção simples de oposição desrespeita as finalidades originais para as quais as contas haviam sido criadas.
 
 #### 2.2.4 Enquadramento Legal e Ético
 - **LGPD (Lei nº 13.709/2018) `[F001]`:** Infração aos artigos 6º, I e VI (Princípios da Finalidade e Transparência), art. 7º (Ausência de base legal legítima para o tratamento de dados pessoais com finalidade distinta da original) e art. 18 (Cerceamento do direito de oposição e livre revogação).
@@ -107,7 +107,7 @@ A Tabela 1 detalha os 8 riscos prioritários mapeados pelo grupo, estabelecendo 
 
 ## 4. SÍNTESE DOS EXPERIMENTOS PRÁTICOS COM FERRAMENTAS DE IA REAL
 
-Em observância à regra de autoria e metodologia empírica do DESAFIO_PRATICO, os quatro estudantes conduziram experimentos práticos reais utilizando diferentes ferramentas de Inteligência Artificial generativa de mercado, registrando prompts exatos, avaliações críticas e a posterior conferência humana dos resultados. A Tabela 2 sintetiza os experimentos documentados em detalhes na pasta [`03_etica_ia/experimentos/`](experimentos/).
+Os quatro integrantes do grupo conduziram experimentos práticos com ferramentas de Inteligência Artificial generativa, registrando prompts, saídas geradas e a validação técnica humana dos resultados. A Tabela 2 sintetiza os experimentos documentados na pasta [`03_etica_ia/experimentos/`](experimentos/).
 
 ### Tabela 2: Síntese dos Experimentos Individuais com Ferramentas de IA
 
@@ -122,7 +122,7 @@ Em observância à regra de autoria e metodologia empírica do DESAFIO_PRATICO, 
 
 ## 5. RECOMENDAÇÕES PARA O DESENVOLVIMENTO RESPONSÁVEL DE TECNOLOGIAS
 
-Com base na reflexão ética dos casos investigados e nos achados empíricos dos testes práticos, o grupo estabelece seis diretrizes mandatórias a serem adotadas na concepção do protótipo e da arquitetura do Projeto Integrador:
+A partir dos casos examinados e dos dados empíricos obtidos nos experimentos, a equipe definiu seis diretrizes operacionais para orientar a arquitetura e o protótipo do sistema:
 
 ```mermaid
 graph TD
@@ -141,24 +141,24 @@ graph TD
     R4 --> SEGURANCA["Esteira de Deploy e Sustentação"]
     R5 --> COMUNICACAO["Termos de Uso e Feedback ao Usuário"]
     R6 --> INFRAESTRUTURA["Servidores e Consultas em Nuvem"]
-```
+    ```
 
-1. **Supervisão Humana Inegociável (*Human-in-the-Loop*):** Nenhuma decisão algorítmica automatizada que afete direitos, notas, diagnósticos ou privilégios de usuários poderá ser executada sem a existência de um canal acessível para revisão e contestação por um ser humano competente `[F050]`.
-2. **Privacidade por Concepção (*Privacy by Design*):** A coleta de dados no sistema será balizada pelo princípio da estrita necessidade (minimização). Não serão armazenados dados pessoais sensíveis ou identificadores diretos desnecessários à funcionalidade principal `[F001]`.
-3. **Acessibilidade Digital Universal:** A interface da solução tecnológica cumprirá as diretrizes WCAG 2.2 `[F007]`, garantindo contraste mínimo de cores de 4.5:1, compatibilidade integral com leitores de tela e navegação funcional via teclado.
-4. **Auditoria de Código e Repúdio a Alucinações:** Nenhum trecho de software gerado por ferramentas de IA generativa será integrado à base do projeto sem teste prévio em compilador/interpretador e auditoria de vulnerabilidades segundo o padrão OWASP Top 10 `[F024]`.
-5. **Transparência e Linguagem Simples (*Legal Design*):** Os termos de utilização, telas de carregamento e mensagens de erro do sistema serão redigidos em português claro e direto, expurgando cláusulas ambíguas ou termos abusivos de exoneração de responsabilidade.
-6. **Eficiência Computacional e Sustentabilidade:** As consultas ao banco de dados e a arquitetura de nuvem serão projetadas para minimizar o tráfego de rede e o consumo computacional desnecessário, mitigando a pegada de carbono da infraestrutura.
+1. **Supervisão Humana Obrigatória (*Human-in-the-Loop*):** Decisões automatizadas que afetem direitos, notas, diagnósticos ou acesso a serviços públicos devem dispor de canal acessível para revisão humana independente `[F050]`.
+2. **Privacidade por Concepção (*Privacy by Design*):** A coleta de dados limita-se ao estritamente necessário para o funcionamento da plataforma (minimização), sem persistência de dados sensíveis ou identificadores desnecessários `[F001]`.
+3. **Acessibilidade Digital Universal:** A interface atenderá às diretrizes WCAG 2.2 Nível AA `[F007]`, com contraste mínimo de 4.5:1, compatibilidade com leitores de tela e navegação funcional via teclado.
+4. **Auditoria de Código e Validação Técnica:** Trechos de código gerados com auxílio de modelos de linguagem exigem execução em ambiente de testes e checagem de vulnerabilidades alinhada ao padrão OWASP Top 10 `[F024]`.
+5. **Transparência e Linguagem Simples (*Legal Design*):** Termos de uso, orientações operacionais e mensagens do sistema serão apresentados em redação direta, sem termos ambíguos ou cláusulas de exoneração indevida de responsabilidade.
+6. **Eficiência Computacional e Sustentabilidade:** Consultas de banco de dados e rotinas de nuvem serão otimizadas para diminuir tráfego de rede e tempo de processamento, reduzindo o consumo energético da infraestrutura.
 
 ---
 
 ## 6. CONSIDERAÇÕES FINAIS E DESDOBRAMENTOS
 
-A investigação empreendida na Etapa 3 demonstrou de forma inequívoca que a excelência técnica em Análise e Desenvolvimento de Sistemas é indissociável da responsabilidade social e ética. 
+A investigação desenvolvida na Etapa 3 indicou a necessidade de incorporar critérios éticos e regulatórios ao ciclo de desenvolvimento de software. Os testes práticos confirmaram que ferramentas de IA apresentam erros factuais e exigem validação técnica contínua antes de qualquer integração em produção.
 
-Ao desmistificar a falibilidade da Inteligência Artificial por meio de experimentos reais e ao identificar as causas estruturais do viés algorítmico e dos vazamentos de dados na sociedade brasileira, o grupo estabelece um alicerce sólido para os ciclos subsequentes:
-- **Etapa 4 (Problema Social ou Ambiental):** O diagnóstico dos problemas socioambientais será conduzido sob a lente da justiça distributiva e inclusão de populações vulneráveis, evitando o tecnosolucionismo ingênuo;
-- **Etapa 5 (Solução Tecnológica):** A especificação dos requisitos funcionais e não funcionais incorporará diretamente os controles da Matriz de Riscos (RSK-E01 a RSK-E08) e as recomendações de *Privacy by Design* e acessibilidade WCAG.
+Essas conclusões orientam as etapas seguintes do projeto:
+- **Etapa 4 (Problema Social ou Ambiental):** O diagnóstico foca no impacto social direto em comunidades vulneráveis e nas restrições de infraestrutura hídrica local;
+- **Etapa 5 (Solução Tecnológica):** A especificação de requisitos incorpora as medidas da Matriz de Riscos (RSK-E01 a RSK-E08), assegurando conformidade com a LGPD e acessibilidade WCAG.
 
 ---
 

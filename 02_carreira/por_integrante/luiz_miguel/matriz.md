@@ -10,7 +10,7 @@ fontes:
   - F029
 ---
 
-# Matriz Individual de Autoavaliação de Competências – Luiz Miguel
+# Matriz Individual de Autoavaliação de Competências: Luiz Miguel
 
 - **Estudante:** Luiz Miguel
 - **Função Principal:** Infraestrutura e Redes
@@ -31,6 +31,6 @@ fontes:
 | 06 | **Windows Server e Active Directory (AD / Entra ID)** | Técnica | 2 | Instalação básica de Windows Server em máquina virtual | Gestão de políticas de grupo (GPO) e integração com Microsoft 365 | Laboratório prático de provisionamento de usuários e grupos |
 | 07 | **Monitoramento e Uptime (Zabbix, Grafana)** | Técnica | 2 | Conceitos de métricas de rede e alertas de indisponibilidade | Criação de dashboards customizados e instalação de agentes Zabbix | Implementação de monitoramento de disponibilidade de serviços web |
 | 08 | **Automação de Infraestrutura (Shell Script / Bash)** | Técnica | 2 | Elaboração de scripts simples para backup e automação de comandos | Scripts com tratamento de erros e integração com cron jobs | Automação de rotinas de verificação do sistema via terminal |
-| 09 | **Comunicação e Atendimento a Incidentes (ITSM)** | Comportamental | 3 | Boa interação em equipe e suporte técnico a colegas de graduação | Aplicação formal dos processos ITIL v4 de gestão de incidentes | Padronização dos registros de bugs e alertas do projeto |
-| 10 | **Trabalho em Equipe e Coordenação Operacional** | Comportamental | 4 | Liderança da Etapa 2 do PI e organização de cronogramas conjuntos | Delegação assertiva de subtarefas técnicas entre pares | Monitoramento do cumprimento dos marcos do Gate 2 |
+| 09 | **Comunicação e Atendimento a Incidentes (ITSM)** | Comportamental | 3 | Apoio técnico a colegas e comunicação direta nos trabalhos em grupo | Compreensão prática das rotinas de triagem e tratamento de incidentes (ITIL) | Padronização no registro e na priorização de incidentes do projeto |
+| 10 | **Trabalho em Equipe e Coordenação Operacional** | Comportamental | 4 | Organização das tarefas e acompanhamento de prazos na Etapa 2 | Distribuição clara de atividades entre os integrantes | Acompanhamento contínuo das metas para aprovação no Gate 2 |
 | 11 | **Segurança Perimétrica Básica (Firewalls)** | Técnica / Segurança | 2 | Conceitos teóricos de portas lógicas, NAT e regras de filtragem | Configuração prática de regras em firewalls pfSense e iptables | Configuração de regras defensivas básicas na infra do projeto |

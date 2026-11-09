@@ -6,9 +6,9 @@ data: 2026-11-06
 status: ativo
 ---
 
-# Matriz de Conformidade do DESAFIO PRÁTICO
+# Matriz de Conformidade do Projeto
 
-Esta matriz audita a rastreabilidade direta entre cada uma das exigências formais especificadas no documento `DESAFIO_PRATICO.md` e as evidências documentais correspondentes produzidas pelo grupo.
+Esta matriz detalha o atendimento aos requisitos das diretrizes acadêmicas (`DESAFIO_PRATICO.md`) e relaciona as evidências documentadas em cada etapa.
 
 | Exigência Formal | Seção no DESAFIO | Evidência no Projeto | Status | Responsável | Gate |
 |---|---|---|---|---|---|

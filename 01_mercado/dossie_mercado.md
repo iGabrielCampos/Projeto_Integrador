@@ -14,45 +14,45 @@ fontes:
   - F022
 ---
 
-# DOSSIÊ MESTRE DA ETAPA 1: INVESTIGAÇÃO EMPÍRICA DO MERCADO DE TRABALHO EM TECNOLOGIA DA INFORMAÇÃO
+# Dossiê da Etapa 1: Investigação do Mercado de Trabalho em Tecnologia da Informação
 
-**Instituição:** UNIPÊ – Centro Universitário de João Pessoa  
+**Instituição:** UNIPÊ (Centro Universitário de João Pessoa)  
 **Curso:** Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (ADS)  
-**Disciplina:** Projeto Integrador – Design Profissional  
+**Disciplina:** Projeto Integrador: Design Profissional  
 **Líder da Etapa 1:** Paulo Germano (Coordenação e Mercado de TI)  
 **Revisores Pares:** Gabriel Amancio, Luiz Miguel, Gustavo Antonio  
 
 ---
 
-## 1. INTRODUÇÃO E CONTEXTO
+## 1. Introdução e Contexto
 
-O setor de Tecnologia da Informação e Comunicação (TIC) no Brasil vivencia uma aceleração contínua, caracterizada pela descentralização geográfica permitida pelo modelo de trabalho remoto e pela demanda premente por profissionais capazes de integrar múltiplas competências técnicas e socioemocionais `[F021]`. De acordo com projeções setoriais da Brasscom `[F021]`, o país demandará centenas de milhares de novos talentos em tecnologia nos próximos anos, coexistindo, contudo, com um desafio de qualificação de entrada que cria fricções expressivas na inserção de profissionais recém-formados.
+O setor de Tecnologia da Informação e Comunicação (TIC) no Brasil passa por transformações impulsionadas pela expansão do trabalho remoto e pela busca por profissionais com conhecimentos técnicos e de comunicação `[F021]`. Projeções da Brasscom `[F021]` indicam crescimento na demanda por mão de obra técnica no país, com desafios na transição e absorção de profissionais em início de carreira.
 
-Nesse cenário, este Dossiê de Análise de Mercado constitui o documento-mestre da **Etapa 1** do Projeto Integrador dos estudantes do curso de Análise e Desenvolvimento de Sistemas do UNIPÊ `[F008]`. A investigação parte de uma coleta empírica de 24 anúncios reais de contratação, abrangendo quatro funções fundamentais da área de TI:
-1. **Desenvolvimento de Software** (investigado pelo estudante Gabriel Amancio);
-2. **Infraestrutura e Redes** (investigado pelo estudante Luiz Miguel);
-3. **Dados e Inteligência Artificial** (investigado pelo estudante Paulo Germano);
-4. **Segurança da Informação** (investigado pelo estudante Gustavo Antonio).
+Neste contexto, este documento reúne os resultados da Etapa 1 do Projeto Integrador no curso de Análise e Desenvolvimento de Sistemas do UNIPÊ `[F008]`. O estudo analisou 24 anúncios de vagas abertas no mercado nacional, distribuídos em quatro áreas de atuação:
+1. Desenvolvimento de Software (Gabriel Amancio);
+2. Infraestrutura e Redes (Luiz Miguel);
+3. Dados e Inteligência Artificial (Paulo Germano);
+4. Segurança da Informação (Gustavo Antonio).
 
-O objetivo central desta etapa é identificar os requisitos técnicos (hard skills), comportamentais (soft skills) e de formação acadêmica exigidos pelas organizações contratantes, analisar os desafios e dores dos empregadores e fundamentar o planejamento de carreira individual e a concepção da solução tecnológica do grupo.
+O objetivo é mapear as exigências de conhecimentos técnicos, competências comportamentais e formação acadêmica, compreender os desafios de contratação das empresas e subsidiar os planos individuais de carreira (Etapa 2) e a concepção da solução tecnológica (Etapa 5).
 
 ---
 
-## 2. METODOLOGIA DE INVESTIGAÇÃO E CONTRATO DE DADOS
+## 2. Metodologia de Investigação e Organização dos Dados
 
-A pesquisa adotou uma abordagem quanti-qualitativa, de natureza descritiva e exploratória, baseada em dados públicos de processos seletivos abertos no Brasil em novembro de 2026 `[F020]`.
+A pesquisa combinou levantamento quantitativo e qualitativo de caráter descritivo, a partir de dados públicos de processos seletivos abertos no Brasil em novembro de 2026 `[F020]`.
 
 ### 2.1 Critérios de Amostragem e Recorte
-- **Universo Amostral:** Plataformas de recrutamento e páginas corporativas oficiais, com ênfase no ecossistema Gupy `[F020]`, selecionado pela padronização e detalhamento de seus editais de vagas.
-- **Tamanho da Amostra:** 24 vagas reais analisadas (6 vagas para cada uma das 4 funções investigadas), superando o quantitativo mínimo regulamentar de 20 vagas exigido pelo `DESAFIO_PRATICO.md`.
-- **Filtros Aplicados:** Modelo de atuação Remoto (Home Office) ou polos tecnológicos no Nordeste (com destaque para Paraíba e Pernambuco) `[F022]`, nos níveis de experiência de Estágio e Júnior.
-- **Rastreabilidade e Não-Duplicação:** Todos os registros brutos foram catalogados sob o Contrato de Dados no arquivo [`01_mercado/vagas_brutas.csv`](vagas_brutas.csv) e estruturados em formato JSON [`01_mercado/vagas_brutas.json`](vagas_brutas.json), constituindo a **fonte única da verdade** para os cálculos estatísticos.
+- **Universo amostral:** páginas corporativas e plataformas de recrutamento, com ênfase no Portal Gupy `[F020]` pela padronização das descrições de vagas.
+- **Tamanho da amostra:** 24 vagas analisadas (6 vagas para cada uma das 4 funções), cobrindo o mínimo de 20 vagas estipulado nas diretrizes do projeto.
+- **Filtros aplicados:** formato de trabalho remoto ou oportunidades em polos do Nordeste (com foco em Paraíba e Pernambuco) `[F022]`, em níveis de estágio e júnior.
+- **Rastreabilidade dos dados:** os registros brutos constam no arquivo [`01_mercado/vagas_brutas.csv`](vagas_brutas.csv) e em formato JSON [`01_mercado/vagas_brutas.json`](vagas_brutas.json), servindo de base para as análises do projeto.
 
 ---
 
-## 3. APRESENTAÇÃO DA BASE DE ANÚNCIOS REAIS COLETADOS
+## 3. Apresentação da Base de Anúncios Coletados
 
-A Tabela 1 sintetiza os 24 anúncios coletados, discriminando ID unívoco, empresa contratante, cargo, localidade, modalidade e nível de senioridade.
+A Tabela 1 reúne os 24 anúncios coletados, discriminando ID, empresa, cargo, localidade, modalidade e nível de senioridade.
 
 ### Tabela 1: Síntese da Base Amostral de Vagas de TI Coletadas
 
@@ -87,7 +87,7 @@ A Tabela 1 sintetiza os 24 anúncios coletados, discriminando ID unívoco, empre
 
 ---
 
-## 4. ANÁLISE COMPARATIVA DE COMPETÊNCIAS POR FUNÇÃO
+## 4. Análise Comparativa de Competências por Função
 
 A padronização das competências brutas extraídas dos editais gerou a Tabela 2, que relaciona as principais exigências técnicas, comportamentais e formativas discriminadas por função investigada.
 
@@ -118,12 +118,12 @@ A padronização das competências brutas extraídas dos editais gerou a Tabela 
 
 ---
 
-## 5. REPRESENTAÇÃO GRÁFICA DOS RESULTADOS
+## 5. Representação Gráfica dos Resultados
 
-Em atendimento à exigência de pelo menos 4 gráficos analíticos, apresentam-se as visualizações estruturadas a seguir, acompanhadas de suas interpretações técnicas.
+Apresentam-se a seguir as quatro visualizações estruturadas a partir dos dados coletados, acompanhadas de suas análises.
 
 ### Gráfico 1: Frequência das Competências Técnicas Transversais no Mercado de TI
-Este gráfico destaca as competências com maior penetração na amostra de 24 vagas, evidenciando o primado do SQL, do controle de versão com Git e de linguagens de ampla aplicação.
+O gráfico apresenta as competências técnicas mais frequentes na amostra de 24 vagas.
 
 ```mermaid
 xychart-beta
@@ -133,12 +133,12 @@ xychart-beta
     bar [45.8, 29.2, 29.2, 20.8, 16.7, 16.7, 12.5, 12.5]
 ```
 
-**Interpretação do Gráfico 1:** SQL (45,8%) e Git/GitHub (29,2%) são os pilares indispensáveis para a quase totalidade dos profissionais em formação. O SQL afirma-se como a linguagem de dados universal, sendo exigida tanto de desenvolvedores quanto de cientistas de dados. A linguagem Python (29,2%) e Java (20,8%) cobrem dados e desenvolvimento corporativo backend.
+**Interpretação do Gráfico 1:** SQL (45,8%) e Git/GitHub (29,2%) aparecem com destaque entre as vagas de entrada. O SQL é cobrado tanto em desenvolvimento de software quanto em análise de dados. As linguagens Python (29,2%) e Java (20,8%) atendem, respectivamente, a demandas de dados, rotinas de automação e sistemas corporativos de backend.
 
 ---
 
-### Gráfico 2: Distribuição de Competências Comportamentais (Soft Skills) no Trabalho Remoto
-O modelo de atuação remoto e híbrido altera a hierarquia de competências comportamentais, priorizando a comunicação assíncrona, a proatividade e a conduta ética.
+### Gráfico 2: Distribuição de Competências Comportamentais no Trabalho Remoto
+O modelo remoto e híbrido valoriza a comunicação escrita, a autonomia e a colaboração entre equipes.
 
 ```mermaid
 xychart-beta
@@ -148,12 +148,12 @@ xychart-beta
     bar [29.2, 16.7, 16.7, 12.5, 12.5]
 ```
 
-**Interpretação do Gráfico 2:** A comunicação clara (75,0%) lidera com folga os editais. No trabalho à distância, a clareza para redigir chamados, documentar código e participar de cerimônias ágeis (*dailies*) é condição mandatória para evitar ruídos e retrabalho. O aprendizado contínuo (54,2%) reflete a velocidade de obsolescência das tecnologias e a expectativa de que o candidato júnior tenha capacidade de autoestudo estruturado.
+**Interpretação do Gráfico 2:** A comunicação clara (29,2%) e a proatividade (16,7%) figuram entre as competências comportamentais mais citadas. No modelo remoto, a clareza para redigir chamados, documentar código e participar de reuniões de alinhamento é necessária para evitar ruídos de comunicação. A postura ética e o trabalho em equipe também aparecem como requisitos frequentes nas descrições das vagas.
 
 ---
 
 ### Gráfico 3: Distribuição da Amostra por Nível de Experiência e Modalidade
-A caracterização estrutural dos 24 anúncios coletados evidencia o perfil das contratações mapeadas.
+A caracterização dos 24 anúncios coletados indica o perfil das vagas mapeadas.
 
 ```mermaid
 xychart-beta
@@ -163,12 +163,12 @@ xychart-beta
     bar [18, 6, 21, 3]
 ```
 
-**Interpretação do Gráfico 3:** A amostra é composta por 75,0% de vagas de nível Júnior (18 vagas) e 25,0% de Estágio (6 vagas). Quanto à modalidade, 87,5% dos anúncios (21 vagas) operam no formato 100% Remoto, abrindo espaço direto para atuação de estudantes domiciliados em João Pessoa e região Nordeste em corporações de todo o país `[F022]`. As vagas híbridas (12,5%) exigem presença eventual em polos regionais.
+**Interpretação do Gráfico 3:** A amostra reúne 75,0% de vagas de nível Júnior (18 vagas) e 25,0% de Estágio (6 vagas). Na modalidade de trabalho, 87,5% dos anúncios (21 vagas) são no formato remoto, permitindo a atuação de estudantes residentes na Paraíba e no Nordeste em empresas de alcance nacional `[F022]`. As vagas híbridas representam 12,5% (3 vagas), demandando deslocamento para polos corporativos.
 
 ---
 
-### Gráfico 4: Matriz de Conexão Multidisciplinar entre as 4 Funções Investigadas
-Este diagrama conceitual ilustra a interseção direta entre os perfis profissionais investigados pelos 4 integrantes, demonstrando que a concepção da solução tecnológica do Projeto Integrador demanda colaboração integrada.
+### Gráfico 4: Relações Técnicas entre as Quatro Funções Investigadas
+O diagrama ilustra os pontos de contato técnico entre as quatro áreas estudadas, mostrando como o projeto integrador combina esses conhecimentos na prática.
 
 ```mermaid
 graph TD
@@ -204,51 +204,51 @@ graph TD
     I2 --- S3
 ```
 
-**Interpretação do Gráfico 4:** A arquitetura do projeto exige convergência: as APIs desenvolvidas por Gabriel demandam a infraestrutura e a computação em nuvem provisionadas por Luiz; os modelos e bancos estruturados por Paulo alimentam o software; e todas as transações, fluxos e acessos devem atender às diretrizes de blindagem e conformidade com a LGPD gerenciadas por Gustavo.
+**Interpretação do Gráfico 4:** A arquitetura da solução depende da articulação entre as áreas: as APIs desenvolvidas em software conectam-se à infraestrutura em nuvem; os dados modelados fornecem suporte à aplicação; e os fluxos e acessos devem seguir os requisitos de segurança e as diretrizes da LGPD `[F001]`.
 
 ---
 
-## 6. DISCUSSÃO DOS DESAFIOS E DORES DOS CONTRATANTES
+## 6. Discussão dos Desafios e Demandas dos Contratantes
 
-A análise sistemática dos requisitos e dos diferenciais registrados nos editais permitiu identificar cinco macrodesafios enfrentados pelas organizações:
+A análise dos requisitos e diferenciais descritos nos editais permitiu mapear cinco desafios recorrentes no processo de contratação:
 
-### 6.1 Hiperinflação de Requisitos em Cargos de Entrada (DES-01)
-Identificou-se que anúncios classificados formalmente como "Júnior" frequentemente solicitam experiência comprovada com arquiteturas complexas (microsserviços, mensageria com Kafka/RabbitMQ e esteiras avançadas de CI/CD), conforme evidenciado em **VAG-001**, **VAG-002** e **VAG-010**. Essa prática reflete a relutância de certas corporações em arcar com a curva inicial de aprendizado do recém-formado, exigindo que o estudante compense a ausência de histórico profissional prévio através de um portfólio robusto e verificável no GitHub (estratégia que será formalizada na Etapa 2).
+### 6.1 Volume de Requisitos em Cargos de Entrada (DES-01)
+Identificou-se que anúncios classificados formalmente como "Júnior" por vezes solicitam conhecimentos práticos em arquiteturas complexas (microsserviços, mensageria e rotinas de CI/CD), a exemplo de **VAG-001**, **VAG-002** e **VAG-010**. Para candidatos recém-formados ou em transição, a apresentação de projetos práticos e código documentado no GitHub torna-se uma forma de demonstrar capacidade técnica sem depender de longa experiência prévia (tópico trabalhado na Etapa 2).
 
-### 6.2 O Fator Eliminatório da Comunicação Remota (DES-02)
-O predomínio do modelo remoto nas contratações em TI (87,5% da amostra) transformou a comunicação escrita em requisito eliminatório, como registrado em **VAG-004**, **VAG-009** e **VAG-014**. O profissional que não domina a síntese assíncrona, a clareza na abertura de *pull requests* ou o registro técnico de incidentes compromete a velocidade de entrega da squad.
+### 6.2 Importância da Comunicação no Trabalho Remoto (DES-02)
+Com 87,5% das vagas em modelo remoto, a comunicação escrita clara é fator decisivo no processo seletivo, como evidenciado em **VAG-004**, **VAG-009** e **VAG-014**. O trabalho distribuído requer clareza na abertura de *pull requests*, na redação de documentações e no relato de impedimentos para manter o ritmo de trabalho da equipe.
 
-### 6.3 Imperativo de Conformidade e Proteção de Dados (DES-03)
-A aplicação das sanções administrativas pela Autoridade Nacional de Proteção de Dados (ANPD) decorrentes da LGPD `[F001]` fez com que conceitos de segregação de privilégios (Princípio do Menor Privilégio), auditoria de credenciais no Microsoft Entra ID e proteção de dados sensíveis migrassem para o rol de exigências técnicas básicas em posições operacionais (**VAG-019**, **VAG-021** e **VAG-024**).
+### 6.3 Requisitos de Conformidade e Proteção de Dados (DES-03)
+A fiscalização da Autoridade Nacional de Proteção de Dados (ANPD) em relação à LGPD `[F001]` impulsionou a exigência de práticas de menor privilégio, gestão de identidades e proteção de dados sensíveis mesmo em posições operacionais (**VAG-019**, **VAG-021** e **VAG-024**).
 
-### 6.4 Adoção Emergente de Inteligência Artificial Generativa (DES-04)
-Os editais **VAG-006** (ZG Soluções) e **VAG-016** (BIP Brasil) revelam um movimento incipiente, mas decisivo: a exigência de que o desenvolvedor utilize ferramentas de assistência de código (como GitHub Copilot) e saiba integrar APIs de modelos de linguagem (OpenAI, Gemini) com discernimento crítico para evitar alucinações de dados e vazamento de propriedade intelectual.
+### 6.4 Uso Prático de Inteligência Artificial Generativa (DES-04)
+Os anúncios **VAG-006** (ZG Soluções) e **VAG-016** (BIP Brasil) apontam para a demanda por uso orientado de assistentes de código e integração com APIs de modelos de linguagem, com atenção a validação de respostas e controle de dados.
 
-### 6.5 O Profissional em "T" (T-Shaped Professional) (DES-05)
-A segregação estanque entre funções de TI encontra-se em declínio. Desenvolvedores são demandados a compreender contêineres Docker e serviços de nuvem (**VAG-001**, **VAG-004**); analistas de infraestrutura precisam redigir scripts de automação em Bash ou PowerShell (**VAG-010**, **VAG-023**); e analistas de segurança necessitam entender o código da aplicação sob a perspectiva da OWASP (**VAG-024**).
-
----
-
-## 7. LIMITAÇÕES DA PESQUISA
-
-Em observância ao rigor científico acadêmico `[F004]`, declaram-se as seguintes limitações metodológicas:
-1. **Amostragem em Plataforma Dominante:** A concentração da coleta no portal Gupy `[F020]` reflete preferencialmente os padrões culturais e de contratação de empresas de médio e grande porte, com menor visibilidade sobre o mercado informal ou microempresas de base local.
-2. **Corte Temporal Sincrónico:** Os dados retratam o panorama específico de novembro de 2026, estando sujeitos a oscilações macroeconômicas sazonais.
-3. **Sub-representação Salarial:** A ampla maioria dos editais analisados omitiu a faixa de remuneração explícita, impossibilitando a correlação quantitativa entre volume de tecnologias exigidas e remuneração financeira direta.
+### 6.5 Interdisciplinaridade e Perfil Multidisciplinar (DES-05)
+A divisão estrita entre funções técnicas tem sido atenuada no mercado. Desenvolvedores são chamados a compreender contêineres Docker e noções de nuvem (**VAG-001**, **VAG-004**); analistas de infraestrutura utilizam scripts de automação em Bash ou PowerShell (**VAG-010**, **VAG-023**); e analistas de segurança analisam o código da aplicação sob diretrizes de segurança como o OWASP Top 10 (**VAG-024**).
 
 ---
 
-## 8. CONSIDERAÇÕES FINAIS E DESDOBRAMENTOS PARA AS ETAPAS SEGUINTES
+## 7. Limitações da Pesquisa
 
-A investigação empírica do mercado de trabalho em TI comprovou que a qualificação profissional em Análise e Desenvolvimento de Sistemas exige uma sólida formação nos fundamentos de lógica, versionamento e manipulação de dados, combinada com uma expressiva maturidade socioemocional para o trabalho colaborativo remoto.
-
-Este Dossiê estabelece os insumos mandatórios para os próximos ciclos do Projeto Integrador:
-- **Etapa 2 (Carreira e Identidade):** Cada um dos 4 estudantes (Gabriel, Luiz, Paulo e Gustavo) utilizará a matriz de frequências da Tabela 2 para estruturar sua **Matriz de Autoavaliação de Competências** (mínimo de 10 competências) e formular seu **PDI no padrão SMART** (mínimo de 3 metas), vinculando suas ações formativas às lacunas evidenciadas pelo mercado.
-- **Etapa 5 (Solução Tecnológica):** As tecnologias demandadas (APIs RESTful, bancos relacionais em nuvem, controle de acessos IAM e diretrizes da LGPD `[F001]`) orientarão a especificação da arquitetura do protótipo a ser desenvolvido pelo grupo.
+Em conformidade com critérios acadêmicos `[F004]`, registram-se as seguintes limitações metodológicas:
+1. **Concentração de plataforma:** a coleta baseou-se predominantemente no portal Gupy `[F020]`, retratando a dinâmica de médias e grandes empresas e podendo sub-representar dinâmicas de contratação de pequenas empresas locais.
+2. **Recorte temporal:** os dados foram coletados em novembro de 2026, refletindo condições de mercado desse período e sujeitos a variações sazonais de fim de ano.
+3. **Informações salariais parciais:** a maior parte dos anúncios omitiu valores exatos de remuneração, inviabilizando a análise estatística direta entre exigências técnicas e faixa salarial.
 
 ---
 
-## 9. REFERÊNCIAS NORMATIVAS E BIBLIOGRÁFICAS
+## 8. Considerações Finais e Desdobramentos para as Etapas Seguintes
+
+A análise empírica do mercado de trabalho de TI indicou que posições de entrada combinam fundamentos técnicos de programação, versionamento e bancos de dados com autonomia e comunicação para trabalho em equipe.
+
+Os resultados obtidos fornecem subsídios para as etapas seguintes:
+- **Etapa 2 (Carreira e Identidade):** os quatro estudantes (Gabriel, Luiz, Paulo e Gustavo) utilizam a frequência de competências levantada para construir suas matrizes de autoavaliação (mínimo de 10 competências) e estruturar planos individuais de desenvolvimento com metas SMART, direcionando esforços para lacunas identificadas.
+- **Etapa 5 (Solução Tecnológica):** tecnologias e práticas identificadas na pesquisa (APIs RESTful, bancos relacionais, computação em nuvem e adequação à LGPD `[F001]`) orientam as decisões de arquitetura e especificação do protótipo ÁguaViva PB.
+
+---
+
+## 9. Referências Normativas e Bibliográficas
 
 - **[F001]** BRASIL. **Lei nº 13.709, de 14 de agosto de 2018**. Dispõe sobre a proteção de dados pessoais e altera a Lei nº 12.965, de 23 de abril de 2014 (Lei Geral de Proteção de Dados Pessoais - LGPD). Diário Oficial da União: seção 1, Brasília, DF, 15 ago. 2018. Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm>. Acesso em: 06 nov. 2026.
 - **[F004]** ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. **ABNT NBR 14724: Informação e documentação — Trabalhos acadêmicos — Apresentação**. Rio de Janeiro: ABNT, 2011.

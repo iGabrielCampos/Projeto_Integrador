@@ -11,19 +11,19 @@ fontes:
   - F031
 ---
 
-# Rascunho Estruturado de Perfil Profissional Digital (LinkedIn) – Gustavo Antonio
+# Perfil Profissional para o LinkedIn: Gustavo Antonio
 
 ## 1. Título Profissional Estratégico
-> Analista de Segurança da Informação Jr | Graduando em ADS (UNIPÊ) | Cibersegurança, SOC, IAM, Conformidade LGPD & CompTIA Security+ (em formação)
+> Analista de Segurança da Informação Júnior | Graduando em ADS no UNIPÊ | Segurança Defensiva, IAM, Conformidade LGPD e CompTIA Security+ (em preparação)
 
 ## 2. Resumo Profissional (Sobre Mim)
-Graduando em Análise e Desenvolvimento de Sistemas no UNIPÊ (João Pessoa - PB), dedicado à área de Segurança da Informação, privacidade de dados e defesa cibernética. Conhecimentos acadêmicos e práticos em gestão de identidades e acessos (IAM), conformidade com a LGPD (Lei 13.709/2018), análise de vulnerabilidades em aplicações (OWASP Top 10), firewalls e monitoramento de eventos de segurança (SIEM).
+Graduando em Análise e Desenvolvimento de Sistemas no UNIPÊ (João Pessoa/PB), dedicado à área de Segurança da Informação, privacidade de dados e segurança defensiva. Meus estudos englobam gestão de identidades e acessos (IAM), conformidade com a LGPD (Lei nº 13.709/2018), análise de vulnerabilidades em aplicações (OWASP Top 10), regras de firewall e monitoramento de logs de segurança (SIEM).
 
-No Projeto Integrador de Inovação Responsável em TI, atuo como responsável pela governança de segurança, elaboração de termos de consentimento (TCLE), conformidade com a LGPD e planejamento da matriz de riscos éticos e tecnológicos. Firme compromisso com a confidencialidade, sigilo profissional e proteção proativa de ativos corporativos.
+No Projeto Integrador do curso, atuo na governança de segurança, na redação de termos de consentimento (TCLE), na aplicação dos princípios da LGPD e no mapeamento de riscos operacionais. Tenho interesse por auditoria técnica, proteção de dados e fortalecimento contínuo da postura de segurança em sistemas corporativos.
 
 ## 3. Principais Competências em Destaque
-- **Hard Skills:** Segurança da Informação, LGPD, Privacy by Design, Gestão de Acessos (IAM / Microsoft Entra ID), Firewalls (pfSense/Fortinet), SIEM, EDR, OWASP Top 10, Redes TCP/IP, CompTIA Security+ (em preparação).
-- **Soft Skills:** Postura ética inegociável, discrição profissional, atenção a detalhes, pensamento crítico investigativo e gestão de riscos operacionais.
+- **Competências Técnicas:** Segurança da Informação, LGPD, Privacy by Design, Gestão de Acessos (IAM e Microsoft Entra ID), Firewalls (pfSense), SIEM, EDR, OWASP Top 10, Redes TCP/IP, CompTIA Security+ (em preparação).
+- **Competências Comportamentais:** Postura ética, discrição profissional, atenção a detalhes, pensamento crítico investigativo e gestão de riscos.
 
 ## 4. Projetos Práticos em Destaque
-- **Projeto Integrador UNIPÊ:** Elaboração do framework de conformidade com a LGPD, elaboração do TCLE e auditoria de requisitos não funcionais de segurança da solução tecnológica.
+- **Projeto Integrador UNIPÊ:** Elaboração da política de privacidade sob a LGPD, redação do TCLE e auditoria dos requisitos não funcionais de segurança e criptografia da plataforma ÁguaViva PB.

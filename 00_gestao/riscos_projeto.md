@@ -6,9 +6,9 @@ data: 2026-11-06
 status: ativo
 ---
 
-# Matriz de Gestão de Riscos Operacionais do Projeto
+# Matriz de Riscos do Projeto
 
-Este documento cataloga os riscos inerentes à execução do Projeto Integrador, avaliando probabilidade, impacto e medidas preventivas/contingenciais.
+Este documento registra os riscos operacionais identificados durante o projeto, com probabilidade, impacto e ações de mitigação.
 
 ---
 

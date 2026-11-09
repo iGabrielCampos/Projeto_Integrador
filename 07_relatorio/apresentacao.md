@@ -42,7 +42,7 @@ ferramenta_slides: Figma / Google Slides
 - **Visual no Figma**: Logo institucional do UNIPÊ, título do projeto em destaque (*Laboratório de Carreira e Inovação Responsável em TI: Solução ÁguaViva PB*), foto e nome dos quatro discentes com suas respectivas áreas de atuação em ADS.
 - **Orador**: Paulo Germano (1 minuto).
 - **Fala oral sugerida**:
-  > *"Boa noite, nobres professores da banca avaliadora, colegas e presentes. Somos estudantes do Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas do UNIPÊ. Nosso grupo é composto por Gabriel Amancio, focado em Desenvolvimento de Software; Luiz Miguel, em Infraestrutura e Redes; eu, Paulo Germano, na área de Dados e Inteligência Artificial; e Gustavo Antonio, em Segurança da Informação. Hoje temos a satisfação de apresentar o resultado integrado do nosso Projeto de Design Profissional, no qual aliamos o diagnóstico rigoroso das exigências do mercado de trabalho de TI à concepção de uma tecnologia cívica de alto impacto social para o nosso estado: a plataforma ÁguaViva PB."*
+  > *"Boa noite aos professores da banca avaliadora, aos colegas e a todos os presentes. Somos discentes do curso de Análise e Desenvolvimento de Sistemas do UNIPÊ. O grupo é formado por Gabriel Amancio, na área de Desenvolvimento de Software; Luiz Miguel, em Infraestrutura e Redes; eu, Paulo Germano, em Dados e Inteligência Artificial; e Gustavo Antonio, em Segurança da Informação. Hoje apresentamos o resultado do nosso Projeto de Design Profissional, no qual relacionamos as demandas reais do mercado de trabalho em TI ao desenvolvimento de uma aplicação voltada aos problemas de saneamento e abastecimento de água na Paraíba: o ÁguaViva PB."*
 
 ---
 
@@ -50,7 +50,7 @@ ferramenta_slides: Figma / Google Slides
 - **Visual no Figma**: Manchetes de jornais da Paraíba sobre falta d'água, dados oficiais do Censo IBGE 2022 (50,9% dos lares da PB sem rede de esgoto) e infográfico do Trata Brasil indicando 47% de perdas na rede hídrica estadual.
 - **Orador**: Paulo Germano (1,5 minuto).
 - **Fala oral sugerida**:
-  > *"Ao iniciarmos este projeto, nos recusamos a construir uma solução hipotética desconectada da realidade paraibana. Os dados oficiais do Censo Demográfico do IBGE revelam que mais de metade dos domicílios da Paraíba ainda sofrem com a ausência de rede geral de esgoto sanitário, e o Sistema Nacional de Informações sobre Saneamento aponta que quase metade da água tratada no estado se perde em tubulações obsoletas antes de chegar às casas. Esse cenário atinge brutalmente as comunidades periféricas e rurais. Nosso desafio como futuros analistas de sistemas foi responder à pergunta: como a tecnologia da informação, a governança de dados e a responsabilidade social podem empoderar o cidadão para fiscalizar e combater essa crise hídrica?"*
+  > *"Ao definir o tema do projeto, buscamos olhar diretamente para a realidade paraibana. Dados do Censo 2022 do IBGE mostram que 50,9% dos lares da Paraíba não possuem rede geral de esgoto, e o Sistema Nacional de Informações sobre Saneamento indica que 47% da água tratada no estado se perde na rede de distribuição antes de chegar às torneiras. Esse problema afeta principalmente comunidades periféricas e rurais. Como estudantes de ADS, nosso desafio foi investigar como sistemas de informação, dados abertos e usabilidade podem ajudar o cidadão a relatar falhas no abastecimento e acompanhar a situação do saneamento em seu bairro."*
 
 ---
 
@@ -58,7 +58,7 @@ ferramenta_slides: Figma / Google Slides
 - **Visual no Figma**: Diagrama do ciclo de vida em 7 etapas, tabela de rodízio de liderança técnica e captura do terminal Linux executando o script determinístico `verificar.py`.
 - **Orador**: Gabriel Amancio (1,5 minuto).
 - **Fala oral sugerida**:
-  > *"Para operacionalizar um projeto dessa envergadura sem retrabalho ou sobreposição, estabelecemos uma governança técnica de padrão industrial. Adotamos o modelo de monorepositório versionado em Git, com rodízio estrito de liderança técnica: cada etapa teve um líder nominal que assinou e respondeu pela entrega perante os portões de qualidade. Desenvolvemos ainda um validador automatizado em Python que barrava qualquer commit com lacunas textuais ou fontes não registradas em nosso arquivo mestre. Toda a documentação e dados operam sob o princípio da Fonte Única da Verdade, garantindo rastreabilidade absoluta de ponta a ponta."*
+  > *"Para organizar o fluxo de trabalho sem retrabalho, adotamos uma estrutura de monorepositório no Git e um rodízio formal de liderança: a cada etapa, um integrante assumiu a coordenação das atividades e a responsabilidade pela entrega perante os critérios de qualidade estabelecidos. Criamos também um script de validação em Python (verificar.py) para checar a consistência do repositório, bloqueando commits com pendências textuais ou referências ausentes. Toda a documentação foi organizada sob o princípio da Fonte Única da Verdade, mantendo a rastreabilidade entre requisitos, decisões técnicas e código."*
 
 ---
 
@@ -66,7 +66,7 @@ ferramenta_slides: Figma / Google Slides
 - **Visual no Figma**: Gráfico de barras com as competências mais exigidas nos 24 anúncios reais coletados (Git 88%, SQL 79%, Docker 58%, Cloud 50%) e divisão por especialidades.
 - **Orador**: Paulo Germano (2 minutos).
 - **Fala oral sugerida**:
-  > *"Na Etapa 1, investigamos o mundo real do trabalho coletando e auditando 24 anúncios reais de vagas públicas de TI no Brasil, com equilíbrio rigoroso de 6 vagas para cada uma das nossas quatro especialidades. Constatamos que o domínio de Git, bancos de dados SQL e cultura de contêineres com Docker formam o piso mínimo inegociável em todos os nichos. No desenvolvimento de software, React, TypeScript e Java Spring dominam o mercado; em infraestrutura, há uma migração massiva para nuvem pública AWS; em dados, a linguagem Python é unânime; e em segurança, a conformidade com a LGPD e testes de intrusão são mandatórios. Além disso, a capacidade de comunicação assíncrona clara surgiu como a competência socioemocional mais valorizada pelos recrutadores."*
+  > *"Na Etapa 1, analisamos 24 anúncios reais de vagas de TI abertas no Brasil, distribuídas igualmente em 6 oportunidades para cada uma das quatro áreas da equipe. Notamos que bancos de dados relacionais com SQL, controle de versão com Git e o uso de contêineres com Docker aparecem como requisitos básicos em quase todas as funções. Em desenvolvimento de software, destacam-se React, TypeScript e Java com Spring Boot; em infraestrutura, sobressaem serviços em nuvem AWS e ambientes Linux; na área de dados, a linguagem Python e ferramentas de BI; e em segurança, conhecimentos de LGPD e segurança de aplicações. Entre as habilidades socioemocionais, a comunicação assíncrona e o trabalho colaborativo foram os requisitos mais citados pelos contratantes."*
 
 ---
 
@@ -74,7 +74,7 @@ ferramenta_slides: Figma / Google Slides
 - **Visual no Figma**: Gráfico de radar comparativo dos quatro perfis, tabela dos gaps coletivos identificados e mosaico com os quatro repositórios de portfólio no GitHub.
 - **Orador**: Luiz Miguel (2 minutos).
 - **Fala oral sugerida**:
-  > *"Na Etapa 2, liderada por mim, confrontamos nossas habilidades individuais com as demandas apuradas no mercado através de matrizes com 11 competências. A análise comparativa revelou uma equipe com excelente base em lógica, versionamento e comunicação, mas expôs um gap coletivo evidente: a orquestração prática de serviços em nuvem e contêineres Docker, cuja média da equipe era de apenas 2,75. Em resposta direta a esse diagnóstico, cada discente elaborou um Plano de Desenvolvimento Individual estruturado no método SMART. Estabelecemos 12 metas formais, cobrindo certificações da AWS, Oracle Java, Power BI e CompTIA Security+, integrando nossas trajetórias a comunidades ativas da Paraíba como o DevOpsDays PB, GDG João Pessoa e OWASP."*
+  > *"Na Etapa 2, que coordenei, comparamos nossas habilidades individuais com as demandas identificadas no mercado por meio de matrizes de 11 competências. Essa análise mostrou que o grupo tinha boa base em lógica, Git e comunicação, mas apontou uma lacuna comum: a prática com contêineres Docker e serviços em nuvem, onde a média da equipe foi de 2,75 numa escala de 1 a 5. A partir desse diagnóstico, cada estudante elaborou um Plano de Desenvolvimento Individual pelo método SMART. Fixamos 12 metas formais com prazos e certificações de referência, como AWS, Oracle Java, Power BI e CompTIA Security+, além de prever nossa participação em comunidades técnicas locais, a exemplo do DevOpsDays PB, GDG João Pessoa e OWASP."*
 
 ---
 
@@ -82,7 +82,7 @@ ferramenta_slides: Figma / Google Slides
 - **Visual no Figma**: Recortes dos relatórios do CESeC (viés em reconhecimento facial) e da decisão liminar da ANPD contra a Meta, com tabela síntese da matriz de riscos éticos.
 - **Orador**: Gabriel Amancio (2 minutos).
 - **Fala oral sugerida**:
-  > *"A Etapa 3 nos colocou diante da responsabilidade cívica e jurídica do desenvolvedor. Analisamos casos reais no Brasil, como o estudo do CESeC que comprovou que mais de 90% dos presos por reconhecimento facial automatizado no país eram pessoas negras, ilustrando o perigo de decisões algorítmicas enviesadas sem revisão humana, ferindo o Art. 20 da LGPD. Também examinamos a medida da ANPD que impediu o treinamento indiscriminado de IAs generativas com dados pessoais dos brasileiros sem consentimento prévio. Sistematizamos esses aprendizados em uma Matriz de Riscos com 8 vetores críticos, cobrindo desde discriminação e vazamentos de privacidade até a pegada ecológica de datacenters e riscos de injeção de prompt."*
+  > *"Na Etapa 3, examinamos a responsabilidade ética e jurídica no desenvolvimento de software. Analisamos casos concretos no Brasil, como o levantamento do CESeC que revelou que mais de 90% dos presos por reconhecimento facial automatizado eram pessoas negras. O caso evidenciou o perigo de decisões automatizadas sem checagem humana, em desacordo com o Artigo 20 da LGPD. Também estudamos a intervenção da ANPD sobre o uso de dados de usuários brasileiros para treino de IA sem opção clara de recusa. Mapeamos essas questões em uma Matriz de Riscos com 8 itens, cobrindo privacidade, discriminação algorítmica, segurança de aplicações e impacto ambiental do consumo energético em data centers."*
 
 ---
 
@@ -90,7 +90,7 @@ ferramenta_slides: Figma / Google Slides
 - **Visual no Figma**: Capturas comparativas dos 4 experimentos laboratoriais (EXP-01 a EXP-04), com destaque para o código com falha de rate limiting e o erro de soma matemática de R$ 380,00 no Gemini.
 - **Orador**: Gustavo Antonio (2 minutos).
 - **Fala oral sugerida**:
-  > *"Como futuros profissionais de tecnologia, decidimos testar empiricamente os limites da Inteligência Artificial em vez de confiar cegamente em suas saídas. Realizamos 4 experimentos laboratoriais controlados. O Gabriel solicitou ao ChatGPT uma rota de autenticação JWT e constatou a omissão perigosa de limitação de requisições, abrindo brecha para ataques de força bruta. O Luiz Miguel detectou no Claude um script de firewall que aplicava a política DROP antes de liberar a porta SSH, o que derrubaria o servidor em produção. O Paulo Germano pegou o Gemini alucinando uma conta de soma em R$ 380,00 reais. E eu demonstrei no Copilot uma interpretação jurídica permissiva sobre cláusulas contratuais abusivas. Esse teste comprovou cientificamente que a IA é apenas uma ferramenta auxiliar que exige auditoria técnica humana permanente."*
+  > *"Para verificar na prática a confiabilidade de modelos de IA, realizamos quatro experimentos controlados. O Gabriel pediu ao ChatGPT um endpoint de autenticação JWT e identificou a falta de limitação de taxa de requisições, o que deixaria o serviço exposto a ataques de força bruta. O Luiz Miguel testou a criação de regras de firewall no Claude, e o modelo sugeriu aplicar a política restritiva DROP antes de liberar o SSH, o que travaria o acesso remoto ao servidor. O Paulo Germano submeteu um conjunto de dados ao Gemini para cálculos estatísticos e o modelo errou uma soma aritmética simples. E eu testei no Copilot a análise de uma cláusula contratual abusiva que feria o Código de Defesa do Consumidor e a LGPD. Os experimentos deixaram claro que a IA auxilia na produtividade, mas a revisão técnica humana continua indispensável."*
 
 ---
 
@@ -98,7 +98,7 @@ ferramenta_slides: Figma / Google Slides
 - **Visual no Figma**: Diagrama de Ishikawa detalhando causas estruturais, e a matriz de decisão multicritério destacando a pontuação vencedora da Opção 1 (ÁguaViva PB: 9,05 / 10,0).
 - **Orador**: Gustavo Antonio (2 minutos).
 - **Fala oral sugerida**:
-  > *"Na Etapa 4, que tive a honra de coordenar, estruturamos uma Matriz de Decisão Multicritério com pesos ponderados para selecionar o problema socioambiental a ser enfrentado. Avaliamos três temas concorrentes: a gestão de lixo eletrônico, a prevenção de golpes digitais em idosos e o saneamento básico e monitoramento da água na Paraíba. O tema da água e saneamento sagrou-se vencedor incontestável com nota 9,05 de 10,0. Mapeamos as causas-raiz no Diagrama de Ishikawa e construímos a persona da Dona Maria de Fátima, moradora de comunidade periférica que passa dias sem água, tem celular simples sem pacote de internet e precisa de uma ferramenta rápida e sem burocracia para ser ouvida pelo poder público."*
+  > *"Na Etapa 4, que liderei, aplicamos uma matriz de decisão multicritério para definir o problema socioambiental que guiaria a solução técnica. Comparamos três propostas: descarte de lixo eletrônico, segurança contra golpes digitais em idosos e saneamento e monitoramento da água na Paraíba. A temática de saneamento e água obteve a pontuação mais alta, com nota 9,05 em 10, considerando a gravidade do cenário estadual e a viabilidade técnica para a equipe. Mapeamos as causas do problema no Diagrama de Ishikawa e construímos a persona da Dona Maria de Fátima: moradora da periferia de João Pessoa que enfrenta dias sem água, tem um celular básico sem franquia contínua de internet e precisa de um canal simples e acessível para registrar a falta d'água."*
 
 ---
 
@@ -106,7 +106,7 @@ ferramenta_slides: Figma / Google Slides
 - **Visual no Figma**: Diagrama de Containers C4 Model demonstrando a interface React PWA, Service Worker, banco local IndexedDB e serviços de backend em nuvem com PostgreSQL/PostGIS.
 - **Orador**: Gabriel Amancio (2 minutos).
 - **Fala oral sugerida**:
-  > *"Para atender à realidade da Dona Maria de Fátima, concebemos a arquitetura da plataforma ÁguaViva PB. Trata-se de um Progressive Web App (PWA) projetado sob o paradigma Offline-First. O sistema opera com Service Workers que realizam o cache completo da aplicação no primeiro acesso. Caso o cidadão esteja sem sinal de dados móveis no bairro, a denúncia, foto comprimida e coordenadas geográficas são retidas com segurança no banco de dados local IndexedDB do aparelho. Assim que o smartphone detecta o retorno de conexão Wi-Fi ou 4G, os dados são sincronizados assincronamente com nosso backend em nuvem. Modelamos 12 requisitos funcionais com MoSCoW, 8 histórias de usuário em BDD e métricas rigorosas de desempenho e segurança da informação."*
+  > *"Para atender à realidade de pessoas como a Dona Maria, desenhamos a arquitetura do ÁguaViva PB. Definimos a aplicação como um Progressive Web App (PWA) com operação voltada ao modo offline (offline-first). O navegador armazena a estrutura da página em cache logo no primeiro acesso. Se a pessoa estiver sem sinal de internet no bairro, o formulário, as coordenadas e a foto ficam gravados no banco local IndexedDB do aparelho. Assim que o dispositivo detecta a volta da conexão, os dados são enviados automaticamente ao backend em nuvem. Especificamos 12 requisitos funcionais com o método MoSCoW, 8 histórias de usuário em formato BDD e requisitos não funcionais com metas claras de desempenho, segurança e acessibilidade."*
 
 ---
 
@@ -114,7 +114,7 @@ ferramenta_slides: Figma / Google Slides
 - **Visual no Figma**: Telas navegáveis conceituais do protótipo no Figma (Tela Inicial, Mapa de Potabilidade por Bairro, Formulário de Denúncia em 2 passos, Central Emergencial de Carro-Pipa e Modo Alto Contraste).
 - **Orador**: Gabriel Amancio (2 minutos).
 - **Fala oral sugerida**:
-  > *"Aqui visualizamos as principais telas do nosso protótipo navegável de alta fidelidade desenhado no Figma. Priorizamos o minimalismo e a acessibilidade digital segundo os padrões WCAG 2.2 AA. Os botões de toque possuem área mínima generosa de 48 por 48 pixels para evitar toques acidentais por pessoas idosas. O mapa interativo utiliza cores semânticas intuitivas: verde para água potável e vermelha para áreas com interrupção ou contaminação. Com apenas três toques, o morador registra a falta d'água, anexa foto da torneira seca e recebe um número de protocolo coletivo, agrupando os vizinhos para cobrar celeridade da concessionária e acionar a Defesa Civil para envio de caminhão-pipa emergencial."*
+  > *"Neste slide visualizamos as principais telas do protótipo no Figma. Priorizamos uma interface direta e acessível, alinhada às recomendações da WCAG 2.2 no nível AA. Os botões de ação contam com área de toque mínima de 48 por 48 pixels, o que facilita o uso em telas pequenas e reduz erros de clique. O mapa utiliza legendas e cores contrastantes para indicar a situação de cada localidade. Com poucos toques, a pessoa consegue selecionar o tipo de ocorrência, anexar uma foto e confirmar o chamado, gerando um protocolo que agrupa relatos da vizinhança para facilitar o acompanhamento com a concessionária ou o acionamento de apoio emergencial."*
 
 ---
 
@@ -122,15 +122,15 @@ ferramenta_slides: Figma / Google Slides
 - **Visual no Figma**: Tabela com os resultados dos testes com 6 participantes reais (P1 a P6), gráfico de barras de tempo por tarefa e destaque para a nota SUS de 84,2 pontos (Excelente).
 - **Orador**: Luiz Miguel (2 minutos).
 - **Fala oral sugerida**:
-  > *"Na Etapa 6, levamos a solução para o teste de fogo: uma avaliação empírica de usabilidade supervisionada com seis voluntários reais, contemplando desde donas de casa e líderes comunitários idosos até agentes de saúde e professores. Coletamos 36 observações controladas em 6 tarefas críticas. O resultado quantitativo foi expressivo: obtivemos 97,2% de taxa de eficácia e um tempo médio de conclusão de apenas 59 segundos. Aplicamos a consagrada Escala de Usabilidade do Sistema (SUS) de John Brooke e alcançamos a pontuação de 84,2 pontos em 100. Na literatura científica de IHC, notas acima de 80 posicionam a aplicação na faixa de excelência máxima (Grade A), comprovando que o design centrado no usuário eliminou barreiras de uso."*
+  > *"Na Etapa 6, submetemos o protótipo a testes de usabilidade com seis voluntários de diferentes idades e ocupações, incluindo agentes de saúde, professores e líderes comunitários. Cada voluntário executou seis tarefas no sistema, totalizando 36 observações registradas. O índice geral de conclusão com sucesso foi de 97,2%, com tempo médio de 59,4 segundos por tarefa. Ao final, aplicamos o questionário da Escala de Usabilidade do Sistema (SUS), obtendo uma média de 84,2 pontos em 100. Na metodologia de Brooke, pontuações acima de 80 situam a interface na faixa 'Excelente', indicando que as escolhas de design atenderam bem ao público-alvo."*
 
 ---
 
 ### Slide 12: Matriz de Melhorias e Protótipo Revisado (v2.0)
-- **Visual no Figma**: Comparativo lado a lado 'Antes x Depois' das telas TEL-03 e TEL-07, destacando a substituição de termos técnicos por frases acolhedoras e a fixação do botão de envio.
+- **Visual no Figma**: Comparativo lado a lado 'Antes x Depois' das telas TEL-03 e TEL-07 com a substituição de termos técnicos por frases acolhedoras e a fixação do botão de envio.
 - **Orador**: Luiz Miguel (1,5 minuto).
 - **Fala oral sugerida**:
-  > *"Os testes reais foram vitais para expor pontos de atrito que nossa equipe técnica não havia enxergado. No protótipo inicial, ao ficar offline, o app mostrava uma mensagem técnica dizendo: 'Cache IndexedDB ativo. Sincronização pendente via API REST'. Nosso voluntário idoso de 64 anos ficou com medo de ter quebrado o celular. Aprendemos a lição: refatoramos a mensagem para um aviso acolhedor: 'Tudo salvo no seu celular! Não se preocupe: assim que o sinal voltar, enviamos seu relato sozinho'. Além disso, fixamos o botão de envio no rodapé da tela para não ser engolido pelo teclado virtual e inserimos botões grandes de zoom no mapa. Essa é a essência do aperfeiçoamento contínuo da engenharia de software."*
+  > *"Os testes com usuários trouxeram melhorias práticas que não havíamos notado internamente. No protótipo inicial, a mensagem de tela ao entrar em modo offline exibia termos técnicos como 'Cache IndexedDB ativo. Sincronização pendente via API REST'. Um voluntário de 64 anos relatou receio de que o celular tivesse travado. Ajustamos o texto para uma comunicação clara e acolhedora: 'Tudo salvo no seu celular! Não se preocupe: assim que o sinal voltar, enviamos seu relato sozinho'. Também fixamos o botão de envio na parte inferior da tela para não sumir sob o teclado virtual e adicionamos botões táteis de zoom no mapa. Essas mudanças tornaram a navegação mais simples e segura para o usuário."*
 
 ---
 
@@ -138,7 +138,7 @@ ferramenta_slides: Figma / Google Slides
 - **Visual no Figma**: Mosaico dos 4 integrantes, resumo dos ganhos de aprendizagem (mais de 2 novas ferramentas dominadas por estudante) e roadmap futuro para a Paraíba.
 - **Orador**: Todos os 4 Integrantes (1,5 minuto).
 - **Falas orais sugeridas**:
-  - **Paulo Germano**: *"Este Projeto Integrador nos transformou. Deixamos de ser meros codificadores de laboratório para nos tornarmos profissionais conscientes da relevância social e da ética em TI."*
-  - **Gabriel Amancio**: *"Aprendemos na prática a arquitetar sistemas resilientes, a documentar sob normas ABNT e a validar acessibilidade universal."*
-  - **Gustavo Antonio**: *"Comprovamos que a segurança, a conformidade com a LGPD e o ceticismo perante a Inteligência Artificial devem nascer no primeiro dia do projeto."*
-  - **Luiz Miguel**: *"Agradecemos imensamente ao corpo docente do UNIPÊ pela orientação e estímulo ao longo de todo este semestre. Estamos prontos para as perguntas e considerações da banca examinadora. Muito obrigado!"*
+  - **Paulo Germano**: *"O projeto nos permitiu conectar teoria e prática, mostrando como a tecnologia pode responder a problemas sociais urgentes da nossa região."*
+  - **Gabriel Amancio**: *"Exercitamos na prática a arquitetura de software resiliente, a escrita de requisitos claros e os cuidados com acessibilidade."*
+  - **Gustavo Antonio**: *"Compreendemos que a conformidade com a LGPD, os controles de segurança e a checagem crítica de ferramentas de IA precisam ser tratados desde o primeiro dia de trabalho."*
+  - **Luiz Miguel**: *"Agradecemos aos professores do UNIPÊ pelo suporte ao longo do semestre e nos colocamos à disposição da banca para a arguição técnica. Muito obrigado."*

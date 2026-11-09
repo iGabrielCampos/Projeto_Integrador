@@ -8,13 +8,13 @@ status: ativo
 
 # Cronograma Geral do Projeto Integrador e Rodízio de Liderança
 
-O cronograma foi estruturado em regime modular, incorporando **15% de margem de contingência e revisão** em cada ciclo de entrega.
+O cronograma foi estruturado em regime modular, com 15% de margem de contingência e revisão em cada ciclo de entrega.
 
 ---
 
 ## 1. Rodízio de Liderança por Etapa
 
-Para assegurar o protagonismo, a responsabilidade compartilhada e a avaliação individual exigida pelo DESAFIO_PRATICO, a coordenação direta de cada etapa é rotativa:
+Para organizar as responsabilidades e atender aos critérios de avaliação individual do curso, a coordenação de cada etapa é rotativa:
 
 | Etapa | Tema Central | Integrante Líder (Coordenação) | Subagente de Suporte | Revisores Obrigatórios |
 |---|---|---|---|---|
@@ -31,7 +31,7 @@ Para assegurar o protagonismo, a responsabilidade compartilhada e a avaliação 
 
 ## 2. Linha do Tempo e Marcos de Entrega (Prazo Final: 27/11/2026)
 
-> *Cronograma acelerado ajustado para entrega final em **27/11/2026**, com marcos rígidos e rodízio formal de liderança.*
+> Cronograma planejado para entrega final em 27/11/2026, com marcos definidos e rodízio de liderança.
 
 ```mermaid
 timeline
@@ -64,7 +64,7 @@ timeline
 
 ## 4. Gestão de Contingência
 
-Caso ocorra atraso em qualquer etapa superior a 3 dias úteis:
-1. Reunião de alinhamento emergencial do grupo.
-2. Redistribuição de tarefas periféricas (revisão de formatação, coleta complementar de fontes).
-3. Consumo da folga de 15% sem comprometer a data-limite do Gate seguinte.
+Caso ocorra atraso superior a 3 dias úteis em qualquer etapa:
+1. Reunião de alinhamento da equipe.
+2. Redistribuição de tarefas de apoio (revisão de formatação ou checagem de fontes).
+3. Uso da margem de 15% sem alterar a data-limite do Gate seguinte.

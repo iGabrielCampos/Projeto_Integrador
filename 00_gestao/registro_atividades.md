@@ -6,9 +6,9 @@ data: 2026-11-06
 status: ativo
 ---
 
-# Registro Central de Atividades do Projeto
+# Registro de Atividades do Projeto
 
-Este registro monitora a execução rigorosa de cada tarefa, atribuindo responsabilidades nominais entre os quatro estudantes, prazos, status, decisões e evidências vinculadas no repositório.
+Este registro documenta a execução de cada tarefa do projeto, com distribuição de responsabilidades entre os quatro estudantes, prazos, status e evidências associadas.
 
 | ID | Etapa | Tarefa | Responsável (integrante) | Prazo | Status | Decisão tomada | Evidência (arquivo/link) |
 |---|---|---|---|---|---|---|---|

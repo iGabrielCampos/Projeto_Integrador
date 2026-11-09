@@ -1,28 +1,28 @@
-# Gabriel Amancio – Software Developer
+# Gabriel Amancio: Desenvolvedor de Software
 
-Olá! Sou graduando em **Análise e Desenvolvimento de Sistemas** pelo **UNIPÊ** (João Pessoa - PB) e desenvolvedor focado na construção de sistemas eficientes, escaláveis e bem documentados.
+Olá! Sou graduando em **Análise e Desenvolvimento de Sistemas** pelo **UNIPÊ** (João Pessoa/PB) e desenvolvedor focado na construção de sistemas web e APIs bem documentadas.
 
 ---
 
-### 💻 Stack Tecnológica & Ferramentas
+### Stack Tecnológica e Ferramentas
 
 - **Linguagens:** Java, TypeScript, JavaScript, Python, SQL
-- **Frameworks & Bibliotecas:** Spring Boot, React, Node.js, Express
+- **Frameworks e Bibliotecas:** Spring Boot, React, Node.js, Express
 - **Bancos de Dados:** PostgreSQL, MySQL, SQLite
-- **Controle de Versão & DevOps:** Git, GitHub, Docker (básico)
-- **Metodologias:** Scrum, Kanban, Clean Code, GitFlow
+- **Controle de Versão e Ferramentas:** Git, GitHub, Docker (básico)
+- **Metodologias e Práticas:** Scrum, Kanban, código limpo, GitFlow
 
 ---
 
-### 🚀 Projetos em Destaque
+### Projetos em Destaque
 
-#### 📌 Projeto Integrador: Laboratório de Carreira e Inovação Responsável em TI
-- **Descrição:** Plataforma desenvolvida no âmbito acadêmico para endereçar problemas socioambientais por meio de arquitetura de microsserviços, privacidade por padrão (LGPD) e acessibilidade WCAG.
+#### ÁguaViva PB (Projeto Integrador UNIPÊ)
+- **Descrição:** Aplicação cívica desenvolvida no curso para monitoramento de desabastecimento de água e problemas de saneamento na Paraíba, utilizando arquitetura modular, diretrizes de privacidade por padrão (LGPD) e critérios de acessibilidade (WCAG).
 - **Tecnologias:** TypeScript, React, APIs RESTful, PostgreSQL.
 - **Repositório:** `Projeto_Integrador`
 
 ---
 
-### 📬 Contato e Redes
+### Contato e Redes
 - **LinkedIn:** [Perfil Gabriel Amancio](https://www.linkedin.com)
 - **E-mail:** gabriel.amancio@aluno.unipe.edu.br

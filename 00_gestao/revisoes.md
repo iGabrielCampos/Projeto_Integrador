@@ -6,9 +6,9 @@ data: 2026-11-06
 status: ativo
 ---
 
-# Registro Central de Revisões entre Pares (Peer Review)
+# Registro de Revisões entre Pares
 
-Em cumprimento à regra de qualidade e integridade do projeto, nenhuma etapa avança com revisões em status `aberto`. Todo documento-mestre deve ser avaliado por pelo menos 2 integrantes distintos do autor primário.
+Para assegurar a qualidade dos artefatos, as etapas só avançam após a resolução de revisões pendentes. Cada documento-mestre é avaliado por pelo menos dois colegas de equipe.
 
 | ID | Data | Arquivo Avaliado | Revisor | Trecho / Seção | Comentário do Revisor | Resolução / Ação Tomada | Status |
 |---|---|---|---|---|---|---|---|

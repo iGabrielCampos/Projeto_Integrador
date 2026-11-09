@@ -32,7 +32,7 @@ fontes:
 ## 1. NOME, FINALIDADE E CONTEXTO DA SOLUÇÃO
 
 - **Nome da Aplicação:** **ÁguaViva PB – Plataforma Participativa de Monitoramento Hídrico e Saneamento Comunitário**
-- **Finalidade:** Fornecer aos cidadãos, líderes comunitários e agentes de saúde da Paraíba uma ferramenta digital gratuita, leve, acessível e segura para reporte georreferenciado de falhas no abastecimento de água potável, contaminação visível (turbidez/odor) e vazamentos de esgoto a céu aberto. A plataforma converte os relatos populares em mapas de calor públicos em tempo real, dissemina alertas preventivos de saúde sanitária e cruza ocorrências com dados epidemiológicos do DATASUS `[F072]`, instrumentalizando a cobrança pública por melhorias perante concessionárias e órgãos fiscalizadores no âmbito do **ODS 6 (Água Potável e Saneamento)**.
+- **Finalidade:** Disponibilizar aos cidadãos, líderes comunitários e agentes de saúde da Paraíba uma ferramenta web para o reporte georreferenciado de falhas no fornecimento de água potável, contaminação visível (turbidez e odor) e vazamentos de esgoto. A plataforma consolida os relatos em mapas de calor territoriais, emite alertas de saúde sanitária e correlaciona ocorrências com dados epidemiológicos do DATASUS `[F072]`, fornecendo subsídios para demandas perante concessionárias e órgãos fiscalizadores no âmbito do **ODS 6 (Água Potável e Saneamento)**.
 
 ---
 
@@ -42,7 +42,7 @@ Com base nas evidências empíricas de precariedade hídrica levantadas no Censo
 
 ### Persona 1: Dona Maria de Fátima (Cidadã / Moradora de Periferia)
 - **Perfil Demográfico:** 52 anos, residente no bairro Mandacaru (João Pessoa - PB), trabalhadora autônoma, usuária de smartphone Android de entrada com plano de dados pré-pago limitado.
-- **Dores e Necessidades:** Sofre com cortes de água sem aviso que duram dias e, quando a água retorna, apresenta cor barrenta e cheiro forte. Precisa de uma ferramenta extremamente simples, em português direto, que permita registrar a falta d'água em poucos segundos sem burocracias cadastrais e que ensine como higienizar a água para as crianças.
+- **Dores e Necessidades:** Enfrenta interrupções frequentes no fornecimento de água e episódios de coloração turva ou odor na rede. Necessita de uma interface simples, com linguagem direta e poucos passos para registrar a ocorrência sem exigência de cadastros extensos, além de orientações práticas para tratamento caseiro da água.
 
 ### Persona 2: Carlos Eduardo (Agente Comunitário de Saúde - ACS)
 - **Perfil Demográfico:** 29 anos, atua na Unidade de Saúde da Família (USF) em área metropolitana/rural da Paraíba, realizando visitas domiciliares cotidianas.
@@ -75,12 +75,12 @@ A especificação harmoniza a viabilidade técnica dos estudantes com as diretri
 ### 3.2 Requisitos Não Funcionais (8 Requisitos com Métricas Verificáveis)
 - **RNF-01 (Acessibilidade):** Conformidade integral com as diretrizes internacionais **WCAG 2.2 Nível AA** `[F007]` (contraste mínimo 4.5:1, alvos de toque ≥ 44x44px, navegação por teclado e rótulos para leitores de tela).
 - **RNF-02 (Desempenho e Leveza):** Tempo de Largest Contentful Paint (LCP) **≤ 2,0 segundos** em conexão 3G móvel; peso total da página inicial **≤ 1,5 MB**.
-- **RNF-03 (Privacidade - LGPD `[F001]`):** *Privacy by Design* absoluto; expurgo imediato de endereço IP do cidadão e criptografia em trânsito com TLS 1.3 e em repouso com AES-256.
-- **RNF-04 (Segurança de Software):** Blindagem contra o catálogo **OWASP Top 10** `[F024]`, com consultas SQL 100% parametrizadas via ORM e sanitização estrita de entradas.
-- **RNF-05 (Disponibilidade):** Disponibilidade operacional mensal de **≥ 99,5% de uptime**, com monitoramento contínuo de integridade via Zabbix/Grafana.
+- **RNF-03 (Privacidade - LGPD `[F001]`):** *Privacy by Design*; descarte de endereço IP do cidadão após o processamento da sessão, criptografia em trânsito com TLS 1.3 e em repouso com AES-256.
+- **RNF-04 (Segurança de Software):** Proteção contra vulnerabilidades do catálogo **OWASP Top 10** `[F024]`, com consultas SQL 100% parametrizadas via ORM e sanitização estrita de entradas.
+- **RNF-05 (Disponibilidade):** Disponibilidade operacional mensal de **≥ 99,5% de uptime**, com monitoramento de integridade via Zabbix/Grafana.
 - **RNF-06 (Usabilidade Aferível):** Taxa de conclusão de envio de reporte por voluntários leigos de **≥ 80% sem auxílio**, com tempo médio de preenchimento **≤ 120 segundos**.
 - **RNF-07 (Responsividade e PWA):** Adaptabilidade fluida a telas de 320px a 1920px de largura, permitindo instalação na tela inicial sem necessidade de download em lojas de apps.
-- **RNF-08 (Green IT):** Arquitetura com baixo consumo de processamento, compressão de imagens em WebP e cache inteligente via Nginx para mitigação de consumo energético.
+- **RNF-08 (Green IT):** Arquitetura com baixo consumo de processamento, compressão de imagens em WebP e cache inteligente via Nginx para redução de consumo energético.
 
 ---
 
@@ -239,7 +239,7 @@ A escolha da stack foi orientada diretamente pelas competências identificadas c
 |---|---|---|---|
 | **Frontend Web** | Protótipo: HTML/CSS/JS vanilla; Arquitetura-alvo: React + Vite + TailwindCSS | Protótipo entregue / PWA alvo | Protótipo conceitual em vanilla JS para validação rápida; React + Vite como arquitetura-alvo para produção e ecossistema PWA. |
 | **Backend / API** | Node.js + Express + TypeScript | Node 20 LTS | Arquitetura RESTful tipada, assíncrona, de alto desempenho para concorrência de requisições e de fácil manutenção pelo estudante de Dev (Gabriel). |
-| **Banco de Dados** | PostgreSQL + PostGIS | Postgres 16 | Banco relacional robusto com extensão espacial líder mundial para consultas de latitude/longitude e agregação em polígonos de bairros (Paulo). |
+| **Banco de Dados** | PostgreSQL + PostGIS | Postgres 16 | Banco relacional com extensão geoespacial PostGIS para indexação de coordenadas e consultas de agregação em polígonos territoriais (Paulo). |
 | **Borda e Infraestrutura** | Docker + Nginx Reverse Proxy | Nginx Alpine | Contêineres leves, baixo consumo de memória RAM, terminação SSL/TLS 1.3 e esteira de sustentação administrada pelo estudante de Infra (Luiz). |
 | **Segurança e Identidade** | Helmet, Bcrypt e JWT | Padrões OWASP `[F024]` | Módulo de segurança defensiva, sanitização de requisições e anonimização rigorosa sob supervisão do estudante de Segurança (Gustavo). |
 | **Prototipagem Visual** | Figma | Versão Cloud | Criação dos wireframes de alta fidelidade, guia de estilos de cores acessíveis e montagem dos slides de apresentação final. |
@@ -250,14 +250,14 @@ A escolha da stack foi orientada diretamente pelas competências identificadas c
 
 O protótipo do **ÁguaViva PB** contempla a jornada de ponta a ponta dos usuários, documentada detalhadamente no artefato canônico [`05_solucao/prototipo/especificacao_telas.md`](prototipo/especificacao_telas.md):
 
-1. **Tela 01 – Página Inicial / Dashboard Comunitário (Home):** Visão rápida de alertas de desabastecimento ativos no topo com alto contraste, botão central destacado de reporte ("Reportar Falta de Água ou Esgoto") e mini-mapa de queixas nas últimas 24 horas.
-2. **Tela 02 – Formulário Acessível de Registro de Ocorrência:** Seleção rápida em 4 cartões com ícones ilustrativos (Falta d'Água, Água Turva/Barrenta, Esgoto a Céu Aberto, Cano Estourado), localização assistida por GPS/Bairro e campo opcional de foto com metadados removidos.
-3. **Tela 03 – Confirmação de Envio com Protocolo Anônimo (Sucesso):** Checkmark verde de sucesso, código identificador único (ex.: `#AV-2026-8941`) e declaração explícita de anonimização conforme a LGPD `[F001]`.
-4. **Tela 04 – Mapa Interativo de Calor e Dados de Saúde (Heatmap):** Camadas com manchas de calor georreferenciadas por bairro e painel lateral correlacionando denúncias a indicadores de saúde pública do DATASUS `[F072]`.
-5. **Tela 05 – Guia Prático de Cuidados e Higienização da Água:** Passo a passo ilustrado de cloração caseira de emergência (2 gotas por litro), fervura correta e sinais clínicos de desidratação infantil para encaminhamento ao SUS.
-6. **Tela 06 – Módulo Especializado do Agente Comunitário de Saúde (ACS):** Visão autenticada por matrícula institucional para registro em lote de queixas comunitárias durante visitas e envio direto à Secretaria Municipal de Saúde.
-7. **Tela 07 – Estado Vazio e Conexão Offline (Empty State):** Mensagem de orientação avisando que o aparelho está temporariamente sem internet, assegurando que o relato foi guardado no cache local do celular e será transmitido automaticamente.
-8. **Tela 08 – Estado de Erro e Tratamento Acessível de Falha (Error State):** Interface amigável de recuperação em linguagem simples, sem códigos técnicos, permitindo tentar o reenvio com um clique.
+1. **Tela 01 (Página Inicial / Dashboard Comunitário):** Visão de alertas de desabastecimento ativos no topo com alto contraste, botão central destacado de reporte ("Reportar Falta de Água ou Esgoto") e mini-mapa de queixas das últimas 24 horas.
+2. **Tela 02 (Formulário Acessível de Registro de Ocorrência):** Seleção orientada em 4 cartões com ícones ilustrativos (Falta d'Água, Água Turva/Barrenta, Esgoto a Céu Aberto, Cano Estourado), localização assistida por GPS/Bairro e campo opcional de foto com metadados removidos.
+3. **Tela 03 (Confirmação de Envio com Protocolo Anônimo):** Indicador visual de sucesso, código identificador único (ex.: `#AV-2026-8941`) e confirmação de anonimização conforme a LGPD `[F001]`.
+4. **Tela 04 (Mapa Interativo de Calor e Dados de Saúde):** Camadas com manchas de calor georreferenciadas por bairro e painel lateral com indicadores de saúde pública do DATASUS `[F072]`.
+5. **Tela 05 (Guia Prático de Cuidados e Higienização da Água):** Roteiro ilustrado de cloração caseira de emergência (2 gotas por litro), fervura correta e sinais clínicos de desidratação infantil para encaminhamento ao SUS.
+6. **Tela 06 (Módulo Especializado do Agente Comunitário de Saúde - ACS):** Interface com autenticação por matrícula institucional para registro em lote de queixas comunitárias durante visitas e envio direto à Secretaria Municipal de Saúde.
+7. **Tela 07 (Estado Vazio e Conexão Offline):** Mensagem informando ausência temporária de sinal de internet e confirmação de que o chamado foi retido no cache local para transmissão automática ao reconectar.
+8. **Tela 08 (Estado de Erro e Tratamento Acessível de Falha):** Interface de recuperação em linguagem simples, sem códigos técnicos, com opção de repetição de envio em um clique.
 
 ---
 
@@ -282,9 +282,9 @@ O protótipo do **ÁguaViva PB** contempla a jornada de ponta a ponta dos usuár
 
 ## 9. CONSIDERAÇÕES FINAIS E APROVAÇÃO DO GATE 5
 
-O projeto técnico da solução **ÁguaViva PB** integra de forma harmônica as competências dos quatro integrantes do grupo (Dev, Infra, Dados e Segurança), respondendo com maturidade técnica, rigor acadêmico e responsabilidade social ao problema da qualidade da água e do saneamento básico na Paraíba `[F070]`.
+O projeto técnico da solução **ÁguaViva PB** articula as quatro áreas do curso (Desenvolvimento, Infraestrutura, Dados e Segurança) para atender às demandas de saneamento e acesso à água identificadas no diagnóstico censitário `[F070]`.
 
-O conjunto documental encontra-se concluído e pronto para fundamentar o planejamento e a realização dos testes de usabilidade com participantes voluntários na **Etapa 6**.
+A documentação subsidia o planejamento e a execução dos testes de usabilidade com participantes voluntários na **Etapa 6**.
 
 ---
 

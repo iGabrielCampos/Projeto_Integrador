@@ -13,7 +13,7 @@ fontes:
   - F072
 ---
 
-# Especificação Formal de Requisitos do Sistema – ÁguaViva PB
+# Especificação Formal de Requisitos do Sistema: ÁguaViva PB
 
 **Nome da Solução:** ÁguaViva PB – Plataforma Participativa de Monitoramento Hídrico e Saneamento Comunitário  
 **Líder Técnico:** Gabriel Amancio (Desenvolvimento de Software)  
@@ -45,10 +45,10 @@ fontes:
 | ID | Categoria | Descrição do Requisito Não Funcional | Métrica Verificável / Critério de Aceite |
 |---|---|---|---|
 | **RNF-01** | **Acessibilidade Digital** | A interface da plataforma deve cumprir integralmente o nível AA das diretrizes internacionais **WCAG 2.2** `[F007]`. | Contraste mínimo de texto de 4.5:1, navegação completa sem mouse (via teclado), botões com alvos táteis ≥ 44x44px e compatibilidade com leitores de tela (TalkBack/NVDA). |
-| **RNF-02** | **Desempenho e Leveza** | A aplicação web deve carregar com extrema rapidez em redes móveis lentas (3G/4G instável) típicas de periferias. | Tempo de carregamento do conteúdo inicial (Largest Contentful Paint - LCP) **≤ 2,0 segundos** em conexão 3G simulada; peso total da página inicial **≤ 1,5 MB**. |
-| **RNF-03** | **Privacidade e Proteção de Dados (LGPD)** | Cumprimento estrito dos princípios de minimização e *Privacy by Design* previstos na Lei nº 13.709/2018 `[F001]`. | Zero armazenamento de dados sensíveis; expurgo de IP do denunciante após geração do token; criptografia em repouso com AES-256 e trânsito com TLS 1.3. |
-| **RNF-04** | **Segurança de Aplicações (OWASP)** | O backend e as APIs RESTful devem ser blindados contra vulnerabilidades comuns catalogadas no **OWASP Top 10** `[F024]`. | Consultas 100% parametrizadas (anti SQL Injection), cabeçalhos de segurança HTTP configurados (CSP, HSTS) e proteção contra CSRF e XSS validada em SAST. |
-| **RNF-05** | **Disponibilidade e Uptime** | A infraestrutura deve assegurar alta disponibilidade para garantir o envio de alertas emergenciais. | Disponibilidade mensal de **≥ 99,5% de uptime**, com monitoramento contínuo de endpoints e reinício automático de contêineres via Docker. |
+| **RNF-02** | **Desempenho e Leveza** | A aplicação web deve carregar com rapidez mesmo em conexões móveis com restrição de banda (3G/4G). | Tempo de carregamento do conteúdo inicial (Largest Contentful Paint - LCP) **≤ 2,0 segundos** em conexão 3G simulada; peso total da página inicial **≤ 1,5 MB**. |
+| **RNF-03** | **Privacidade e Proteção de Dados (LGPD)** | Adoção dos princípios de minimização e *Privacy by Design* previstos na Lei nº 13.709/2018 `[F001]`. | Zero armazenamento de dados sensíveis; expurgo de IP do denunciante após o processamento da sessão; criptografia em repouso com AES-256 e trânsito com TLS 1.3. |
+| **RNF-04** | **Segurança de Aplicações (OWASP)** | O backend e as APIs RESTful devem implementar controles defensivos contra as falhas catalogadas no **OWASP Top 10** `[F024]`. | Consultas 100% parametrizadas (anti SQL Injection), cabeçalhos de segurança HTTP configurados (CSP, HSTS) e proteção contra CSRF e XSS validada em SAST. |
+| **RNF-05** | **Disponibilidade e Uptime** | A infraestrutura deve manter disponibilidade operacional contínua para sustentar alertas comunitários e relatórios. | Disponibilidade mensal de **≥ 99,5% de uptime**, com monitoramento contínuo de endpoints e reinício automático de contêineres via Docker. |
 | **RNF-06** | **Usabilidade e Clareza Textual** | O fluxo de envio de ocorrência deve ser autoexplicativo, adotando linguagem simples e ícones visuais descritivos. | Taxa de conclusão de reporte por cidadãos leigos de **≥ 80% sem auxílio externo**, com tempo médio de preenchimento **≤ 120 segundos**. |
 | **RNF-07** | **Compatibilidade e Responsividade** | A aplicação deve ser responsiva e adaptável a telas de 320px a 1920px de largura, funcionando como Progressive Web App (PWA). | Suporte aos navegadores Google Chrome Mobile, Mozilla Firefox Mobile e Safari iOS, permitindo instalação na tela inicial do smartphone. |
 | **RNF-08** | **Sustentabilidade Computacional (Green IT)** | Minimização da pegada de carbono e consumo de recursos computacionais em nuvem. | Redução ≥ 30% no peso de imagens via WebP, cache estático de 7 dias via Nginx e execução em instâncias de baixo consumo energético. |

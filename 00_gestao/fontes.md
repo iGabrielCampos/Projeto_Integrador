@@ -6,11 +6,11 @@ data: 2026-11-06
 status: ativo
 ---
 
-# Catálogo Unificado de Fontes e Referências (Fonte Única da Verdade)
+# Catálogo de Fontes e Referências do Projeto
 
-Este documento centraliza todas as fontes bibliográficas, documentos legais, conjuntos de dados, normas técnicas e anúncios de vagas utilizados no Projeto Integrador.
+Este documento reúne as fontes bibliográficas, normas técnicas, legislações e conjuntos de dados utilizados no Projeto Integrador.
 
-> **Regra de Uso:** Nenhum documento do projeto deve citar referências externas sem que estejam registradas aqui sob o identificador canônico `[Fxxx]`. Toda citação factual no texto deve referenciar o código correspondente.
+> **Regra de Uso:** As citações no projeto utilizam o identificador canônico `[Fxxx]` registrado nesta lista para garantir a rastreabilidade dos dados.
 
 ---
 

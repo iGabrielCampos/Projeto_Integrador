@@ -10,19 +10,19 @@ fontes:
   - F028
 ---
 
-# Rascunho Estruturado de Perfil Profissional Digital (LinkedIn) – Paulo Germano
+# Perfil Profissional para o LinkedIn: Paulo Germano
 
 ## 1. Título Profissional Estratégico
-> Analista de Dados Júnior | Graduando em ADS (UNIPÊ) | SQL, Power BI, Python (Pandas), Modelagem de Dados & Data Storytelling
+> Analista de Dados Júnior | Graduando em ADS no UNIPÊ | SQL, Power BI, Python (Pandas) e Modelagem de Dados
 
 ## 2. Resumo Profissional (Sobre Mim)
-Estudante de Análise e Desenvolvimento de Sistemas no UNIPÊ (João Pessoa - PB), apaixonado por transformar grandes volumes de dados em inteligência acionável para tomadas de decisão. Experiência na elaboração de consultas avançadas em SQL, desenvolvimento de dashboards interativos em Power BI, tratamento de dados com Python (Pandas/NumPy) e modelagem dimensional de bancos de dados.
+Estudante de Análise e Desenvolvimento de Sistemas no UNIPÊ (João Pessoa/PB), com foco em análise de dados, business intelligence e modelagem de bancos de dados. Prática acadêmica em consultas analíticas em SQL, construção de dashboards interativos no Power BI, tratamento de conjuntos de dados com Python (Pandas e NumPy) e noções de engenharia de dados.
 
-Atuei como líder da Etapa 1 no Projeto Integrador de Inovação Responsável em TI, coordenando a coleta, padronização algorítmica e análise estatística de 24 anúncios reais do mercado de trabalho. Defensor do pensamento crítico, ética no uso de IA generativa e rigor analítico.
+No Projeto Integrador da graduação, liderei a Etapa 1, realizando a coleta, padronização e análise estatística de 24 anúncios reais do mercado de trabalho em TI. Busco transformar dados brutos em informações claras e acessíveis para tomada de decisão, mantendo atenção à consistência metodológica e à ética no uso de ferramentas de IA.
 
 ## 3. Principais Competências em Destaque
-- **Hard Skills:** SQL (PostgreSQL, SQL Server, MySQL), Power BI, DAX, Python (Pandas, NumPy), Modelagem Dimensional (Star Schema), ETL, Estatística Descritiva, Git/GitHub, Fundamentos de IA / LLMs.
-- **Soft Skills:** Pensamento analítico, resolução de problemas baseada em dados, comunicação executiva (Data Storytelling) e trabalho colaborativo multidisciplinar.
+- **Competências Técnicas:** SQL (PostgreSQL, SQL Server, MySQL), Power BI, DAX, Python (Pandas, NumPy), Modelagem Dimensional (Star Schema), ETL, Estatística Descritiva, Git, GitHub, Fundamentos de IA e LLMs.
+- **Competências Comportamentais:** Raciocínio analítico, resolução de problemas com base em dados, comunicação objetiva e trabalho em equipe multidisciplinar.
 
 ## 4. Projetos Práticos em Destaque
-- **Projeto Integrador UNIPÊ:** Estruturação da base de dados amostral de mercado de TI e cálculo de frequências percentuais para tomada de decisão em carreira e sustentação tecnológica.
+- **Projeto Integrador UNIPÊ:** Coleta e tratamento estatístico de vagas de tecnologia, cálculo de frequências percentuais e consolidação de indicadores socioambientais para a aplicação ÁguaViva PB.

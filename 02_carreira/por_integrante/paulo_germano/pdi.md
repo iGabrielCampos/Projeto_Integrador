@@ -11,7 +11,7 @@ fontes:
   - F028
 ---
 
-# Plano Individual de Desenvolvimento de Carreira (PDI) – Paulo Germano
+# Plano Individual de Desenvolvimento de Carreira (PDI): Paulo Germano
 
 - **Estudante:** Paulo Germano
 - **Função Principal:** Dados e Inteligência Artificial
@@ -20,7 +20,7 @@ fontes:
 ---
 
 ## 1. Visão Geral e Posicionamento Profissional Desejado
-Atuar como Analista de Dados Júnior / BI Developer, com sólido domínio em modelagem relacional/dimensional, consultas analíticas em SQL, visualização com Power BI e aplicação responsável de Inteligência Artificial generativa `[F021]`.
+Atuar como Analista de Dados Júnior ou Desenvolvedor de BI. Meus objetivos de estudo envolvem modelagem relacional e dimensional, consultas SQL analíticas, relatórios dinâmicos no Power BI e aplicação ética de ferramentas de Inteligência Artificial `[F021]`.
 
 ---
 
@@ -38,8 +38,8 @@ Atuar como Analista de Dados Júnior / BI Developer, com sólido domínio em mod
 ### Meta SMART 2: Desenvolvimento de Projeto Completo de Engenharia e Análise de Dados
 - **S (Específica):** Desenvolver um pipeline analítico em Python utilizando dados abertos do governo brasileiro (IBGE ou DATASUS), contemplando extração, tratamento com Pandas, carga em PostgreSQL e dashboard no Power BI.
 - **M (Mensurável):** Publicação de repositório no GitHub contendo código documentado, arquivo README explicativo e link do dashboard interativo.
-- **A (Atingível):** Aproveitamento da base temática de problemas socioambientais que será investigada na Etapa 4 do Projeto Integrador.
-- **R (Relevante):** Comprova autonomia investigativa e capacidade de gerar valor de negócio a partir de dados brutos.
+- **A (Atingível):** Aproveitamento da base temática de problemas socioambientais investigada na Etapa 4 do Projeto Integrador.
+- **R (Relevante):** Comprova autonomia prática e capacidade de gerar relatórios acionáveis a partir de bases de dados reais.
 - **T (Temporal):** Prazo final: 20 de janeiro de 2027.
 
 ---
