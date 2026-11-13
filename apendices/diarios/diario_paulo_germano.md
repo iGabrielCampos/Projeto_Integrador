@@ -39,7 +39,7 @@ periodo: 2026.2
 - **Conhecimento desenvolvido:** Avaliação empírica da confiabilidade matemática de modelos de linguagem de grande porte (LLMs) em análises tabulares.
 - **Importância:** Como estudante focado em Dados e IA, comprovar os limites dos modelos neurais para cálculos exatos e a necessidade de validação computacional independente.
 - **Fontes consultadas:** Artigos acadêmicos sobre alucinações em LLMs (Ji et al., 2023) e documentação do Google Gemini 1.5 Pro.
-- **Atividade prática:** Realização do Experimento EXP-03 submetendo tabela com 10 observações numéricas ao Gemini e descobrindo erro de soma aritmética (divergência de R$ 380,00 na agregação).
+- **Atividade prática:** Realização do Experimento EXP-03 submetendo um vetor com 15 idades de candidatos ao Gemini 1.5 Pro para estatística descritiva e descobrindo erro de soma aritmética (o modelo calculou soma de 498 e média de 33,2 anos, enquanto a soma real validada em Python era 442 e média de 29,47 anos).
 - **Dificuldades:** Isolar o mecanismo de alucinação do modelo sem introduzir ambiguidades nas instruções do prompt.
 - **Estratégias de superação:** Criação de scripts comparativos em Python (`sum()` nativo) para auditar a resposta da IA com precisão matemática.
 - **Resultados obtidos:** Registro de auditoria documentado em `03_etica_ia/experimentos/experimento_03_paulo_germano.md`.

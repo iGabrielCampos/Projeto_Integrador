@@ -139,7 +139,7 @@ O índice abaixo orienta a localização direta de cada artefato e documento do 
 
 ### Etapa 1: Diagnóstico do Mercado de Trabalho em TI (Líder: Paulo Germano)
 - **Base empírica:** 24 anúncios reais coletados na plataforma pública Portal Gupy [F020] em 06/11/2026, com divisão de 6 vagas por especialidade.
-- **Achados quantitativos:** Controle de versão Git (87,5%), SQL (79,2%) e contêineres Docker (58,3%) formam a base técnica comum para início de carreira. Em desenvolvimento, aparecem com frequência React e Java Spring; em infraestrutura, nuvem AWS; em ciência de dados, Python; e em segurança da informação, conhecimentos de LGPD e testes de intrusão.
+- **Achados quantitativos:** SQL (45,8% geral; 100% em Dev e 83,3% em Dados), Git/GitHub (29,2%), Python (29,2%) e Comunicação Clara (29,2%) formam a base técnica e comportamental mais exigida para início de carreira, em uma amostra com 87,5% das vagas (21/24) no modelo remoto. Em desenvolvimento, destacam-se Java/Spring Boot (83,3%) e React/TypeScript (33,3%); em infraestrutura, Linux (66,7%); em ciência de dados, Power BI (66,7%); e em segurança da informação, LGPD (50,0%) e nuvem AWS/Azure (33,3%).
 - **Demandas dos contratantes:** Modernização de sistemas legados, adequação regulatória à ANPD e gestão de custos em nuvem (FinOps).
 - **Artefatos:** [`01_mercado/dossie_mercado.md`](01_mercado/dossie_mercado.md), [`01_mercado/vagas_brutas.csv`](01_mercado/vagas_brutas.csv).
 
@@ -157,7 +157,7 @@ O índice abaixo orienta a localização direta de cada artefato e documento do 
 - **Artefatos:** [`03_etica_ia/dossie_etica.md`](03_etica_ia/dossie_etica.md), [`03_etica_ia/matriz_riscos.md`](03_etica_ia/matriz_riscos.md), [`03_etica_ia/experimentos/`](03_etica_ia/experimentos/).
 
 ### Etapa 4: Diagnóstico Socioambiental na Paraíba (Líder: Gustavo Antonio)
-- **Matriz de decisão multicritério (MCDA):** Avaliou três desafios da Paraíba com critérios ponderados: E-Lixo (7,05), Golpes contra Idosos (7,80) e Água e Saneamento Básico (9,05, opção selecionada).
+- **Matriz de decisão multicritério (MCDA):** Avaliou três desafios da Paraíba com critérios ponderados: Desperdício de Alimentos / ODS 2 e 12 (8,20), Alagamentos e Encostas / ODS 11 e 13 (7,63) e Água e Saneamento Básico / ODS 6 (9,05, opção selecionada).
 - **Evidências oficiais:** Censo IBGE 2022 (50,9% dos lares da PB sem rede de esgoto), Trata Brasil e SNIS (47% de perdas na rede hídrica) e DATASUS (taxas de internação por diarreia infecciosa).
 - **Ishikawa e Personas:** Diagrama de causa e efeito e caracterização da persona Dona Maria de Fátima (moradora de área periférica com desabastecimento frequente e acesso restrito a dados móveis).
 - **Artefatos:** [`04_problema/dossie_problema.md`](04_problema/dossie_problema.md), [`04_problema/matriz_decisao.md`](04_problema/matriz_decisao.md).
@@ -178,7 +178,7 @@ O índice abaixo orienta a localização direta de cada artefato e documento do 
 ### Etapa 7: Sistematização, Relatório ABNT e Defesa (Coordenação Coletiva)
 - **Monografia oficial:** Documento integrado completo em normas ABNT (10 capítulos, 11.860 palavras, 34 páginas no PDF, 28 referências formais `[F001]` a `[F082]` e 3 apêndices).
 - **Slides para Figma:** Arquivo [`07_relatorio/slides_figma_spec.json`](07_relatorio/slides_figma_spec.json) com especificações estruturadas para montagem visual dos slides.
-- **Roteiro de apresentação:** 13 slides organizados com divisão planejada de falas para 18 a 20 minutos de apresentação.
+- **Roteiro de apresentação:** 12 slides organizados com divisão planejada de falas para 18 a 20 minutos de apresentação (mais demonstração do protótipo).
 - **Banco de Defesa:** 20 questões potenciais da banca examinadora com respostas técnicas de apoio para os discentes.
 - **Scripts de montagem:** Scripts [`compilar.py`](07_relatorio/build/compilar.py) e [`build.sh`](07_relatorio/build/build.sh) que geram as versões HTML e o PDF final [`monografia_completa_abnt.pdf`](07_relatorio/build/monografia_completa_abnt.pdf).
 
@@ -207,7 +207,7 @@ Para localizar informações específicas dentro do repositório, os pontos de c
 - Consultar `06_testes/registros_anonimizados.csv` e `06_testes/dossie_testes.md` para verificar tempos de tarefa, pontuação SUS e melhorias aplicadas no protótipo.
 
 ### 7. Estrutura dos Slides (Etapa 7)
-- Consultar `07_relatorio/slides_figma_spec.json` para acessar a especificação dos 13 frames, cartões de métricas e notas de apresentação.
+- Consultar `07_relatorio/slides_figma_spec.json` para acessar a especificação dos 12 frames, cartões de métricas e notas de apresentação.
 
 ### 8. Preparação para a Defesa Oral
 - Consultar `07_relatorio/roteiro_defesa.md` para revisar as 20 perguntas técnicas organizadas por etapa do projeto.

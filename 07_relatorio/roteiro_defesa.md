@@ -47,7 +47,7 @@ Este documento prepara os quatro discentes para a arguição oral individual per
 - **Titular Recomendado**: Paulo Germano (Dados e IA)
 - **Fundamentação**: Análise de frequência de requisitos em editais e anúncios corporativos.
 - **Resposta Sugerida**:
-  > *"O ponto que mais chamou atenção foi a presença recorrente de contêineres Docker e práticas de DevOps mesmo em vagas de estágio e nível júnior, citados em quase 60% dos anúncios. Antes do levantamento, pensávamos que Docker era exigido principalmente para profissionais plenos ou especialistas em infraestrutura. No entanto, muitas empresas esperam que o desenvolvedor iniciante saiba executar a aplicação em contêineres locais para manter o ambiente alinhado com testes e produção. Esse resultado orientou diretamente as metas de estudo nos nossos planos de desenvolvimento."*
+  > *"O ponto que mais chamou atenção foi a exigência de conhecimentos transversais de engenharia mesmo para nível júnior e estágio — como SQL em 45,8% do total (100% em Dev e 83,3% em Dados), Git/GitHub em 29,2% e Python em 29,2% — além da presença de contêineres Docker e computação em nuvem como diferenciais práticos já em vagas iniciais (como VAG-001, VAG-004 e VAG-010). Como 87,5% das vagas analisadas eram remotas, a comunicação clara também se destacou (29,2%). Esse resultado orientou diretamente as metas de estudo nos nossos planos de desenvolvimento."*
 
 ### Pergunta 05: Quais foram as principais dores operacionais relatadas pelas empresas contratantes na pesquisa de mercado?
 - **Titular Recomendado**: Gabriel Amancio (Desenvolvimento de Software)
