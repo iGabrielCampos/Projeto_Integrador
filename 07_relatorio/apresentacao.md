@@ -1,7 +1,7 @@
 ---
 id: roteiro-apresentacao-slides
 etapa: 7
-titulo: Roteiro e Script de Apresentação Oral em Slides (Figma / Slides)
+titulo: Roteiro e Script de Apresentação Oral em Slides (Centrado no Impacto Social)
 projeto: Laboratório de Carreira e Inovação Responsável em TI - ÁguaViva PB
 instituicao: UNIPÊ - Centro Universitário de João Pessoa
 curso: CST em Análise e Desenvolvimento de Sistemas
@@ -10,126 +10,125 @@ equipe:
   - Luiz Miguel (Infraestrutura e Redes)
   - Paulo Germano (Dados e IA)
   - Gustavo Antonio (Segurança da Informação)
-tempo_total_estimado: "25 a 30 minutos (21 min de slides + 5 a 7 min de demonstração do protótipo) + 10 min de arguição"
+tempo_total_estimado: "25 a 30 minutos (18 a 20 min de slides + 5 a 7 min de demonstração do protótipo) + 10 min de arguição"
 ferramenta_slides: Figma / Google Slides
 ---
 
 # Roteiro Oficial de Apresentação e Script de Defesa Oral
 
-## Estrutura da Apresentação (Divisão Equitativa de Falas — 12 Slides)
+## Estrutura da Apresentação (10 Slides — Fio Condutor Social e Aderência ao Desafio Prático)
 
 | Slide | Bloco Temático | Orador Titular | Tempo Alocado | Foco do Conteúdo |
 |---|---|---|---|---|
-| **01** | Capa e Identificação Institucional | Paulo Germano | 1 min | Apresentação da equipe, curso, instituição e título |
-| **02** | Contextualização e Justificativa | Paulo Germano | 1,5 min | Desafios de saneamento na PB e metas formativas |
-| **03** | Governança e Metodologia | Gabriel Amancio | 1,5 min | Rodízio de liderança, monorepositório e scripts |
-| **04** | Pesquisa de Mercado (24 Vagas) | Paulo Germano | 2 min | Análise de vagas, competências mais frequentes |
-| **05** | Identidade, Autoavaliação e PDI | Luiz Miguel | 2 min | Matrizes individuais, gaps de nuvem e metas SMART |
-| **06** | Ética Tecnológica, Casos Reais e LGPD | Gustavo Antonio | 2 min | Caso CESeC, medida da ANPD e matriz de 8 riscos |
-| **07** | Diagnóstico Socioambiental (ODS 6) | Gustavo Antonio | 2 min | Ishikawa e matriz multicritério com dados do Censo |
-| **08** | Solução ÁguaViva PB (Arquitetura) | Gabriel Amancio | 2 min | C4 Model, PWA offline-first e requisitos MoSCoW |
-| **09** | Demonstração do Protótipo (Telas e Fluxo) | Gabriel Amancio | 2 min | Telas principais (`TEL-01` a `TEL-08`), denúncia, mapa e acessibilidade |
-| **10** | Testes de Usabilidade e Escala SUS | Luiz Miguel | 2 min | 36 sessões, eficácia de 97,2% e SUS de 84,2 pontos |
-| **11** | Matriz de Melhorias e Protótipo v2 | Luiz Miguel | 1,5 min | Correções pós-teste e humanização de avisos |
-| **12** | Conclusão, Impacto e Roadmap | Todos | 1,5 min | Aprendizados dos 4 integrantes e próximos passos |
+| **01** | Capa e Propósito Social | Paulo Germano | 1 min | Equipe, curso, instituição e missão social do ÁguaViva PB |
+| **02** | A Dor Real na Paraíba: Água, Saúde e Exclusão | Paulo Germano | 2 min | Censo IBGE 2022, SNIS, DATASUS e barreira burocrática atual |
+| **03** | Quem Sofre na Ponta, Causas e Escolha do ODS 6 | Gustavo Antonio | 2 min | Personas (Dona Maria e ACS), Ishikawa e Matriz de Decisão |
+| **04** | Do Mercado às Competências Aplicadas (Missão 1 → 2) | Paulo Germano & Luiz Miguel | 2 min | 24 vagas, 4 PDIs SMART, rodízio de liderança e ponte social |
+| **05** | Ética, Proteção ao Vulnerável e Inclusão Digital | Gustavo Antonio | 2 min | Casos CESeC/ANPD, LGPD, mediação comunitária e 8 riscos |
+| **06** | Como o ÁguaViva PB Ajuda na Prática | Gabriel Amancio | 2 min | Denúncia em 2 passos sem CPF, carro-pipa e modo offline real |
+| **07** | Telas do Protótipo e Acessibilidade Universal | Gabriel Amancio | 2 min | 8 telas (`TEL-01` a `TEL-08`), botões 48px, alto contraste e demo |
+| **08** | O Choque com a Realidade: Testes com Voluntários | Luiz Miguel | 2 min | 6 voluntários (36 tarefas), SUS 84,2 e dificuldades de P1 e P3 |
+| **09** | O Que Mudamos para Incluir de Verdade (v1.0 → v2.0) | Luiz Miguel | 2 min | Humanização do aviso offline, botão fixo, zoom tátil e vibração |
+| **10** | Limitações Honestas, Aprendizados e Próximos Passos | Todos | 2 min | Limites da solução/amostra, 24 diários e abertura para arguição |
 
 ---
 
 ## Script Detalhado por Slide
 
-### Slide 01: Abertura e Apresentação da Equipe
-- **Visual no Figma**: Logo institucional do UNIPÊ, título do projeto em destaque (*Laboratório de Carreira e Inovação Responsável em TI: Solução ÁguaViva PB*), foto e nome dos quatro discentes com suas respectivas áreas de atuação em ADS.
+### Slide 01: Capa e Propósito Social
+- **Visual sugerido**: Logo institucional do UNIPÊ, título (*Laboratório de Carreira e Inovação Responsável em TI: Solução ÁguaViva PB*), subtítulo voltado à cidadania hídrica na Paraíba e identificação dos 4 discentes com suas áreas de atuação.
 - **Orador**: Paulo Germano (1 minuto).
 - **Fala oral sugerida**:
-  > *"Boa noite aos professores da banca avaliadora, aos colegas e a todos os presentes. Somos discentes do curso de Análise e Desenvolvimento de Sistemas do UNIPÊ. O grupo é formado por Gabriel Amancio, na área de Desenvolvimento de Software; Luiz Miguel, em Infraestrutura e Redes; eu, Paulo Germano, em Dados e Inteligência Artificial; e Gustavo Antonio, em Segurança da Informação. Hoje apresentamos o resultado do nosso Projeto de Design Profissional, no qual relacionamos as demandas reais do mercado de trabalho em TI ao desenvolvimento de uma aplicação voltada aos problemas de saneamento e abastecimento de água na Paraíba: o ÁguaViva PB."*
+  > *"Boa noite aos professores da banca avaliadora, aos colegas e a todos os presentes. Somos estudantes do curso de Análise e Desenvolvimento de Sistemas do UNIPÊ. Nossa equipe é formada por Gabriel Amancio (Desenvolvimento), Luiz Miguel (Infraestrutura e Redes), Gustavo Antonio (Segurança da Informação) e por mim, Paulo Germano (Dados e IA). Hoje apresentamos o Projeto Integrador que conectou o que o mercado exige de profissionais de TI a um problema urgente do nosso estado: a falta de água potável, a precariedade do saneamento e a dificuldade que comunidades periféricas e rurais da Paraíba enfrentam até mesmo para conseguir denunciar essa situação."*
 
 ---
 
-### Slide 02: Contexto e Justificativa Socioambiental
-- **Visual no Figma**: Manchetes de jornais da Paraíba sobre falta d'água, dados oficiais do Censo IBGE 2022 (50,92% dos lares da PB sem rede de esgoto e 8 dos 10 municípios com pior atendimento hídrico do país no estado), infográfico do Trata Brasil/SNIS indicando 47% de perdas na rede estadual e registros de doenças hídricas do DATASUS.
-- **Orador**: Paulo Germano (1,5 minuto).
-- **Fala oral sugerida**:
-  > *"Ao definir o tema do projeto, buscamos olhar diretamente para a realidade paraibana. Dados do Censo 2022 do IBGE mostram que 50,92% dos lares da Paraíba não possuem rede geral de esgoto, e o Sistema Nacional de Informações sobre Saneamento indica que 47% da água tratada no estado se perde na rede de distribuição antes de chegar às torneiras. Esse problema afeta principalmente comunidades periféricas e rurais, refletindo-se em internações por doenças diarreicas registradas no DATASUS. Como estudantes de ADS, nosso desafio foi investigar como sistemas de informação, dados abertos e usabilidade podem ajudar o cidadão a relatar falhas no abastecimento e acompanhar a situação do saneamento em seu bairro."*
-
----
-
-### Slide 03: Governança, Engenharia e Repositório
-- **Visual no Figma**: Diagrama do ciclo de vida em 7 etapas, tabela de rodízio de liderança técnica e captura do terminal Linux executando o script determinístico `verificar.py`.
-- **Orador**: Gabriel Amancio (1,5 minuto).
-- **Fala oral sugerida**:
-  > *"Para organizar o fluxo de trabalho sem retrabalho, adotamos uma estrutura de monorepositório no Git e um rodízio formal de liderança: a cada etapa, um integrante assumiu a coordenação das atividades e a responsabilidade pela entrega perante os critérios de qualidade estabelecidos. Criamos também um script de validação em Python (`verificar.py`) para checar a consistência do repositório, bloqueando entregas com pendências textuais ou referências ausentes. Toda a documentação foi organizada sob o princípio da Fonte Única da Verdade, mantendo a rastreabilidade entre requisitos, decisões técnicas e 28 fontes catalogadas."*
-
----
-
-### Slide 04: Pesquisa Empírica do Mercado de TI
-- **Visual no Figma**: Gráfico de barras com as competências mais exigidas nos 24 anúncios reais coletados (SQL 45,8%, Git/GitHub 29,2%, Python 29,2%, Comunicação Clara 29,2%, Java/Spring Boot 20,8%, Linux 16,7%, Power BI 16,7%, Cloud 12,5% e LGPD 12,5%), além do destaque de 87,5% de vagas remotas e divisão por especialidades.
+### Slide 02: A Dor Real na Paraíba: Água, Saúde e Exclusão
+- **Visual sugerido**: 3 cards de impacto humano e 1 bloco destacando a barreira burocrática:
+  - **50,92%** dos lares da PB sem rede geral de esgoto e **1,4 milhão de pessoas** descartando em fossas rudimentares ou valas a céu aberto (88 mil só em João Pessoa) — Censo IBGE 2022.
+  - **8 dos 10 municípios** com pior atendimento hídrico do Brasil estão na Paraíba (como Santa Cecília e Baraúna) + **47,0%** de água tratada perdida na rede — IBGE / SNIS Trata Brasil.
+  - **Crianças de 0 a 5 anos e idosos** internados por doenças diarreicas agudas (DATASUS).
+  - **Barreira invisível:** canais atuais das concessionárias exigem **número de matrícula da conta**, o que exclui famílias de áreas irregulares ou sem ligação formal.
 - **Orador**: Paulo Germano (2 minutos).
 - **Fala oral sugerida**:
-  > *"Na Etapa 1, analisamos 24 anúncios reais de vagas de TI abertas no Brasil, distribuídas igualmente em 6 oportunidades para cada uma das quatro áreas da equipe, sendo 87,5% delas no formato remoto. Notamos que bancos de dados com SQL (45,8% do total; 100% em Desenvolvimento e 83,3% em Dados), controle de versão com Git (29,2%) e Python (29,2%) formam a base técnica transversal. Em desenvolvimento, destacam-se Java com Spring Boot (83,3%) e React/TypeScript; em infraestrutura, Linux (66,7%); em dados, Power BI (66,7%); e em segurança, LGPD (50%) e nuvem AWS/Azure. Entre as habilidades comportamentais, a comunicação clara e assíncrona liderou com 29,2% das menções."*
+  > *"Antes de pensar em código ou telas, fomos olhar para o problema real na Paraíba. O Censo 2022 do IBGE mostra que mais da metade dos lares paraibanos — 50,92% — não tem rede de esgoto, e cerca de 1,4 milhão de pessoas convivem com fossas rudimentares ou valas a céu aberto. Além disso, 8 dos 10 municípios brasileiros com pior atendimento hídrico ficam aqui no estado, e 47% da água tratada se perde antes de chegar às torneiras. Na ponta, quem paga a conta são crianças pequenas e idosos, que lotam hospitais por doenças diarreicas registradas no DATASUS. E há uma barreira pouco falada: para abrir um chamado hoje na concessionária, exige-se o número de matrícula da conta, excluindo justamente as famílias mais vulneráveis que não têm ligação formal ou crédito no celular para esperar em ligações."*
 
 ---
 
-### Slide 05: Autoavaliação, Identidade e Planos SMART (PDI)
-- **Visual no Figma**: Gráfico comparativo dos quatro perfis, tabela dos gaps coletivos identificados (destaque para Nuvem e Conteinerização Docker com média 2,75 em escala de 1 a 5) e mosaico com os quatro portfólios no GitHub.
-- **Orador**: Luiz Miguel (2 minutos).
-- **Fala oral sugerida**:
-  > *"Na Etapa 2, que coordenei, comparamos nossas habilidades individuais com as demandas identificadas no mercado por meio de matrizes de 11 competências. Essa análise mostrou que o grupo tinha boa base em comunicação, trabalho em equipe, lógica e Git, mas apontou uma lacuna comum: a prática com contêineres Docker e serviços em nuvem, onde a média consolidada da equipe ficou em 2,75 numa escala de 1 a 5. A partir desse diagnóstico, cada estudante elaborou um Plano de Desenvolvimento Individual pelo método SMART. Fixamos 12 metas formais com prazos e certificações de referência — Oracle Java SE, AWS Cloud Practitioner, Power BI PL-300, Enap LGPD e CompTIA Security+ — além da participação em comunidades locais como DevOpsDays PB, GDG João Pessoa, Python Nordeste e OWASP."*
-
----
-
-### Slide 06: Ética Tecnológica, Casos Reais e LGPD
-- **Visual no Figma**: Recortes dos relatórios do CESeC (viés em reconhecimento facial) e da decisão preventiva da ANPD contra a Meta, com tabela síntese da matriz de 8 riscos éticos (`RSK-E01` a `RSK-E08`).
+### Slide 03: Quem Sofre na Ponta, Causas e Escolha do ODS 6
+- **Visual sugerido**: Retrato das duas personas principais (**Dona Maria de Fátima**, 52 anos, Mandacaru, celular Android básico pré-pago sem internet contínua; e **Carlos Eduardo**, 29 anos, Agente Comunitário de Saúde), síntese do Diagrama de Ishikawa (infraestrutura, gestão opaca, subnotificação e vulnerabilidade social) e quadro da Matriz Multicritério (Água e Saneamento / ODS 6 eleito com **9,05** vs. Desperdício de Alimentos / ODS 2 e 12 com **8,20** e Alagamentos / ODS 11 e 13 com **7,63**).
 - **Orador**: Gustavo Antonio (2 minutos).
 - **Fala oral sugerida**:
-  > *"Na Etapa 3, examinamos a responsabilidade ética e jurídica no desenvolvimento de software. Analisamos casos concretos no Brasil, como o levantamento do CESeC que revelou que mais de 90% dos presos por reconhecimento facial automatizado eram pessoas negras, evidenciando decisões automatizadas sem checagem humana em desacordo com o Artigo 20 da LGPD. Também estudamos a medida preventiva da ANPD que suspendeu o uso de dados pessoais pela Meta para treino de IA por falta de transparência e opção clara de recusa. Mapeamos essas questões em uma Matriz de Riscos com 8 itens, cobrindo viés algorítmico, privacidade por padrão, alucinações de IA, acessibilidade, segurança OWASP Top 10 e impacto ambiental de Green IT."*
+  > *"Na Etapa 4, comparamos três problemas socioambientais da Paraíba em uma matriz ponderada: desperdício de alimentos (8,20), alagamentos em encostas (7,63) e crise hídrica e saneamento (9,05), que selecionamos por sua gravidade e viabilidade em ADS. Mapeamos as causas no Diagrama de Ishikawa e demos rosto ao problema com personas reais: a Dona Maria de Fátima, moradora de comunidade periférica que passa dias sem água, usa um celular simples pré-pago e não sabe a quem recorrer; e o Carlos Eduardo, Agente Comunitário de Saúde que vê casos repetidos de diarreia infantil na rua e precisa de dados organizados para cobrar providências da vigilância sanitária."*
 
 ---
 
-### Slide 07: Diagnóstico Censitário e Matriz de Decisão
-- **Visual no Figma**: Diagrama de Ishikawa detalhando causas estruturais e a matriz de decisão multicritério destacando a pontuação vencedora do Problema A (Água e Saneamento Básico / ODS 6: 9,05 / 10,0) frente a Desperdício de Alimentos / ODS 2 e 12 (8,20) e Alagamentos e Encostas / ODS 11 e 13 (7,63).
+### Slide 04: Do Mercado às Competências Aplicadas (Missão 1 → Missão 2)
+- **Visual sugerido**: Fluxo conectando **Mercado (Etapa 1: 24 vagas)** → **Formação da Equipe (Etapa 2: 11 competências, 12 metas SMART)** → **Solução Social (ÁguaViva PB)**, com gráfico compacto das top exigências (`SQL 45,8%`, `Git/GitHub 29,2%`, `Python 29,2%`, `Comunicação Clara 29,2%`, `87,5%` remotas) e menção ao rodízio de liderança do grupo nas 7 etapas.
+- **Orador**: Paulo Germano (1 min) e Luiz Miguel (1 min).
+- **Fala oral sugerida**:
+  > *"Para cumprir a segunda missão do projeto com qualidade, começamos investigando 24 vagas reais de estágio e nível júnior no Brasil (6 por área da equipe, sendo 87,5% remotas). Vimos que o mercado exige base sólida em SQL (45,8%), Git (29,2%), Python (29,2%), comunicação clara (29,2%), além de nuvem, Linux e LGPD. Ao comparar essas exigências com nossa autoavaliação de 11 competências, identificamos um gap coletivo em nuvem e contêineres (média 2,75 de 5) e definimos 12 metas SMART com foco em certificações (Oracle Java, AWS, Power BI PL-300, Enap LGPD e Security+) e comunidades locais da Paraíba (GDG João Pessoa, DevOpsDays PB, Python Nordeste e OWASP). Mais importante: alternamos a liderança a cada etapa e transformamos cada especialidade em resposta a uma barreira social — dados para cruzar denúncias com o DATASUS, front-end para acessibilidade, infraestrutura para funcionar sem internet e segurança para proteger o denunciante."*
+
+---
+
+### Slide 05: Ética, Proteção ao Vulnerável e Inclusão Digital
+- **Visual sugerido**: 2 blocos: (1) Lições de casos reais no Brasil (**CESeC**: >90% de presos por reconhecimento facial eram negros, violando o Art. 20 da LGPD; **ANPD vs. Meta**: suspensão de uso de dados para IA sem transparência/opt-out); (2) **Como os 8 riscos da matriz protegem o cidadão no ÁguaViva PB** (anonimato sem CPF, proteção contra retaliação, inclusão de quem não tem smartphone via ACS/lideranças, linguagem simples e baixo consumo de dados/energia).
 - **Orador**: Gustavo Antonio (2 minutos).
 - **Fala oral sugerida**:
-  > *"Na Etapa 4, que liderei, aplicamos uma matriz de decisão multicritério para definir o problema socioambiental que guiaria a solução técnica. Comparamos três cenários na Paraíba: qualidade da água e saneamento básico (ODS 6), desperdício de alimentos e insegurança alimentar (ODS 2 e 12), que marcou 8,20, e alagamentos e encostas urbanas (ODS 11 e 13), com 7,63. O saneamento e monitoramento da água obteve a maior pontuação, com nota 9,05 em 10, pela gravidade dos indicadores estaduais e pela viabilidade técnica para a equipe. Mapeamos as causas no Diagrama de Ishikawa e construímos personas como a Dona Maria de Fátima, moradora de periferia com celular básico pré-pago que precisa registrar a falta d'água de forma simples e sem barreiras."*
+  > *"Na Etapa 3, estudamos casos reais no Brasil — como a pesquisa do CESeC sobre viés racial em reconhecimento facial e a intervenção da ANPD contra a Meta — para não repetir erros éticos no nosso sistema. Ao trazer essa reflexão para a realidade das periferias, mapeamos oito riscos e fizemos perguntas difíceis: e se um morador sofrer retaliação por denunciar esgoto clandestino na rua? Por isso, o ÁguaViva PB não coleta CPF, RG nem telefone, agregando os relatos por bairro sob a LGPD. E quem não tem celular nem internet? Preparamos fluxos para que Agentes Comunitários de Saúde e lideranças de bairro registrem demandas coletivas pelas famílias, garantindo que a tecnologia não exclua justamente quem mais precisa."*
 
 ---
 
-### Slide 08: Arquitetura Técnica C4 e Solução ÁguaViva PB
-- **Visual no Figma**: Diagrama de Containers C4 Model demonstrando a estratégia *offline-first* (protótipo conceitual navegável em HTML/CSS/JS vanilla com especificação de 8 telas para Figma e arquitetura-alvo em React + Vite PWA, Service Worker, IndexedDB, backend Docker/Node.js e PostgreSQL/PostGIS).
+### Slide 06: Como o ÁguaViva PB Ajuda na Prática
+- **Visual sugerido**: Jornada cidadã em 4 cartões simples de benefício humano:
+  1. **Denúncia em 2 passos sem cadastro:** relatar falta d'água, água barrenta ou esgoto a céu aberto sem matrícula da CAGEPA.
+  2. **Funciona mesmo sem crédito de internet:** o relato fica salvo no celular e é enviado assim que houver sinal.
+  3. **Pedido emergencial de Carro-Pipa:** prioridade para creches, escolas e postos de saúde sem água.
+  4. **Transparência e Saúde:** mapa de potabilidade do bairro e guia simples de fervura/cloração caseira.
+  *(Nota de rodapé discreta: 12 RF MoSCoW, 8 RNF, 8 histórias BDD; protótipo navegável em HTML/CSS/JS + especificação de 8 telas e arquitetura-alvo PWA offline-first).*
 - **Orador**: Gabriel Amancio (2 minutos).
 - **Fala oral sugerida**:
-  > *"Para atender à realidade de pessoas como a Dona Maria, desenhamos a arquitetura do ÁguaViva PB sob o paradigma offline-first. Na arquitetura-alvo de produção em PWA, o Service Worker armazena os ativos da aplicação em cache e, caso o morador esteja sem sinal de internet, a denúncia e a foto comprimida em WebP ficam salvas no IndexedDB local até a sincronização automática no retorno da conexão, chegando a um backend em contêiner Docker com PostgreSQL e PostGIS. Para o projeto integrador, especificamos 12 requisitos funcionais com MoSCoW, 8 requisitos não funcionais verificáveis, 8 histórias de usuário em BDD e entregamos um protótipo navegável completo com simulação desse fluxo."*
+  > *"O ÁguaViva PB foi projetado para caber na rotina de quem está sem água. Em até dois passos, sem pedir login, CPF ou matrícula da conta, o morador informa se a torneira secou, se a água veio barrenta ou se há esgoto aberto, podendo anexar uma foto leve. Se estiver sem sinal ou sem crédito de celular, o sistema guarda o pedido no próprio aparelho para enviar depois. Além disso, a comunidade pode acompanhar o mapa do bairro, consultar cuidados básicos para tratar a água em casa e acionar pedidos emergenciais de carro-pipa para creches e postos de saúde. Toda a solução foi modelada com 12 requisitos funcionais, 8 não funcionais e histórias de usuário voltadas à arquitetura offline-first."*
 
 ---
 
-### Slide 09: Demonstração do Protótipo e Acessibilidade Universal
-- **Visual no Figma**: Telas estruturais `TEL-01` a `TEL-08` do protótipo (Tela Inicial, Formulário de Denúncia em 2 passos, Mapa Interativo de Potabilidade, Painel de Transparência, Central de Carro-Pipa, Fila Offline e Modo Alto Contraste / Acessibilidade).
-- **Orador**: Gabriel Amancio (2 minutos + condução da demonstração ao vivo).
+### Slide 07: Telas do Protótipo e Acessibilidade Universal (Demo ao Vivo)
+- **Visual sugerido**: Mosaico limpo das 8 telas estruturais (`TEL-01` a `TEL-08`) destacando ergonomia inclusiva: botões grandes de **48×48 px**, **alto contraste (>14:1)** para ler sob sol forte, ampliação de fonte em **+200%** e linguagem acolhedora. Chamada visual para a **Demonstração do Protótipo**.
+- **Orador**: Gabriel Amancio (2 minutos + condução da demonstração ao vivo de 5 a 7 minutos).
 - **Fala oral sugerida**:
-  > *"Neste slide visualizamos as 8 telas estruturais do protótipo do ÁguaViva PB. Priorizamos uma interface direta e acessível, alinhada às recomendações da WCAG 2.2 no nível AA: botões com área de toque mínima de 48 por 48 pixels, contraste reforçado para uso sob sol forte, ampliação tipográfica de até 200% e minimização de dados sob a LGPD, sem exigir login ou CPF do cidadão. Em seguida, demonstraremos ao vivo a navegação pelo protótipo funcional."*
+  > *"Como muitas pessoas do nosso público-alvo usam celulares simples na rua, sob sol forte, ou têm dificuldade visual e motora, aplicamos a diretriz WCAG 2.2 AA desde o primeiro rascunho: botões grandes com área mínima de 48 por 48 pixels, modo de alto contraste e texto ampliável em até 200%. Vamos agora demonstrar ao vivo a navegação pelas telas do protótipo, simulando uma denúncia na Ilha do Bispo e o comportamento em modo offline."*
 
 ---
 
-### Slide 10: Validação Empírica de Usabilidade e Escala SUS
-- **Visual no Figma**: Tabela com os resultados dos testes com 6 voluntários adultos reais (P1 a P6, com TCLE assinado), gráfico de barras de tempo por tarefa vs. meta e destaque para a eficácia de 97,2% e a nota SUS de 84,2 pontos (Excelente / Grau A).
+### Slide 08: O Choque com a Realidade: Testes com Voluntários
+- **Visual sugerido**: Quadro dos **6 voluntários reais** (P1 a P6, de 23 a 64 anos, com TCLE e anonimização) e métricas da ISO 9241-11 (**97,2% de conclusão** em 36 tarefas, tempo médio **59,4 s**, **escore SUS 84,2 / 100** — Excelente) ao lado do destaque humano das **2 fricções reais descobertas**:
+  - **Participante P3 (64 anos, líder comunitário com baixa visão e tremor leve):** travou ao ver o aviso técnico *"Cache IndexedDB ativo; aguardando handshake HTTP"* (achou que perdeu a denúncia) e perdeu o botão de envio quando o teclado do celular abriu.
+  - **Participante P1 (52 anos, comerciante periférica):** pediu confirmação por vibração no bolso para não precisar ficar segurando e olhando o celular na rua.
 - **Orador**: Luiz Miguel (2 minutos).
 - **Fala oral sugerida**:
-  > *"Na Etapa 6, submetemos o protótipo a testes de usabilidade sob a norma ISO 9241-11 com seis voluntários adultos de diferentes idades e ocupações — entre 23 e 64 anos — incluindo comerciante, agente comunitária de saúde, professora e líder comunitário, todos com TCLE e anonimização pela LGPD. Cada participante executou seis tarefas pelo método Think-Aloud, totalizando 36 observações. Atingimos 97,2% de conclusão com sucesso (35 de 36 tarefas), tempo médio de 59,4 segundos e média de 84,2 pontos na escala SUS, classificando a interface como 'Excelente' (Grau A, percentil acima de 90)."*
+  > *"Na Etapa 6, colocamos o protótipo à prova com seis voluntários adultos de perfis diferentes — entre 23 e 64 anos — incluindo uma comerciante periférica, uma agente de saúde, uma professora e um líder comunitário idoso, todos com termo de consentimento assinado. Mesmo atingindo 97,2% de conclusão das 36 tarefas e pontuação SUS de 84,2, os testes revelaram falhas que nós, como alunos de TI, não tínhamos percebido: o participante idoso P3 ficou assustado ao ler uma mensagem técnica falando em 'Cache IndexedDB' e não encontrou o botão de enviar escondido atrás do teclado virtual; já a participante P1 sugeriu um aviso por vibração para poder guardar o celular no bolso na rua."*
 
 ---
 
-### Slide 11: Matriz de Melhorias e Protótipo Revisado (v2.0)
-- **Visual no Figma**: Comparativo lado a lado "Antes x Depois" das telas `TEL-03`, `TEL-04`, `TEL-05` e `TEL-07` com as melhorias priorizadas pós-teste e nota sobre limitações do estudo (amostra exploratória N=6).
-- **Orador**: Luiz Miguel (1,5 minuto).
+### Slide 09: O Que Mudamos para Incluir de Verdade (v1.0 → v2.0)
+- **Visual sugerido**: Comparativo visual "Antes × Depois" das 4 melhorias implementadas após os testes:
+  1. **Linguagem humana (`TEL-07`):** de *"Cache IndexedDB ativo..."* → para *"Tudo salvo no celular! Enviaremos automaticamente quando o sinal voltar."*
+  2. **Botão sempre visível (`TEL-03`):** botão de envio fixado na barra inferior (`sticky bottom`) mesmo com o teclado aberto.
+  3. **Zoom acessível (`TEL-04`):** botões táteis `+` e `-` de 48×48 px no mapa para quem não consegue fazer gesto de pinça.
+  4. **Leitura no sol e bolso (`TEL-05`/`TEL-07`):** legendas aumentadas para 13 px em alto contraste e confirmação por vibração suave.
+- **Orador**: Luiz Miguel (2 minutos).
 - **Fala oral sugerida**:
-  > *"Os testes com usuários revelaram pontos práticos de melhoria que refatoramos na versão 2.0. No protótipo inicial, a mensagem de modo offline exibia jargões como 'Cache IndexedDB ativo', gerando receio de perda de dados no participante idoso; substituímos por um aviso acolhedor: 'Tudo salvo no celular! Enviaremos automaticamente quando o sinal voltar'. Também fixamos o botão de envio em barra inferior fixa para não ser coberto pelo teclado virtual, incluímos botões ampliados de zoom (+ / -) no mapa, ampliamos legendas de gráficos para alto contraste e previmos feedback háptico de confirmação."*
+  > *"Cada dificuldade observada virou uma correção concreta na versão 2.0 do protótipo. Tiramos todo jargão técnico das mensagens de tela para tranquilizar quem está sem internet; fixamos o botão de envio no rodapé para nunca sumir atrás do teclado; colocamos botões grandes de mais e menos no mapa para ajudar idosos e pessoas com tremor nas mãos; e ampliamos as legendas dos gráficos com previsão de resposta por vibração. Foi nesse momento que entendemos na prática que usabilidade é inclusão social."*
 
 ---
 
-### Slide 12: Conclusão, Diários de Aprendizagem e Agradecimentos
-- **Visual no Figma**: Mosaico dos 4 integrantes, síntese dos 24 registros nos Diários de Aprendizagem (6 por estudante, com ao menos 2 novas ferramentas aplicadas por integrante) e roadmap de evolução do ÁguaViva PB.
-- **Orador**: Todos os 4 Integrantes (1,5 minuto).
+### Slide 10: Limitações Honestas, Aprendizados e Impacto
+- **Visual sugerido**: 2 colunas claras:
+  - **Limitações explicitadas:** (1) Um software não gera água nem conserta tubulações — ele transforma queixas invisíveis em evidência coletiva para cobrar concessionárias e Defesa Civil; (2) Famílias sem smartphone continuam dependendo de mediação comunitária (ACS); (3) Avaliação exploratória limitada a `N=6` na Região Metropolitana de João Pessoa (sem incluir o semiárido) e fluxo offline simulado no protótipo.
+  - **Diários e Próximos Passos:** síntese dos **24 registros nos Diários de Aprendizagem** (6 por integrante, ≥ 2 novas ferramentas por estudante) e evolução futura do ÁguaViva PB.
+- **Orador**: Todos os 4 Integrantes (2 minutos).
 - **Falas orais sugeridas**:
-  - **Paulo Germano**: *"O projeto nos permitiu conectar dados reais de mercado e microdados públicos da Paraíba a uma solução técnica fundamentada em evidências."*
-  - **Gabriel Amancio**: *"Exercitamos na prática a arquitetura resiliente offline-first, a escrita de requisitos BDD e a acessibilidade digital desde o design inicial."*
-  - **Gustavo Antonio**: *"Confirmamos que a conformidade com a LGPD, a análise de riscos éticos e a revisão crítica de ferramentas de IA precisam caminhar juntas em qualquer sistema."*
-  - **Luiz Miguel**: *"Agradecemos aos professores do UNIPÊ pelo acompanhamento ao longo do semestre e nos colocamos à disposição da banca para a arguição técnica. Muito obrigado."*
+  - **Gustavo Antonio**: *"Temos clareza dos limites do projeto: um aplicativo não cria água na torneira, mas transforma reclamações isoladas e ignoradas em dados coletivos auditáveis para cobrar o poder público e priorizar caminhões-pipa."*
+  - **Paulo Germano**: *"Também reconhecemos que nossa amostra de testes foi exploratória e restrita à Grande João Pessoa, sem cobrir ainda o semiárido paraibano, além da dependência de mediação comunitária para quem não possui smartphone."*
+  - **Gabriel Amancio**: *"Ao longo das sete etapas e dos 24 registros nos diários individuais, cada integrante dominou novas ferramentas e aprendeu a colocar o usuário vulnerável no centro de cada decisão técnica."*
+  - **Luiz Miguel**: *"Agradecemos aos professores do UNIPÊ pela orientação e nos colocamos à disposição da banca examinadora para a arguição individual."*

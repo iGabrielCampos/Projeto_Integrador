@@ -29,15 +29,15 @@
   "slides": [
     {
       "slide_number": 1,
-      "title": "LABORATÓRIO DE CARREIRA E INOVAÇÃO RESPONSÁVEL EM TI",
-      "subtitle": "Concepção, Validação e Impacto da Solução Cívica ÁguaViva PB no Contexto da Paraíba",
+      "title": "ÁGUAVIVA PB: TI A SERVIÇO DA CIDADANIA HÍDRICA NA PARAÍBA",
+      "subtitle": "Laboratório de Carreira e Inovação Responsável em TI — Projeto Integrador de Design Profissional",
       "speaker": "Paulo Germano (Dados e IA)",
       "timing_seconds": 60,
       "layout": "hero_cover",
       "elements": [
         {
           "type": "badge",
-          "text": "PROJETO INTEGRADOR DE DESIGN PROFISSIONAL • UNIPÊ 2026",
+          "text": "UNIPÊ • ADS • TURMA F • 2026.2",
           "color": "#0D9488"
         },
         {
@@ -50,299 +50,235 @@
           ]
         }
       ],
-      "speaker_notes": "Boa noite, professores e presentes. Somos estudantes de Análise e Desenvolvimento de Sistemas do UNIPÊ. Apresentamos nosso Projeto Integrador com a plataforma cívica ÁguaViva PB."
+      "speaker_notes": "Apresentação da equipe e do propósito social: conectar competências exigidas pelo mercado de TI ao enfrentamento do desabastecimento de água e da exclusão digital na Paraíba."
     },
     {
       "slide_number": 2,
-      "title": "O Cenário da Crise Hídrica e Saneamento na Paraíba",
-      "subtitle": "Fundamentação com Microdados do Censo IBGE 2022, SNIS e DATASUS",
+      "title": "A Dor Real na Paraíba: Água, Saúde e Exclusão Burocrática",
+      "subtitle": "Por que comunidades periféricas e rurais continuam invisíveis mesmo quando falta água potável",
       "speaker": "Paulo Germano (Dados e IA)",
-      "timing_seconds": 90,
-      "layout": "three_stat_cards",
+      "timing_seconds": 120,
+      "layout": "stat_cards_and_barrier",
       "elements": [
         {
           "type": "stat_card",
           "number": "50,92%",
-          "label": "Dos lares da PB sem rede geral de esgoto",
+          "label": "Dos lares da PB sem rede de esgoto (1,4 milhão em fossas/valas; 88 mil em João Pessoa)",
           "source": "IBGE Censo 2022 [F070]",
           "accent_color": "#E11D48"
         },
         {
           "type": "stat_card",
-          "number": "47,0%",
-          "label": "De perda hídrica na distribuição",
-          "source": "Instituto Trata Brasil / SNIS [F071]",
+          "number": "8 de 10",
+          "label": "Piores municípios do Brasil em atendimento hídrico ficam na PB; 47,0% da água tratada se perde",
+          "source": "IBGE / SNIS Trata Brasil [F070][F071]",
           "accent_color": "#F59E0B"
         },
         {
           "type": "stat_card",
-          "number": "8 de 10",
-          "label": "Piores municípios em atendimento hídrico do país estão na PB",
-          "source": "IBGE Censo 2022 / DATASUS [F070][F072]",
+          "number": "0 a 5 anos",
+          "label": "Crianças e idosos concentram internações por doenças diarreicas ligadas à água contaminada",
+          "source": "DATASUS / SIH [F072]",
           "accent_color": "#0D9488"
+        },
+        {
+          "type": "callout_box",
+          "title": "A Barreira Invisível para Denunciar",
+          "text": "Canais oficiais exigem número de matrícula da conta (excluindo ocupações sem ligação formal), formulários extensos e internet contínua."
         }
       ],
-      "speaker_notes": "Não construímos uma solução abstrata. O Censo do IBGE revela que 50,92% da PB não tem rede de esgoto, 8 dos 10 piores municípios em atendimento hídrico ficam no estado e 47% da água tratada se perde antes da torneira."
+      "speaker_notes": "Mostramos a gravidade humana por trás dos dados oficiais e explicamos por que quem mais sofre sem água não consegue sequer registrar uma reclamação formal."
     },
     {
       "slide_number": 3,
-      "title": "Governança Ágil, Monorepositório e Validação Contínua",
-      "subtitle": "Rodízio de Liderança Técnica e Princípio da Fonte Única da Verdade",
-      "speaker": "Gabriel Amancio (Desenvolvimento de Software)",
-      "timing_seconds": 90,
-      "layout": "two_column_process",
+      "title": "Quem Sofre na Ponta, Causas-Raiz e Escolha do ODS 6",
+      "subtitle": "Personas reais, Diagrama de Ishikawa e Matriz Multicritério (Nota 9,05 / 10,0)",
+      "speaker": "Gustavo Antonio (Segurança da Informação)",
+      "timing_seconds": 120,
+      "layout": "personas_and_decision",
       "elements": [
         {
-          "column": "left",
-          "title": "Rodízio de Liderança (Quality Gates)",
-          "items": [
-            "Etapa 0: Gustavo • Governança e Regras",
-            "Etapa 1: Paulo • Mercado de TI (24 Vagas)",
-            "Etapa 2: Luiz • Identidade e 12 Metas SMART",
-            "Etapa 3: Gabriel • Ética e Experimentos IA",
-            "Etapa 4: Gustavo • Diagnóstico ODS 6 PB",
-            "Etapa 5: Gabriel • Solução ÁguaViva PB",
-            "Etapa 6: Luiz • Testes de Usabilidade SUS",
-            "Etapa 7: Todos • Relatório Integrado e Defesa"
-          ]
+          "type": "persona",
+          "name": "Dona Maria de Fátima (52 anos, Mandacaru)",
+          "context": "Dias seguidos com torneira seca ou água barrenta; celular Android básico pré-pago sem internet ativa; medo de perder prazo ou não entender termos difíceis."
         },
         {
-          "column": "right",
-          "title": "Engenharia de Qualidade Automatizada",
-          "items": [
-            "Script verificar.py determinístico",
-            "Zero campos em aberto ([...] ou TODO)",
-            "28 fontes rastreáveis formalmente [Fxxx]",
-            "Commits semânticos e tags Git etapa-1 a 7"
-          ]
+          "type": "persona",
+          "name": "Carlos Eduardo (29 anos, Agente Comunitário de Saúde)",
+          "context": "Atende famílias com gastroenterite infantil por esgoto a céu aberto; precisa registrar demandas coletivas na rua para cobrar vigilância sanitária."
+        },
+        {
+          "type": "matrix_summary",
+          "winner": "Problema A: Água e Saneamento Básico (ODS 6) — 9,05 / 10,0",
+          "competitors": "Desperdício de Alimentos / ODS 2 e 12 (8,20) • Alagamentos e Encostas / ODS 11 e 13 (7,63)"
         }
       ],
-      "speaker_notes": "Adotamos governança estruturada: rodízio de liderança onde cada estudante coordenou etapas, monorepositório versionado e validação determinística por script em Python."
+      "speaker_notes": "Explicamos como a análise multicritério e o Diagrama de Ishikawa levaram à escolha do ODS 6 e como as personas orientaram todas as decisões de produto."
     },
     {
       "slide_number": 4,
-      "title": "Diagnóstico do Mercado de Trabalho em TI no Brasil",
-      "subtitle": "Amostragem Estratificada de 24 Vagas Reais em Nível Júnior e Estágio (87,5% Remotas)",
-      "speaker": "Paulo Germano (Dados e IA)",
+      "title": "Do Mercado às Competências Aplicadas (Missão 1 → Missão 2)",
+      "subtitle": "Como 24 vagas reais, 12 metas SMART e o rodízio de liderança habilitaram a solução social",
+      "speaker": "Paulo Germano & Luiz Miguel",
       "timing_seconds": 120,
-      "layout": "chart_and_insights",
+      "layout": "bridge_chart_and_roles",
       "elements": [
         {
           "type": "chart_summary",
-          "title": "Competências Mais Requisitadas (% sobre 24 vagas)",
+          "title": "Top Competências em 24 Vagas Reais (87,5% Remotas)",
           "data": [
-            { "skill": "Bancos SQL", "percentage": 45.8 },
+            { "skill": "SQL", "percentage": 45.8 },
             { "skill": "Git / GitHub", "percentage": 29.2 },
-            { "skill": "Linguagem Python", "percentage": 29.2 },
+            { "skill": "Python", "percentage": 29.2 },
             { "skill": "Comunicação Clara", "percentage": 29.2 },
             { "skill": "Java / Spring Boot", "percentage": 20.8 },
-            { "skill": "Linux (Ubuntu/Debian)", "percentage": 16.7 },
-            { "skill": "Power BI / Data Viz", "percentage": 16.7 },
-            { "skill": "Cloud (AWS/Azure)", "percentage": 12.5 },
-            { "skill": "LGPD / Segurança", "percentage": 12.5 }
+            { "skill": "Linux / Power BI", "percentage": 16.7 },
+            { "skill": "Cloud / LGPD", "percentage": 12.5 }
           ]
         },
         {
           "type": "callout_box",
-          "title": "Insights Críticos do Mercado",
-          "text": "SQL apareceu em 100% das vagas de Dev e 83,3% de Dados; 87,5% das oportunidades eram remotas, colocando Comunicação Clara (29,2%) no topo das exigências comportamentais."
+          "title": "Ponte Carreira → Impacto Social (Gap Nuvem/Docker: 2,75)",
+          "text": "12 metas SMART (AWS, Oracle Java, Power BI PL-300, Enap LGPD, Security+) + comunidades da PB (GDG JP, DevOpsDays PB, Python Nordeste, OWASP). Cada especialidade resolveu uma barreira real: Dados (DATASUS), Dev (Acessibilidade), Infra (Offline-first) e Segurança (Anonimato LGPD)."
         }
       ],
-      "speaker_notes": "Auditamos 24 anúncios reais balanceados em 6 por especialidade. SQL, Git e Python formam a base técnica transversal, enquanto comunicação clara e conhecimentos de LGPD e nuvem diferenciam os candidatos."
+      "speaker_notes": "Mostramos a integração exigida pelo Desafio Prático entre a investigação do mercado/PDIs e as competências aplicadas no ÁguaViva PB, destacando o rodízio de liderança."
     },
     {
       "slide_number": 5,
-      "title": "Identidade Profissional, Autoavaliação e Metas SMART",
-      "subtitle": "Superação do Gap Coletivo em Nuvem e Conteinerização (Média 2,75)",
-      "speaker": "Luiz Miguel (Infraestrutura e Redes)",
+      "title": "Ética, Proteção ao Vulnerável e Inclusão Digital",
+      "subtitle": "Casos CESeC e ANPD aplicados à realidade de quem denuncia na periferia",
+      "speaker": "Gustavo Antonio (Segurança da Informação)",
       "timing_seconds": 120,
-      "layout": "four_cards_grid",
+      "layout": "ethics_social_safeguards",
       "elements": [
         {
-          "member": "Gabriel Amancio (Dev)",
-          "meta_smart": "Certificação Oracle Java SE até 06/2027 e projeto Full Stack com testes automatizados."
+          "case": "Referências Reais no Brasil (Etapa 3)",
+          "evidence": "CESeC (>90% de presos por reconhecimento facial eram negros — Art. 20 LGPD) e ANPD (suspensão preventiva da Meta por falta de transparência/opt-out)."
         },
         {
-          "member": "Luiz Miguel (Infra)",
-          "meta_smart": "Certificação AWS Cloud Practitioner (CLF-C02) até 05/2027 e Homelab Docker com 3 contêineres."
-        },
-        {
-          "member": "Paulo Germano (Dados)",
-          "meta_smart": "Certificação Microsoft Power BI Analyst (PL-300) até 07/2027 e pipeline de dados abertos da PB."
-        },
-        {
-          "member": "Gustavo Antonio (Seg)",
-          "meta_smart": "Certificação CompTIA Security+ (SY0-701) até 09/2027 e 30 laboratórios práticos no TryHackMe."
+          "case": "Proteção Social no ÁguaViva PB (Matriz de 8 Riscos)",
+          "evidence": "Sem coleta de CPF, RG ou telefone; geolocalização agregada por bairro contra retaliações; registro mediado por ACS/lideranças para famílias sem celular; linguagem simples e Green IT."
         }
       ],
-      "speaker_notes": "Confrontamos nossas competências em matrizes de 11 itens. Detectamos um gap coletivo em nuvem e Docker (média 2,75) e criamos 12 metas SMART associadas a comunidades locais como DevOpsDays PB, GDG João Pessoa, Python Nordeste e OWASP."
+      "speaker_notes": "Conectamos a ética digital à realidade de quem denuncia: proteger a identidade do morador e incluir quem não tem smartphone ou letramento digital."
     },
     {
       "slide_number": 6,
-      "title": "Ética Tecnológica, Discriminação Algorítmica e LGPD",
-      "subtitle": "Estudo dos Casos CESeC e ANPD (Meta) e Matriz de 8 Riscos Éticos",
-      "speaker": "Gustavo Antonio (Segurança da Informação)",
+      "title": "Como o ÁguaViva PB Ajuda na Prática",
+      "subtitle": "Solução acessível em 2 passos para enfrentar o desabastecimento e a falta de informação",
+      "speaker": "Gabriel Amancio (Desenvolvimento de Software)",
       "timing_seconds": 120,
-      "layout": "two_case_studies",
+      "layout": "four_social_features",
       "elements": [
         {
-          "case": "Caso 1: Reconhecimento Facial (CESeC)",
-          "evidence": ">90% dos presos por reconhecimento facial no Brasil eram pessoas negras.",
-          "legal_infraction": "Violação do Art. 20 da LGPD (decisão puramente automatizada sem revisão humana)."
+          "feature": "1. Denúncia em 2 passos sem cadastro",
+          "detail": "Relata torneira seca, água barrenta ou esgoto aberto sem exigir número de matrícula da conta ou CPF."
         },
         {
-          "case": "Caso 2: Medida Preventiva ANPD (Meta)",
-          "evidence": "Uso de dados públicos de brasileiros para treino de IA generativa sem transparência adequada.",
-          "legal_infraction": "Abuso do 'legítimo interesse' e ausência de opt-out claro e acessível."
+          "feature": "2. Resiliência sem crédito de internet",
+          "detail": "Fluxo offline-first: guarda o relato no celular e envia quando o sinal voltar (simulado no protótipo; Service Worker + IndexedDB na arquitetura-alvo)."
         },
         {
-          "case": "Matriz de 8 Riscos (RSK-E01 a RSK-E08)",
-          "evidence": "Viés algorítmico, vazamento LGPD, alucinação de LLMs, opacidade, acessibilidade, OWASP Top 10, disponibilidade e Green IT.",
-          "legal_infraction": "Mitigações aplicadas por design no ÁguaViva PB."
+          "feature": "3. Chamado emergencial de Carro-Pipa",
+          "detail": "Prioriza creches, escolas e postos de saúde desabastecidos com pontos de referência locais."
+        },
+        {
+          "feature": "4. Transparência e Educação Sanitária",
+          "detail": "Mapa público por bairro e orientações práticas de fervura e cloração caseira (12 RF MoSCoW, 8 RNF, 8 BDD)."
         }
       ],
-      "speaker_notes": "Analisamos casos concretos no Brasil, como o relatório do CESeC e a atuação da ANPD, e consolidamos uma Matriz de Riscos com 8 vetores éticos, jurídicos e ambientais que guiaram o projeto da solução."
+      "speaker_notes": "Apresentamos o funcionamento prático da solução pelo olhar do cidadão, mantendo transparente o que está no protótipo navegável e o que compõe a arquitetura-alvo."
     },
     {
       "slide_number": 7,
-      "title": "Seleção Multicritério e Diagrama de Ishikawa",
-      "subtitle": "Solução ÁguaViva PB (ODS 6) Eleita com Nota 9,05 / 10,0 na Matriz de Decisão",
-      "speaker": "Gustavo Antonio (Segurança da Informação)",
-      "timing_seconds": 120,
-      "layout": "decision_matrix_and_ishikawa",
-      "elements": [
-        {
-          "type": "matrix_summary",
-          "winner": "Problema A: Água e Saneamento Básico (ODS 6)",
-          "score": "9,05 / 10,0",
-          "competitors": "Desperdício de Alimentos / ODS 2 e 12 (8,20) • Alagamentos e Encostas / ODS 11 e 13 (7,63)"
-        },
-        {
-          "type": "persona",
-          "name": "Dona Maria de Fátima (52 anos)",
-          "context": "Comunidade periférica de João Pessoa, interrupções frequentes de água, celular Android básico pré-pago sem dados contínuos."
-        }
-      ],
-      "speaker_notes": "Comparamos 3 problemas reais da Paraíba com matriz ponderada. O saneamento e monitoramento da água venceu com nota 9,05. Desenhamos o Ishikawa das causas e definimos personas como a Dona Maria de Fátima para orientar o software."
-    },
-    {
-      "slide_number": 8,
-      "title": "Arquitetura da Solução ÁguaViva PB (C4 Model)",
-      "subtitle": "Protótipo Conceitual Navegável e Arquitetura-Alvo PWA Offline-First",
-      "speaker": "Gabriel Amancio (Desenvolvimento de Software)",
-      "timing_seconds": 120,
-      "layout": "c4_architecture_diagram",
-      "elements": [
-        {
-          "tier": "Protótipo Entregue & Arquitetura-Alvo Client-Side",
-          "tech": "Protótipo HTML5 + Tailwind + JS Vanilla | Alvo: React + Vite PWA + Service Worker + IndexedDB",
-          "description": "Fluxo offline simulado no protótipo; retenção local em IndexedDB e sincronização automática via Service Worker na arquitetura-alvo."
-        },
-        {
-          "tier": "Backend Cloud & Segurança (Alvo)",
-          "tech": "Node.js / Express em Contêiner Docker",
-          "description": "API Gateway, sanitização OWASP Top 10, TLS 1.3, rate limiting e Privacy by Design (sem CPF ou telefone)."
-        },
-        {
-          "tier": "Persistência Georreferenciada (Alvo)",
-          "tech": "PostgreSQL + PostGIS + MinIO S3",
-          "description": "Clusterização territorial por setor censitário e correlação com indicadores do DATASUS."
-        }
-      ],
-      "speaker_notes": "Concebemos o ÁguaViva PB com 12 requisitos funcionais (MoSCoW), 8 não funcionais e 8 histórias BDD. Na arquitetura-alvo em PWA offline-first, o Service Worker e o IndexedDB garantem o envio mesmo sem sinal, e no projeto entregamos o protótipo navegável simulando esse fluxo."
-    },
-    {
-      "slide_number": 9,
       "title": "Protótipo Navegável e Acessibilidade Universal",
-      "subtitle": "8 Telas Estruturais (TEL-01 a TEL-08) com Conformidade WCAG 2.2 Nível AA",
+      "subtitle": "8 Telas Estruturais (TEL-01 a TEL-08) pensadas para sol forte, telas pequenas e baixa visão",
       "speaker": "Gabriel Amancio (Desenvolvimento de Software)",
       "timing_seconds": 120,
       "layout": "mockup_showcase",
       "elements": [
-        { "screen": "TEL-01", "name": "Dashboard Comunitário & Alertas de Bairro" },
-        { "screen": "TEL-02 / TEL-03", "name": "Formulário de Denúncia Rápida em 2 Passos com Foto e GPS" },
-        { "screen": "TEL-04", "name": "Mapa Interativo de Potabilidade e Calor" },
-        { "screen": "TEL-05 / TEL-06", "name": "Painel de Transparência e Central de Carro-Pipa" },
-        { "screen": "TEL-07", "name": "Painel de Fila Offline e Sincronização Automática" },
-        { "screen": "TEL-08", "name": "Modo Alto Contraste e Ampliação de Fonte (+200%)" }
+        { "screen": "TEL-01 / TEL-02 / TEL-03", "name": "Home Comunitária e Denúncia em 2 Passos (Ilha do Bispo / Mandacaru)" },
+        { "screen": "TEL-04 / TEL-05", "name": "Mapa Sanitário e Painel de Transparência Hídrica" },
+        { "screen": "TEL-06 / TEL-07", "name": "Central de Carro-Pipa e Fila Local Offline" },
+        { "screen": "TEL-08 + WCAG 2.2 AA", "name": "Botões >= 48x48 px, Alto Contraste (>14:1) e Fonte +200% — Transição para Demo ao Vivo" }
       ],
-      "speaker_notes": "Projetamos 8 telas estruturais com alvos de toque mínimos de 48x48px, modo de alto contraste para leitura sob sol forte e fluxo simplificado de denúncia. Em seguida faremos a demonstração ao vivo do protótipo."
+      "speaker_notes": "Mostramos as 8 telas estruturais do protótipo e iniciamos a demonstração ao vivo simulando o uso real sem internet e no modo alto contraste."
     },
     {
-      "slide_number": 10,
-      "title": "Validação Empírica de Usabilidade e Escala SUS",
-      "subtitle": "Eficácia de 97,2% nas Tarefas e Pontuação SUS de 84,2 Pontos (Excelente)",
+      "slide_number": 8,
+      "title": "O Choque com a Realidade: Testes com Voluntários",
+      "subtitle": "6 participantes (23 a 64 anos), 36 tarefas, eficácia de 97,2% e SUS de 84,2 — e as dores descobertas",
       "speaker": "Luiz Miguel (Infraestrutura e Redes)",
       "timing_seconds": 120,
-      "layout": "usability_results_dashboard",
+      "layout": "usability_and_human_findings",
       "elements": [
         {
-          "metric": "Amostra Real",
-          "value": "6 Voluntários Adultos (P1 a P6) com TCLE",
-          "detail": "Idades de 23 a 64 anos: comerciante periférica, estudante, líder comunitário idoso, ACS, encanador e professora."
+          "metric": "Indicadores ISO 9241-11 & SUS",
+          "value": "97,2% de sucesso (35/36) • 59,4 s/tarefa • SUS 84,2/100",
+          "detail": "6 voluntários adultos com TCLE e anonimização (comerciante, estudante, líder idoso, ACS, encanador e professora)."
         },
         {
-          "metric": "Eficácia Global",
-          "value": "97,2% de Conclusão (59,4 s/tarefa)",
-          "detail": "35 de 36 tarefas padronizadas (T01 a T06) concluídas com sucesso pelo método Think-Aloud."
+          "metric": "Fricção Real — P3 (64 anos, baixa visão e tremor)",
+          "value": "Travou na T02/T03",
+          "detail": "Teclado virtual escondeu o botão Enviar e o aviso 'Cache IndexedDB ativo; aguardando handshake HTTP' gerou medo de perda do relato."
         },
         {
-          "metric": "Escore SUS",
-          "value": "84,2 / 100",
-          "detail": "Classificação 'Excelente' (Grau A, percentil >90 segundo a literatura de Brooke e Bangor et al.)."
+          "metric": "Fricção Real — P1 (52 anos, comerciante)",
+          "value": "Uso na rua",
+          "detail": "Solicitou confirmação por vibração no bolso quando a denúncia offline for enviada."
         }
       ],
-      "speaker_notes": "Avaliamos o protótipo sob a norma ISO 9241-11 com 6 voluntários reais e 36 execuções de tarefas. Atingimos 97,2% de sucesso, tempo médio de 59,4 segundos e escore SUS de 84,2 pontos."
+      "speaker_notes": "Mostramos que, apesar da nota SUS excelente, ouvir pessoas reais de fora da área de TI expôs barreiras que os desenvolvedores não enxergavam."
     },
     {
-      "slide_number": 11,
-      "title": "Matriz de Melhorias e Refatoração para a Versão 2.0",
-      "subtitle": "Humanização de Mensagens Técnicas e Acessibilidade Ergonômica Pós-Testes",
+      "slide_number": 9,
+      "title": "O Que Mudamos para Incluir de Verdade (v1.0 → v2.0)",
+      "subtitle": "Refatoração ergonômica guiada pelas dificuldades reais de P1, P3 e P5",
       "speaker": "Luiz Miguel (Infraestrutura e Redes)",
-      "timing_seconds": 90,
+      "timing_seconds": 120,
       "layout": "before_after_comparison",
       "elements": [
         {
           "item": "Aviso Offline (TEL-07)",
-          "before": "Alerta técnico: 'Cache IndexedDB ativo. Sincronização pendente via API REST.'",
-          "after": "Linguagem humana: 'Tudo salvo no celular! Enviaremos automaticamente quando o sinal voltar.'",
-          "rationale": "Heurística 2 de Nielsen (Mundo Real); eliminou receio de perda de dados do voluntário idoso."
+          "before": "'Cache IndexedDB ativo; aguardando handshake HTTP.'",
+          "after": "'Tudo salvo no celular! Enviaremos automaticamente quando o sinal voltar.'",
+          "rationale": "Eliminou o medo de perda de dados no participante idoso (Heurística 2 de Nielsen)."
         },
         {
-          "item": "Botão de Envio (TEL-03) & Zoom no Mapa (TEL-04)",
-          "before": "Botão no fim da página coberto pelo teclado virtual e zoom apenas por gesto de pinça.",
-          "after": "Botão fixo em barra inferior (Sticky Action Bar), botões de zoom (+/- 48x48px), legendas 13px e feedback háptico.",
-          "rationale": "WCAG 2.5.5 e Prevenção de Erros; elimina abandono de formulário em telas compactas."
+          "item": "Envio Fixo (TEL-03), Zoom Tátil (TEL-04) & Legibilidade (TEL-05)",
+          "before": "Botão coberto pelo teclado, zoom só por pinça e legendas de 10 px.",
+          "after": "Barra inferior fixa (sticky bottom), botões + / - de 48x48 px, legendas de 13 px e vibração háptica.",
+          "rationale": "WCAG 2.5.5 e prevenção de abandono em smartphones compactos."
         }
       ],
-      "speaker_notes": "Os testes apontaram melhorias concretas: humanizamos a mensagem offline sem jargão técnico, fixamos o botão de envio no rodapé e adicionamos controles táteis de zoom no mapa."
+      "speaker_notes": "Detalhamos cada melhoria prática implementada na v2.0 como resposta direta às dificuldades observadas nos testes."
     },
     {
-      "slide_number": 12,
-      "title": "Conclusão, Diários de Aprendizagem e Roadmap Futuro",
-      "subtitle": "24 Registros Individuais de Aprendizagem e Impacto Social na Paraíba",
+      "slide_number": 10,
+      "title": "Limitações Honestas, Aprendizados e Impacto Social",
+      "subtitle": "Maturidade crítica (Etapas 4, 6 e 7) e 24 registros individuais de aprendizagem",
       "speaker": "Todos os 4 Integrantes",
-      "timing_seconds": 90,
-      "layout": "closing_statement",
+      "timing_seconds": 120,
+      "layout": "limitations_and_closing",
       "elements": [
         {
-          "author": "Paulo Germano",
-          "text": "Conectamos análise real de vagas e microdados públicos da Paraíba a decisões baseadas em evidências."
+          "section": "Limitações Explicitadas (DESAFIO_PRATICO.md)",
+          "items": [
+            "O software não gera água nem substitui obras: transforma queixas isoladas em prova coletiva para cobrar concessionárias e Defesa Civil.",
+            "Famílias sem smartphone continuam dependendo de mediação por ACS e lideranças de bairro.",
+            "Amostra exploratória restrita (N=6 na Grande João Pessoa, sem semiárido presencial) e fluxo offline simulado no protótipo."
+          ]
         },
         {
-          "author": "Gabriel Amancio",
-          "text": "Exercitamos arquitetura resiliente offline-first, BDD e acessibilidade WCAG 2.2 AA desde o design."
-        },
-        {
-          "author": "Gustavo Antonio",
-          "text": "Confirmamos que LGPD, ética digital e auditoria crítica de IA devem nascer no primeiro esboço."
-        },
-        {
-          "author": "Luiz Miguel",
-          "text": "Agradecemos aos professores do UNIPÊ e nos colocamos à disposição da banca para arguição."
+          "section": "Diários Individuais & Próximos Passos",
+          "items": [
+            "24 registros de aprendizagem (6 por aluno, >= 2 novas ferramentas aplicadas por integrante).",
+            "Roadmap: Service Worker + IndexedDB reais, backend PostGIS e integração com dados abertos/Defesa Civil."
+          ]
         }
       ],
-      "speaker_notes": "Consolidamos 24 registros nos diários individuais de aprendizagem (ao menos 2 novas ferramentas por integrante) e agradecemos à banca examinadora pela atenção."
+      "speaker_notes": "Encerramos com transparência sobre o alcance real da proposta, síntese dos aprendizados da equipe e abertura para arguição individual."
     }
   ]
 }

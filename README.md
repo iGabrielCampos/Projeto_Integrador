@@ -158,7 +158,8 @@ O índice abaixo orienta a localização direta de cada artefato e documento do 
 
 ### Etapa 4: Diagnóstico Socioambiental na Paraíba (Líder: Gustavo Antonio)
 - **Matriz de decisão multicritério (MCDA):** Avaliou três desafios da Paraíba com critérios ponderados: Desperdício de Alimentos / ODS 2 e 12 (8,20), Alagamentos e Encostas / ODS 11 e 13 (7,63) e Água e Saneamento Básico / ODS 6 (9,05, opção selecionada).
-- **Evidências oficiais:** Censo IBGE 2022 (50,9% dos lares da PB sem rede de esgoto), Trata Brasil e SNIS (47% de perdas na rede hídrica) e DATASUS (taxas de internação por diarreia infecciosa).
+- **Diagnóstico social e barreiras reais:** A partir do Censo IBGE 2022 (`50,92%` dos lares sem esgoto, `1,4 milhão` em fossas/valas e `8 dos 10` piores municípios do país em atendimento hídrico na PB), do SNIS (`47%` de perdas) e do DATASUS, identificou-se ainda uma barreira burocrática: os canais atuais exigem número de matrícula da conta, excluindo famílias sem ligação formal.
+- **Conexão Carreira ↔ Impacto (Missão 1 + Missão 2):** As competências mapeadas no mercado e nos 4 PDIs SMART foram aplicadas diretamente às dores sociais: Dados/SQL para cruzar queixas e indicadores do DATASUS; Front-end/WCAG para inclusão de baixa literacia digital; Infraestrutura para operação resiliente sem crédito de internet; e Segurança/LGPD para denúncia anônima sem risco de retaliação.
 - **Ishikawa e Personas:** Diagrama de causa e efeito e caracterização da persona Dona Maria de Fátima (moradora de área periférica com desabastecimento frequente e acesso restrito a dados móveis).
 - **Artefatos:** [`04_problema/dossie_problema.md`](04_problema/dossie_problema.md), [`04_problema/matriz_decisao.md`](04_problema/matriz_decisao.md).
 
@@ -178,7 +179,7 @@ O índice abaixo orienta a localização direta de cada artefato e documento do 
 ### Etapa 7: Sistematização, Relatório ABNT e Defesa (Coordenação Coletiva)
 - **Monografia oficial:** Documento integrado completo em normas ABNT (10 capítulos, 11.860 palavras, 34 páginas no PDF, 28 referências formais `[F001]` a `[F082]` e 3 apêndices).
 - **Slides para Figma:** Arquivo [`07_relatorio/slides_figma_spec.json`](07_relatorio/slides_figma_spec.json) com especificações estruturadas para montagem visual dos slides.
-- **Roteiro de apresentação:** 12 slides organizados com divisão planejada de falas para 18 a 20 minutos de apresentação (mais demonstração do protótipo).
+- **Roteiro de apresentação:** 10 slides estruturados com foco no impacto social, dificuldades reais e divisão planejada de falas para 18 a 20 minutos (mais demonstração ao vivo do protótipo).
 - **Banco de Defesa:** 20 questões potenciais da banca examinadora com respostas técnicas de apoio para os discentes.
 - **Scripts de montagem:** Scripts [`compilar.py`](07_relatorio/build/compilar.py) e [`build.sh`](07_relatorio/build/build.sh) que geram as versões HTML e o PDF final [`monografia_completa_abnt.pdf`](07_relatorio/build/monografia_completa_abnt.pdf).
 
@@ -207,7 +208,7 @@ Para localizar informações específicas dentro do repositório, os pontos de c
 - Consultar `06_testes/registros_anonimizados.csv` e `06_testes/dossie_testes.md` para verificar tempos de tarefa, pontuação SUS e melhorias aplicadas no protótipo.
 
 ### 7. Estrutura dos Slides (Etapa 7)
-- Consultar `07_relatorio/slides_figma_spec.json` para acessar a especificação dos 12 frames, cartões de métricas e notas de apresentação.
+- Consultar `07_relatorio/slides_figma_spec.json` para acessar a especificação dos 10 frames centrados no impacto social, métricas e notas de apresentação.
 
 ### 8. Preparação para a Defesa Oral
 - Consultar `07_relatorio/roteiro_defesa.md` para revisar as 20 perguntas técnicas organizadas por etapa do projeto.
