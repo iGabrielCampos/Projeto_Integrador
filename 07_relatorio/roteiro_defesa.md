@@ -53,7 +53,7 @@ Este documento prepara os quatro discentes para a arguição oral individual per
 - **Titular Recomendado**: Gabriel Amancio (Desenvolvimento de Software)
 - **Fundamentação**: Mapeamento de desafios do mercado de TI corporativo.
 - **Resposta Sugerida**:
-  > *"Identificamos cinco desafios frequentes nas descrições de vagas: a modernização de sistemas legados para arquiteturas modulares sem interromper operações; a adequação dos sistemas às exigências da LGPD; o controle de custos em serviços de nuvem (FinOps); a inconsistência e baixa qualidade de bases de dados cadastrais; e a dificuldade em encontrar profissionais que aliem conhecimento técnico a uma boa comunicação em equipe."*
+  > *"Identificamos cinco desafios frequentes nas descrições de vagas: a modernização de sistemas antigos para módulos organizados sem parar a operação; a adequação dos sistemas às exigências da LGPD; o controle de custos com infraestrutura em nuvem; a inconsistência e baixa qualidade de bases de dados cadastrais; e a dificuldade em encontrar profissionais que aliem conhecimento técnico a uma boa comunicação em equipe."*
 
 ---
 
@@ -125,17 +125,17 @@ Este documento prepara os quatro discentes para a arguição oral individual per
 
 ## Bloco 6: Arquitetura e Engenharia da Solução ÁguaViva PB (Etapa 5)
 
-### Pergunta 15: Por que a equipe escolheu a abordagem Progressive Web App (PWA) e a arquitetura Offline-First em vez de um aplicativo nativo para Android/iOS?
+### Pergunta 15: Por que a equipe escolheu uma aplicação web responsiva com modo offline em vez de um aplicativo nativo para Android/iOS?
 - **Titular Recomendado**: Gabriel Amancio (Desenvolvimento de Software)
-- **Fundamentação**: PWA, Service Workers, economia de dados e compatibilidade multiplataforma.
+- **Fundamentação**: Acesso direto pelo navegador, economia de memória e suporte a uso sem conexão contínua.
 - **Resposta Sugerida**:
-  > *"A escolha por um PWA evitou a necessidade de download em lojas virtuais, economizando espaço no celular e franquia de dados. O usuário acessa pelo navegador e pode adicionar o ícone à tela inicial. O funcionamento offline foi implementado com Service Workers e IndexedDB: a página carrega os recursos necessários no primeiro acesso e, caso o usuário esteja sem sinal ao preencher um chamado, os dados e a foto ficam armazenados localmente no navegador. Assim que a conexão for restabelecida, os registros são transmitidos automaticamente ao backend em nuvem, evitando perda de relatos."*
+  > *"A escolha por uma aplicação web responsiva evitou a necessidade de baixar e atualizar aplicativos pesados nas lojas virtuais, economizando memória do celular e pacote de dados. O morador abre direto no navegador e pode salvar um atalho na tela inicial. Para lidar com falta de sinal, desenhamos o salvamento local no próprio navegador: quando o usuário preenche a ocorrência sem internet, os dados e a foto ficam guardados no aparelho e são enviados automaticamente ao servidor assim que a conexão retorna, sem perder o relato."*
 
-### Pergunta 16: Como foi garantida a segurança da informação e a privacidade dos dados das denúncias no banco de dados IndexedDB local?
+### Pergunta 16: Como foi garantida a segurança da informação e a privacidade dos dados das denúncias salvas no celular?
 - **Titular Recomendado**: Gustavo Antonio (Segurança da Informação)
-- **Fundamentação**: Criptografia em repouso (Web Crypto API) e pseudonimização da LGPD.
+- **Fundamentação**: Minimização de dados (LGPD) e proteção no envio e armazenamento.
 - **Resposta Sugerida**:
-  > *"Seguimos os princípios de privacidade desde a concepção (Privacy by Design). O aplicativo permite registrar relatos sem exigir CPF, nome completo ou dados bancários. No mapa público, as ocorrências são agrupadas por bairro ou setor censitário, sem expor o endereço exato ou a identidade do morador. Antes do envio das imagens, os metadados de localização e da câmera (EXIF) são removidos pelo sistema. Além disso, a transmissão ocorre sob conexão segura HTTPS/TLS 1.3 e o armazenamento temporário no navegador segue a política de mesma origem."*
+  > *"Seguimos o princípio de privacidade desde o desenho das telas. O sistema permite registrar relatos sem exigir CPF, nome completo ou dados sensíveis. No mapa público, as ocorrências são agrupadas por bairro ou área aproximada, sem expor o endereço exato nem quem denunciou. Antes de salvar as fotos, os dados ocultos do arquivo (como localização exata da câmera, os metadados EXIF) são removidos. Além disso, o envio dos dados acontece por conexão segura HTTPS e os registros temporários ficam restritos ao domínio da aplicação no navegador."*
 
 ### Pergunta 17: O que motivou a adoção da técnica MoSCoW e da sintaxe BDD para a especificação dos requisitos?
 - **Titular Recomendado**: Gabriel Amancio (Desenvolvimento de Software)
@@ -163,4 +163,4 @@ Este documento prepara os quatro discentes para a arguição oral individual per
 - **Titular Recomendado**: Luiz Miguel (Infraestrutura e Redes)
 - **Fundamentação**: Heurística de Correspondência com o Mundo Real e WCAG.
 - **Resposta Sugerida**:
-  > *"A principal melhoria ocorreu na mensagem do modo offline. Na primeira versão do protótipo, a interface exibia um aviso técnico: 'Cache IndexedDB ativo. Sincronização pendente via API REST'. Durante o teste com o participante P3, de 64 anos, ele relatou receio de ter cometido um erro ou perdido os dados. Na versão revisada, trocamos o aviso por uma frase direta e acessível: 'Tudo salvo no seu celular! Não se preocupe: assim que o sinal voltar, enviamos seu chamado sozinho'. Essa mudança atende à segunda heurística de Nielsen, que orienta a correspondência entre o sistema e o mundo real, usando vocabulário familiar ao usuário em vez de termos internos de desenvolvimento."*
+  > *"A principal melhoria ocorreu na mensagem do modo offline. Na primeira versão do protótipo, a tela mostrava um aviso técnico: 'Cache IndexedDB ativo. Sincronização pendente via API REST'. Durante o teste com o participante P3, de 64 anos, ele ficou com medo de ter errado alguma coisa ou perdido o relato. Na versão revisada, trocamos o texto por uma frase simples e direta: 'Tudo salvo no seu celular! Não se preocupe: assim que o sinal voltar, enviamos seu chamado sozinho'. Essa mudança segue a segunda heurística de Nielsen, aproximando o sistema da linguagem real das pessoas."*

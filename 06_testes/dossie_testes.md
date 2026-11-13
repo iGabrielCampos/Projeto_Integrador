@@ -4,7 +4,6 @@ etapa: 6
 titulo: Dossiê de Testes de Usabilidade, Validação Técnica e Aperfeiçoamento da Solução ÁguaViva PB
 lider_etapa: Luiz Miguel
 funcao_lider: Infraestrutura e Redes
-subagentes_apoio: [SA-2, SA-4]
 integrantes: [Gabriel Amancio, Luiz Miguel, Paulo Germano, Gustavo Antonio]
 data: 2026-11-23
 status: concluido
@@ -100,7 +99,7 @@ Na escala de aceitabilidade e adjetivação de Bangor, Kortum e Miller (2008), u
 Durante a aplicação do protocolo de testes com a técnica *Think-Aloud*, foram registrados pontos de atrito e dificuldades de interação que orientaram ajustes no protótipo:
 
 1. **Jargão Técnico na Notificação Offline (Tarefa T03)**:
-   - *Evidência*: O participante P3 (líder comunitário idoso) relatou perplexidade ao ler o aviso original: *"Registro armazenado em cache local IndexedDB; aguardando handshake HTTP"*. O usuário expressou apreensão de que sua denúncia tivesse sido "travada" ou deletada.
+   - *Evidência*: O participante P3 (líder comunitário idoso) relatou perplexidade ao ler o aviso original: *"Cache IndexedDB ativo. Sincronização pendente via API REST"*. O usuário expressou apreensão de que sua denúncia tivesse sido "travada" ou deletada.
    - *Diagnóstico*: Violação da heurística de Nielsen nº 2 (*Correspondência entre o sistema e o mundo real*). A interface comunicava detalhes de implementação arquitetural em vez de focar no benefício do cidadão.
 
 2. **Dificuldade de Foco e Oclusão do Botão Enviar no Formulário (Tarefa T02)**:

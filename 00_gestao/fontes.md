@@ -1,7 +1,7 @@
 ---
 id: fontes-projeto
 etapa: 0
-autor: Main Agent (Orca)
+autor: Equipe Integradora (ADS UNIPÊ)
 data: 2026-11-06
 status: ativo
 ---

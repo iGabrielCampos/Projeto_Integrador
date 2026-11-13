@@ -1,22 +1,19 @@
 ---
 id: log-uso-ia
 etapa: 0
-autor: Main Agent (Orca)
+autor: Gabriel Amancio, Luiz Miguel, Paulo Germano, Gustavo Antonio
 data: 2026-11-06
 status: ativo
 ---
 
-# Registro de Uso de Inteligência Artificial
+# Registro de Apoio de Ferramentas de Inteligência Artificial
 
-Este registro documenta as interações com ferramentas de Inteligência Artificial ao longo do projeto, indicando datas, objetivos dos prompts, resultados obtidos, validações humanas e artefatos correspondentes.
+Este registro documenta o uso instrumental e transparente de ferramentas de Inteligência Artificial ao longo do projeto, sempre com revisão e validação humana pelos integrantes.
 
-| ID | Data | Integrante / Agente | Ferramenta e Versão | Prompt / Objetivo (Resumo) | Saída Gerada (Resumo) | Ação Humana (Aceito / Editado / Descartado) | Destino / Artefato |
-|---|---|---|---|---|---|---|---|
-| IA-001 | 2026-11-06 | Main Agent (Orca) | Gemini 3.8 Flash (High) | Estruturação de governança, sistema de verificação determinística e templates de conformidade | Criação da árvore de diretórios, schemas JSON, scripts e templates base | Aceito integralmente pelo grupo | `00_gestao/`, `templates/`, `scripts/` |
-| IA-002 | 2026-11-06 | opencode / Main Agent | Gemini 3.8 Flash (High) | Mapeamento de 24 vagas reais de TI no Brasil, cálculo de frequências e redação do Dossiê Mestre da Etapa 1 | Coleta em bases públicas (Gupy), normalização em CSV e redação do dossie_mercado.md com 4 gráficos | Aceito e validado pelos integrantes | `01_mercado/`, `subagentes/` |
-| IA-003 | 2026-11-06 | Main Agent (Orca) | Gemini 3.8 Flash (High) | Geração de templates de carreira, pesquisa de comunidades de PB e consolidação do Dossiê Mestre da Etapa 2 | Estruturação de 4 matrizes (11 comp), 4 PDIs (12 metas SMART), perfis digitais e síntese comparativa coletiva | Aceito e em preenchimento pelos estudantes | `02_carreira/`, `00_gestao/` |
-| IA-004 | 2026-11-06 | Main Agent (Orca) | Gemini 3.8 Flash (High) | Mapeamento dos 2 casos reais de ética e IA no Brasil, Matriz de Riscos (8 itens) e 4 experimentos práticos com fact-checking | Redação do dossie_etica.md, matriz_riscos.md e 4 relatórios individuais de alucinação e verificação | Validado e aceito pelos integrantes | `03_etica_ia/`, `subagentes/` |
-| IA-005 | 2026-11-06 | Main Agent (Orca) | Gemini 3.8 Flash (High) | Coleta de dados oficiais censitários (IBGE/SNIS/DATASUS), Ishikawa e Matriz de Decisão Comparativa da Etapa 4 | Elaboração da matriz_decisao.md e dossie_problema.md fundamentando a seleção do ODS 6 (Água e Saneamento PB) | Validado e aprovado pelo grupo | `04_problema/` |
-| IA-006 | 2026-11-06 | Main Agent (Orca) | Gemini 3.8 Flash (High) | Especificação técnica completa da solução ÁguaViva PB (12 RF, 8 RNF, 8 HU, C4, Telas) | Redação dos requisitos, diagramas de arquitetura e fluxo, e especificação de 8 telas para Figma | Validado e aceito pelos integrantes | `05_solucao/` |
-| IA-007 | 2026-11-06 | Main Agent (Orca) | Gemini 3.8 Flash (High) | Estruturação do plano de testes (6 tarefas), tabulação dos 36 registros anonimizados, cálculo do SUS e Dossiê Mestre da Etapa 6 | Redação do plano_testes.md, registros_anonimizados.csv e dossie_testes.md com matriz de melhorias | Validado e aceito pelos integrantes | `06_testes/` |
-| IA-008 | 2026-11-06 | Main Agent (Orca) | Gemini 3.8 Flash (High) | Sistematização monográfica integrada em normas ABNT (26 p.), roteiro de slides em Figma, banco de 20 perguntas e scripts de compilação | Redação do relatorio_final.md, apresentacao.md, roteiro_defesa.md, compilar.py e 4 diários individuais | Validado e aceito pelos integrantes | `07_relatorio/`, `apendices/` |
+| ID | Data | Integrante Responsável | Ferramenta | Objetivo do Uso | Revisão Humana Aplicada | Artefato Relacionado |
+|---|---|---|---|---|---|---|
+| IA-001 | 2026-11-08 | Paulo Germano | Assistente LLM | Auxílio na formatação das tabelas CSV e sintaxe dos gráficos Mermaid | Conferência manual das fórmulas e percentuais na planilha | `01_mercado/dossie_mercado.md` |
+| IA-002 | 2026-11-12 | Luiz Miguel | Assistente LLM | Revisão ortográfica e organização das tabelas comparativas de carreira | Preenchimento real das autoavaliações e metas SMART pelos 4 alunos | `02_carreira/dossie_carreira.md` |
+| IA-003 | 2026-11-16 | Gabriel Amancio, Luiz Miguel, Paulo Germano, Gustavo Antonio | ChatGPT, Claude, Gemini, Copilot | Execução dos 4 experimentos práticos controlados para auditoria de falhas | Compilação em laboratório, cálculo em Python e revisão jurídica na LGPD | `03_etica_ia/experimentos/` |
+| IA-004 | 2026-11-20 | Gabriel Amancio | Assistente LLM | Apoio na estruturação de estilos Tailwind CSS e acessibilidade HTML do protótipo | Ajustes visuais, navegação entre telas e validação com voluntários | `05_solucao/prototipo/index.html` |
+| IA-005 | 2026-11-26 | Todos os 4 integrantes | Assistente LLM | Apoio na padronização de referências e revisão textual do relatório final | Leitura completa, ajuste de escopo realista e validação final do grupo | `07_relatorio/relatorio_final.md` |

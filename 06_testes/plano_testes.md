@@ -3,7 +3,6 @@ id: plano-testes
 etapa: 6
 lider: Luiz Miguel
 funcao: Infraestrutura e Redes
-subagentes_apoio: [SA-2, SA-4]
 data: 2026-11-23
 status: concluido
 solucao: AguaViva PB

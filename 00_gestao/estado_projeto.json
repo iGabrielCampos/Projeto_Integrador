@@ -11,42 +11,37 @@
     "nivel_vagas_padrao": "Estágio e Júnior",
     "recorte_geografico_padrao": "Brasil (Remoto e Híbrido Nordeste / PB)",
     "normas_formatacao": "ABNT (NBR 6023, 6024, 14724)",
-    "ferramenta_prototipagem": "Figma",
-    "tema_social_ambiental": "Monitoramento Participativo da Qualidade da Água e Saneamento Básico em Comunidades Vulneráveis da Paraíba (ODS 6)",
-    "modelo_ia_orquestrador": "Gemini 3.8 Flash (High)"
+    "ferramenta_prototipagem": "HTML/CSS/JS e Figma",
+    "tema_social_ambiental": "Monitoramento Participativo da Qualidade da Água e Saneamento Básico em Comunidades Vulneráveis da Paraíba (ODS 6)"
   },
   "integrantes": [
     {
       "id": "INT-01",
       "nome": "Gabriel Amancio",
       "funcao_principal": "Desenvolvimento de Software",
-      "subagente_apoio": "SA-1",
-      "lideranca_etapas": [3, 5]
+      "lideranca_etapas": [0, 3, 5]
     },
     {
       "id": "INT-02",
       "nome": "Luiz Miguel",
       "funcao_principal": "Infraestrutura e Redes",
-      "subagente_apoio": "SA-2",
       "lideranca_etapas": [2, 6]
     },
     {
       "id": "INT-03",
       "nome": "Paulo Germano",
       "funcao_principal": "Dados e IA",
-      "subagente_apoio": "SA-3",
       "lideranca_etapas": [1]
     },
     {
       "id": "INT-04",
       "nome": "Gustavo Antonio",
       "funcao_principal": "Segurança da Informação",
-      "subagente_apoio": "SA-4",
       "lideranca_etapas": [4]
     }
   ],
   "etapa_atual": 7,
-  "status_geral": "Projeto Concluído - Entregáveis Finais Prontos para Apresentação e Defesa",
+  "status_geral": "Projeto Concluído - Pronto para Apresentação em Sala",
   "percentual_concluido": 100,
   "gates": {
     "etapa_0_governanca": "concluido",
@@ -58,16 +53,5 @@
     "etapa_6_testes": "concluido",
     "etapa_7_relatorio": "concluido"
   },
-  "subagentes": {
-    "SA-1": "Coordenação do projeto e organização da pesquisa de mercado",
-    "SA-2": "Análise de dados, competências profissionais e planejamento",
-    "SA-3": "Pesquisa ética, responsabilidade digital e requisitos da solução",
-    "SA-4": "Prototipagem, testes e documentação técnica"
-  },
-  "pendencias_humanas": [
-    "Realizar a leitura de revisão final da monografia integrada (07_relatorio/relatorio_final.md)",
-    "Importar o roteiro de slides (07_relatorio/apresentacao.md) no Figma ou Google Slides para a apresentação oral",
-    "Simular a defesa oral em grupo utilizando o banco de 20 perguntas em 07_relatorio/roteiro_defesa.md"
-  ],
-  "ultima_atualizacao": "2026-11-06T11:23:00-03:00"
+  "ultima_atualizacao": "2026-11-13T11:30:00-03:00"
 }

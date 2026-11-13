@@ -7,14 +7,14 @@ Declaramos, outrossim, que todo o conteúdo final consolidado, os diários de ap
 ---
 
 ### 1. Ferramentas de IA Utilizadas
-- **Modelos de Linguagem e Raciocínio:** Gemini 3.8 Flash (High) / Plataforma Orca Orquestrador.
-- **Ferramentas de Automação e Suporte:** Scripts determinísticos em Python 3 (`verificar.py`).
+- **Modelos de Linguagem (Interfaces Web):** ChatGPT, Claude, Gemini e Microsoft Copilot (consultas pontuais e experimentos comparativos da Etapa 3).
+- **Ferramentas de Automação e Suporte:** Scripts em Python 3 (`verificar.py` e `compilar.py`).
 
 ### 2. Finalidades do Uso de IA
-- Estruturação inicial de templates, índices e matrizes de rastreabilidade.
-- Apoio na padronização textual e normalização de termos de competências de vagas.
-- Verificação determinística de integridade de dados e consistência bibliográfica.
-- Apoio na formulação de personas, diagramas conceituais e cenários de teste.
+- Apoio na organização inicial de textos, tabelas em Markdown e diagramas Mermaid.
+- Apoio na revisão ortográfica e padronização de termos técnicos da pesquisa de vagas.
+- Experimentos práticos controlados na Etapa 3 para identificar erros e vieses em respostas de IA.
+- Apoio na formulação de personas, fluxos de tela e roteiro de testes de usabilidade.
 
 ### 3. Partes de Autoria Exclusivamente Humana
 - **Diários Individuais de Aprendizagem:** vivências, sentimentos, dificuldades e estratégias reais de estudo.

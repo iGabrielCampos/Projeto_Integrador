@@ -75,56 +75,47 @@ A especificação harmoniza a viabilidade técnica dos estudantes com as diretri
 ### 3.2 Requisitos Não Funcionais (8 Requisitos com Métricas Verificáveis)
 - **RNF-01 (Acessibilidade):** Conformidade integral com as diretrizes internacionais **WCAG 2.2 Nível AA** `[F007]` (contraste mínimo 4.5:1, alvos de toque ≥ 44x44px, navegação por teclado e rótulos para leitores de tela).
 - **RNF-02 (Desempenho e Leveza):** Tempo de Largest Contentful Paint (LCP) **≤ 2,0 segundos** em conexão 3G móvel; peso total da página inicial **≤ 1,5 MB**.
-- **RNF-03 (Privacidade - LGPD `[F001]`):** *Privacy by Design*; descarte de endereço IP do cidadão após o processamento da sessão, criptografia em trânsito com TLS 1.3 e em repouso com AES-256.
-- **RNF-04 (Segurança de Software):** Proteção contra vulnerabilidades do catálogo **OWASP Top 10** `[F024]`, com consultas SQL 100% parametrizadas via ORM e sanitização estrita de entradas.
-- **RNF-05 (Disponibilidade):** Disponibilidade operacional mensal de **≥ 99,5% de uptime**, com monitoramento de integridade via Zabbix/Grafana.
+- **RNF-03 (Privacidade - LGPD `[F001]`):** Registro sem exigir CPF ou nome completo, remoção automática de metadados EXIF das fotos e transmissão segura por HTTPS.
+- **RNF-04 (Segurança de Software):** Proteção contra vulnerabilidades do catálogo **OWASP Top 10** `[F024]`, com consultas SQL 100% parametrizadas e validação estrita de entradas.
+- **RNF-05 (Confiabilidade de Envio):** Armazenamento local automático no navegador quando o sinal cair e reenvio em até 30 segundos após a conexão voltar.
 - **RNF-06 (Usabilidade Aferível):** Taxa de conclusão de envio de reporte por voluntários leigos de **≥ 80% sem auxílio**, com tempo médio de preenchimento **≤ 120 segundos**.
-- **RNF-07 (Responsividade e PWA):** Adaptabilidade fluida a telas de 320px a 1920px de largura, permitindo instalação na tela inicial sem necessidade de download em lojas de apps.
-- **RNF-08 (Green IT):** Arquitetura com baixo consumo de processamento, compressão de imagens em WebP e cache inteligente via Nginx para redução de consumo energético.
+- **RNF-07 (Responsividade):** Adaptabilidade fluida a telas de 320px a 1920px de largura, permitindo uso direto no navegador sem baixar aplicativo de loja.
+- **RNF-08 (Leveza e Economia de Dados):** Compressão de imagens e reaproveitamento de telas em cache no celular para gastar menos pacote de dados 3G/4G.
 
 ---
 
 ## 4. MODELAGEM DA ARQUITETURA E DIAGRAMAS DE SISTEMA
 
-### 4.1 Diagrama de Arquitetura de Software e Containers
-A arquitetura adota o padrão modular desacoplado em camadas:
+### 4.1 Diagrama de Funcionamento e Arquitetura Simplificada
+A solução separa a interface leve que roda no celular do morador dos serviços de recebimento e armazenamento no servidor:
 
 ```mermaid
 graph TD
-    subgraph CLIENTE["Camada Cliente (PWA Responsivo)"]
+    subgraph CLIENTE["No Celular do Cidadão ou ACS (Navegador Web)"]
         USR["Cidadão Morador (Smartphone 3G/4G)"]
         ACS["Agente Comunitário de Saúde (Tablet/Celular)"]
-        PWA["Interface Web ÁguaViva PB (Protótipo entregue: HTML/CSS/JS vanilla; Arquitetura-alvo: React + Vite)<br>WCAG 2.2 AA / Service Worker Offline"]
+        PWA["Interface Web ÁguaViva PB (Protótipo entregue: HTML/CSS/JS; Evolução: PWA)<br>WCAG 2.2 AA e fila local offline"]
     end
 
-    subgraph BORDA["Camada de Borda & Segurança"]
-        NGX["Reverse Proxy & Cache (Nginx)<br>Terminação TLS 1.3 / Rate Limiting (OWASP)"]
+    subgraph BACKEND["Servidor Web (Node.js + Express)"]
+        API["API REST de Recebimento de Ocorrências"]
+        AUTH["Anonimização de Relatos (LGPD)"]
+        ALERTA["Alertas e Painel de Transparência"]
     end
 
-    subgraph BACKEND["Camada de Serviços (Node.js + Express + TypeScript)"]
-        API["API Gateway & Roteadores REST"]
-        AUTH["Módulo de Anonimização (Hash SHA-256 / LGPD)"]
-        GEO["Serviço Espacial de Ocorrências (PostGIS Spatial Queries)"]
-        ALERTA["Serviço de Alertas & Notificações"]
-    end
-
-    subgraph DADOS["Camada de Persistência & Analytics"]
-        DB[(Banco de Dados PostgreSQL 16 + Extensão PostGIS)]
-        CACHE[(Cache Redis - Sessões e Mapas de Calor)]
+    subgraph DADOS["Banco de Dados e Fontes Públicas"]
+        DB[(Banco de Dados PostgreSQL)]
         DATA_OPEN["Bases Abertas DATASUS (F072) e SNIS (F071)"]
     end
 
     USR --> PWA
     ACS --> PWA
-    PWA -->|HTTPS / JSON| NGX
-    NGX --> API
+    PWA -->|HTTPS / JSON quando online| API
     API --> AUTH
-    API --> GEO
     API --> ALERTA
-    GEO --> DB
-    GEO --> CACHE
+    AUTH --> DB
     ALERTA --> DB
-    DATA_OPEN -.->|Carga Analítica Periódica| DB
+    DATA_OPEN -.->|Cruzamento de indicadores| DB
 ```
 
 ---
@@ -231,18 +222,18 @@ Para assegurar rastreabilidade entre requisitos e implementação, estruturaram-
 
 ---
 
-## 6. STACK TECNOLÓGICA E RECURSOS NECESSÁRIOS
+## 6. TECNOLOGIAS E RECURSOS PREVISTOS
 
-A escolha da stack foi orientada diretamente pelas competências identificadas como prioritárias no mercado de trabalho de TI (Etapa 1 `[F020]`), viabilidade econômica de código aberto e baixo consumo energético (Green IT):
+A escolha das tecnologias priorizou simplicidade, código aberto, baixo consumo de dados para o morador e alinhamento com o que o grupo estuda no curso de ADS:
 
-| Camada | Tecnologia Selecionada | Versão / Padrão | Justificativa Técnica e Acadêmica |
+| Camada | Tecnologia Selecionada | Papel no Projeto | Justificativa Prática |
 |---|---|---|---|
-| **Frontend Web** | Protótipo: HTML/CSS/JS vanilla; Arquitetura-alvo: React + Vite + TailwindCSS | Protótipo entregue / PWA alvo | Protótipo conceitual em vanilla JS para validação rápida; React + Vite como arquitetura-alvo para produção e ecossistema PWA. |
-| **Backend / API** | Node.js + Express + TypeScript | Node 20 LTS | Arquitetura RESTful tipada, assíncrona, de alto desempenho para concorrência de requisições e de fácil manutenção pelo estudante de Dev (Gabriel). |
-| **Banco de Dados** | PostgreSQL + PostGIS | Postgres 16 | Banco relacional com extensão geoespacial PostGIS para indexação de coordenadas e consultas de agregação em polígonos territoriais (Paulo). |
-| **Borda e Infraestrutura** | Docker + Nginx Reverse Proxy | Nginx Alpine | Contêineres leves, baixo consumo de memória RAM, terminação SSL/TLS 1.3 e esteira de sustentação administrada pelo estudante de Infra (Luiz). |
-| **Segurança e Identidade** | Helmet, Bcrypt e JWT | Padrões OWASP `[F024]` | Módulo de segurança defensiva, sanitização de requisições e anonimização rigorosa sob supervisão do estudante de Segurança (Gustavo). |
-| **Prototipagem Visual** | Figma | Versão Cloud | Criação dos wireframes de alta fidelidade, guia de estilos de cores acessíveis e montagem dos slides de apresentação final. |
+| **Interface Web (Entregue)** | HTML5, Tailwind CSS e JavaScript | Protótipo navegável completo (`index.html`) | Carregamento rápido em aparelhos simples e validação direta no navegador durante os testes. |
+| **Evolução PWA (Prevista)** | Service Worker e armazenamento local | Fila de envio sem internet | Permite que o relato fique salvo no celular do morador quando acaba o sinal ou crédito de dados. |
+| **Backend (Previsto)** | Node.js e Express | API REST para receber denúncias | Tecnologia leve, conhecida da equipe e fácil de manter para registrar relatos e gerar protocolos. |
+| **Banco de Dados (Previsto)** | PostgreSQL | Armazenamento de ocorrências por bairro | Banco relacional aberto e confiável para cruzar queixas por região com indicadores de saúde. |
+| **Segurança e Privacidade** | HTTPS e validação de entradas (`OWASP` `[F024]`) | Proteção básica e anonimato (`LGPD` `[F001]`) | Garante envio seguro sem exigir CPF, RG ou endereço exato do denunciante. |
+| **Prototipagem e Design** | HTML/CSS/JS e Figma | Especificação visual das 8 telas | Definição da paleta de alto contraste, tipografia legível e botões de 48×48 px. |
 
 ---
 
@@ -265,18 +256,18 @@ O protótipo do **ÁguaViva PB** contempla a jornada de ponta a ponta dos usuár
 
 ### 8.1 Privacidade e Proteção de Dados (LGPD - Lei nº 13.709/2018 `[F001]`)
 - **Minimização de Dados (Art. 6º, III):** O sistema não coleta RG, CPF, biometria ou dados bancários do cidadão denunciante. A geolocalização é arredondada em nível de trecho de rua/bairro para evitar a identificação domiciliar exata de quem reporta.
-- **Anonimização Irreversível:** Os identificadores de sessão são transformados em códigos hash criptográficos SHA-256 unidirecionais.
+- **Anonimização de Relatos:** Os registros públicos exibem apenas o bairro ou região e um código de protocolo, sem dados que identifiquem a residência do morador.
 - **Canal de Atendimento ao Titular (Art. 18):** Disponibilização de link direto no rodapé da aplicação para requisição de eliminação de dados ou esclarecimentos sobre privacidade.
 
 ### 8.2 Acessibilidade Digital e Inclusão (WCAG 2.2 Nível AA `[F007]`)
-- **Contraste de Cores:** Todos os textos possuem razão de contraste mínima de 4.5:1 em relação ao plano de fundo. Botões de ação prioritária utilizam cores primárias sólidas com bordas destacadas.
+- **Contraste de Cores:** Todos os textos possuem razão de contraste mínima de 4.5:1 em relação ao plano de fundo, com modo de alto contraste para leitura sob sol forte.
 - **Navegação Assistida:** Ordem de tabulação lógica (`tabindex`) para usuários que utilizam navegadores exclusivamente via teclado ou acionadores assistivos.
 - **Linguagem Simples (*Plain Language*):** Supressão de jargões técnicos de engenharia hidráulica ou jurídica, adotando termos populares compreensíveis por cidadãos de todos os níveis de escolaridade (ex.: "Água Barrenta" em vez de "Turbidez elevada acima de 5,0 uT").
 
 ### 8.3 Sustentabilidade Computacional (Green IT)
-- A arquitetura PWA elimina o consumo excessivo de downloads pesados de lojas de aplicativos;
-- As imagens são comprimidas no formato moderno WebP com redução média de 70% no peso de transferência de dados;
-- O banco de dados PostgreSQL utiliza índices espaciais (GIST) otimizados para evitar que consultas de mapa de calor sobrecarreguem o processador do servidor.
+- O acesso via navegador evita downloads pesados em lojas de aplicativos;
+- As imagens anexadas passam por compressão antes do envio para economizar a franquia de dados móveis do cidadão;
+- O uso de páginas leves e cache local reduz requisições repetidas e consumo de energia no aparelho e no servidor.
 
 ---
 

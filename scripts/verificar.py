@@ -50,7 +50,7 @@ def check_state() -> None:
         print(f"[!!] estado_projeto.json inválido: {exc}")
 
 def md_files():
-    skip_dirs = {"templates", "subagentes", "build", "apendices", ".git"}
+    skip_dirs = {"build", "apendices", ".git"}
     # Foca nos diretórios operacionais do projeto
     target_prefixes = ("00_", "01_", "02_", "03_", "04_", "05_", "06_", "07_")
     for p in ROOT.rglob("*.md"):

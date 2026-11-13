@@ -1,7 +1,7 @@
 ---
 id: relatorio-vagas-etapa-1
 etapa: 1
-autor: opencode / Main Agent
+autor: Paulo Germano (Dados e IA)
 data: 2026-11-06
 status: ativo
 fontes:

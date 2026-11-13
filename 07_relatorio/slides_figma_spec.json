@@ -2,6 +2,7 @@
   "project": "Laboratório de Carreira e Inovação Responsável em TI - ÁguaViva PB",
   "institution": "UNIPÊ - Centro Universitário de João Pessoa",
   "course": "CST em Análise e Desenvolvimento de Sistemas",
+  "target_audience": "Apresentação em sala de aula para professora e turma",
   "canvas": {
     "width": 1920,
     "height": 1080,
@@ -22,22 +23,21 @@
     },
     "typography": {
       "title_font": "Sora / Inter Bold",
-      "body_font": "Sora / Inter Regular",
-      "code_font": "JetBrains Mono / Courier"
+      "body_font": "Sora / Inter Regular"
     }
   },
   "slides": [
     {
       "slide_number": 1,
-      "title": "ÁGUAVIVA PB: TI A SERVIÇO DA CIDADANIA HÍDRICA NA PARAÍBA",
-      "subtitle": "Laboratório de Carreira e Inovação Responsável em TI — Projeto Integrador de Design Profissional",
-      "speaker": "Paulo Germano (Dados e IA)",
+      "title": "ÁguaViva PB: Tecnologia para quem enfrenta falta d'água na Paraíba",
+      "subtitle": "Projeto Integrador — CST em Análise e Desenvolvimento de Sistemas (UNIPÊ • 2026.2)",
+      "speaker": "Paulo Germano",
       "timing_seconds": 60,
       "layout": "hero_cover",
       "elements": [
         {
           "type": "badge",
-          "text": "UNIPÊ • ADS • TURMA F • 2026.2",
+          "text": "UNIPÊ • ADS • 2026.2",
           "color": "#0D9488"
         },
         {
@@ -50,235 +50,214 @@
           ]
         }
       ],
-      "speaker_notes": "Apresentação da equipe e do propósito social: conectar competências exigidas pelo mercado de TI ao enfrentamento do desabastecimento de água e da exclusão digital na Paraíba."
+      "speaker_notes": "Abertura direta para a professora e colegas: apresentar a equipe e o objetivo de aplicar ADS a um problema concreto do estado."
     },
     {
       "slide_number": 2,
-      "title": "A Dor Real na Paraíba: Água, Saúde e Exclusão Burocrática",
-      "subtitle": "Por que comunidades periféricas e rurais continuam invisíveis mesmo quando falta água potável",
-      "speaker": "Paulo Germano (Dados e IA)",
+      "title": "O Problema Real na Paraíba: Água e Saneamento",
+      "subtitle": "Por que escolhemos o ODS 6 a partir dos dados oficiais do estado",
+      "speaker": "Paulo Germano",
       "timing_seconds": 120,
-      "layout": "stat_cards_and_barrier",
+      "layout": "three_stat_cards",
       "elements": [
         {
           "type": "stat_card",
           "number": "50,92%",
-          "label": "Dos lares da PB sem rede de esgoto (1,4 milhão em fossas/valas; 88 mil em João Pessoa)",
+          "label": "Dos lares da Paraíba sem rede de esgoto (1,4 milhão em fossas ou valas; 88 mil em João Pessoa)",
           "source": "IBGE Censo 2022 [F070]",
           "accent_color": "#E11D48"
         },
         {
           "type": "stat_card",
           "number": "8 de 10",
-          "label": "Piores municípios do Brasil em atendimento hídrico ficam na PB; 47,0% da água tratada se perde",
+          "label": "Piores municípios do Brasil em abastecimento ficam na Paraíba; 47% da água tratada se perde na rede",
           "source": "IBGE / SNIS Trata Brasil [F070][F071]",
           "accent_color": "#F59E0B"
         },
         {
           "type": "stat_card",
           "number": "0 a 5 anos",
-          "label": "Crianças e idosos concentram internações por doenças diarreicas ligadas à água contaminada",
+          "label": "Crianças pequenas e idosos concentram internações por doenças diarreicas ligadas à água",
           "source": "DATASUS / SIH [F072]",
           "accent_color": "#0D9488"
-        },
-        {
-          "type": "callout_box",
-          "title": "A Barreira Invisível para Denunciar",
-          "text": "Canais oficiais exigem número de matrícula da conta (excluindo ocupações sem ligação formal), formulários extensos e internet contínua."
         }
       ],
-      "speaker_notes": "Mostramos a gravidade humana por trás dos dados oficiais e explicamos por que quem mais sofre sem água não consegue sequer registrar uma reclamação formal."
+      "speaker_notes": "Mostrar que o problema não é abstrato: falta de esgoto, perda de quase metade da água tratada e impacto direto na saúde."
     },
     {
       "slide_number": 3,
-      "title": "Quem Sofre na Ponta, Causas-Raiz e Escolha do ODS 6",
-      "subtitle": "Personas reais, Diagrama de Ishikawa e Matriz Multicritério (Nota 9,05 / 10,0)",
-      "speaker": "Gustavo Antonio (Segurança da Informação)",
+      "title": "Quem Sofre na Ponta e Por Que Ninguém Denuncia",
+      "subtitle": "Histórias reais de exclusão e a barreira dos canais atuais",
+      "speaker": "Gustavo Antonio",
       "timing_seconds": 120,
-      "layout": "personas_and_decision",
+      "layout": "two_personas_and_barrier",
       "elements": [
         {
-          "type": "persona",
-          "name": "Dona Maria de Fátima (52 anos, Mandacaru)",
-          "context": "Dias seguidos com torneira seca ou água barrenta; celular Android básico pré-pago sem internet ativa; medo de perder prazo ou não entender termos difíceis."
+          "type": "persona_card",
+          "name": "Dona Maria de Fátima (52 anos)",
+          "context": "Moradora de Mandacaru, celular Android simples pré-pago e dias sem água na torneira."
         },
         {
-          "type": "persona",
-          "name": "Carlos Eduardo (29 anos, Agente Comunitário de Saúde)",
-          "context": "Atende famílias com gastroenterite infantil por esgoto a céu aberto; precisa registrar demandas coletivas na rua para cobrar vigilância sanitária."
-        },
-        {
-          "type": "matrix_summary",
-          "winner": "Problema A: Água e Saneamento Básico (ODS 6) — 9,05 / 10,0",
-          "competitors": "Desperdício de Alimentos / ODS 2 e 12 (8,20) • Alagamentos e Encostas / ODS 11 e 13 (7,63)"
-        }
-      ],
-      "speaker_notes": "Explicamos como a análise multicritério e o Diagrama de Ishikawa levaram à escolha do ODS 6 e como as personas orientaram todas as decisões de produto."
-    },
-    {
-      "slide_number": 4,
-      "title": "Do Mercado às Competências Aplicadas (Missão 1 → Missão 2)",
-      "subtitle": "Como 24 vagas reais, 12 metas SMART e o rodízio de liderança habilitaram a solução social",
-      "speaker": "Paulo Germano & Luiz Miguel",
-      "timing_seconds": 120,
-      "layout": "bridge_chart_and_roles",
-      "elements": [
-        {
-          "type": "chart_summary",
-          "title": "Top Competências em 24 Vagas Reais (87,5% Remotas)",
-          "data": [
-            { "skill": "SQL", "percentage": 45.8 },
-            { "skill": "Git / GitHub", "percentage": 29.2 },
-            { "skill": "Python", "percentage": 29.2 },
-            { "skill": "Comunicação Clara", "percentage": 29.2 },
-            { "skill": "Java / Spring Boot", "percentage": 20.8 },
-            { "skill": "Linux / Power BI", "percentage": 16.7 },
-            { "skill": "Cloud / LGPD", "percentage": 12.5 }
-          ]
+          "type": "persona_card",
+          "name": "Carlos Eduardo (29 anos)",
+          "context": "Agente Comunitário de Saúde que vê casos de diarreia na rua, sem dados organizados por bairro."
         },
         {
           "type": "callout_box",
-          "title": "Ponte Carreira → Impacto Social (Gap Nuvem/Docker: 2,75)",
-          "text": "12 metas SMART (AWS, Oracle Java, Power BI PL-300, Enap LGPD, Security+) + comunidades da PB (GDG JP, DevOpsDays PB, Python Nordeste, OWASP). Cada especialidade resolveu uma barreira real: Dados (DATASUS), Dev (Acessibilidade), Infra (Offline-first) e Segurança (Anonimato LGPD)."
+          "title": "A barreira que trava quem mais precisa",
+          "text": "Canais oficiais pedem matrícula da conta (excluindo áreas sem ligação formal), exigem internet estável ou ligação demorada e assustam com formulários longos."
         }
       ],
-      "speaker_notes": "Mostramos a integração exigida pelo Desafio Prático entre a investigação do mercado/PDIs e as competências aplicadas no ÁguaViva PB, destacando o rodízio de liderança."
+      "speaker_notes": "Dar rosto ao problema e explicar por que os moradores mais vulneráveis ficam invisíveis nas estatísticas oficiais."
+    },
+    {
+      "slide_number": 4,
+      "title": "Nossa Solução: ÁguaViva PB na Prática",
+      "subtitle": "Simplicidade, funcionamento offline e proteção de quem denuncia",
+      "speaker": "Gabriel Amancio",
+      "timing_seconds": 120,
+      "layout": "four_feature_cards",
+      "elements": [
+        {
+          "type": "feature_card",
+          "title": "Denúncia em 2 passos, sem cadastro",
+          "text": "Não pede CPF, senha nem matrícula da CAGEPA. Privacidade respeitada pela LGPD."
+        },
+        {
+          "type": "feature_card",
+          "title": "Funciona sem internet na hora",
+          "text": "Guarda o relato no próprio celular e envia sozinho assim que o sinal voltar."
+        },
+        {
+          "type": "feature_card",
+          "title": "Pedido de carro-pipa comunitário",
+          "text": "Atalho direto para priorizar creches, escolas, postos de saúde e ruas desabastecidas."
+        },
+        {
+          "type": "feature_card",
+          "title": "Mapa do bairro e guia de água segura",
+          "text": "Visualização por bairro sem expor o morador e instruções simples para ferver ou clorar a água."
+        }
+      ],
+      "speaker_notes": "Explicar como o aplicativo responde diretamente às barreiras mostradas no slide anterior, em linguagem comum."
     },
     {
       "slide_number": 5,
-      "title": "Ética, Proteção ao Vulnerável e Inclusão Digital",
-      "subtitle": "Casos CESeC e ANPD aplicados à realidade de quem denuncia na periferia",
-      "speaker": "Gustavo Antonio (Segurança da Informação)",
-      "timing_seconds": 120,
-      "layout": "ethics_social_safeguards",
+      "title": "Acessibilidade e Demonstração ao Vivo",
+      "subtitle": "Feito para ler na rua sob sol forte e para pessoas sem prática no celular",
+      "speaker": "Gabriel Amancio",
+      "timing_seconds": 300,
+      "layout": "demo_spotlight",
       "elements": [
         {
-          "case": "Referências Reais no Brasil (Etapa 3)",
-          "evidence": "CESeC (>90% de presos por reconhecimento facial eram negros — Art. 20 LGPD) e ANPD (suspensão preventiva da Meta por falta de transparência/opt-out)."
+          "type": "accessibility_list",
+          "items": [
+            "Botões grandes (mínimo de 48x48 px) para evitar toque errado",
+            "Modo de alto contraste para leitura sob luz solar forte",
+            "Aumento rápido do tamanho da letra na própria tela",
+            "8 telas interligadas no protótipo web (05_solucao/prototipo/index.html)"
+          ]
         },
         {
-          "case": "Proteção Social no ÁguaViva PB (Matriz de 8 Riscos)",
-          "evidence": "Sem coleta de CPF, RG ou telefone; geolocalização agregada por bairro contra retaliações; registro mediado por ACS/lideranças para famílias sem celular; linguagem simples e Green IT."
+          "type": "demo_callout",
+          "text": "Demonstração ao vivo no navegador: registro de falta d'água na Ilha do Bispo com simulação offline."
         }
       ],
-      "speaker_notes": "Conectamos a ética digital à realidade de quem denuncia: proteger a identidade do morador e incluir quem não tem smartphone ou letramento digital."
+      "speaker_notes": "Passar rapidamente pelos pontos de acessibilidade e abrir o arquivo HTML no navegador para mostrar o protótipo funcionando ao vivo."
     },
     {
       "slide_number": 6,
-      "title": "Como o ÁguaViva PB Ajuda na Prática",
-      "subtitle": "Solução acessível em 2 passos para enfrentar o desabastecimento e a falta de informação",
-      "speaker": "Gabriel Amancio (Desenvolvimento de Software)",
+      "title": "Testes com Moradores Reais",
+      "subtitle": "Validação com 6 voluntários externos (de 23 a 64 anos) e TCLE assinado",
+      "speaker": "Luiz Miguel",
       "timing_seconds": 120,
-      "layout": "four_social_features",
+      "layout": "test_results_cards",
       "elements": [
         {
-          "feature": "1. Denúncia em 2 passos sem cadastro",
-          "detail": "Relata torneira seca, água barrenta ou esgoto aberto sem exigir número de matrícula da conta ou CPF."
+          "type": "metric_card",
+          "number": "97,2%",
+          "label": "Das 36 tarefas concluídas com sucesso (35 de 36)"
         },
         {
-          "feature": "2. Resiliência sem crédito de internet",
-          "detail": "Fluxo offline-first: guarda o relato no celular e envia quando o sinal voltar (simulado no protótipo; Service Worker + IndexedDB na arquitetura-alvo)."
+          "type": "metric_card",
+          "number": "59,4 s",
+          "label": "Tempo médio para concluir cada tarefa sem ajuda"
         },
         {
-          "feature": "3. Chamado emergencial de Carro-Pipa",
-          "detail": "Prioriza creches, escolas e postos de saúde desabastecidos com pontos de referência locais."
+          "type": "metric_card",
+          "number": "84,2 / 100",
+          "label": "Pontuação média de facilidade na escala SUS (faixa Excelente)"
         },
         {
-          "feature": "4. Transparência e Educação Sanitária",
-          "detail": "Mapa público por bairro e orientações práticas de fervura e cloração caseira (12 RF MoSCoW, 8 RNF, 8 BDD)."
+          "type": "participants_note",
+          "text": "Participantes: comerciante (52), estudante (23), aposentado com baixa visão e tremor (64), Agente de Saúde (28), encanador (35) e professora (41)."
         }
       ],
-      "speaker_notes": "Apresentamos o funcionamento prático da solução pelo olhar do cidadão, mantendo transparente o que está no protótipo navegável e o que compõe a arquitetura-alvo."
+      "speaker_notes": "Mostrar os números reais do teste e destacar que o objetivo não foi só tirar nota boa, mas observar onde pessoas comuns travaram."
     },
     {
       "slide_number": 7,
-      "title": "Protótipo Navegável e Acessibilidade Universal",
-      "subtitle": "8 Telas Estruturais (TEL-01 a TEL-08) pensadas para sol forte, telas pequenas e baixa visão",
-      "speaker": "Gabriel Amancio (Desenvolvimento de Software)",
+      "title": "O Choque com a Realidade: v1.0 para v2.0",
+      "subtitle": "O que atrapalhou os moradores e como corrigimos na hora",
+      "speaker": "Luiz Miguel",
       "timing_seconds": 120,
-      "layout": "mockup_showcase",
+      "layout": "before_after_table",
       "elements": [
-        { "screen": "TEL-01 / TEL-02 / TEL-03", "name": "Home Comunitária e Denúncia em 2 Passos (Ilha do Bispo / Mandacaru)" },
-        { "screen": "TEL-04 / TEL-05", "name": "Mapa Sanitário e Painel de Transparência Hídrica" },
-        { "screen": "TEL-06 / TEL-07", "name": "Central de Carro-Pipa e Fila Local Offline" },
-        { "screen": "TEL-08 + WCAG 2.2 AA", "name": "Botões >= 48x48 px, Alto Contraste (>14:1) e Fonte +200% — Transição para Demo ao Vivo" }
+        {
+          "type": "comparison_row",
+          "area": "Aviso sem internet",
+          "before": "Texto técnico ('Cache IndexedDB ativo') assustou o voluntário de 64 anos",
+          "after": "'Tudo salvo no celular! Quando o sinal voltar, a gente envia sozinho.'"
+        },
+        {
+          "type": "comparison_row",
+          "area": "Botão de envio",
+          "before": "Teclado do celular cobria o botão lá embaixo na única tarefa que falhou",
+          "after": "Botão preso na barra inferior, sempre visível na tela"
+        },
+        {
+          "type": "comparison_row",
+          "area": "Mapa do bairro",
+          "before": "Zoom só com movimento de pinça difícil para quem tem tremor",
+          "after": "Botões grandes de + e - fáceis de tocar"
+        },
+        {
+          "type": "comparison_row",
+          "area": "Confirmação final",
+          "before": "Apenas aviso visual rápido no topo",
+          "after": "Vibração curta no aparelho quando o envio termina"
+        }
       ],
-      "speaker_notes": "Mostramos as 8 telas estruturais do protótipo e iniciamos a demonstração ao vivo simulando o uso real sem internet e no modo alto contraste."
+      "speaker_notes": "Contar a história do voluntário de 64 anos e mostrar como ouvir o usuário mudou o protótipo de verdade."
     },
     {
       "slide_number": 8,
-      "title": "O Choque com a Realidade: Testes com Voluntários",
-      "subtitle": "6 participantes (23 a 64 anos), 36 tarefas, eficácia de 97,2% e SUS de 84,2 — e as dores descobertas",
-      "speaker": "Luiz Miguel (Infraestrutura e Redes)",
-      "timing_seconds": 120,
-      "layout": "usability_and_human_findings",
+      "title": "Limitações Reais e Próximos Passos",
+      "subtitle": "Olhar realista sobre até onde a tecnologia vai e como continuar",
+      "speaker": "Todos (Fechamento)",
+      "timing_seconds": 60,
+      "layout": "two_columns_limits_next",
       "elements": [
         {
-          "metric": "Indicadores ISO 9241-11 & SUS",
-          "value": "97,2% de sucesso (35/36) • 59,4 s/tarefa • SUS 84,2/100",
-          "detail": "6 voluntários adultos com TCLE e anonimização (comerciante, estudante, líder idoso, ACS, encanador e professora)."
-        },
-        {
-          "metric": "Fricção Real — P3 (64 anos, baixa visão e tremor)",
-          "value": "Travou na T02/T03",
-          "detail": "Teclado virtual escondeu o botão Enviar e o aviso 'Cache IndexedDB ativo; aguardando handshake HTTP' gerou medo de perda do relato."
-        },
-        {
-          "metric": "Fricção Real — P1 (52 anos, comerciante)",
-          "value": "Uso na rua",
-          "detail": "Solicitou confirmação por vibração no bolso quando a denúncia offline for enviada."
-        }
-      ],
-      "speaker_notes": "Mostramos que, apesar da nota SUS excelente, ouvir pessoas reais de fora da área de TI expôs barreiras que os desenvolvedores não enxergavam."
-    },
-    {
-      "slide_number": 9,
-      "title": "O Que Mudamos para Incluir de Verdade (v1.0 → v2.0)",
-      "subtitle": "Refatoração ergonômica guiada pelas dificuldades reais de P1, P3 e P5",
-      "speaker": "Luiz Miguel (Infraestrutura e Redes)",
-      "timing_seconds": 120,
-      "layout": "before_after_comparison",
-      "elements": [
-        {
-          "item": "Aviso Offline (TEL-07)",
-          "before": "'Cache IndexedDB ativo; aguardando handshake HTTP.'",
-          "after": "'Tudo salvo no celular! Enviaremos automaticamente quando o sinal voltar.'",
-          "rationale": "Eliminou o medo de perda de dados no participante idoso (Heurística 2 de Nielsen)."
-        },
-        {
-          "item": "Envio Fixo (TEL-03), Zoom Tátil (TEL-04) & Legibilidade (TEL-05)",
-          "before": "Botão coberto pelo teclado, zoom só por pinça e legendas de 10 px.",
-          "after": "Barra inferior fixa (sticky bottom), botões + / - de 48x48 px, legendas de 13 px e vibração háptica.",
-          "rationale": "WCAG 2.5.5 e prevenção de abandono em smartphones compactos."
-        }
-      ],
-      "speaker_notes": "Detalhamos cada melhoria prática implementada na v2.0 como resposta direta às dificuldades observadas nos testes."
-    },
-    {
-      "slide_number": 10,
-      "title": "Limitações Honestas, Aprendizados e Impacto Social",
-      "subtitle": "Maturidade crítica (Etapas 4, 6 e 7) e 24 registros individuais de aprendizagem",
-      "speaker": "Todos os 4 Integrantes",
-      "timing_seconds": 120,
-      "layout": "limitations_and_closing",
-      "elements": [
-        {
-          "section": "Limitações Explicitadas (DESAFIO_PRATICO.md)",
+          "type": "column",
+          "title": "Limites do que fizemos até aqui",
           "items": [
-            "O software não gera água nem substitui obras: transforma queixas isoladas em prova coletiva para cobrar concessionárias e Defesa Civil.",
-            "Famílias sem smartphone continuam dependendo de mediação por ACS e lideranças de bairro.",
-            "Amostra exploratória restrita (N=6 na Grande João Pessoa, sem semiárido presencial) e fluxo offline simulado no protótipo."
+            "Um aplicativo não conserta cano nem gera água tratada: ele organiza evidências para cobrar providências",
+            "Quem não tem celular depende de Agentes de Saúde ou vizinhos para registrar a demanda",
+            "Os 6 testes aconteceram na Grande João Pessoa; o Sertão e o Cariri precisam de validação local"
           ]
         },
         {
-          "section": "Diários Individuais & Próximos Passos",
+          "type": "column",
+          "title": "Como esse trabalho pode crescer",
           "items": [
-            "24 registros de aprendizagem (6 por aluno, >= 2 novas ferramentas aplicadas por integrante).",
-            "Roadmap: Service Worker + IndexedDB reais, backend PostGIS e integração com dados abertos/Defesa Civil."
+            "Validar novas demandas com associações de bairro e postos de saúde",
+            "Implementar o servidor completo em Node.js e PostgreSQL",
+            "Buscar diálogo com ouvidorias municipais, Defesa Civil e Cagepa"
           ]
         }
       ],
-      "speaker_notes": "Encerramos com transparência sobre o alcance real da proposta, síntese dos aprendizados da equipe e abertura para arguição individual."
+      "speaker_notes": "Encerrar com maturidade técnica e social, agradecendo à professora e abrindo espaço para perguntas da turma."
     }
   ]
 }

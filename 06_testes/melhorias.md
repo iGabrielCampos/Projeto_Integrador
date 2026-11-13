@@ -7,7 +7,7 @@ Durante os testes de usabilidade com os 6 participantes e a aplicação da técn
 
 | ID | Oportunidade de Melhoria | Impacto na Experiência | Esforço Técnico | Prioridade de Implementação | Status |
 |---|---|---|---|---|---|
-| **MELH-01** | Substituição de jargões técnicos no modo offline (*"cache IndexedDB; handshake HTTP"*) por redação clara em linguagem natural: *"Salvo no aparelho com segurança. Enviaremos sozinho assim que o sinal voltar."* | **Alto** | **Baixo** | Imediata (P1) | **Implementado no Protótipo v2.0** |
+| **MELH-01** | Substituição de jargões técnicos no modo offline (*"Cache IndexedDB ativo; API REST"*) por redação clara em linguagem natural: *"Salvo no aparelho com segurança. Enviaremos sozinho assim que o sinal voltar."* | **Alto** | **Baixo** | Imediata (P1) | **Implementado no Protótipo v2.0** |
 | **MELH-02** | Fixação do botão de envio do formulário em barra inferior fixa (*sticky action bar*), garantindo visibilidade mesmo com o teclado virtual aberto em telas compactas. | **Alto** | **Baixo** | Imediata (P1) | **Implementado no Protótipo v2.0** |
 | **MELH-03** | Inclusão de botões táteis explícitos de ampliação e redução (+ / -) com dimensão mínima de 48 × 48 px no mapa interativo, eliminando a dependência exclusiva do gesto multitouch de pinça (*pinch-to-zoom*). | **Médio** | **Baixo** | Curto Prazo (P2) | **Implementado no Protótipo v2.0** |
 | **MELH-04** | Aumento da tipografia das legendas e eixos dos gráficos de 10 px para 13 px em negrito de alto contraste e integração de feedback háptico (vibração curta de 100 ms) ao concluir a sincronização assíncrona. | **Alto** | **Médio** | Curto Prazo (P2) | **Implementado no Protótipo v2.0** |

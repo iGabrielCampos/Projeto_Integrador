@@ -287,7 +287,7 @@ Articular a pesquisa empírica sobre o mercado de trabalho em TI, a autoavaliaç
 2. Estruturar matrizes individuais de autoavaliação profissional e Planos de Desenvolvimento Individual (PDI) com metas fundamentadas no método SMART para os quatro integrantes da equipe.
 3. Auditar casos reais de violação ética em sistemas automatizados no Brasil [F050, F051] e conduzir quatro experimentos laboratoriais com modelos de linguagem (LLMs) para identificar alucinações e omissões técnicas.
 4. Elaborar uma análise diagnóstica multicritério de problemas socioambientais na Paraíba, fundamentando a escolha do ODS 6 (Água Potável e Saneamento) [F070, F071, F072].
-5. Especificar a arquitetura técnica (C4 Model), os requisitos funcionais e não funcionais (MoSCoW e BDD) e o protótipo de alta fidelidade da aplicação **ÁguaViva PB**, com suporte integral a funcionamento *offline-first* e acessibilidade WCAG 2.2 nível AA [F007].
+5. Projetar a solução **ÁguaViva PB** com requisitos funcionais e não funcionais, fluxos de navegação, histórias de usuário e um protótipo navegável de 8 telas focado em operação *offline* e acessibilidade WCAG 2.2 nível AA [F007].
 6. Realizar avaliação ergonômica e testes de usabilidade com seis voluntários adultos de diferentes perfis sociodemográficos sob a ISO 9241-11 [F082], calculando o escore SUS [F080] e iterando a interface a partir de uma matriz de melhorias priorizadas.
 7. Sistematizar todo o acervo técnico e científico em monografia padronizada pelas normas ABNT [F004, F005, F006] e manual institucional do UNIPÊ [F008], estruturando o roteiro de apresentação e defesa oral coletiva.
 
@@ -328,27 +328,27 @@ Paralelamente, a sustentabilidade da própria tecnologia deve ser contemplada so
 ## 3. METODOLOGIA CIENTÍFICA E OPERACIONAL
 
 ### 3.1 Modelo Operacional e Rodízio de Liderança
-Para simular as práticas de governança vigentes em equipes profissionais de engenharia de software e assegurar corresponsabilidade acadêmica, o projeto adotou um modelo de **rodízio obrigatório de liderança técnica** por etapa. Cada fase do ciclo foi chefiada nominalmente por um dos discentes, incumbido de coordenar as tarefas, presidir as reuniões técnicas, revisar as contribuições dos pares e submeter a entrega ao portão de qualidade (*Quality Gate*) correspondente.
+Para organizar o trabalho em equipe e atender à exigência de alternância de responsabilidades, o grupo adotou um **rodízio de liderança por etapa**. Em cada fase, um integrante ficou responsável por coordenar as tarefas, conduzir os alinhamentos e revisar as entregas com os colegas antes da consolidação final.
 
-Tabela 1 — Matriz de Governança, Rodízio de Liderança e Papéis Técnicos
-| Etapa | Tema Central da Etapa | Líder Responsável | Especialidade Principal | Subagente de Apoio IA | Portão de Qualidade |
+Tabela 1 — Matriz de Organização, Rodízio de Liderança e Papéis Técnicos
+| Etapa | Tema Central da Etapa | Líder Responsável | Especialidade Principal | Revisores Pares | Situação |
 |---|---|---|---|---|---|
-| **Etapa 0** | Governança, Infraestrutura e Regras | Gabriel Amancio | Desenvolvimento | SA-1 (Coordenação) | Gate 0 — Aprovado |
-| **Etapa 1** | Mercado de Trabalho em TI | Paulo Germano | Dados e IA | SA-2 (Análise de Dados) | Gate 1 — Aprovado |
-| **Etapa 2** | Identidade Profissional e Carreira | Luiz Miguel | Infraestrutura e Redes | SA-2 (Competências) | Gate 2 — Aprovado |
-| **Etapa 3** | Ética, IA e Cidadania Digital | Gabriel Amancio | Desenvolvimento | SA-3 (Pesquisa Ética) | Gate 3 — Aprovado |
-| **Etapa 4** | Problema Socioambiental (ODS) | Gustavo Antonio | Segurança da Informação | SA-1 (Diagnóstico) | Gate 4 — Aprovado |
-| **Etapa 5** | Solução Tecnológica ÁguaViva PB | Gabriel Amancio | Desenvolvimento | SA-4 (Prototipagem) | Gate 5 — Aprovado |
-| **Etapa 6** | Testes de Usabilidade e Aperfeiçoamento | Luiz Miguel | Infraestrutura e Redes | SA-4 (Eng. Usabilidade)| Gate 6 — Aprovado |
-| **Etapa 7** | Sistematização, Relatório e Defesa | Todos os 4 Integrantes | Coordenação Coletiva | Todos os Subagentes | Gate 7 — Submetido |
+| **Etapa 0** | Organização do Repositório e Cronograma | Gabriel Amancio | Desenvolvimento | Luiz Miguel, Gustavo Antonio | Concluído |
+| **Etapa 1** | Mercado de Trabalho em TI | Paulo Germano | Dados e IA | Gabriel Amancio, Luiz Miguel | Concluído |
+| **Etapa 2** | Identidade Profissional e Carreira | Luiz Miguel | Infraestrutura e Redes | Paulo Germano, Gustavo Antonio | Concluído |
+| **Etapa 3** | Ética, IA e Cidadania Digital | Gabriel Amancio | Desenvolvimento | Paulo Germano, Luiz Miguel | Concluído |
+| **Etapa 4** | Problema Socioambiental (ODS) | Gustavo Antonio | Segurança da Informação | Gabriel Amancio, Luiz Miguel | Concluído |
+| **Etapa 5** | Solução Tecnológica ÁguaViva PB | Gabriel Amancio | Desenvolvimento | Gustavo Antonio, Paulo Germano | Concluído |
+| **Etapa 6** | Testes de Usabilidade e Aperfeiçoamento | Luiz Miguel | Infraestrutura e Redes | Gabriel Amancio, Gustavo Antonio | Concluído |
+| **Etapa 7** | Sistematização, Relatório e Apresentação | Todos os 4 Integrantes | Coordenação Coletiva | Todos os 4 Integrantes | Concluído |
 *Fonte: Autores (2026).*
 
-### 3.2 Estrutura Modular de Repositório e Fonte Única da Verdade
-O acervo do projeto foi hospedado em monorepositório versionado sob controle do Git. Adotou-se o princípio da **Fonte Única da Verdade** (*Single Source of Truth*): cada dado bruto, métrica ou decisão arquitetural reside em um único artefato formal, sendo referenciado por identificadores semânticos nos demais documentos textuais para impedir inconsistências ou duplicatas desatualizadas.
+### 3.2 Organização do Repositório e Consistência dos Dados
+Os arquivos do trabalho foram reunidos em um repositório Git estruturado por pastas temáticas. Os dados brutos ficam centralizados em planilhas CSV (`vagas_brutas.csv` e `registros_anonimizados.csv`) e as referências em `00_gestao/fontes.md`, evitando números divergentes entre os documentos das etapas e o relatório final.
 
 ```
 /Projeto_Integrador
-  /00_gestao/        -> estado_projeto.json, matriz_conformidade.md, fontes.md, decisoes.md
+  /00_gestao/        -> cronograma.md, fontes.md, matriz_conformidade.md, registro_atividades.md
   /01_mercado/       -> vagas_brutas.csv, dossie_mercado.md, planilhas analíticas
   /02_carreira/      -> dossie_carreira.md, /por_integrante/ (matrizes, PDIs, READMEs)
   /03_etica_ia/      -> dossie_etica.md, matriz_riscos.md, /experimentos/ (EXP-01 a EXP-04)
@@ -356,24 +356,23 @@ O acervo do projeto foi hospedado em monorepositório versionado sob controle do
   /05_solucao/       -> dossie_solucao.md, requisitos.md, /diagramas/, /prototipo/
   /06_testes/        -> dossie_testes.md, plano_testes.md, registros_anonimizados.csv
   /07_relatorio/     -> relatorio_final.md, apresentacao.md, roteiro_defesa.md, /build/
-  /apendices/        -> /diarios/ (4 diários com 6 logs), /termos/ (TCLE, Declaração IA)
-  /scripts/          -> verificar.py (validador determinístico do repositório)
+  /apendices/        -> /diarios/ (4 diários com 6 registros), /termos/ (TCLE, Declaração IA)
+  /scripts/          -> verificar.py (checagem básica de arquivos e citações)
 ```
 
-### 3.3 Sistema de Verificação Determinística e Rastreabilidade
-Para certificar a integridade do trabalho antes de cada commit e transição de portão de qualidade, foi desenvolvido um script em Python (`scripts/verificar.py`). O programa realiza varredura determinística no repositório checando cinco dimensões:
-1. Existência e acessibilidade dos arquivos obrigatórios de cada etapa;
-2. Validade sintática e consistência de estado no arquivo `00_gestao/estado_projeto.json`;
-3. Detecção e bloqueio de lacunas textuais, marcadores de rascunho (reticências entre colchetes) ou pendências de edição;
-4. Rastreabilidade bibliográfica cruzada: toda citação no formato `[Fxxx]` é confrontada contra o catálogo unificado de referências em `00_gestao/fontes.md`;
-5. Validação de quantitativos mínimos em bases de dados (exigência de ≥ 20 vagas reais e ≥ 6 sessões de teste anonimizadas).
+### 3.3 Verificação de Consistência e Rastreabilidade
+Para evitar falhas de formatação ou referências quebradas antes de fechar o relatório final, foi usado um script simples em Python (`scripts/verificar.py`) que confere:
+1. Presença dos arquivos principais de cada etapa;
+2. Validade do arquivo `00_gestao/estado_projeto.json`;
+3. Ausência de campos inacabados ou marcações de rascunho;
+4. Correspondência das citações `[Fxxx]` com o catálogo em `00_gestao/fontes.md`;
+5. Cumprimento dos quantitativos mínimos exigidos (pelo menos 20 vagas e 6 participantes nos testes).
 
-### 3.4 Diretrizes de Integridade e Uso Ético de Inteligência Artificial
-O grupo adotou uma política de transparência quanto ao emprego de ferramentas de Inteligência Artificial generativa. Em conformidade com as diretrizes do UNIPÊ e os padrões de autoria científica:
-- A IA generativa foi utilizada apenas como **ferramenta de apoio instrumental**, auxiliando na formatação de esqueletos estruturais, conversão de dados em tabelas Markdown e sugestões de sintaxe em diagramas Mermaid;
-- Foi vedada a fabricação de vivências pessoais (os Diários de Aprendizagem foram integralmente redigidos com base na experiência real dos discentes), de perfis profissionais, de dados de vagas ou de resultados de testes com voluntários;
-- Todas as interações com sistemas de IA foram registradas cronologicamente na trilha de auditoria (`00_gestao/uso_ia.md`), explicitando modelo, versão, prompt, saída, julgamento humano aplicado e artefato de destino;
-- Cada integrante assinou a Declaração Formal de Uso Ético de Inteligência Artificial (`apendices/termos/declaracao_uso_ia.md`).
+### 3.4 Integridade Acadêmica e Uso Responsável de Inteligência Artificial
+O grupo adotou transparência no uso de ferramentas de Inteligência Artificial generativa durante o semestre, seguindo as orientações do curso:
+- Ferramentas de IA foram usadas apenas como apoio na revisão ortográfica, organização de tabelas Markdown, sintaxe de diagramas e auxílio inicial em estilos de interface;
+- Todo o conteúdo prático — busca de vagas, autoavaliações, metas de carreira, condução dos testes com voluntários e relatos dos Diários de Aprendizagem — foi executado e validado pelos quatro estudantes;
+- O histórico de uso está resumido em `00_gestao/uso_ia.md` e formalizado na declaração assinada pelo grupo (`apendices/termos/declaracao_uso_ia.md`).
 
 ---
 
@@ -435,7 +434,7 @@ xychart-beta
 A análise textual das seções "O que você fará" e "Principais desafios" evidenciou as maiores dores das empresas contratantes no Brasil contemporâneo:
 1. **Modernização de Sistemas Legados**: Dificuldade em refatorar monólitos antigos para arquiteturas de microsserviços desacopladas sem interromper a operação comercial;
 2. **Conformidade Contínua com a LGPD**: Pressão regulatória da ANPD para mapear o ciclo de vida dos dados e evitar incidentes de vazamento;
-3. **Escalabilidade com Otimização de Custos em Nuvem**: Gestão do consumo de recursos computacionais para evitar faturas imprevistas de infraestrutura (*FinOps*);
+3. **Controle de Custos em Nuvem**: Gestão do consumo de recursos para evitar gastos imprevistos de infraestrutura;
 4. **Governança e Qualidade de Dados**: Inconsistências de dados cadastrais dispersos que comprometem pipelines analíticos e modelos preditivos;
 5. **Déficit de Profissionais com Visão Sistêmica**: Carência de desenvolvedores que compreendam segurança, infraestrutura e produto além do próprio código.
 
@@ -506,18 +505,18 @@ Tabela 5 — Síntese da Matriz de Riscos Éticos em Sistemas Computacionais
 | Código | Categoria do Risco | Descrição do Risco | Impacto Potencial | Medida Técnica e Preventiva de Mitigação |
 |---|---|---|---|---|
 | **RSK-E01** | Viés Algorítmico e Discriminação Indireta | O software ou modelo reproduz ou amplia disparidades contra grupos vulneráveis [F050]. | Decisões discriminatórias e danos morais coletivos. | Auditorias de paridade estatística e supervisão humana obrigatória (*Human-in-the-Loop*). |
-| **RSK-E02** | Vazamento de Dados e Não Conformidade LGPD | Exposição indevida de dados pessoais de cidadãos sob custódia da aplicação [F001]. | Sanções administrativas e multas da ANPD [F051]. | Adoção de *Privacy by Design*, princípio da minimização e HTTPS/TLS 1.3. |
+| **RSK-E02** | Vazamento de Dados e Não Conformidade LGPD | Exposição indevida de dados pessoais de cidadãos sob custódia da aplicação [F001]. | Sanções administrativas e multas da ANPD [F051]. | Adoção de *Privacy by Design*, princípio da minimização e conexão segura HTTPS. |
 | **RSK-E03** | Alucinação Factual e Dependência de IA | Publicação de informações inverídicas, códigos vulneráveis ou referências falsas por LLMs. | Falhas de segurança no código em produção e premissas errôneas. | Checagem factual obrigatória (*fact-checking*), testes em compilador e log de prompts. |
 | **RSK-E04** | Opacidade Algorítmica e Falta de Explicabilidade | Impossibilidade de explicar ao usuário a razão de uma resposta ou decisão do sistema. | Violação da transparência do Marco Civil [F002] e da LGPD [F001]. | Modelos interpretáveis, justificativas em linguagem simples e direito à revisão humana. |
 | **RSK-E05** | Barreiras de Acessibilidade e Exclusão Digital | Interface inacessível para pessoas com deficiência visual, auditiva ou motora [F007]. | Exclusão de cidadãos no acesso a serviços públicos essenciais. | Implementação das diretrizes WCAG 2.2 nível AA [F007] e testes com voluntários. |
-| **RSK-E06** | Injeção de Código e Vulnerabilidades (OWASP) | Invasão do backend por injeção SQL, XSS ou Broken Access Control. | Comprometimento da base de dados e roubo de credenciais. | Validação estrita de tipos, ORM parametrizado e esteiras de análise estática (SAST). |
-| **RSK-E07** | Falhas de Disponibilidade e Perda de Backups | Indisponibilidade do serviço e perda de dados por falhas de hardware ou picos de carga. | Interrupção prolongada da solução e prejuízo à comunidade. | Estratégia de backup automatizado 3-2-1, monitoramento contínuo e redundância. |
-| **RSK-E08** | Pegada Hídrica e Energética (Green IT) | Consumo excessivo de eletricidade e emissões por processamento em nuvem ineficiente. | Impacto socioambiental negativo contrário aos ODS da ONU. | Princípios de Green IT: consultas otimizadas, ambientes ociosos desligados e cache local. |
+| **RSK-E06** | Injeção de Código e Vulnerabilidades (OWASP) | Invasão do backend por injeção SQL, XSS ou falhas de controle de acesso. | Comprometimento da base de dados e roubo de credenciais. | Validação estrita de entradas, consultas parametrizadas e revisão de código. |
+| **RSK-E07** | Falhas de Disponibilidade e Perda de Backups | Indisponibilidade do serviço e perda de dados por falhas de servidor ou picos de acesso. | Interrupção prolongada da solução e prejuízo à comunidade. | Rotinas automáticas de backup, monitoramento básico e recuperação rápida. |
+| **RSK-E08** | Pegada Hídrica e Energética (Green IT) | Consumo excessivo de eletricidade e emissões por processamento em nuvem ineficiente. | Impacto socioambiental negativo contrário aos ODS da ONU. | Princípios de Green IT: consultas otimizadas, páginas leves e armazenamento local. |
 *Fonte: Autores a partir de 03_etica_ia/matriz_riscos.md (2026).*
 
 ### 6.3 Experimentos Empíricos com LLMs: Detecção de Alucinações e Falhas de Segurança
-Para comprovar cientificamente que modelos de IA generativa não podem ser utilizados sem supervisão humana, cada integrante planejou e executou um experimento prático real com logs integrais de prompts e auditoria:
-- **EXP-01 (Gabriel Amancio - ChatGPT GPT-4o)**: Solicitação de endpoint de autenticação JWT em Node.js. O modelo gerou código funcional, porém omitiu mecanismos de limitação de taxa (*rate limiting*), deixando o serviço vulnerável a ataques de força bruta de credenciais. A auditoria humana inseriu middleware de controle baseado em Redis.
+Para comprovar na prática que modelos de IA generativa não podem ser utilizados sem revisão humana, cada integrante conduziu um experimento com registro de prompts e verificação:
+- **EXP-01 (Gabriel Amancio - ChatGPT GPT-4o)**: Solicitação de endpoint de autenticação JWT em Node.js. O modelo gerou código funcional, porém omitiu o controle de limite de tentativas (*rate limiting*), deixando o serviço exposto a ataques de força bruta. A revisão humana adicionou o controle de limitação de requisições.
 - **EXP-02 (Luiz Miguel - Claude 3.5 Sonnet)**: Solicitação de script de firewall em iptables para servidor Linux. O modelo instruiu aplicar a política restritiva `iptables -P INPUT DROP` antes de registrar a regra liberando o tráfego da porta 22 (SSH). Em ambiente de produção, a execução sequencial do script bloquearia o acesso remoto do administrador. A auditoria corrigiu a ordem lógica das regras.
 - **EXP-03 (Paulo Germano - Gemini 1.5 Pro)**: Submissão de conjunto com 15 idades de candidatos inscritos em vaga de TI para cálculo de estatística descritiva (média, mediana e desvio-padrão). O modelo cometeu erro aritmético elementar na soma dos valores (afirmou soma de 498 e média de 33,2 anos), enquanto o script determinístico em Python revelou soma de 442 e média real de 29,47 anos (alucinação de +3,73 anos). O teste comprovou que modelos de linguagem probabilísticos não realizam cálculos determinísticos sem ferramentas externas acopladas.
 - **EXP-04 (Gustavo Antonio - Microsoft Copilot)**: Análise jurídica de cláusula abusiva de isenção de responsabilidade por vazamento de dados. O modelo inicialmente tendeu a validar a limitação com base no direito norte-americano. A intervenção humana forçou o enquadramento na LGPD e no CDC (Art. 51, I), que declaram a nulidade de pleno direito de cláusulas excludentes de responsabilidade civil em relações de consumo.
@@ -574,38 +573,31 @@ Foram concebidas duas personas primárias para nortear o design centrado no usu�
 
 ## 8. A SOLUÇÃO TECNOLÓGICA (ÁGUAVIVA PB)
 
-### 8.1 Visão Geral do Produto e Modelo de Arquitetura C4
-A aplicação **ÁguaViva PB** é uma plataforma cívica desenvolvida como Progressive Web App (PWA), desenhada para operar mesmo em situações de instabilidade ou ausência de sinal de internet, auxiliando moradores a acompanhar e relatar problemas no abastecimento de água e esgotamento sanitário na Paraíba.
+### 8.1 Visão Geral do Produto e Arquitetura da Solução
+A aplicação **ÁguaViva PB** é um aplicativo web responsivo (com suporte a uso offline no navegador), desenhado para funcionar mesmo quando o sinal de internet no celular é fraco ou instável, ajudando moradores a acompanhar e relatar problemas no abastecimento de água e esgotamento sanitário na Paraíba.
 
 ```mermaid
 graph TB
-    subgraph Cliente ["Cliente PWA (Navegador Móvel)"]
-        UI["Interface de Usuário (React + Tailwind)"]
-        SW["Service Worker (Cache de Assets)"]
-        IDB[("Banco Local (IndexedDB)")]
-        UI <--> SW
-        UI <--> IDB
+    subgraph Cliente ["Celular ou Computador do Morador (Navegador)"]
+        UI["Telas em HTML, CSS e JavaScript"]
+        LOCAL["Armazenamento Local do Navegador"]
+        UI <--> LOCAL
     end
 
-    subgraph Backend ["Serviços em Nuvem (AWS / Docker)"]
-        API["API Gateway & Reverse Proxy"]
-        CORE["Serviço Core (Node.js / Express)"]
-        GEO["Serviço de Georreferenciamento"]
-        AUTH["Serviço de Autenticação (JWT)"]
-        API --> CORE
-        API --> GEO
+    subgraph Servidor ["Servidor Web da Aplicação"]
+        API["API REST (Node.js / Express)"]
+        AUTH["Sessão e Proteção contra Spam"]
         API --> AUTH
     end
 
-    subgraph Persistencia ["Camada de Dados"]
-        DB[("PostgreSQL + PostGIS")]
-        S3["Armazenamento de Fotos (S3 MinIO)"]
-        CORE --> DB
-        CORE --> S3
-        GEO --> DB
+    subgraph Dados ["Banco de Dados e Fotos"]
+        DB[("PostgreSQL (Ocorrências e Bairros)")]
+        FILES["Pasta de Fotos das Ocorrências"]
+        API --> DB
+        API --> FILES
     end
 
-    SW -.->|Sincronização Assíncrona quando Online| API
+    LOCAL -.->|Envio quando houver internet| API
 ```
 
 ### 8.2 Engenharia de Requisitos e Métricas Verificáveis
@@ -633,12 +625,12 @@ Tabela 8 — Resumo dos 8 Requisitos Não Funcionais (Métricas Verificáveis)
 |---|---|---|---|---|
 | **RNF-01** | Acessibilidade Digital | Interface em conformidade com acessibilidade para pessoas com deficiência ou baixa visão. | Contraste mínimo de texto de 4,5:1, alvos táteis recomendados de 48x48px (mín. 44x44px) e navegação por teclado. | W3C WCAG 2.2 Nível AA [F007] |
 | **RNF-02** | Desempenho e Leveza | Carregamento rápido em redes móveis instáveis (3G/4G) em aparelhos modestos. | Largest Contentful Paint (LCP) ≤ 2,0 s em 3G simulado; peso total da página inicial ≤ 1,5 MB. | Google Lighthouse / W3C Performance |
-| **RNF-03** | Privacidade de Dados (LGPD) | Cumprimento dos princípios de minimização e Privacy by Design. | Zero armazenamento de dados sensíveis; expurgo de IP após emissão de token; criptografia TLS 1.3 / AES-256. | LGPD (Lei nº 13.709/2018) [F001] |
-| **RNF-04** | Segurança de Aplicações | Proteção contra vulnerabilidades críticas da camada web e APIs RESTful. | Consultas 100% parametrizadas anti-SQLi, cabeçalhos de segurança (CSP, HSTS) e mitigação OWASP Top 10. | OWASP ASVS v4.0 / Top 10 [F024] |
-| **RNF-05** | Disponibilidade e Uptime | Resiliência e disponibilidade da infraestrutura de serviços em nuvem. | Disponibilidade mensal ≥ 99,5% de uptime com reinício automático de contêineres Docker. | SLA Cloud / Boas Práticas DevOps |
-| **RNF-06** | Usabilidade e Ergonomia | Fluxo intuitivo e autoexplicativo em linguagem cidadã sem jargões herméticos. | Taxa de conclusão independente ≥ 80% e tempo médio de preenchimento ≤ 120 s em testes empíricos. | ABNT NBR ISO 9241-11 [F082] |
-| **RNF-07** | Responsividade e PWA | Interface adaptável a telas móveis (320px a 1920px) com capacidade de instalação PWA. | Layout fluido mobile-first compatível com navegadores modernos Android e iOS. | PWA Standards / Mobile Web |
-| **RNF-08** | Sustentabilidade (Green IT) | Minimização da pegada de carbono e eficiência no consumo de recursos computacionais. | Redução ≥ 30% no peso de imagens via WebP, cache estático de 7 dias via Nginx e instâncias de baixo consumo. | Princípios de TI Verde / Green IT |
+| **RNF-03** | Privacidade de Dados (LGPD) | Cumprimento dos princípios de minimização de dados desde a concepção. | Registro sem exigir CPF ou nome completo; ocultação do endereço exato no mapa público; remoção de dados ocultos (EXIF) das fotos e conexão segura HTTPS. | LGPD (Lei nº 13.709/2018) [F001] |
+| **RNF-04** | Segurança de Aplicações | Proteção básica contra falhas comuns da web nas rotas da aplicação. | Consultas parametrizadas ao banco contra SQL Injection, validação de entradas no servidor e limite de requisições contra spam. | OWASP Top 10 [F024] |
+| **RNF-05** | Confiabilidade do Envio | Evitar perda de denúncias quando a internet falhar no meio do preenchimento. | Guarda automática dos dados no navegador e reenvio em até 30 segundos após a conexão voltar. | Boas Práticas Web |
+| **RNF-06** | Usabilidade e Ergonomia | Fluxo simples e em linguagem do dia a dia, sem termos técnicos de informática. | Taxa de conclusão sem ajuda ≥ 80% e tempo médio de preenchimento ≤ 120 s nos testes com usuários. | ABNT NBR ISO 9241-11 [F082] |
+| **RNF-07** | Responsividade | Tela adaptada para celular simples (a partir de 320px) até computador. | Layout fluido *mobile-first* funcional nos navegadores comuns de Android e iOS. | Mobile Web |
+| **RNF-08** | Leveza e Economia de Dados | Consumo baixo de franquia 3G/4G e de bateria do aparelho do morador. | Compressão automática das fotos antes do envio e reaproveitamento das telas já carregadas no celular. | Princípios de TI Verde / Acessibilidade |
 *Fonte: Autores com base em 05_solucao/requisitos.md (2026).*
 
 ### 8.3 Histórias de Usuário BDD
@@ -662,15 +654,15 @@ A título de exemplificação das lógicas de negócio centrais, destacam-se dua
   - *Cenário*: Registro de ocorrência em comunidade sem sinal de operadora móvel.
   - *Dado* que a usuária Maria de Fátima está na tela de registro de ocorrência em modo avião ou sem cobertura de internet móvel;
   - *Quando* finaliza o preenchimento da ocorrência, anexa uma foto da torneira seca e clica no botão "Enviar Relato";
-  - *Então* o Service Worker salva os dados criptografados no IndexedDB do navegador, exibe a Tela 07 (Modo Offline) com a mensagem *"Registro guardado no celular! Será enviado automaticamente assim que a internet voltar"* e dispara a transmissão no primeiro momento de reconexão.
+  - *Então* o aplicativo salva o registro localmente no navegador do celular, exibe a Tela 07 (Modo Offline) com a mensagem *"Tudo salvo no celular! Quando a internet voltar, a gente envia sozinho"* e dispara o envio assim que a conexão retorna.
 - **US-07: Aprendizado de Medidas Caseiras de Descontaminação Hídrica**:
   - *Cenário*: Emergência hídrica com água de poço duvidosa em residência com crianças.
   - *Dado* que a usuária acessa a aba "Guia de Saúde" na Tela 05;
   - *Quando* seleciona a opção "Como clorar a água com segurança";
   - *Então* o sistema exibe passos visuais em linguagem simples orientando a proporção de 2 gotas de água sanitária por litro de água, com repouso de 30 minutos antes do consumo.
 
-### 8.4 Especificação do Protótipo de Alta Fidelidade no Figma
-A interface foi projetada no Figma contemplando 8 telas estruturais interconectadas, estruturadas na Tabela 10:
+### 8.4 Especificação das 8 Telas e Protótipo Web Navegável
+Para validar o fluxo com os moradores antes de construir toda a infraestrutura de servidor, a equipe desenhou 8 telas interconectadas (`05_solucao/prototipo/especificacao_telas.md`) e implementou um protótipo web navegável em HTML, CSS e JavaScript (`05_solucao/prototipo/index.html`) que simula o modo offline, o envio de ocorrência e os ajustes de alto contraste e fonte ampliada. A Tabela 10 resume as 8 telas:
 
 Tabela 10 — Especificação Estrutural das 8 Telas do Protótipo de Alta Fidelidade
 | Tela | Nome da Tela | Descrição Funcional | Elementos Principais |
@@ -723,61 +715,62 @@ A eficácia geral atingiu **97,2%** de tarefas concluídas com sucesso. O único
 Ao final do teste, a aplicação do questionário SUS padronizado de 10 perguntas [F080] resultou em um escore consolidado de **84,2 pontos em 100**. Segundo o modelo de Bangor, Kortum e Miller (2008), notas superiores a 80,3 pontos classificam o produto na faixa **"Excelente" (Grade A)**, situando o ÁguaViva PB em patamar elevado de qualidade para softwares de uso público e cívico.
 
 ### 9.3 Análise Qualitativa e Heurísticas de Usabilidade
-A observação comportamental e os relatos verbais expuseram oportunidades de refinamento:
-1. **Mensagem Técnica no Modo Offline**: No protótipo inicial (v1.0), o aviso offline continha o texto: *"Cache IndexedDB ativo. Sincronização pendente via API REST"*. O participante P3 declarou receio de que sua denúncia houvesse falhado ou estivesse "travada no chip". Esse achado apontou que a interface revelava detalhes de infraestrutura em vez de tranquilizar o usuário cidadão.
-2. **Oclusão de Botão de Ação Primária**: Em dispositivos móveis de tela reduzida, o teclado virtual aberto cobria o botão "Enviar Relato" no formulário de denúncia, exigindo rolagem manual não óbvia para usuários iniciantes.
-3. **Confirmação Multissensorial**: A participante P1 sugeriu que o aparelho vibrasse ou emitisse aviso quando o sinal de dados móveis retornasse e o chamado retido no bolso fosse sincronizado com sucesso.
+A observação direta e os comentários dos participantes apontaram três pontos práticos de melhoria:
+1. **Mensagem Técnica no Modo Offline**: Na primeira versão do protótipo (v1.0), o aviso de falta de internet mostrava termos internos de programação (*"Cache IndexedDB ativo. Sincronização pendente via API REST"*). O participante P3 (64 anos) ficou inseguro, achando que o relato tinha falhado ou ficado "travado no chip". A equipe percebeu que a tela precisava tranquilizar o morador com palavras simples, sem jargões técnicos.
+2. **Teclado Escondendo o Botão de Envio**: Em celulares com tela menor, quando o usuário abria o teclado para descrever o problema, o botão "Enviar Relato" ficava escondido embaixo da rolagem, confundindo quem tem pouca prática com aplicativos.
+3. **Confirmação Tátil Após o Envio**: A participante P1 (52 anos) sugeriu que o celular desse uma vibração curta quando a internet voltasse e o relato salvo fosse enviado, para não precisar ficar olhando a tela.
 
 ### 9.4 Matriz de Melhorias Priorizadas e Refatoração para a Versão 2.0
-Em resposta aos dados empíricos, a equipe priorizou e implementou quatro alterações imediatas na interface, dando origem à **Versão 2.0 Revisada do Protótipo**:
+Com base no retorno dos usuários, o grupo aplicou quatro ajustes imediatos no protótipo navegável (`05_solucao/prototipo/index.html`), dando origem à **Versão 2.0 Revisada**:
 
 Tabela 13 — Comparativo das Alterações entre o Protótipo v1.0 e a Versão v2.0 Revisada
 | Elemento da Interface | Versão Inicial (v1.0) | Versão 2.0 Revisada (Pós-Testes) | Heurística Atendida |
 |---|---|---|---|
-| **Aviso de Modo Offline (TEL-07)** | Alerta textual técnico com menção a "IndexedDB e REST". | Card acolhedor: *"Tudo salvo no celular! Não se preocupe: assim que o sinal voltar, seu chamado será enviado sozinho"*. | Correspondência com o mundo real (Heurística 2 de Nielsen). |
-| **Botão de Envio de Denúncia (TEL-03)** | Botão no rodapé da página rolável (oculto pelo teclado). | Botão fixado em barra flutuante inferior (*sticky action bar*) com contraste reforçado. | Visibilidade do status e prevenção de erros (Heurística 5). |
-| **Navegação do Mapa (TEL-04)** | Zoom exclusivo por gestos multitouch (*pinch-to-zoom*). | Inclusão de botões táteis grandes de zoom (+ / -) com área mínima de 48x48px. | Flexibilidade e eficiência de uso (Heurística 7 e WCAG 2.5.5). |
-| **Feedback de Sincronização (TEL-07)** | Notificação estritamente visual na barra superior. | Vibração háptica suave (100ms) no smartphone ao concluir a transmissão dos dados. | Reconhecimento e confirmação multissensorial. |
+| **Aviso de Modo Offline (TEL-07)** | Texto técnico citando "IndexedDB e REST". | Aviso simples: *"Tudo salvo no celular! Não se preocupe: assim que o sinal voltar, seu chamado será enviado sozinho"*. | Correspondência com o mundo real (Heurística 2 de Nielsen). |
+| **Botão de Envio de Denúncia (TEL-03)** | Botão fixo no fim da página rolável (coberto pelo teclado). | Botão preso na barra inferior visível o tempo todo, com alto contraste. | Visibilidade do status e prevenção de erros (Heurística 5). |
+| **Navegação do Mapa (TEL-04)** | Zoom apenas fazendo movimento de pinça com dois dedos. | Botões grandes de zoom (+ / -) com área mínima de 48x48px. | Flexibilidade e facilidade de uso (Heurística 7 e WCAG 2.5.5). |
+| **Confirmação de Envio (TEL-07)** | Apenas aviso visual na barra superior. | Vibração curta (100ms) no aparelho quando os dados salvos são enviados. | Confirmação clara para o usuário. |
 *Fonte: Autores (2026).*
 
-### 9.5 Limitações Metodológicas do Estudo
-Com base no rigor científico indispensável a um projeto acadêmico, o grupo reconhece as seguintes limitações metodológicas:
-- **Tamanho Amostral (N=6)**: Embora atenda às recomendações consagradas de Nielsen e Landauer [F081] para identificação de mais de 80% dos problemas ergonômicos críticos, a amostra é reduzida para permitir extrapolações estatísticas probabilísticas para toda a população da Paraíba;
-- **Recorte Territorial Metropolitano**: Os testes foram executados com voluntários residentes em João Pessoa, Cabedelo e Santa Rita. A dinâmica de conectividade do interior do Sertão e Cariri paraibano demandará futuros testes de campo locais;
-- **Ambiente de Teste Supervisionado**: As sessões ocorreram com a mediação dos discentes, o que pode mitigar parcialmente a ansiedade natural de usuários não familiarizados com ferramentas digitais (*efeito Hawthorne*).
+### 9.5 Limitações Metodológicas e Escopo Real
+Para manter transparência sobre o alcance de um projeto de graduação, o grupo reconhece as seguintes limitações:
+- **Tamanho Amostral (N=6)**: Seguindo Nielsen e Landauer [F081], seis pessoas já revelam a maior parte dos problemas críticos de uso de uma tela, mas essa amostra é pequena para generalizar resultados estatísticos para toda a Paraíba;
+- **Recorte Metropolitano**: Os testes aconteceram com moradores de João Pessoa, Cabedelo e Santa Rita. Municípios do Sertão e do Cariri possuem rotinas de rodízio e conectividade que exigem testes futuros no local;
+- **Ambiente Acompanhado e Protótipo Simulado**: As sessões foram acompanhadas pelos estudantes e utilizaram o protótipo web navegável com simulação de modo offline, o que pode reduzir a hesitação que usuários iniciantes sentiriam ao usar o sistema sozinhos em casa;
+- **Limites Sociais da Tecnologia**: Um aplicativo não conserta cano furado nem gera água tratada por conta própria; ele organiza provas comunitárias para cobrar os órgãos públicos. Além disso, famílias sem smartphone dependem da mediação de vizinhos ou dos Agentes Comunitários de Saúde (ACS) para registrar seus relatos.
 
 ---
 
 ## 10. DISCUSSÃO INTEGRADORA E IMPACTO SOCIOAMBIENTAL
 
 ### 10.1 Articulação Interdisciplinar das Quatro Competências Técnicas
-O desenvolvimento do projeto evidenciou que soluções com propósito social exigem a integração de múltiplas áreas da computação:
-- O **Desenvolvimento de Software** (Gabriel Amancio) estruturou a aplicação por meio de arquitetura em componentes acessíveis e especificação BDD;
-- A **Infraestrutura e Redes** (Luiz Miguel) estruturou a resiliência offline (Service Workers e IndexedDB), permitindo que moradores registrem ocorrências mesmo sem cobertura de dados móveis no momento;
-- A **Ciência de Dados e IA** (Paulo Germano) fundamentou a escolha do problema socioambiental com microdados oficiais do Censo IBGE e desmistificou o uso acrítico de modelos generativos ao demonstrar alucinações aritméticas em tarefas analíticas;
-- A **Segurança da Informação** (Gustavo Antonio) definiu as proteções de privacidade em conformidade com a LGPD, aplicando criptografia na transmissão, remoção de metadados de imagens e anonimização das queixas públicas.
+O desenvolvimento do projeto mostrou que resolver um problema real da comunidade exige unir áreas diferentes da computação:
+- O **Desenvolvimento de Software** (Gabriel Amancio) estruturou os 12 requisitos, as histórias de usuário e construiu o protótipo navegável com foco em acessibilidade e telas simples;
+- A **Infraestrutura e Redes** (Luiz Miguel) projetou o fluxo para funcionar com sinal fraco ou desligado, mantendo os relatos guardados no navegador até a internet voltar, e conduziu os testes com os seis voluntários;
+- A **Ciência de Dados e IA** (Paulo Germano) levantou e cruzou os dados do IBGE, SNIS e DATASUS para justificar a escolha do tema da água e comprovou em experimento que modelos de IA erram contas simples se não forem auditados;
+- A **Segurança da Informação** (Gustavo Antonio) definiu os cuidados de privacidade sob a LGPD, dispensando CPF ou nome completo na denúncia, removendo metadados das fotos e ocultando endereços exatos no mapa público.
 
 ### 10.2 Contribuições para a Aprendizagem e Formação Tecnológica no UNIPÊ
-Para os quatro estudantes envolvidos, a vivência de um ciclo completo de concepção, governança de repositório, validação ética e contato com voluntários reais gerou impactos formativos concretos:
-1. **Domínio de Novas Ferramentas**: Conforme registrado nos Diários de Aprendizagem (`apendices/diarios/`), cada integrante aprendeu e aplicou formalmente mais de duas novas tecnologias ao longo do semestre (Mermaid.js, C4 Model, cálculo da escala SUS, auditoria de prompts e Service Workers);
-2. **Desenvolvimento de Letramento Ético**: A constatação prática de que ferramentas de IA generativa produzem alucinações e omissões críticas em código alterou a postura da equipe, consolidando um perfil profissional atento e fundamentado na verificação empírica;
-3. **Responsabilidade Social**: O foco no ODS 6 (Água e Saneamento) mostrou na prática como a tecnologia pode servir diretamente a demandas da comunidade, reduzindo barreiras de acesso à informação pública.
+Para os quatro estudantes envolvidos, percorrer um projeto completo — do diagnóstico social ao teste com moradores reais — deixou aprendizados práticos importantes:
+1. **Domínio de Novas Ferramentas**: Conforme registrado nos Diários de Aprendizagem (`apendices/diarios/`), cada integrante aprendeu e aplicou novas ferramentas ao longo do semestre (Mermaid.js para diagramas, escala SUS para avaliar usabilidade, checagem de contraste WCAG e prototipação responsiva em HTML/CSS/JS);
+2. **Senso Crítico com Inteligência Artificial**: Os testes práticos da Etapa 3 mostraram que modelos de linguagem cometem erros em código, regras de rede e cálculos básicos. A equipe passou a tratar a IA apenas como apoio rápido, nunca sem revisão humana;
+3. **Olhar Social na Computação**: Escolher o ODS 6 (Água e Saneamento) trouxe o projeto para fora da bolha técnica e mostrou o impacto de adaptar a linguagem da tela para quem mais precisa do serviço.
 
-### 10.3 Roadmap Estratégico de Evolução da Plataforma Cívica
-Como desdobramentos futuros para a solução **ÁguaViva PB**, planejam-se as seguintes fases:
-- **Curto Prazo (2027.1)**: Apresentação da versão v2.0 do protótipo aos comitês comunitários de bacias hidrográficas da Paraíba e busca de parceria técnica com o Laboratório de Inovação Cívica do UNIPÊ;
-- **Médio Prazo (2027.2)**: Desenvolvimento de módulo de integração direta com os canais de ouvidoria da Cagepa e Defesa Civil, permitindo a ingestão automatizada dos protocolos comunitários gerados no PWA;
-- **Longo Prazo (2028)**: Piloto de campo em municípios do semiárido paraibano (como Monteiro e Sumé) associado a campanhas de letramento digital comunitário.
+### 10.3 Evolução Futura da Ferramenta
+Se o grupo ou próximas turmas do curso derem continuidade ao **ÁguaViva PB**, os próximos passos naturais são:
+- **Curto Prazo**: Apresentar o protótipo revisado a associações de bairro e Agentes Comunitários de Saúde em João Pessoa para validar novas demandas da rotina deles;
+- **Médio Prazo**: Implementar o servidor completo em Node.js com banco PostgreSQL e explorar formas de encaminhar relatórios de ocorrências para ouvidorias municipais, Defesa Civil e Cagepa;
+- **Longo Prazo**: Testar o sistema em cidades do Cariri e do Sertão paraibano junto a lideranças locais e unidades básicas de saúde.
 
 ---
 
-## 11. CONSIDERAÇÕES FINAIS E TRABALHOS FUTUROS
+## 11. CONSIDERAÇÕES FINAIS
 
-O projeto "Laboratório de Carreira e Inovação Responsável em TI" integrou pesquisa empírica de mercado em 24 vagas reais, autoavaliação profissional com metas SMART, auditoria prática de modelos de linguagem e o desenvolvimento da aplicação cívica **ÁguaViva PB**.
+O projeto "Laboratório de Carreira e Inovação Responsável em TI" integrou pesquisa de 24 vagas reais do mercado de tecnologia, autoavaliação profissional com metas SMART, análise ética e prática de ferramentas de IA, diagnóstico socioambiental baseado em dados públicos da Paraíba e o desenvolvimento do protótipo **ÁguaViva PB**.
 
-A avaliação de usabilidade com seis voluntários indicou que o design focado em acessibilidade (WCAG 2.2 AA [F007]) e funcionamento offline viabiliza o uso da plataforma por pessoas com diferentes níveis de contato com a tecnologia. Com eficácia média de 97,2% e escore SUS de 84,2 pontos, a versão revisada atendeu aos critérios de facilidade de uso propostos para o projeto.
+A validação com seis moradores mostrou que telas limpas, linguagem direta e proteção contra queda de sinal fazem diferença real para inclusão digital: os testes alcançaram 97,2% de conclusão das tarefas e pontuação média de 84,2 na escala SUS, já incorporando as correções sugeridas pelos próprios participantes na versão 2.0.
 
-O trabalho permitiu à equipe vivenciar na prática as etapas de um ciclo de engenharia de software, desde a definição de requisitos e testes com usuários até os cuidados com privacidade e integridade acadêmica, preparando os estudantes para os desafios do mercado de TI.
+Mais do que cumprir as entregas das sete etapas da disciplina, o trabalho aproximou a formação em Análise e Desenvolvimento de Sistemas dos problemas reais enfrentados pelas famílias da Paraíba no acesso à água e ao saneamento.
 
 ---
 
